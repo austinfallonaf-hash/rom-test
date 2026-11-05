@@ -26,7 +26,17 @@ Neither file is a full translation. No ROM data is supplied with the patches.
   Supersedes earlier patches; apply only to the original ROM. See
   `docs/dandy-alpha.md` and `dandy-alpha-manifest.json`.
 
-- `ship-menu-alpha.bps`: latest cumulative patch. Adds compact pause-menu,
+- `ship-menu-alpha.bps`: earlier cumulative patch. Adds compact pause-menu,
   profile, equipment and starter-item labels. Supersedes earlier patches;
   apply only to the original ROM. See `docs/ship-menu-alpha.md` and
   `ship-menu-alpha-manifest.json` for coverage and hashes.
+
+- `ship-help-alpha.bps` and `bed-save-alpha.bps`: earlier cumulative ship guides
+  and verified bed/save flow. See their corresponding documents and manifests.
+- `care-guide-alpha.bps` and `battle-guide-alpha.bps`: earlier cumulative bot-care
+  and battle-help guides. See their corresponding documents and manifests.
+- `moon-blue-alpha.bps`: earlier cumulative first-sea story/hint draft, including
+  Koron and the Red Pass. See `docs/moon-blue-alpha.md`.
+- `shop-alpha.bps`: latest cumulative patch. Adds shared seed/parts shop UI and
+  ten compact color-seed labels. See `docs/shop-alpha.md` and
+  `shop-alpha-manifest.json`. Apply only to the exact original ROM.

@@ -1,29 +1,38 @@
 # Project backup
 
-The dated encrypted archive preserves the full translation workspace at the
-bed/save alpha milestone, including original/current ROMs, the supplied Linux
-emulator, all source catalogs/tools/tests/docs, all patches, 34 documented
-screenshots, historical checkpoints and the verified day-2 EEPROM save.
+Latest snapshot: **shop alpha**, created November 05, 2026 at 01:52 PM PST.
+Coverage: 220 native records, 185 UI strings and 299 native choice blocks.
+All 71 automated tests pass. See `docs/shop-alpha.md` for runtime coverage.
 
-The project source and release patches are also available directly in this
-repository. ROM images and private save data are contained only in the encrypted
-archive. The recovery passphrase is supplied separately in the project chat.
+`robopon64-progress-2026-11-05_135201-PST.zip.gpg` is a full restore snapshot, including original/current ROMs,
+the supplied emulator, current catalogs/tools/tests/docs/patches, documented
+screenshots, historical checkpoints and the verified native day-2 save.
+Git metadata, credentials, dependency caches and duplicate intermediate ROMs
+are omitted. Source and patch files are also available directly in the repo.
 
-## Restore the full backup
+The archive uses the same recovery passphrase supplied separately for the
+previous backup. The passphrase is not stored in this repository.
 
-Download the `.zip.gpg` file and its checksum files using GitHub's download
-button, or clone this repository. With GnuPG installed, run in this directory:
+## Restore
+
+Download the encrypted archive and both adjacent checksum files. Run:
 
 ```sh
-sha256sum -c robopon64-progress-2026-11-05_012741-PST.zip.gpg.sha256
-gpg --output robopon64-progress-2026-11-05_012741-PST.zip --decrypt robopon64-progress-2026-11-05_012741-PST.zip.gpg
-sha256sum -c robopon64-progress-2026-11-05_012741-PST.zip.sha256
+sha256sum -c robopon64-progress-2026-11-05_135201-PST.zip.gpg.sha256
+gpg --output robopon64-progress-2026-11-05_135201-PST.zip --decrypt robopon64-progress-2026-11-05_135201-PST.zip.gpg
+sha256sum -c robopon64-progress-2026-11-05_135201-PST.zip.sha256
 ```
 
-Enter the recovery passphrase when prompted. Extract the resulting ZIP and
-follow `rom-test/RESTORE.md`. Its `BACKUP_MANIFEST.json` contains per-file hashes.
-The archive was verified before encryption, and decrypting this encrypted copy
-was verified to reproduce the original ZIP byte-for-byte.
+Enter the existing recovery passphrase when prompted. Extract the ZIP and follow
+`rom-test/RESTORE.md`. `BACKUP_MANIFEST.json` lists per-file hashes. The ZIP was
+checked for corruption and every manifest entry verified. Independent patch
+application and a rebuild from the archived source/catalogs reproduce the
+included current ROM. Decrypting the encrypted copy reproduces the ZIP exactly.
 
-The backup was created on November 5, 2026, at 1:27 a.m. Pacific time.
-The day-2 EEPROM corresponds to the included ROM's MD5 prefix `793AFD73`.
+The included current ROM has MD5 prefix `EE13E958`. Its native EEPROM loads
+file A at day 2, 500G, with the entered player name and Merlin. A same-build
+checkpoint, if included, is for that exact ROM only; new patches require cold
+boots for verification.
+
+The earlier bed/save snapshot `robopon64-progress-2026-11-05_012741-PST.zip.gpg`
+is retained as a historical backup. It is not required to restore this snapshot.

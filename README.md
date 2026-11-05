@@ -1,25 +1,30 @@
 # Robopon 64 English translation
 
-The current alpha adds the bed/save confirmation, wake-up message, ship navigation and doctor
-greetings to the earlier opening, tutorial, ship-menu and help translation.
-The cumulative catalogs contain **142 native records, 129 UI strings and 16
+The current alpha adds shared seed/parts shop dialogue, buying and selling,
+inventory warnings, shop stats/classes and ten compact color-seed labels.
+The cumulative catalogs contain **220 native records, 185 UI strings and 299
 choice blocks**. This remains a partial English draft;
 graphic headings, most names, the kana grid and later story are unfinished.
 
-File A was saved in-game and loaded after a full emulator restart on the final
-build, retaining day 2, 500G, the player name and Merlin. Emulator savestates were
-not used for this save/load check.
+The earlier bed/save build verified an in-game save and cold reload of file A,
+retaining day 2, 500G, the player name and Merlin. Later builds load that native
+save for testing, starting from a cold boot. Old-build emulator savestates are
+not used for validation.
 
-Apply [the cumulative bed/save BPS](releases/bed-save-alpha.bps) to the exact
-original ROM. Do not stack earlier patches. See [bed/save validation
-notes](docs/bed-save-alpha.md), [ship-help coverage](docs/ship-help-alpha.md),
+Apply [the cumulative shop BPS](releases/shop-alpha.bps) to the exact
+original ROM. Do not stack earlier patches. See [shop coverage and validation
+notes](docs/shop-alpha.md), [Moon Blue coverage](docs/moon-blue-alpha.md),
+[battle-guide coverage](docs/battle-guide-alpha.md),
+[bot-care coverage](docs/care-guide-alpha.md),
+[bed/save validation](docs/bed-save-alpha.md),
+[ship-help coverage](docs/ship-help-alpha.md),
 [ship-menu coverage](docs/ship-menu-alpha.md),
 [Dandy/tutorial coverage](docs/dandy-alpha.md), and
 [native text format](docs/story-format.md).
 
-The [full project backup](backups/README.md) includes the original inputs,
-emulator and verified save data in an encrypted archive. Its recovery passphrase
-is supplied separately in the project chat.
+The [project backup](backups/README.md) includes original inputs, the emulator,
+the current translation and verified native save data in an encrypted archive.
+Its recovery passphrase was supplied separately in the project chat.
 
 ## Inputs
 
@@ -37,15 +42,16 @@ From `/workspace/rom-test`, Python 3.12, standard library only:
 python tools/rom_text.py local/original.z64 --output local/text-candidates.json
 python -m tools.story_text local/original.z64 --output local/story-records.json
 python -m tools.build_story local/original.z64 \
-  --menu translation/bed-save-menu.json --story translation/ship-help-text.json \
-  --choices translation/dandy-choices.json \
-  --output local/bed-save-alpha.z64 --patch local/bed-save-alpha.bps
+  --menu translation/shop-menu.json --story translation/shop-text.json \
+  --choices translation/story-choices.json \
+  --layout translation/shop-layout.json \
+  --output local/shop-alpha.z64 --patch local/shop-alpha.bps
 python -m unittest discover -s tests -v
 ```
 
 The builder checks the entire original hash, each source byte sequence, byte
-budgets, and overlapping edits. It creates `local/bed-save-alpha.z64` and
-`local/bed-save-alpha.bps`, preserving the original. Apply the BPS to the exact
+budgets, and overlapping edits. It creates `local/shop-alpha.z64` and
+`local/shop-alpha.bps`, preserving the original. Apply the BPS to the exact
 original using a standard BPS patcher. All edits lie outside the N64 header
 checksum coverage; no checksum change is necessary for this alpha.
 
@@ -60,7 +66,7 @@ terminal, run `tools/start-display.sh` (display `:7`, no TCP listener). In anoth
 
 ```sh
 DISPLAY=:7 LIBGL_ALWAYS_SOFTWARE=1 \
-ROM_PATH=/workspace/rom-test/local/bed-save-alpha.z64 \
+ROM_PATH=/workspace/rom-test/local/shop-alpha.z64 \
 tools/emulator.sh --windowed --gfx mupen64plus-video-glide64mk2 --audio dummy \
   --input mupen64plus-input-sdl --rsp mupen64plus-rsp-hle
 ```

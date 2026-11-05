@@ -45,6 +45,91 @@
       "source": "アシュラシード",
       "english": "Ashura Seed",
       "note": "Provisional item name; gardening reward text"
+    },
+    {
+      "source": "ビットチップ",
+      "english": "Bit Chip",
+      "note": "Provisional term used in the chore guides for the value increased by helping with chores."
+    },
+    {
+      "source": "エネだま",
+      "english": "Energy Orb",
+      "note": "Provisional term in battle-help records 2650/2655. Compact menus use Orbs."
+    },
+    {
+      "source": "おやじようせい",
+      "english": "Old Man Fairy",
+      "note": "Provisional literal name for the fairy that drops Energy Orbs during battle."
+    },
+    {
+      "source": "バグ",
+      "english": "Bug",
+      "note": "In-game status that causes the affected Robopon to attack itself."
+    },
+    {
+      "source": "ていし",
+      "english": "Stop",
+      "note": "In-game status that prevents the affected Robopon from moving."
+    },
+    {
+      "source": "コロン",
+      "english": "Koron",
+      "note": "Provisional pirate name; first Moon Blue encounter and Red Pass reward."
+    },
+    {
+      "source": "まんげつのカラメラ",
+      "english": "Moon Caramela",
+      "note": "Compact dialogue form of Full Moon Caramela, the Moon Blue treasure. The original allocation limits dialogue to sixteen cells per line."
+    },
+    {
+      "source": "ムーン＝ブルー",
+      "english": "Moon Blue",
+      "note": "Provisional name for the first sea."
+    },
+    {
+      "source": "レッドパス",
+      "english": "Red Pass",
+      "note": "First coaster pass, awarded by Koron."
+    },
+    {
+      "source": "スクリューコースター",
+      "english": "Screw Coaster",
+      "note": "Provisional literal name for the ship-carrying theme-park coaster; encounter scripts use coaster for space."
+    },
+    {
+      "source": "プカポンとう",
+      "english": "Pukapon Island",
+      "note": "Provisional place name; northbound route in the information keeper hint."
+    },
+    {
+      "source": "ジョニー",
+      "english": "Johnny",
+      "note": "Provisional name of the Moon Blue boss."
+    },
+    {
+      "source": "エーやん",
+      "english": "E-yan",
+      "note": "Provisional battler name in the information keeper list."
+    },
+    {
+      "source": "シャロル",
+      "english": "Sharol",
+      "note": "Provisional battler name; verify against later story."
+    },
+    {
+      "source": "ディーン",
+      "english": "Dean",
+      "note": "Provisional battler name."
+    },
+    {
+      "source": "ゴドシー",
+      "english": "Godoshii",
+      "note": "Provisional battler name; verify against later story."
+    },
+    {
+      "source": "レッドシード ～ セピアシード",
+      "english": "Red, Blue, White, Yellow, Green, Brown, Gray, Black, Pink, Sepia",
+      "note": "Ten colored seed labels (3878–3887). The Seed suffix is omitted in compact native item names because full English names exceed their fixed six/seven-glyph allocations. The shop/category supplies the item type."
     }
   ]
 }

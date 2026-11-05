@@ -10,7 +10,7 @@ from tools.dialogue import encode as encode_dialogue
 from tools.choices import replace_choice
 
 
-def build_story(original, menu, story, choices=()):
+def build_story(original, menu, story, choices=(), layout=()):
     baseline = {r['id']: r for r in records(original)}
     menu_rom, _ = build(original, menu)
     output = bytearray(menu_rom)
@@ -50,6 +50,17 @@ def build_story(original, menu, story, choices=()):
             raise ValueError('Choice patch would affect checksum-covered data')
         output[offset:offset+len(encoded)] = encoded
         spans.append((offset, offset+len(encoded)))
+    for entry in layout:
+        offset = int(entry['offset'], 0)
+        source, target = bytes.fromhex(entry['source_hex']), bytes.fromhex(entry['target_hex'])
+        if offset % 4 or len(source) != 4 or len(target) != 4:
+            raise ValueError('Layout edits require one aligned instruction word')
+        if offset < 0x101000 or original[offset:offset+4] != source:
+            raise ValueError('Layout instruction source or checksum region differs')
+        if any(offset < end and start < offset+4 for start, end in spans):
+            raise ValueError('Layout instruction overlaps another edit')
+        output[offset:offset+4] = target
+        spans.append((offset, offset+4))
     if output[:0x101000] != original[:0x101000]:
         raise ValueError('Unexpected N64 checksum-region change')
     patch = make_patch(original, bytes(output), spans)
@@ -62,6 +73,7 @@ def main():
     p.add_argument('--menu', type=Path, default=Path('translation/save-menu.json'))
     p.add_argument('--story', type=Path, default=Path('translation/intro.json'))
     p.add_argument('--choices', type=Path, help='Optional guarded native Yes/No blocks')
+    p.add_argument('--layout', type=Path, help='Optional guarded layout instruction words')
     p.add_argument('--output', type=Path, default=Path('local/intro-alpha.z64'))
     p.add_argument('--patch', type=Path, default=Path('local/intro-alpha.bps'))
     a = p.parse_args()
@@ -70,7 +82,8 @@ def main():
     original = a.rom.read_bytes()
     result, patch = build_story(original, json.loads(a.menu.read_text())['entries'],
                                 json.loads(a.story.read_text())['records'],
-                                json.loads(a.choices.read_text())['entries'] if a.choices else [])
+                                json.loads(a.choices.read_text())['entries'] if a.choices else [],
+                                json.loads(a.layout.read_text())['entries'] if a.layout else [])
     for path, content in [(a.output, result), (a.patch, patch)]:
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_bytes(content)

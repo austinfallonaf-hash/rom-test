@@ -22,7 +22,41 @@ class ShipUiTests(unittest.TestCase):
 
     def test_unknown_source_escape_cannot_be_dropped(self):
         with self.assertRaisesRegex(ValueError, 'source control'):
-            validate_text({'source': chr(92)+'Labc', 'translation': 'abc'})
+            validate_text({'source': chr(92)+'Qabc', 'translation': 'abc'})
+
+    def test_shop_pages_have_separate_width_and_line_limits(self):
+        slash = chr(92)
+        entry = {'source': 'abc'+slash+'Ldef',
+                 'translation': 'Welcome!'+slash+'NSeed Shop'+slash+'LCan I help?',
+                 'max_lines': 3}
+        validate_text(entry)
+        with self.assertRaisesRegex(ValueError, '16-cell'):
+            validate_text(dict(entry, translation='Welcome!'+slash+'L'+'x'*17))
+        with self.assertRaisesRegex(ValueError, '3 lines'):
+            validate_text(dict(entry, translation=('x'+slash+'N')*3+'x'+slash+'LNext'))
+
+    def test_shop_page_controls_cannot_be_added_or_removed(self):
+        slash = chr(92)
+        for source, target in [('a'+slash+'Lb', 'ab'), ('ab', 'a'+slash+'Lb')]:
+            with self.subTest(source=source), self.assertRaisesRegex(ValueError, 'Page controls'):
+                validate_text({'source': source, 'translation': target})
+
+    def test_shop_page_cannot_move_outside_color_span(self):
+        slash = chr(92)
+        with self.assertRaisesRegex(ValueError, 'color context'):
+            validate_text({'source': slash+'C004a'+slash+'Lb'+slash+'C000',
+                           'translation': slash+'C004ab'+slash+'C000'+slash+'LNext'})
+
+    def test_composed_shop_prices_fit_full_item_name_and_six_digits(self):
+        root = Path(__file__).resolve().parents[1]
+        rows = json.loads((root/'translation/shop-menu.json').read_text())['entries']
+        by_offset = {int(row['offset'], 0): row for row in rows}
+        for prefix, suffix in [(0x121da8, 0x121dbc), (0x121f50, 0x121f60)]:
+            with self.subTest(prefix=hex(prefix)):
+                before, after = by_offset[prefix], by_offset[suffix]
+                validate_text({'source': '%s'+before['source']+'%d'+after['source'],
+                               'translation': '%s'+before['translation']+'%d'+after['translation'],
+                               'format_cells': [16, 6], 'max_lines': 3})
 
     def test_printf_minimum_width_cannot_be_underreserved(self):
         with self.assertRaisesRegex(ValueError, '4-cell'):

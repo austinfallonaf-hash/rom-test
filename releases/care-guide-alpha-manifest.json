@@ -1,0 +1,27 @@
+{
+  "format": "BPS1",
+  "scope": {
+    "opening_caption_records": 66,
+    "cabin_and_tutorial_dialogue_records": 57,
+    "native_menu_item_labels": 3,
+    "ship_help_dialogue_records": 16,
+    "bot_care_dialogue_records": 14,
+    "shift_jis_ui_strings": 136,
+    "native_choice_blocks": 16
+  },
+  "translation_status": "partial condensed draft; battle help, later story and graphical labels remain unfinished",
+  "files": {
+    "source": {
+      "bytes": 33554432,
+      "sha256": "02cda6221c10cba0705f351227e2d6c77e071bdb4f7aa8b5cd3c7c047a2b1881"
+    },
+    "target": {
+      "bytes": 33554432,
+      "sha256": "c7527bcf645a5acf231c224e38de029c2d9e05721c03f9ebaa2e39e9e93a4108"
+    },
+    "patch": {
+      "bytes": 27679,
+      "sha256": "47bbbe8b4511ce76661c5369c0eaf2adc4d6aa61579a680028bd4a29acce595e"
+    }
+  }
+}

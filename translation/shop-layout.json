@@ -1,0 +1,11 @@
+{
+  "description": "Widen only the shop Buy/Sell/Exit frame from 48 to 64 logical pixels for four-letter English labels",
+  "entries": [
+    {
+      "offset": "0x119cdc",
+      "source_hex": "24070030",
+      "target_hex": "24070040",
+      "note": "Delay slot of jal 0x800bffb0: addiu a3,zero,48 becomes addiu a3,zero,64. The frame has x=24, y=86 and height=60; the text labels are drawn at x=36. No branch or target changes."
+    }
+  ]
+}

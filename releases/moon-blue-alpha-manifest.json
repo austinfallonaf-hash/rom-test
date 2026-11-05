@@ -1,0 +1,25 @@
+{
+  "format": "BPS1",
+  "scope": {
+    "native_records_total": 210,
+    "koron_encounter_records_added": 30,
+    "first_sea_hint_records_added": 14,
+    "shift_jis_ui_strings": 143,
+    "native_choice_blocks": 299
+  },
+  "translation_status": "partial condensed draft; later story, combat command menus and graphical labels remain unfinished",
+  "files": {
+    "source": {
+      "bytes": 33554432,
+      "sha256": "02cda6221c10cba0705f351227e2d6c77e071bdb4f7aa8b5cd3c7c047a2b1881"
+    },
+    "target": {
+      "bytes": 33554432,
+      "sha256": "119ec3d8eac519a83f4f50847773a659e0f715ba6b50aa8629e0e9bc0f15a18b"
+    },
+    "patch": {
+      "bytes": 42533,
+      "sha256": "f649ba190f871e6b3d6d444b41e7bb02906a80d71292b79d0db7e16181fb8aef"
+    }
+  }
+}

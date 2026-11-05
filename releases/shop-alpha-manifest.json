@@ -1,0 +1,26 @@
+{
+  "format": "BPS1",
+  "scope": {
+    "native_records_total": 220,
+    "color_seed_labels_added": 10,
+    "shop_ui_strings_added": 42,
+    "shift_jis_ui_strings": 185,
+    "native_choice_blocks": 299,
+    "layout_instruction_words": 1
+  },
+  "translation_status": "partial condensed draft; later story, most names, combat menus and graphical labels unfinished",
+  "files": {
+    "source": {
+      "bytes": 33554432,
+      "sha256": "02cda6221c10cba0705f351227e2d6c77e071bdb4f7aa8b5cd3c7c047a2b1881"
+    },
+    "target": {
+      "bytes": 33554432,
+      "sha256": "06c8a72647362c311c7f257f59050affbf05bf68014c750f46ac101a438714f7"
+    },
+    "patch": {
+      "bytes": 43766,
+      "sha256": "5b136f21f1370b74b166672de6e1fda38de06d6e152afe4ef5279428290c7e7a"
+    }
+  }
+}

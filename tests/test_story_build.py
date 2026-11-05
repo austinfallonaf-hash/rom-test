@@ -47,3 +47,25 @@ class StoryTests(unittest.TestCase):
     def test_rejects_non_ascii_narration(self):
         with self.assertRaisesRegex(ValueError, 'ASCII'):
             build_story(self.original, [], [dict(self.row, translation='été')])
+
+    def test_layout_word_only_changes_guarded_instruction(self):
+        row = {'offset': '0x101030', 'source_hex': '00000000', 'target_hex': '24070040'}
+        result, _ = build_story(self.original, [], [], layout=[row])
+        self.assertEqual(result[:0x101030], self.original[:0x101030])
+        self.assertEqual(result[0x101030:0x101034], bytes.fromhex('24070040'))
+        self.assertEqual(result[0x101034:], self.original[0x101034:])
+
+    def test_layout_word_guards_source_alignment_size_and_checksum(self):
+        row = {'offset': '0x101030', 'source_hex': '00000000', 'target_hex': '24070040'}
+        for change in [{'source_hex': '11111111'}, {'offset': '0x100000'},
+                       {'offset': '0x101031'}, {'target_hex': '0040'}]:
+            with self.subTest(change=change), self.assertRaises(ValueError):
+                build_story(self.original, [], [], layout=[dict(row, **change)])
+
+    def test_layout_word_cannot_overlap_dialogue_or_another_layout_word(self):
+        row = {'offset': self.row['offset'], 'source_hex': '00b700b8', 'target_hex': '24070040'}
+        with self.assertRaisesRegex(ValueError, 'overlaps'):
+            build_story(self.original, [], [dict(self.row)], layout=[row])
+        row = dict(row, offset='0x101030', source_hex='00000000')
+        with self.assertRaisesRegex(ValueError, 'overlaps'):
+            build_story(self.original, [], [], layout=[row, row])

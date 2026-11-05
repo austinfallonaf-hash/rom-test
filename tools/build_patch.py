@@ -10,6 +10,7 @@ from tools.rom_text import EXPECTED_SHA256
 
 FORMAT = re.compile(r'%[-+0-9.]*[dsxXf]')
 COLOR = re.compile(re.escape(chr(92)) + r'C[0-9]{3}')
+PAGE_COLOR = re.compile(re.escape(chr(92)) + r'(?:C[0-9]{3}|L)')
 
 
 def validate_text(entry):
@@ -17,14 +18,17 @@ def validate_text(entry):
     if chr(0) in target:
         raise ValueError('Embedded terminator in translation')
     newline = chr(92) + 'N'
+    page = chr(92) + 'L'
     if COLOR.findall(source) != COLOR.findall(target):
         raise ValueError('Color controls must be preserved in order')
-    if chr(92) in COLOR.sub('', source).replace(newline, ''):
+    if PAGE_COLOR.findall(source) != PAGE_COLOR.findall(target):
+        raise ValueError('Page controls and their color context must be preserved')
+    if chr(92) in COLOR.sub('', source).replace(newline, '').replace(page, ''):
         raise ValueError('Unsupported source control sequence')
     for text in (source, target):
         if '%' in FORMAT.sub('', text).replace('%%', ''):
             raise ValueError('Unsupported printf specifier')
-    plain = COLOR.sub('', target).replace(newline, '')
+    plain = COLOR.sub('', target).replace(newline, '').replace(page, '')
     if chr(92) in plain:
         raise ValueError('Unsupported or malformed control sequence')
     if FORMAT.findall(source) != FORMAT.findall(target):
@@ -51,8 +55,14 @@ def validate_text(entry):
         return text
     visible = FORMAT.sub(reserve, COLOR.sub('', target))
     limit = entry.get('max_cells', 16)
-    if any(len(line) > limit for line in visible.split(newline)):
+    if any(len(line) > limit for screen in visible.split(page) for line in screen.split(newline)):
         raise ValueError(f'English line exceeds the save-menu {limit}-cell limit')
+    max_lines = entry.get('max_lines')
+    if max_lines is not None:
+        if type(max_lines) is not int or not 1 <= max_lines <= 3:
+            raise ValueError('Invalid page line limit')
+        if any(len(screen.split(newline)) > max_lines for screen in visible.split(page)):
+            raise ValueError(f'English page exceeds {max_lines} lines')
 
 
 def build(original, entries):
