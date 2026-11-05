@@ -1,0 +1,21 @@
+{
+  "description": "Two length-prefixed Yes/No blocks in the initial cabin event; 2+3 glyphs become 3+2 without relocation",
+  "entries": [
+    {
+      "offset": "0x1969fd4",
+      "source_hex": "000200d000b8000300b800b800ba",
+      "labels": [
+        "Yes",
+        "No"
+      ]
+    },
+    {
+      "offset": "0x196a02e",
+      "source_hex": "000200d000b8000300b800b800ba",
+      "labels": [
+        "Yes",
+        "No"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "format": "BPS1",
+  "scope": {
+    "opening_caption_records": 66,
+    "save_menu_strings": 11
+  },
+  "translation_status": "condensed draft; incomplete game translation",
+  "files": {
+    "source": {
+      "bytes": 33554432,
+      "sha256": "02cda6221c10cba0705f351227e2d6c77e071bdb4f7aa8b5cd3c7c047a2b1881"
+    },
+    "target": {
+      "bytes": 33554432,
+      "sha256": "39b33437189a17b84d8c40666aacab9a8b7d00cff3427b4fe92b01be71b3a0ad"
+    },
+    "patch": {
+      "bytes": 2539,
+      "sha256": "fd6859b97eb018161909add98392cc178fb37c763af1c048e4b1adaa9c174556"
+    }
+  }
+}

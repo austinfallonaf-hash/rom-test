@@ -1,0 +1,50 @@
+{
+  "status": "Provisional project terminology; not claimed as official localization",
+  "terms": [
+    {
+      "source": "ロボポン",
+      "english": "Robopon",
+      "note": "Game's robots and series name"
+    },
+    {
+      "source": "カラメル",
+      "english": "Caramel",
+      "note": "Legendary being in the opening narration"
+    },
+    {
+      "source": "カラメラ",
+      "english": "Caramela",
+      "note": "The seven fragments; plural wording currently 'seven Caramela'"
+    },
+    {
+      "source": "パールトン",
+      "english": "Pearlton",
+      "note": "Ship fuel/resource; explicitly confirmed by native ship-help records 2673/2681. Abbreviated P; distinct from the G money counter."
+    },
+    {
+      "source": "ギョジンごう",
+      "english": "Gyojin",
+      "note": "Ship name; provisional romanization"
+    },
+    {
+      "source": "ダンディはかせ",
+      "english": "Dr. Dandy",
+      "note": "Provisional title/name"
+    },
+    {
+      "source": "パンチ",
+      "english": "Punch",
+      "note": "Provisional character name; elongated nickname パンチー also rendered Punch"
+    },
+    {
+      "source": "メルリン",
+      "english": "Merlin",
+      "note": "First Robopon reward; party/HUD text is not yet translated"
+    },
+    {
+      "source": "アシュラシード",
+      "english": "Ashura Seed",
+      "note": "Provisional item name; gardening reward text"
+    }
+  ]
+}

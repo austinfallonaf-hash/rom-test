@@ -1,0 +1,24 @@
+{
+  "format": "BPS1",
+  "scope": {
+    "opening_caption_records": 66,
+    "cabin_and_tutorial_dialogue_records": 57,
+    "shift_jis_ui_strings": 18,
+    "native_choice_blocks": 16
+  },
+  "translation_status": "condensed draft; incomplete game translation",
+  "files": {
+    "source": {
+      "bytes": 33554432,
+      "sha256": "02cda6221c10cba0705f351227e2d6c77e071bdb4f7aa8b5cd3c7c047a2b1881"
+    },
+    "target": {
+      "bytes": 33554432,
+      "sha256": "10aaafdf21e00ef6904a419cd8ad7e592222d14d80f1807cefe231f23fac991d"
+    },
+    "patch": {
+      "bytes": 12264,
+      "sha256": "55c3e7ead5384a65b799345658b6e00281e5bd40a28a447c9379b875e9c29cb5"
+    }
+  }
+}

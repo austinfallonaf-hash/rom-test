@@ -1,0 +1,133 @@
+{
+  "description": "Name confirmation and Dr. Dandy guardian-event Yes/No blocks; exact original guards",
+  "entries": [
+    {
+      "offset": "0x1969fd4",
+      "source_hex": "000200d000b8000300b800b800ba",
+      "labels": [
+        "Yes",
+        "No"
+      ]
+    },
+    {
+      "offset": "0x196a02e",
+      "source_hex": "000200d000b8000300b800b800ba",
+      "labels": [
+        "Yes",
+        "No"
+      ]
+    },
+    {
+      "offset": "0x196a2d6",
+      "source_hex": "000200d000b8000300b800b800ba",
+      "labels": [
+        "Yes",
+        "No"
+      ]
+    },
+    {
+      "offset": "0x196a318",
+      "source_hex": "000200d000b8000300b800b800ba",
+      "labels": [
+        "Yes",
+        "No"
+      ]
+    },
+    {
+      "offset": "0x196a340",
+      "source_hex": "000200d000b8000300b800b800ba",
+      "labels": [
+        "Yes",
+        "No"
+      ]
+    },
+    {
+      "offset": "0x196a368",
+      "source_hex": "000200d000b8000300b800b800ba",
+      "labels": [
+        "Yes",
+        "No"
+      ]
+    },
+    {
+      "offset": "0x196a3d6",
+      "source_hex": "000200d000b8000300b800b800ba",
+      "labels": [
+        "Yes",
+        "No"
+      ]
+    },
+    {
+      "offset": "0x196a418",
+      "source_hex": "000200d000b8000300b800b800ba",
+      "labels": [
+        "Yes",
+        "No"
+      ]
+    },
+    {
+      "offset": "0x196a440",
+      "source_hex": "000200d000b8000300b800b800ba",
+      "labels": [
+        "Yes",
+        "No"
+      ]
+    },
+    {
+      "offset": "0x196a468",
+      "source_hex": "000200d000b8000300b800b800ba",
+      "labels": [
+        "Yes",
+        "No"
+      ]
+    },
+    {
+      "offset": "0x196a526",
+      "source_hex": "000200d000b8000300b800b800ba",
+      "labels": [
+        "Yes",
+        "No"
+      ]
+    },
+    {
+      "offset": "0x196a586",
+      "source_hex": "000200d000b8000300b800b800ba",
+      "labels": [
+        "Yes",
+        "No"
+      ]
+    },
+    {
+      "offset": "0x196a5ae",
+      "source_hex": "000200d000b8000300b800b800ba",
+      "labels": [
+        "Yes",
+        "No"
+      ]
+    },
+    {
+      "offset": "0x196a608",
+      "source_hex": "000200d000b8000300b800b800ba",
+      "labels": [
+        "Yes",
+        "No"
+      ]
+    },
+    {
+      "offset": "0x196a668",
+      "source_hex": "000200d000b8000300b800b800ba",
+      "labels": [
+        "Yes",
+        "No"
+      ]
+    },
+    {
+      "offset": "0x196a690",
+      "source_hex": "000200d000b8000300b800b800ba",
+      "labels": [
+        "Yes",
+        "No"
+      ]
+    }
+  ]
+}

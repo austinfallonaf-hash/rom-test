@@ -1,0 +1,25 @@
+{
+  "format": "BPS1",
+  "scope": {
+    "opening_caption_records": 66,
+    "cabin_and_tutorial_dialogue_records": 57,
+    "native_menu_item_labels": 3,
+    "shift_jis_ui_strings": 91,
+    "native_choice_blocks": 16
+  },
+  "translation_status": "partial condensed draft; graphic headings and later content remain Japanese",
+  "files": {
+    "source": {
+      "bytes": 33554432,
+      "sha256": "02cda6221c10cba0705f351227e2d6c77e071bdb4f7aa8b5cd3c7c047a2b1881"
+    },
+    "target": {
+      "bytes": 33554432,
+      "sha256": "23ea4c7caa577bb579c60d91832d26763c54b3377d0b5a51c6b59ee8bc44d7eb"
+    },
+    "patch": {
+      "bytes": 13443,
+      "sha256": "5abfc68d368107652e67ce7312000c45e4803083aaaca35074ef303146b62555"
+    }
+  }
+}

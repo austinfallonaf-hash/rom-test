@@ -1,0 +1,26 @@
+{
+  "format": "BPS1",
+  "scope": {
+    "opening_caption_records": 66,
+    "cabin_and_tutorial_dialogue_records": 57,
+    "native_menu_item_labels": 3,
+    "ship_help_dialogue_records": 16,
+    "shift_jis_ui_strings": 109,
+    "native_choice_blocks": 16
+  },
+  "translation_status": "partial condensed draft; actual bed/save dialogs, graphic headings and later content remain Japanese",
+  "files": {
+    "source": {
+      "bytes": 33554432,
+      "sha256": "02cda6221c10cba0705f351227e2d6c77e071bdb4f7aa8b5cd3c7c047a2b1881"
+    },
+    "target": {
+      "bytes": 33554432,
+      "sha256": "58b70ff9eeef599d7601670a77cba038f0ce9a2d9a186497009a41a6a4533f23"
+    },
+    "patch": {
+      "bytes": 20737,
+      "sha256": "c52e386202b05c203786f51db2f46c8614b6842d0594c4ccc30166bef1b15b12"
+    }
+  }
+}

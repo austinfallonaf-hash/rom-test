@@ -1,0 +1,8 @@
+/local/
+/backups/*.passphrase.txt
+__pycache__/
+*.z64
+*.n64
+*.v64
+*.zip
+*.tar.gz

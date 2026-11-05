@@ -1,0 +1,951 @@
+{
+  "description": "Opening narration and first cabin conversation; condensed English alpha",
+  "records": [
+    {
+      "id": 4030,
+      "descriptor": "0x18e77b8",
+      "offset": "0x19551a6",
+      "byte_length": 20,
+      "source_hex": "00ac006e009b0001000000b2007f00b2007f0001",
+      "source": "ドーン！　パチパチ！",
+      "translation": "BOOM! POW!",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4031,
+      "descriptor": "0x18e77c0",
+      "offset": "0x19551ba",
+      "byte_length": 22,
+      "source_hex": "00ac006e009b0001000000b2007f00b2007f006d0001",
+      "source": "ドーン！　パチパチッ！",
+      "translation": "BOOM! BANG!",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4032,
+      "descriptor": "0x18e77c8",
+      "offset": "0x19551d0",
+      "byte_length": 30,
+      "source_hex": "00ac006e009b0001000000ac006e009b0001000000ac006e009b006d0001",
+      "source": "ドーン！　ドーン！　ドーンッ！",
+      "translation": "BOOM! BOOM!",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4033,
+      "descriptor": "0x18e77d0",
+      "offset": "0x19551ee",
+      "byte_length": 26,
+      "source_hex": "00c800ef00c800ef00ca000000bc00b800f700be00c400e400cf",
+      "source": "つぎつぎと　かいぞくせんの",
+      "translation": "Pirate ships",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4034,
+      "descriptor": "0x18e77d8",
+      "offset": "0x1955208",
+      "byte_length": 30,
+      "source_hex": "00c600b800d400b900ee000000b900cb00de00e300b700f100d500c200c6",
+      "source": "たいほうが　うなりをあげました",
+      "translation": "fired cannons.",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4035,
+      "descriptor": "0x18e77e0",
+      "offset": "0x1955226",
+      "byte_length": 24,
+      "source_hex": "00bd00e4000000ef00e4000000d400b900c400bd000000cc",
+      "source": "きん　ぎん　ほうせき　に",
+      "translation": "Gold, silver",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4036,
+      "descriptor": "0x18e77e8",
+      "offset": "0x195523e",
+      "byte_length": 28,
+      "source_hex": "00c6010000d900cf000000f400ff00e400cf000000c200d501080108",
+      "source": "たべもの　じぶんの　しま……",
+      "translation": "gems, food...",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4037,
+      "descriptor": "0x18e77f0",
+      "offset": "0x195525a",
+      "byte_length": 32,
+      "source_hex": "00b700de00ca000000b700dd00db00df000000c3010000c900cf00d900cf00e3",
+      "source": "ありと　あらゆる　すべてのものを",
+      "translation": "Even for islands",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4038,
+      "descriptor": "0x18e77f8",
+      "offset": "0x195527a",
+      "byte_length": 24,
+      "source_hex": "00c900cc000000b800e000df00c600d8000000b900d600cf",
+      "source": "てに　いれるため　うみの",
+      "translation": "they battled",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4039,
+      "descriptor": "0x18e7800",
+      "offset": "0x1955292",
+      "byte_length": 28,
+      "source_hex": "00c600c600bc00b800d0000000d000f400d500ea00c600cf00fb00c3",
+      "source": "たたかいは　はじまったのです",
+      "translation": "on every sea.",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4040,
+      "descriptor": "0x18e7808",
+      "offset": "0x19552ae",
+      "byte_length": 30,
+      "source_hex": "00bc00b800f700be00c600c700f800bf00cf000000c600c600bc00b800d9",
+      "source": "かいぞくたちだけの　たたかいも",
+      "translation": "Pirates fought",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4041,
+      "descriptor": "0x18e7810",
+      "offset": "0x19552cc",
+      "byte_length": 30,
+      "source_hex": "00b800c800c200bc000000cb00cc00d9000000bc00e400bf00b800cb00b8",
+      "source": "いつしか　なにも　かんけいない",
+      "translation": "and dragged in",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4042,
+      "descriptor": "0x18e7818",
+      "offset": "0x19552ea",
+      "byte_length": 30,
+      "source_hex": "00d100ca00d500fb000000d500bd00c000e400fb00b800bd00d500c200c6",
+      "source": "ひとまで　まきこんでいきました",
+      "translation": "innocent folk.",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4043,
+      "descriptor": "0x18e7820",
+      "offset": "0x1955308",
+      "byte_length": 22,
+      "source_hex": "00dc00be00cc000000d800ee000000be00dd00e400f8",
+      "source": "よくに　めが　くらんだ",
+      "translation": "Greed drove",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4044,
+      "descriptor": "0x18e7828",
+      "offset": "0x195531e",
+      "byte_length": 30,
+      "source_hex": "00bc00b800f700be00c600c700d0000000d100ca00e3000000bb00c500b8",
+      "source": "かいぞくたちは　ひとを　おそい",
+      "translation": "them to attack",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4045,
+      "descriptor": "0x18e7830",
+      "offset": "0x195533c",
+      "byte_length": 28,
+      "source_hex": "00c200d500e3000000bb00c500ea00c900b800ea00c600cf00fb00c3",
+      "source": "しまを　おそっていったのです",
+      "translation": "folk and land.",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4046,
+      "descriptor": "0x18e7838",
+      "offset": "0x1955358",
+      "byte_length": 20,
+      "source_hex": "00ac006e009b0001000000b2007f00b2007f0001",
+      "source": "ドーン！　パチパチ！",
+      "translation": "BOOM! POW!",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4047,
+      "descriptor": "0x18e7840",
+      "offset": "0x195536c",
+      "byte_length": 22,
+      "source_hex": "00ac006e009b0001000000b2007f00b2007f006d0001",
+      "source": "ドーン！　パチパチッ！",
+      "translation": "BOOM! BANG!",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4048,
+      "descriptor": "0x18e7848",
+      "offset": "0x1955382",
+      "byte_length": 30,
+      "source_hex": "00ac006e009b0001000000ac006e009b0001000000ac006e009b006d0001",
+      "source": "ドーン！　ドーン！　ドーンッ！",
+      "translation": "BOOM! BOOM!",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4049,
+      "descriptor": "0x18e7850",
+      "offset": "0x19553a0",
+      "byte_length": 32,
+      "source_hex": "00c600b800d400b900cf00bb00ca00d0000000cb00de00da00d600d500c400e4",
+      "source": "たいほうのおとは　なりやみません",
+      "translation": "Cannons roared.",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4050,
+      "descriptor": "0x18e7858",
+      "offset": "0x19553c0",
+      "byte_length": 26,
+      "source_hex": "00bc00b800f700be00c600c700cf000000c000b900f100bd00d0",
+      "source": "かいぞくたちの　こうげきは",
+      "translation": "Pirate raids",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4051,
+      "descriptor": "0x18e7860",
+      "offset": "0x19553da",
+      "byte_length": 26,
+      "source_hex": "00d100cc000000d100cc000000d500c300fd00bc00de00fb00c3",
+      "source": "ひに　ひに　ますばかりです",
+      "translation": "grew by day.",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4052,
+      "descriptor": "0x18e7868",
+      "offset": "0x19553f4",
+      "byte_length": 26,
+      "source_hex": "00d300b800e200cb000000b900d600d9000000b800c800c200bc",
+      "source": "へいわな　うみも　いつしか",
+      "translation": "Peaceful seas",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4053,
+      "descriptor": "0x18e7870",
+      "offset": "0x195540e",
+      "byte_length": 28,
+      "source_hex": "00d600cc00be00b8000000d500ea00bc00cb000000d400cf00bb00fb",
+      "source": "みにくい　まっかな　ほのおで",
+      "translation": "were engulfed",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4054,
+      "descriptor": "0x18e7878",
+      "offset": "0x195542a",
+      "byte_length": 22,
+      "source_hex": "00c800c800d500e000c9000000b800bd00d500c200c6",
+      "source": "つつまれて　いきました",
+      "translation": "in red fire",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4055,
+      "descriptor": "0x18e7880",
+      "offset": "0x1955440",
+      "byte_length": 14,
+      "source_hex": "0108010800c500cf00ca00bd0001",
+      "source": "……そのとき！",
+      "translation": "Then...",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4056,
+      "descriptor": "0x18e7888",
+      "offset": "0x195544e",
+      "byte_length": 28,
+      "source_hex": "00ca00c800f600e4000000c500dd00cf000000bc00cb00c600bc00dd",
+      "source": "とつぜん　そらの　かなたから",
+      "translation": "From the sky,",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4057,
+      "descriptor": "0x18e7890",
+      "offset": "0x195546a",
+      "byte_length": 30,
+      "source_hex": "00cb00cc00d900cf00bc00ee000000b700dd00e200e0000000b900d600cc",
+      "source": "なにものかが　あらわれ　うみに",
+      "translation": "a being lit up",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4058,
+      "descriptor": "0x18e7898",
+      "offset": "0x1955488",
+      "byte_length": 24,
+      "source_hex": "00d100bc00de00e3000000d000cb00ea00c600cf00fb00c3",
+      "source": "ひかりを　はなったのです",
+      "translation": "all the sea.",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4059,
+      "descriptor": "0x18e78a0",
+      "offset": "0x19554a0",
+      "byte_length": 10,
+      "source_hex": "00bc00d6000000bc001f",
+      "source": "かみ　か？",
+      "translation": "God?",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4060,
+      "descriptor": "0x18e78a8",
+      "offset": "0x19554aa",
+      "byte_length": 12,
+      "source_hex": "00c900e400c2000000bc001f",
+      "source": "てんし　か？",
+      "translation": "Angel?",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4061,
+      "descriptor": "0x18e78b0",
+      "offset": "0x19554b6",
+      "byte_length": 26,
+      "source_hex": "00c500e000d0000000bb00bb00bd00cb000000bb00bb00bd00cb",
+      "source": "それは　おおきな　おおきな",
+      "translation": "A vast light,",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4062,
+      "descriptor": "0x18e78b8",
+      "offset": "0x19554d0",
+      "byte_length": 30,
+      "source_hex": "00c800dc00be000000d500fd00db00b8000000d100bc00de00fb00c200c6",
+      "source": "つよく　まばゆい　ひかりでした",
+      "translation": "blazed bright.",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4063,
+      "descriptor": "0x18e78c0",
+      "offset": "0x19554ee",
+      "byte_length": 28,
+      "source_hex": "00c300df00ca000000fc00b900c200c600c000ca00fb00c200ed00b9",
+      "source": "すると　どうしたことでしょう",
+      "translation": "Then, somehow,",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4064,
+      "descriptor": "0x18e78c8",
+      "offset": "0x195550a",
+      "byte_length": 24,
+      "source_hex": "00b700dd00c500b800e3000000c800fa00bf00c900b800c6",
+      "source": "あらそいを　つづけていた",
+      "translation": "The pirates",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4065,
+      "descriptor": "0x18e78d0",
+      "offset": "0x1955522",
+      "byte_length": 30,
+      "source_hex": "00bc00b800f700be00c600c700ee000000e200e000cc000000bc00ba00de",
+      "source": "かいぞくたちが　われに　かえり",
+      "translation": "woke up and",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4066,
+      "descriptor": "0x18e78d8",
+      "offset": "0x1955540",
+      "byte_length": 24,
+      "source_hex": "00c600c600bc00b800e3000000da00d800c600cf00fb00c3",
+      "source": "たたかいを　やめたのです",
+      "translation": "ceased war.",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4067,
+      "descriptor": "0x18e78e0",
+      "offset": "0x1955558",
+      "byte_length": 32,
+      "source_hex": "00d500df00fb000000d100bc00de00ee000000bc00b800f700be00c600c700cf",
+      "source": "まるで　ひかりが　かいぞくたちの",
+      "translation": "As if the light",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4068,
+      "descriptor": "0x18e78e8",
+      "offset": "0x1955578",
+      "byte_length": 20,
+      "source_hex": "00b700dd00c500b9000000c600d500c200b800e3",
+      "source": "あらそう　たましいを",
+      "translation": "had erased",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4069,
+      "descriptor": "0x18e78f0",
+      "offset": "0x195558c",
+      "byte_length": 28,
+      "source_hex": "00bf00c200c900c200d500ea00c600bc00cf00dc00b900fb00c200c6",
+      "source": "けしてしまったかのようでした",
+      "translation": "their anger.",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4070,
+      "descriptor": "0x18e78f8",
+      "offset": "0x19555a8",
+      "byte_length": 30,
+      "source_hex": "00b700dd00e200e000c6000000cb00f700cf000000ff00ea00c600b800d0",
+      "source": "あらわれた　なぞの　ぶったいは",
+      "translation": "That strange",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4071,
+      "descriptor": "0x18e7900",
+      "offset": "0x19555c6",
+      "byte_length": 28,
+      "source_hex": "00bc00dd00f800e30000001700c800cc000000ff00e400de00c100c4",
+      "source": "からだを　７つに　ぶんりさせ",
+      "translation": "being split in",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4072,
+      "descriptor": "0x18e7908",
+      "offset": "0x19555e2",
+      "byte_length": 30,
+      "source_hex": "00b900d600d3000000c700dd00fd00ea00c900b800ea00c600cf00fb00c3",
+      "source": "うみへ　ちらばっていったのです",
+      "translation": "seven at sea.",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4073,
+      "descriptor": "0x18e7910",
+      "offset": "0x1955600",
+      "byte_length": 32,
+      "source_hex": "00d100ca00fe00ca00d0000000ca00c800f600e4000000b700dd00e200e000c6",
+      "source": "ひとびとは　とつぜん　あらわれた",
+      "translation": "The people named",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4074,
+      "descriptor": "0x18e7918",
+      "offset": "0x1955620",
+      "byte_length": 30,
+      "source_hex": "00cb00f700cf000000ff00ea00c600b800cc006000740095009000970061",
+      "source": "なぞの　ぶったいに「カラメル」",
+      "translation": "the strange one",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4075,
+      "descriptor": "0x18e7920",
+      "offset": "0x195563e",
+      "byte_length": 28,
+      "source_hex": "00ca00b800b9000000cb00d500ba00e3000000c800bf00d500c200c6",
+      "source": "という　なまえを　つけました",
+      "translation": "\"Caramel\".",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4076,
+      "descriptor": "0x18e7928",
+      "offset": "0x195565a",
+      "byte_length": 30,
+      "source_hex": "00c500e000bc00dd000000cb00ee00b8000000f400bc00e400e300d300c9",
+      "source": "それから　ながい　じかんをへて",
+      "translation": "Years went by.",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4077,
+      "descriptor": "0x18e7930",
+      "offset": "0x1955678",
+      "byte_length": 32,
+      "source_hex": "00b800c800c200bc000000ba00b800db00b900600074009500900097006100d0",
+      "source": "いつしか　えいゆう「カラメル」は",
+      "translation": "Caramel became",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4078,
+      "descriptor": "0x18e7938",
+      "offset": "0x1955698",
+      "byte_length": 24,
+      "source_hex": "00fb00e400c400c8000000ca00cb00ea00c600cf00fb00c3",
+      "source": "でんせつ　となったのです",
+      "translation": "a legend.",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4079,
+      "descriptor": "0x18e7940",
+      "offset": "0x19556b0",
+      "byte_length": 30,
+      "source_hex": "00b900d600cc000000c700dd00fd00ea00c60000007400950090009700cf",
+      "source": "うみに　ちらばった　カラメルの",
+      "translation": "The seven lost",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4080,
+      "descriptor": "0x18e7948",
+      "offset": "0x19556ce",
+      "byte_length": 24,
+      "source_hex": "001700c800cf00bc00bf00dd00d9000000b800c800c200bc",
+      "source": "７つのかけらも　いつしか",
+      "translation": "pieces were",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4081,
+      "descriptor": "0x18e7950",
+      "offset": "0x19556e6",
+      "byte_length": 30,
+      "source_hex": "00600074009500900095006100ca000000cb00fa00bf00dd00e001080108",
+      "source": "「カラメラ」と　なづけられ……",
+      "translation": "named Caramela.",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4082,
+      "descriptor": "0x18e7958",
+      "offset": "0x1955704",
+      "byte_length": 32,
+      "source_hex": "00b800d500d9000000b900d600cc000000d100ca00fe00ca00cf00d700ce00cc",
+      "source": "いまも　うみに　ひとびとのむねに",
+      "translation": "They live on in",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4083,
+      "descriptor": "0x18e7960",
+      "offset": "0x1955724",
+      "byte_length": 26,
+      "source_hex": "00b800bd00c800fa00bf00c900b800df00cf00fb00c301080108",
+      "source": "いきつづけているのです……",
+      "translation": "sea and soul.",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4084,
+      "descriptor": "0x18e7968",
+      "offset": "0x195573e",
+      "byte_length": 30,
+      "source_hex": "001700c800cf0000007400950090009500d0000000b900c800be00c200b8",
+      "source": "７つの　カラメラは　うつくしい",
+      "translation": "Seven Caramela,",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4085,
+      "descriptor": "0x18e7970",
+      "offset": "0x195575c",
+      "byte_length": 24,
+      "source_hex": "00c600bc00dd000000ca00c200c9000000b800d500fb00d9",
+      "source": "たから　として　いまでも",
+      "translation": "fair jewels,",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4086,
+      "descriptor": "0x18e7978",
+      "offset": "0x1955774",
+      "byte_length": 28,
+      "source_hex": "00c000cf000000b900d600cc000000ce00d700ea00c900b800d500c3",
+      "source": "この　うみに　ねむっています",
+      "translation": "sleep at sea.",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4087,
+      "descriptor": "0x18e7980",
+      "offset": "0x1955790",
+      "byte_length": 24,
+      "source_hex": "00c200bc00c2000000c500cf000000bc00ee00da00bd00d0",
+      "source": "しかし　その　かがやきは",
+      "translation": "Yet none has",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4088,
+      "descriptor": "0x18e7988",
+      "offset": "0x19557a8",
+      "byte_length": 30,
+      "source_hex": "00f800e000d9000000d600c600c000ca00ee000000b700de00d500c400e4",
+      "source": "だれも　みたことが　ありません",
+      "translation": "seen them glow.",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4089,
+      "descriptor": "0x18e7990",
+      "offset": "0x19557c6",
+      "byte_length": 24,
+      "source_hex": "007400950090009700cf000000fb00e400c400c800cc00d0",
+      "source": "カラメルの　でんせつには",
+      "translation": "The legend",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4090,
+      "descriptor": "0x18e7998",
+      "offset": "0x19557de",
+      "byte_length": 26,
+      "source_hex": "00c000e400cb000000c800fa00bd00ee000000b700de00d500c3",
+      "source": "こんな　つづきが　あります",
+      "translation": "goes on...",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4091,
+      "descriptor": "0x18e79a0",
+      "offset": "0x19557f8",
+      "byte_length": 22,
+      "source_hex": "00d200bc00b8000000b900d600cc000000ce00d700df",
+      "source": "ふかい　うみに　ねむる",
+      "translation": "Gather all",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4092,
+      "descriptor": "0x18e79a8",
+      "offset": "0x195580e",
+      "byte_length": 30,
+      "source_hex": "001700c800cf0000007400950090009500e3000000b700c800d800df00ca",
+      "source": "７つの　カラメラを　あつめると",
+      "translation": "seven Caramela",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4093,
+      "descriptor": "0x18e79b0",
+      "offset": "0x195582c",
+      "byte_length": 26,
+      "source_hex": "007400950090009700ee000000dc00d600ee00ba00de01080108",
+      "source": "カラメルが　よみがえり……",
+      "translation": "from the deep",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4094,
+      "descriptor": "0x18e79b8",
+      "offset": "0x1955846",
+      "byte_length": 24,
+      "source_hex": "00fc00e400cb00c000ca00fb00d9000000f400ff00e400cf",
+      "source": "どんなことでも　じぶんの",
+      "translation": "and Caramel",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 4095,
+      "descriptor": "0x18e79c0",
+      "offset": "0x195585e",
+      "byte_length": 32,
+      "source_hex": "00bb00d900ea00c6000000ce00ee00b800ee000000bc00cb00b900ca01080108",
+      "source": "おもった　ねがいが　かなうと……",
+      "translation": "grants any wish.",
+      "status": "draft_condensed_narration"
+    },
+    {
+      "id": 189,
+      "descriptor": "0x18dffb0",
+      "offset": "0x18eccf2",
+      "byte_length": 186,
+      "source_hex": "200a000100ba006e00ea00ca0000001700c800cf00002003000500740095009000952003000000e3200000b700c800d800e000fd000000fb00e400c400c800cf2003000100740095009000972003000000ee200000dc00d600ee00ba00df00ea00c90078008200bc006e001f200a00002001200a000200fb00e400c400c800cf0000009900b100b6009b20002003000100740095009000972003000000cc000000b700ba00df00ea00c900bc200000cc00b800c700eb00e40001",
+      "source": "<200A>！えーっと　７つの　<2003>％カラメラ<2003>　を<2000>あつめれば　でんせつの<2003>！カラメル<2003>　が<2000>よみがえるってコトかー？<200A>　<2001><200A>”でんせつの　ロボポン<2000><2003>！カラメル<2003>　に　あえるってか<2000>にいちゃん！",
+      "translation": "[200A:0001]7 [2003:0005]Caramela[2003:0000][2000]revive [2003:0001]Caramel[2003:0000][2000]the legend?[200A:0000][2001][200A:0002]We can meet[2000][2003:0001]Caramel[2003:0000]?[2000]Right, bro!",
+      "kind": "dialogue",
+      "status": "draft_condensed_dialogue"
+    },
+    {
+      "id": 190,
+      "descriptor": "0x18dffb8",
+      "offset": "0x18ecdac",
+      "byte_length": 66,
+      "source_hex": "200a000100a8009800bc00cf000000bc00e400ee00ba00c6000000bc00be00b900cf200000bb00ca00ef00fd00cb00c2000000f400eb00cb00b800cf001f200a0000",
+      "source": "<200A>！ダレかの　かんがえた　かくうの<2000>おとぎばなし　じゃないの？<200A>　",
+      "translation": "[200A:0001]Just a made-up[2000]fairy tale?[200A:0000]",
+      "kind": "dialogue",
+      "status": "draft_condensed_dialogue"
+    },
+    {
+      "id": 191,
+      "descriptor": "0x18dffc0",
+      "offset": "0x18ecdee",
+      "byte_length": 96,
+      "source_hex": "200a000100ce00ba000000cc00b800c700eb00e400c1006e2000008c009b008200d0000000fc00b900cb00e400f800e100b900ce001f20002003000100740095009000972003000000ea00c9000000b800df00cf00bc00cb00b7001f200a0000",
+      "source": "<200A>！ねえ　にいちゃんさー<2000>ホントは　どうなんだろうね？<2000><2003>！カラメル<2003>　って　いるのかなあ？<200A>　",
+      "translation": "[200A:0001]Tell me, bro...[2000]Is he real?[2000][2003:0001]Caramel[2003:0000]?[200A:0000]",
+      "kind": "dialogue",
+      "status": "draft_condensed_dialogue"
+    },
+    {
+      "id": 192,
+      "descriptor": "0x18dffc8",
+      "offset": "0x18ece4e",
+      "byte_length": 94,
+      "source_hex": "200a0002008a006d008a006d008a0001000000f8006e00bc006e00dd006e0108010820000078009800bc00dd000000c600c200bc00d800cc000000b800c000b900ca200000c200c900df00e400f400eb00b7000000cb00b800bc006e0001",
+      "source": "<200A>”フッフッフ！　だーかーらー……<2000>コレから　たしかめに　いこうと<2000>してるんじゃあ　ないかー！",
+      "translation": "[200A:0002]Heh! That's why[2000]we're going to[2000]find out!",
+      "kind": "dialogue",
+      "status": "draft_condensed_dialogue"
+    },
+    {
+      "id": 193,
+      "descriptor": "0x18dffd0",
+      "offset": "0x18eceac",
+      "byte_length": 182,
+      "source_hex": "200a000300fb00d900c1006e000000c000cf0000009f006c00a4009b00f200b900ea00c920002003000100a8009b00ab006600d000bc00c42003000000cf000000d200ce00f800dc00ce001f2000009200ad007000ea00c9006e0001200a00002001200a000500bc00ea00c900cc000000c800bc00ea00c700eb00ea00c600dd20000090006d007f006a0076007f006a00cc200000bb00c000dd00e000c700eb00b900ea00c900010000008c009b00820001200a0000",
+      "source": "<200A>＃でもさー　この　ギョジンごうって<2000><2003>！ダンディはかせ<2003>　の　ふねだよね？<2000>ヤバイってー！<200A>　<2001><200A>％かってに　つかっちゃったら<2000>メッチャクチャに<2000>おこられちゃうって！　ホント！<200A>　",
+      "translation": "[200A:0003]The Gyojin is[2000][2003:0001]Dr. Dandy[2003:0000]'s![2000]This is bad![200A:0000][2001][200A:0005]He'll be mad[2000]we took it[2000]without asking![200A:0000]",
+      "kind": "dialogue",
+      "status": "draft_condensed_dialogue"
+    },
+    {
+      "id": 194,
+      "descriptor": "0x18dffd8",
+      "offset": "0x18ecf62",
+      "byte_length": 84,
+      "source_hex": "200a000200cb006e00cc0001000000c700ed00c000ea00ca000000bc00de00c9200000790079006d00ca000000d600cb00ca00cc000000bc00ba00c400fd200000a8007000a4006c006e00af00f800ea00c90001",
+      "source": "<200A>”なーに！　ちょこっと　かりて<2000>ササッと　みなとに　かえせば<2000>ダイジョーブだって！",
+      "translation": "[200A:0002]Just borrow it[2000]and return it[2000]quickly!",
+      "kind": "dialogue",
+      "status": "draft_condensed_dialogue"
+    },
+    {
+      "id": 195,
+      "descriptor": "0x18dffe0",
+      "offset": "0x18ecfb6",
+      "byte_length": 88,
+      "source_hex": "200a000200b7006e0001000000b800b80086006e0000007d00980001200000ea00c900b800b900bc000000fb00e400c400c800cf200020030001007400950090009720030000000000d600c900d600c600b800c2006e0001",
+      "source": "<200A>”あー！　いいネー　ソレ！<2000>っていうか　でんせつの<2000><2003>！カラメル<2003>　　みてみたいしー！",
+      "translation": "[200A:0002]Great idea![2000]Let's meet[2000][2003:0001]Caramel[2003:0000]!",
+      "kind": "dialogue",
+      "status": "draft_condensed_dialogue"
+    },
+    {
+      "id": 196,
+      "descriptor": "0x18dffe8",
+      "offset": "0x18ed00e",
+      "byte_length": 74,
+      "source_hex": "200a000200f800e1006e001f000000f400eb00000075008d009600f800dc0001200000b800c000b9000100002003000100740095009000972003000000e300d600cc00c10001200a0000",
+      "source": "<200A>”だろー？　じゃ　キマリだよ！<2000>いこう！　<2003>！カラメル<2003>　をみにさ！<200A>　",
+      "translation": "[200A:0002]Then let's go![2000]See [2003:0001]Caramel[2003:0000]![200A:0000]",
+      "kind": "dialogue",
+      "status": "draft_condensed_dialogue"
+    },
+    {
+      "id": 197,
+      "descriptor": "0x18dfff0",
+      "offset": "0x18ed058",
+      "byte_length": 104,
+      "source_hex": "200a00050108010800b700e0001f000000cb00e400bc000000bc00ea00c900cc20000078009b00b3006b006e007e00ee000000b900f200b800c900cb00b8001f2000200a000100fc00b900c200c600e400f800e100b9001f000000d600c900d600dc00b9200a0000",
+      "source": "<200A>％……あれ？　なんか　かってに<2000>コンピュータが　うごいてない？<2000><200A>！どうしたんだろう？　みてみよう<200A>　",
+      "translation": "[200A:0005]Huh? Is the[2000]computer awake?[2000][200A:0001]Let's check it.[200A:0000]",
+      "kind": "dialogue",
+      "status": "draft_condensed_dialogue"
+    },
+    {
+      "id": 198,
+      "descriptor": "0x18dfff8",
+      "offset": "0x18ed0c0",
+      "byte_length": 148,
+      "source_hex": "009f006c00a4009b000000a200710000008700000075006e009a006e00ac20000084006b00710096006c00760000006400000073007800830070008d007b20010088006d007a009b0000008700000075006e009a006e00ac000000ab006f00972000006f0083007e0000008700000083008d00720000006420000070009b00b4006d00820000007a00810000007600a800790070",
+      "source": "ギョジン　ゴウ　ノ　キーワード<2000>ニュウリョク　ヲ　オコナイマス<2001>ハッシン　ノ　キーワード　デアル<2000>アナタ　ノ　ナマエ　ヲ<2000>インプット　シテ　クダサイ",
+      "translation": "GYOJIN PASSWORD[2000]INPUT REQUEST.[2001]TO LAUNCH,[2000]ENTER YOUR NAME[2000]AS THE PASSWORD.",
+      "kind": "dialogue",
+      "status": "draft_condensed_dialogue"
+    },
+    {
+      "id": 199,
+      "descriptor": "0x18e0000",
+      "offset": "0x18ed154",
+      "byte_length": 56,
+      "source_hex": "0075006e009a006e00ac000000882000000220030001200b0000200300000002000000ab200000940099007a0070000000ab007b0074001f",
+      "source": "キーワード　ハ<2000>”<2003>！<200B>　<2003>　”　デ<2000>ヨロシイ　デスカ？",
+      "translation": "YOUR PASSWORD:[2000]\"[2003:0001][200B:0000][2003:0000]\"[2000]OK?",
+      "kind": "dialogue",
+      "status": "draft_condensed_dialogue"
+    },
+    {
+      "id": 200,
+      "descriptor": "0x18e0008",
+      "offset": "0x18ed18c",
+      "byte_length": 64,
+      "source_hex": "00ab008800000091007100000070007f00ac20000075006e009a006e00ac00000084006b00710096006c00760000006420000092009600830073007a008d007b",
+      "source": "デハ　モウ　イチド<2000>キーワード　ニュウリョク　ヲ<2000>ヤリナオシマス",
+      "translation": "ENTER[2000]YOUR PASSWORD[2000]AGAIN.",
+      "kind": "dialogue",
+      "status": "draft_condensed_dialogue"
+    },
+    {
+      "id": 201,
+      "descriptor": "0x18e0010",
+      "offset": "0x18ed1cc",
+      "byte_length": 98,
+      "source_hex": "006f007e0095007a007000000075006e009a006e00ac00000064200000820071009900760000007a008d007a007e01080108200100ab00880000009f006c00a4009b000000a200710000006420000088006d007a009b00000079007c008d007b0001",
+      "source": "アタラシイ　キーワード　ヲ<2000>トウロク　シマシタ……<2001>デハ　ギョジン　ゴウ　ヲ<2000>ハッシン　サセマス！",
+      "translation": "PASSWORD[2000]REGISTERED...[2001]GYOJIN WILL[2000]NOW LAUNCH!",
+      "kind": "dialogue",
+      "status": "draft_condensed_dialogue"
+    },
+    {
+      "id": 202,
+      "descriptor": "0x18e0018",
+      "offset": "0x18ed22e",
+      "byte_length": 180,
+      "source_hex": "200a000400b700de00de001f000000d200ce00ee000000bc00ea00c900cc200000b9000000b900f200b800c9000000cb00b800bc00b8001f200000b70001000000da00ea00fd006e0108010800012001200a000500e200c600be00c2000000c000cf00d200ce00cf000000c500b900f400ec00b9200000f600e400ea00f600e4000000e200ea00bc00de00d500c4006e00e40001200000fc00b900c300df00002003000100b2009b007f006e200300000001001f",
+      "source": "<200A>＄ありり？　ふねが　かってに<2000>う　うごいて　ないかい？<2000>あ！　やっばー……！<2001><200A>％わたくし　このふねの　そうじゅう<2000>ぜんっぜん　わっかりませーん！<2000>どうする　<2003>！パンチー<2003>　！？",
+      "translation": "[200A:0004]Huh? The ship[2000]is moving?![2000]Uh-oh...[2001][200A:0005]I can't pilot[2000]this thing![2000]Now what, [2003:0001]Punch[2003:0000]?",
+      "kind": "dialogue",
+      "status": "draft_condensed_dialogue"
+    },
+    {
+      "id": 203,
+      "descriptor": "0x18e0020",
+      "offset": "0x18ed2e2",
+      "byte_length": 70,
+      "source_hex": "200a000300fc00b900c300df00ea00c9001f000000ba00ba00ba01090001001f200000cc00b800c700eb00e4006d0001001f2000008c009b007500cb00cf00e900e90001001f",
+      "source": "<200A>＃どうするって？　えええ〜！？<2000>にいちゃんッ！？<2000>ホンキなのぉぉ！？",
+      "translation": "[200A:0003]What? Bro?![2000]Are you[2000]serious?!",
+      "kind": "dialogue",
+      "status": "draft_condensed_dialogue"
+    },
+    {
+      "id": 204,
+      "descriptor": "0x18e0028",
+      "offset": "0x18ed328",
+      "byte_length": 90,
+      "source_hex": "200a000200b800d500c100dd00ce00ba001f0000008c009b007500fb00c300dc00012000200a000300c200bc00c2000000d200ce000000fb00c700eb00ea00c600ce00ba200000fc00b900c200dc00b900bc006e01080108001f",
+      "source": "<200A>”いまさらねえ？　ホンキですよ！<2000><200A>＃しかし　ふね　でちゃったねえ<2000>どうしようかー……？",
+      "translation": "[200A:0002]Of course![2000][200A:0003]But we've left![2000]Now what...?",
+      "kind": "dialogue",
+      "status": "draft_condensed_dialogue"
+    },
+    {
+      "id": 205,
+      "descriptor": "0x18e0030",
+      "offset": "0x18ed382",
+      "byte_length": 58,
+      "source_hex": "200a000500cc000000cc00b800c700eb00e4001f000000c700ed00ea00ca001f200000ba001f000000ba001f000000c700ed00ea00ca006e001f",
+      "source": "<200A>％に　にいちゃん？　ちょっと？<2000>え？　え？　ちょっとー？",
+      "translation": "[200A:0005]B-bro? Wait![2000]W-wait a sec!",
+      "kind": "dialogue",
+      "status": "draft_condensed_dialogue"
+    },
+    {
+      "id": 206,
+      "descriptor": "0x18e0038",
+      "offset": "0x18ed3bc",
+      "byte_length": 90,
+      "source_hex": "200a000400cb00da00e400f800ca00c000e100fb200000e200bc00e400cb00b800ce000000c500b900f400ec00b9000120002003000500740095009000952003000000fc00c000e100f400eb00ce006e00cb000000780096006a",
+      "source": "<200A>＄なやんだところで<2000>わかんないね　そうじゅう！<2000><2003>％カラメラ<2003>　どころじゃねーな　コリャ",
+      "translation": "[200A:0004]Can't steer![2000]Forget the[2000][2003:0005]Caramela[2003:0000] now!",
+      "kind": "dialogue",
+      "status": "draft_condensed_dialogue"
+    },
+    {
+      "id": 207,
+      "descriptor": "0x18e0040",
+      "offset": "0x18ed416",
+      "byte_length": 102,
+      "source_hex": "200a000500cc00b800c700eb00e40000007b00760096006e009b00e300d600c900dc0001200000bb00bb00bd00cb00d200ce00ee000000c800ea00c000e400fb00be00df0001200000c000cf00d500d500f800ca000000ff00c800bc00ea00c700eb00b90001",
+      "source": "<200A>％にいちゃん　スクリーンをみてよ！<2000>おおきなふねが　つっこんでくる！<2000>このままだと　ぶつかっちゃう！",
+      "translation": "[200A:0005]Look, bro![2000]A huge ship![2000]It'll hit us!",
+      "kind": "dialogue",
+      "status": "draft_condensed_dialogue"
+    },
+    {
+      "id": 208,
+      "descriptor": "0x18e0048",
+      "offset": "0x18ed47c",
+      "byte_length": 66,
+      "source_hex": "200a000500920000009200ad00b80001200000d000da00be000000cb00e400ca00bc00c200cb00b800ca200000b800cf00c700ee000000b700ff00cb00b800cb0001",
+      "source": "<200A>％ヤ　ヤバい！<2000>はやく　なんとかしないと<2000>いのちが　あぶないな！",
+      "translation": "[200A:0005]Oh no![2000]Do something![2000]We'll die!",
+      "kind": "dialogue",
+      "status": "draft_condensed_dialogue"
+    },
+    {
+      "id": 209,
+      "descriptor": "0x18e0050",
+      "offset": "0x18ed4be",
+      "byte_length": 32,
+      "source_hex": "200a000500b7000000b700ff00cb00b80001000000ff00c800bc00df00e70001",
+      "source": "<200A>％あ　あぶない！　ぶつかるぅ！",
+      "translation": "[200A:0005]We'll crash!",
+      "kind": "dialogue",
+      "status": "draft_condensed_dialogue"
+    },
+    {
+      "id": 210,
+      "descriptor": "0x18e0058",
+      "offset": "0x18ed4de",
+      "byte_length": 84,
+      "source_hex": "200a000400b700ff00cb00b8006d0001000000b800c500b800fb200000b800fc00b90091006e00ac00cf0000007b0070006d007f00e3200000bd00de00bc00ba00df00cf00fb00c30001000000d000da00be0001",
+      "source": "<200A>＄あぶないッ！　いそいで<2000>いどうモードの　スイッチを<2000>きりかえるのです！　はやく！",
+      "translation": "[200A:0004]Danger! Hurry![2000]Switch to[2000]travel mode!",
+      "kind": "dialogue",
+      "status": "draft_condensed_dialogue"
+    },
+    {
+      "id": 211,
+      "descriptor": "0x18e0060",
+      "offset": "0x18ed532",
+      "byte_length": 52,
+      "source_hex": "200a000500bb00de00ed00de00ed001f20002003000100a8009b00ab006600d000bc00c42003000000f400eb00e400bc0001001f",
+      "source": "<200A>％おりょりょ？<2000><2003>！ダンディはかせ<2003>　じゃんか！？",
+      "translation": "[200A:0005]Huh? It's[2000][2003:0001]Dr. Dandy[2003:0000]!",
+      "kind": "dialogue",
+      "status": "draft_condensed_dialogue"
+    },
+    {
+      "id": 212,
+      "descriptor": "0x18e0068",
+      "offset": "0x18ed566",
+      "byte_length": 86,
+      "source_hex": "200a000400d500ea00c600be0001000000bd00d600c600c700ca00bd00c600dd0001200000b800ba000000c500e400cb0078008200dc00de00d90108010800012000007b0070006d007f00000073009b0001200a0000",
+      "source": "<200A>＄まったく！　きみたちときたら！<2000>いえ　そんなコトよりも……！<2000>スイッチ　オン！<200A>　",
+      "translation": "[200A:0004]You two![2000]But first...[2000]Switch on![200A:0000]",
+      "kind": "dialogue",
+      "status": "draft_condensed_dialogue"
+    },
+    {
+      "id": 213,
+      "descriptor": "0x18e0070",
+      "offset": "0x18ed5bc",
+      "byte_length": 102,
+      "source_hex": "200a000100c100b700000078009800fb00d900b9000000f800b800f400ed00b900ff200000b700e400f600e400cc000000d200ce00ee000000b800fc00b900c300df20000073006e00820091006e00ac00cc000000bd00de00bc00ba00d500c200c6200a0000",
+      "source": "<200A>！さあ　コレでもう　だいじょうぶ<2000>あんぜんに　ふねが　いどうする<2000>オートモードに　きりかえました<200A>　",
+      "translation": "[200A:0001]There. All safe.[2000]The ship is now[2000]on autopilot.[200A:0000]",
+      "kind": "dialogue",
+      "status": "draft_condensed_dialogue"
+    },
+    {
+      "id": 214,
+      "descriptor": "0x18e0078",
+      "offset": "0x18ed622",
+      "byte_length": 98,
+      "source_hex": "200a000300c3000000c300b800d500c400e400002003000100a8009b00ab006600d000bc00c420030000200000bc00ea00c900cc000000d000bc00c400cf2000009f006c00a4009b00f200b900e3000000b900f200bc00c200c901080108200a0000",
+      "source": "<200A>＃す　すいません　<2003>！ダンディはかせ<2003>　<2000>かってに　はかせの<2000>ギョジンごうを　うごかして……<200A>　",
+      "translation": "[200A:0003]Sorry, [2003:0001]Dr. Dandy[2003:0000][2000]We took your[2000]Gyojin...[200A:0000]",
+      "kind": "dialogue",
+      "status": "draft_condensed_dialogue"
+    }
+  ]
+}

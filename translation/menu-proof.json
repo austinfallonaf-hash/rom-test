@@ -1,0 +1,15 @@
+{
+  "description": "Experimental save-file menu proof; not a full translation",
+  "entries": [
+    {
+      "offset": "0x2212D8",
+      "source": "しようする セーブデータを\\Nえらんでください",
+      "translation": "Select a\\Nsave file."
+    },
+    {
+      "offset": "0x221324",
+      "source": "あたらしいファイル",
+      "translation": "New File"
+    }
+  ]
+}

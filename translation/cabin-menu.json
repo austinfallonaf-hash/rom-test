@@ -1,0 +1,105 @@
+{
+  "description": "Save menu and name-entry labels; alphabet grid remains Japanese",
+  "entries": [
+    {
+      "offset": "0x2212D8",
+      "source": "しようする セーブデータを\\Nえらんでください",
+      "translation": "Select a\\Nsave file."
+    },
+    {
+      "offset": "0x221324",
+      "source": "あたらしいファイル",
+      "translation": "New File"
+    },
+    {
+      "offset": "0x221290",
+      "source": "はい",
+      "translation": "Yes"
+    },
+    {
+      "offset": "0x221298",
+      "source": "いいえ",
+      "translation": "No"
+    },
+    {
+      "offset": "0x2212a0",
+      "source": "Ｂボタン：キャンセル",
+      "translation": "B: Cancel"
+    },
+    {
+      "offset": "0x2212b8",
+      "source": "ゲームかいし",
+      "translation": "Start",
+      "max_cells": 6
+    },
+    {
+      "offset": "0x2212c8",
+      "source": "データさくじょ",
+      "translation": "Delete",
+      "max_cells": 6
+    },
+    {
+      "offset": "0x221308",
+      "source": "パールトンのこり",
+      "translation": "P left",
+      "max_cells": 8
+    },
+    {
+      "offset": "0x221338",
+      "source": "データがありません",
+      "translation": "No save data."
+    },
+    {
+      "offset": "0x22134c",
+      "source": "セーブデータＡを\\Nさくじょします\\Nよろしいですか？",
+      "translation": "Delete file A?\\NContinue?"
+    },
+    {
+      "offset": "0x221380",
+      "source": "セーブデータＢを\\Nさくじょします\\Nよろしいですか？",
+      "translation": "Delete file B?\\NContinue?"
+    },
+    {
+      "offset": "0x1c11e0",
+      "source": "ひらがな",
+      "translation": "Hira",
+      "max_cells": 4
+    },
+    {
+      "offset": "0x1c11ec",
+      "source": "カタカナ",
+      "translation": "Kana",
+      "max_cells": 4
+    },
+    {
+      "offset": "0x1c11f8",
+      "source": "ナマエ",
+      "translation": "Name",
+      "max_cells": 6
+    },
+    {
+      "offset": "0x1c1200",
+      "source": "ナマエ　ニュウリョク",
+      "translation": "Name Entry",
+      "max_cells": 12
+    },
+    {
+      "offset": "0x1c1218",
+      "source": "けってい",
+      "translation": "OK",
+      "max_cells": 4
+    },
+    {
+      "offset": "0x1c1224",
+      "source": "さくじょ",
+      "translation": "Del",
+      "max_cells": 4
+    },
+    {
+      "offset": "0x1c1230",
+      "source": "スペース",
+      "translation": "Spc",
+      "max_cells": 4
+    }
+  ]
+}

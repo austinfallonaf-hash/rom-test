@@ -1,0 +1,26 @@
+{
+  "format": "BPS1",
+  "scope": {
+    "opening_caption_records": 66,
+    "cabin_and_tutorial_dialogue_records": 57,
+    "native_menu_item_labels": 3,
+    "ship_help_dialogue_records": 16,
+    "shift_jis_ui_strings": 129,
+    "native_choice_blocks": 16
+  },
+  "translation_status": "partial condensed draft; later story and graphical labels remain unfinished",
+  "files": {
+    "source": {
+      "bytes": 33554432,
+      "sha256": "02cda6221c10cba0705f351227e2d6c77e071bdb4f7aa8b5cd3c7c047a2b1881"
+    },
+    "target": {
+      "bytes": 33554432,
+      "sha256": "f6e54a0cabe58ee17e805640d851bb6057b895feb1b73421f547036d8f66656d"
+    },
+    "patch": {
+      "bytes": 21166,
+      "sha256": "bdbcee643238464e40c94f51d28d525d3e2ab84a5965ce0f85d408a2d7656427"
+    }
+  }
+}
