@@ -5,9 +5,9 @@ For a resumed cloud workspace, start with [RESUME.md](RESUME.md). Run
 to detect a checkout that is behind GitHub and verify the current release/save.
 `PROJECT_STATE.json` identifies the current catalogs and recovery checkpoint.
 
-The current alpha adds shared seed/parts shop dialogue, buying and selling,
-inventory warnings, shop stats/classes and ten compact color-seed labels.
-The cumulative catalogs contain **220 native records, 185 UI strings and 299
+The current alpha adds reconstructed planting/growth/harvest and newborn text,
+nine seed names, simulator selection screens and battle-result messages.
+The cumulative catalogs contain **279 native records, 261 UI strings and 299
 choice blocks**. This remains a partial English draft;
 graphic headings, most names, the kana grid and later story are unfinished.
 
@@ -16,8 +16,9 @@ retaining day 2, 500G, the player name and Merlin. Later builds load that native
 save for testing, starting from a cold boot. Old-build emulator savestates are
 not used for validation.
 
-Apply [the cumulative shop BPS](releases/shop-alpha.bps) to the exact
-original ROM. Do not stack earlier patches. See [shop coverage and validation
+Apply [the cumulative simulator BPS](releases/simulator-alpha.bps) to the exact
+original ROM. Do not stack earlier patches. See [simulator and gardening notes](docs/simulator-alpha.md)
+for provenance, tested coverage and limitations, and [shop coverage and validation
 notes](docs/shop-alpha.md), [Moon Blue coverage](docs/moon-blue-alpha.md),
 [battle-guide coverage](docs/battle-guide-alpha.md),
 [bot-care coverage](docs/care-guide-alpha.md),
@@ -47,16 +48,16 @@ From `/workspace/rom-test`, Python 3.12, standard library only:
 python tools/rom_text.py local/original.z64 --output local/text-candidates.json
 python -m tools.story_text local/original.z64 --output local/story-records.json
 python -m tools.build_story local/original.z64 \
-  --menu translation/shop-menu.json --story translation/shop-text.json \
+  --menu translation/simulator-menu.json --story translation/garden-recovery-text.json \
   --choices translation/story-choices.json \
   --layout translation/shop-layout.json \
-  --output local/shop-alpha.z64 --patch local/shop-alpha.bps
+  --output local/simulator-alpha.z64 --patch local/simulator-alpha.bps
 python -m unittest discover -s tests -v
 ```
 
 The builder checks the entire original hash, each source byte sequence, byte
-budgets, and overlapping edits. It creates `local/shop-alpha.z64` and
-`local/shop-alpha.bps`, preserving the original. Apply the BPS to the exact
+budgets, and overlapping edits. It creates `local/simulator-alpha.z64` and
+`local/simulator-alpha.bps`, preserving the original. Apply the BPS to the exact
 original using a standard BPS patcher. All edits lie outside the N64 header
 checksum coverage; no checksum change is necessary for this alpha.
 
@@ -71,7 +72,7 @@ terminal, run `tools/start-display.sh` (display `:7`, no TCP listener). In anoth
 
 ```sh
 DISPLAY=:7 LIBGL_ALWAYS_SOFTWARE=1 \
-ROM_PATH=/workspace/rom-test/local/shop-alpha.z64 \
+ROM_PATH=/workspace/rom-test/local/simulator-alpha.z64 \
 tools/emulator.sh --windowed --gfx mupen64plus-video-glide64mk2 --audio dummy \
   --input mupen64plus-input-sdl --rsp mupen64plus-rsp-hle
 ```

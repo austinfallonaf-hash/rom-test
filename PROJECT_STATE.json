@@ -1,7 +1,7 @@
 {
   "format_version": 1,
   "project": "Robopon 64 English translation",
-  "milestone": "shop-alpha",
+  "milestone": "simulator-alpha",
   "recovered_on": "2026-11-05",
   "timezone": "America/Los_Angeles",
   "upstream": {
@@ -9,18 +9,18 @@
     "branch": "main",
     "recovered_commit": "b6b220228bdb6074758017c25e83539e12a5ca2d"
   },
-  "release_manifest": "releases/shop-alpha-manifest.json",
-  "release_patch": "releases/shop-alpha.bps",
-  "playable_rom": "local/shop-alpha.z64",
+  "release_manifest": "releases/simulator-alpha-manifest.json",
+  "release_patch": "releases/simulator-alpha.bps",
+  "playable_rom": "local/simulator-alpha.z64",
   "catalogs": {
-    "menu": "translation/shop-menu.json",
-    "story": "translation/shop-text.json",
+    "menu": "translation/simulator-menu.json",
+    "story": "translation/garden-recovery-text.json",
     "choices": "translation/story-choices.json",
     "layout": "translation/shop-layout.json"
   },
   "coverage": {
-    "native_records": 220,
-    "ui_strings": 185,
+    "native_records": 279,
+    "ui_strings": 261,
     "native_choice_blocks": 299
   },
   "native_save": {
@@ -31,11 +31,16 @@
     "day": 2,
     "gold": 500,
     "party_member": "Merlin",
-    "rom_md5_prefix": "EE13E958",
-    "working_path": "local/native-saves/Robot Ponkottsu 64 - 7tsu no Umi-EE13E958.eep"
+    "rom_md5_prefix": "20B19F3D",
+    "working_path": "local/native-saves/Robot Ponkottsu 64 - 7tsu no Umi-20B19F3D.eep"
   },
   "latest_encrypted_backup": "backups/robopon64-progress-2026-11-05_135201-PST.zip.gpg",
   "backup_payload_files_verified": 238,
-  "automated_tests": 79,
-  "next_task": "Refine the shop sell-category frame so the Parts label fits, then verify parts-shop stock and remaining warning branches."
+  "automated_tests": 82,
+  "next_task": "Complete simulator/VS runtime branches and graphical battle command labels; refine the shop sell-category Parts frame.",
+  "history_recovery": {
+    "source": "user-supplied 16-page conversation PDF",
+    "historical_gardening_artifact": "unavailable",
+    "gardening_status": "reconstructed from the original ROM; wording is not claimed identical to the historical patch"
+  }
 }

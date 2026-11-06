@@ -37,6 +37,11 @@ Neither file is a full translation. No ROM data is supplied with the patches.
   and battle-help guides. See their corresponding documents and manifests.
 - `moon-blue-alpha.bps`: earlier cumulative first-sea story/hint draft, including
   Koron and the Red Pass. See `docs/moon-blue-alpha.md`.
-- `shop-alpha.bps`: latest cumulative patch. Adds shared seed/parts shop UI and
+- `shop-alpha.bps`: earlier cumulative patch. Adds shared seed/parts shop UI and
   ten compact color-seed labels. See `docs/shop-alpha.md` and
   `shop-alpha-manifest.json`. Apply only to the exact original ROM.
+
+- `simulator-alpha.bps`: latest cumulative patch. Adds reconstructed gardening
+  text/nine seed names and simulator/battle-result UI. See `docs/simulator-alpha.md`
+  for the distinction from the unavailable historical gardening patch and the
+  precise runtime coverage. Apply only to the exact original ROM.
