@@ -63,3 +63,5 @@ The destination must not exist. Verification precedes extraction; executable mod
 Continue graphical battle commands, later combat/move names, simulator/VS branches and garden capacity/discard warnings. Refine the shop sell-category Parts frame separately. Later story, most names, graphical labels and the kana grid remain unfinished.
 
 Update this handoff, `PROJECT_STATE.json` and the recovery archive when the milestone changes. A running cloud process is not a persistent checkpoint.
+
+The durable simulator checkpoint is the Git tag `simulator-alpha`. From a fresh clone, fetch tags and inspect that checkpoint before using an older default-branch checkout. Preserve local changes before switching revisions.

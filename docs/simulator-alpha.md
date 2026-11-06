@@ -66,6 +66,47 @@ reproduces the generated ROM from the release BPS. All 185 earlier UI strings
 and 220 earlier native records compare equal, and the checksum-covered prefix
 is unchanged. The final ROM's MD5 prefix is `20B19F3D`.
 
+The roster heading uses compact `Select` text and trailing spaces. The game
+centers this caption using half its byte length; an unpadded longer English
+caption overflowed the golden frame during testing. Bot/App planting categories
+use short padded labels. These changes preserve allocations and do not alter
+the drawing code.
+
+## Runtime verification
+
+The exact final build cold-booted with a separately named copy of the preserved
+day-2 native EEPROM. An Ashura seed was selected and planted through the Bot/App
+menu. Initial, sprout, branch, approaching-maturity and tomorrow messages were
+checked during five genuine overnight bed/save cycles. The fifth morning
+reached a mature bot. Harvesting played the translated newborn remark, then
+displayed the entered player name in the `picked` message and the bot name in
+the separate naming question. Declining renaming returned to normal control
+with a second bot in the party. The pause menu visibly showed day 7 and 500G.
+
+Growth records 3904–3909 and newborn record 2702 were reached during this run.
+Other growth/newborn variants, software harvesting and capacity/discard warnings
+are build-validated, not separately played. The original day-2 reference and
+default working EEPROM remain byte-identical; the test used an isolated copy.
+
+Evidence is stored in `local/simulator-evidence/`. `garden-day7.eep` is a native
+save before harvesting the mature plant. `after-harvest.st0` is an exploration
+checkpoint from this exact ROM after the second bot joined; it is not a native
+save and must not validate later builds. No older-build state was used during
+this verification.
+
+The simulator confirmation, centered `Select` caption, Swap and Start labels
+fit on the exact final build. A assigns a bot to a slot; C-right (`l`) switched
+focus to COM, where another A assigned the opponent. Return/Start then entered
+the practice arena. Both teams need an assigned bot before Start proceeds.
+`simulator-roster.st0` and `practice-battle.st0` are checkpoints from this exact
+ROM for continued exploration. The roster was also revisited from its same-build
+checkpoint; no earlier ROM's state was used.
+
+Battle win/loss/reward text, VS/stage menus and transfer/read branches have not
+all been exercised in play. The practice startup check is not a full fight or
+proof of those result branches. Graphical battle HUD and command text remain
+Japanese where not covered by this catalog.
+
 ## Remaining work
 
 Complete the runtime coverage recorded below before treating any unplayed

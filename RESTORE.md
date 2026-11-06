@@ -1,6 +1,6 @@
 # Restore this project
 
-The latest private asset snapshot is the shop-alpha encrypted ZIP named in
+The latest private asset snapshot is the simulator-alpha encrypted ZIP named in
 `backups/README.md`. Verify its encrypted checksum, decrypt it with the existing
 recovery passphrase, then verify the decrypted ZIP checksum as documented there.
 
@@ -25,7 +25,8 @@ Run `python -m tools.check_workspace --require-save` on the current source plus
 restored assets, and `python -m unittest discover -s tests -q`.
 Add `--check-remote` when Git metadata and network access are available.
 
-The recovery was tested in a separate empty directory: all 238 archived payload
-hashes verified, all 71 tests supplied by that snapshot passed, and its rebuilt
-ROM and BPS matched the release exactly. The current source adds eight recovery
-tests for a total of 79.
+Recovery is tested in a separate empty directory, including executable modes
+and the emulator library symlink. The current source has 82 tests and verifies
+the simulator-alpha ROM/BPS and reference EEPROM against the recorded hashes.
+The earlier shop snapshot remains a historical backup with 238 payload files
+and its original 71-test source suite.

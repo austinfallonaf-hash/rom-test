@@ -34,13 +34,24 @@
     "rom_md5_prefix": "20B19F3D",
     "working_path": "local/native-saves/Robot Ponkottsu 64 - 7tsu no Umi-20B19F3D.eep"
   },
-  "latest_encrypted_backup": "backups/robopon64-progress-2026-11-05_135201-PST.zip.gpg",
-  "backup_payload_files_verified": 238,
+  "latest_encrypted_backup": "backups/robopon64-simulator-alpha-20B19F3D.zip.gpg",
   "automated_tests": 82,
   "next_task": "Complete simulator/VS runtime branches and graphical battle command labels; refine the shop sell-category Parts frame.",
   "history_recovery": {
     "source": "user-supplied 16-page conversation PDF",
     "historical_gardening_artifact": "unavailable",
     "gardening_status": "reconstructed from the original ROM; wording is not claimed identical to the historical patch"
-  }
+  },
+  "checkpoint_ref": "refs/tags/simulator-alpha",
+  "runtime_validation": {
+    "rom_md5_prefix": "20B19F3D",
+    "initial_save": "native day 2",
+    "growth_nights": 5,
+    "harvest_day": 7,
+    "gold": 500,
+    "second_bot_joined": true,
+    "simulator": "entry confirmation, centered roster, Swap/Start and practice arena startup",
+    "reference_eeprom_unchanged": true
+  },
+  "backup_payload_files_verified": 421
 }
