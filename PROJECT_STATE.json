@@ -1,0 +1,41 @@
+{
+  "format_version": 1,
+  "project": "Robopon 64 English translation",
+  "milestone": "shop-alpha",
+  "recovered_on": "2026-11-05",
+  "timezone": "America/Los_Angeles",
+  "upstream": {
+    "remote": "origin",
+    "branch": "main",
+    "recovered_commit": "b6b220228bdb6074758017c25e83539e12a5ca2d"
+  },
+  "release_manifest": "releases/shop-alpha-manifest.json",
+  "release_patch": "releases/shop-alpha.bps",
+  "playable_rom": "local/shop-alpha.z64",
+  "catalogs": {
+    "menu": "translation/shop-menu.json",
+    "story": "translation/shop-text.json",
+    "choices": "translation/story-choices.json",
+    "layout": "translation/shop-layout.json"
+  },
+  "coverage": {
+    "native_records": 220,
+    "ui_strings": 185,
+    "native_choice_blocks": 299
+  },
+  "native_save": {
+    "path": "local/bed-save-final-saved.eep",
+    "bytes": 2048,
+    "sha256": "4b8072efdc08a827141cea1e172205acdb89b17007201d1d1110ff7912f71a00",
+    "slot": "A",
+    "day": 2,
+    "gold": 500,
+    "party_member": "Merlin",
+    "rom_md5_prefix": "EE13E958",
+    "working_path": "local/native-saves/Robot Ponkottsu 64 - 7tsu no Umi-EE13E958.eep"
+  },
+  "latest_encrypted_backup": "backups/robopon64-progress-2026-11-05_135201-PST.zip.gpg",
+  "backup_payload_files_verified": 238,
+  "automated_tests": 79,
+  "next_task": "Refine the shop sell-category frame so the Parts label fits, then verify parts-shop stock and remaining warning branches."
+}

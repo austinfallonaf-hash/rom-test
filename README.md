@@ -1,5 +1,10 @@
 # Robopon 64 English translation
 
+For a resumed cloud workspace, start with [RESUME.md](RESUME.md). Run
+`python -m tools.check_workspace --check-remote --require-save` before continuing
+to detect a checkout that is behind GitHub and verify the current release/save.
+`PROJECT_STATE.json` identifies the current catalogs and recovery checkpoint.
+
 The current alpha adds shared seed/parts shop dialogue, buying and selling,
 inventory warnings, shop stats/classes and ten compact color-seed labels.
 The cumulative catalogs contain **220 native records, 185 UI strings and 299
@@ -72,7 +77,10 @@ tools/emulator.sh --windowed --gfx mupen64plus-video-glide64mk2 --audio dummy \
 ```
 
 The launcher initializes a keyboard controller config if missing or empty. It
-preserves nonempty existing configuration. Return = Start, left Shift = A,
+preserves nonempty existing configuration. Native saves now live in
+`local/native-saves/` and emulator states in `local/emulator-states/`, so they
+travel with the workspace. Existing saves in the user's default Mupen directory
+are not moved automatically. Return = Start, left Shift = A,
 left Control = B, arrows = stick, Escape = exit. While walking aboard the ship,
 Face the bed and press left Shift (A) to interact. `c` (R trigger) opens
 the ship's floor/destination navigation. At the title, press Return to
