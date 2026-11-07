@@ -1,0 +1,42 @@
+{
+  "format": "BPS1",
+  "scope": {
+    "native_records_total": 279,
+    "shift_jis_ui_strings": 420,
+    "native_choice_blocks": 299,
+    "layout_instruction_words": 70,
+    "reconstructed_garden_dialogue_records": 50,
+    "reconstructed_seed_names": 9,
+    "garden_ui_strings": 12,
+    "simulator_and_result_ui_strings": 64,
+    "battle_hud_ui_strings": 159
+  },
+  "translation_status": "partial condensed draft; battle status/move components added; graphical command labels and later story unfinished",
+  "catalogs": {
+    "menu": "translation/battle-hud-menu.json",
+    "story": "translation/garden-recovery-text.json",
+    "choices": "translation/story-choices.json",
+    "layout": "translation/battle-hud-layout.json"
+  },
+  "files": {
+    "source": {
+      "bytes": 33554432,
+      "sha256": "02cda6221c10cba0705f351227e2d6c77e071bdb4f7aa8b5cd3c7c047a2b1881"
+    },
+    "target": {
+      "bytes": 33554432,
+      "sha256": "cea7463dd8a361a0c68c5bc7c759188b99ef01623deb20b0c517bba3c8fa46a0"
+    },
+    "patch": {
+      "bytes": 51260,
+      "sha256": "e25db02aa6f44da5948ab40026a7a77473dd3709d1fc6aa027f1d15406b3b078"
+    }
+  },
+  "update_checksum": true,
+  "n64_checksum": {
+    "variant": "CIC-6102",
+    "crc1": "7E305CF9",
+    "crc2": "130320B5",
+    "bootcode_crc32": "90BB6CB5"
+  }
+}

@@ -62,6 +62,18 @@ class ChecksumTests(unittest.TestCase):
         self.assertEqual(target[0x18:0x1000], original[0x18:0x1000])
         self.assertEqual(int.from_bytes(bps[-8:-4], 'little'), zlib.crc32(target))
 
+    def test_covered_layout_requires_opt_in_and_repairs_checksum(self):
+        original = bytes(image())
+        row = {'offset':'0xb75f0','source_hex':'00000000','target_hex':'00001021'}
+        with patch('tools.build_patch.EXPECTED_SHA256', hashlib.sha256(original).hexdigest()), \
+                patch('tools.build_story.records', return_value=[]), \
+                patch('tools.n64_checksum.BOOT_CRC32', zlib.crc32(original[0x40:0x1000])):
+            with self.assertRaisesRegex(ValueError, 'checksum'):
+                build_story(original, [], [], layout=[row])
+            target, _ = build_story(original, [], [], layout=[row], update_checksum=True)
+        self.assertEqual(target[0xb75f0:0xb75f4], bytes.fromhex('00001021'))
+        self.assertEqual(struct.unpack_from('>II', target, 0x10), calculate6102(target))
+
     def test_boot_and_header_text_edits_still_rejected_with_opt_in(self):
         for offset in [0x10, 0x40, 0xFFC]:
             rom = image();rom[offset:offset+3]=b'A\0\0'

@@ -56,7 +56,8 @@ def build_story(original, menu, story, choices=(), layout=(), *, update_checksum
         source, target = bytes.fromhex(entry['source_hex']), bytes.fromhex(entry['target_hex'])
         if offset % 4 or len(source) != 4 or len(target) != 4:
             raise ValueError('Layout edits require one aligned instruction word')
-        if offset < 0x101000 or original[offset:offset+4] != source:
+        if (offset < 0x1000 or (offset < 0x101000 and not update_checksum)
+                or original[offset:offset+4] != source):
             raise ValueError('Layout instruction source or checksum region differs')
         if any(offset < end and start < offset+4 for start, end in spans):
             raise ValueError('Layout instruction overlaps another edit')

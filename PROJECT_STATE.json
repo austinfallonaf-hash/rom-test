@@ -1,26 +1,26 @@
 {
   "format_version": 1,
   "project": "Robopon 64 English translation",
-  "milestone": "simulator-alpha",
+  "milestone": "battle-hud-alpha",
   "recovered_on": "2026-11-05",
   "timezone": "America/Los_Angeles",
   "upstream": {
     "remote": "origin",
-    "branch": "main",
+    "branch": "codex/verified-workspace-recovery",
     "recovered_commit": "b6b220228bdb6074758017c25e83539e12a5ca2d"
   },
-  "release_manifest": "releases/simulator-alpha-manifest.json",
-  "release_patch": "releases/simulator-alpha.bps",
-  "playable_rom": "local/simulator-alpha.z64",
+  "release_manifest": "releases/battle-hud-alpha-manifest.json",
+  "release_patch": "releases/battle-hud-alpha.bps",
+  "playable_rom": "local/battle-hud-alpha.z64",
   "catalogs": {
-    "menu": "translation/simulator-menu.json",
+    "menu": "translation/battle-hud-menu.json",
     "story": "translation/garden-recovery-text.json",
     "choices": "translation/story-choices.json",
-    "layout": "translation/shop-layout.json"
+    "layout": "translation/battle-hud-layout.json"
   },
   "coverage": {
     "native_records": 279,
-    "ui_strings": 261,
+    "ui_strings": 420,
     "native_choice_blocks": 299
   },
   "native_save": {
@@ -31,27 +31,28 @@
     "day": 2,
     "gold": 500,
     "party_member": "Merlin",
-    "rom_md5_prefix": "20B19F3D",
-    "working_path": "local/native-saves/Robot Ponkottsu 64 - 7tsu no Umi-20B19F3D.eep"
+    "rom_md5_prefix": "7A9FF097",
+    "working_path": "local/native-saves/Robot Ponkottsu 64 - 7tsu no Umi-7A9FF097.eep"
   },
-  "latest_encrypted_backup": "backups/robopon64-simulator-alpha-20B19F3D.zip.gpg",
-  "automated_tests": 82,
-  "next_task": "Complete simulator/VS runtime branches and graphical battle command labels; refine the shop sell-category Parts frame.",
+  "latest_encrypted_backup": "backups/robopon64-battle-hud-alpha-7A9FF097.zip.gpg",
+  "automated_tests": 96,
+  "next_task": "Translate graphical battle command labels and remaining full move names; exercise status effects and give-up/result branches; refine shop Parts frame.",
   "history_recovery": {
     "source": "user-supplied 16-page conversation PDF",
     "historical_gardening_artifact": "unavailable",
     "gardening_status": "reconstructed from the original ROM; wording is not claimed identical to the historical patch"
   },
-  "checkpoint_ref": "refs/tags/simulator-alpha",
+  "checkpoint_ref": "refs/tags/battle-hud-alpha",
   "runtime_validation": {
-    "rom_md5_prefix": "20B19F3D",
+    "rom_md5_prefix": "7A9FF097",
     "initial_save": "native day 2",
-    "growth_nights": 5,
-    "harvest_day": 7,
     "gold": 500,
-    "second_bot_joined": true,
-    "simulator": "entry confirmation, centered roster, Swap/Start and practice arena startup",
-    "reference_eeprom_unchanged": true
+    "reference_eeprom_unchanged": true,
+    "party_member": "Merlin",
+    "simulator": "roster and practice battle",
+    "battle": "condensed Attack labels and normal OK status; give-up prompt",
+    "older_build_state_loaded": false
   },
-  "backup_payload_files_verified": 421
+  "update_checksum": true,
+  "backup_payload_files_verified": 441
 }
