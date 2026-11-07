@@ -49,9 +49,12 @@ def main():
         story = json.loads((ROOT / catalogs['story']).read_text())['records']
         choices = json.loads((ROOT / catalogs['choices']).read_text())['entries']
         layout = json.loads((ROOT / catalogs['layout']).read_text())['entries'] if catalogs.get('layout') else []
+        graphics = json.loads((ROOT/catalogs['graphics']).read_text())['entries'] if catalogs.get('graphics') else []
+        images = {e['image_path']:(ROOT/e['image_path']).read_bytes() for e in graphics}
         target, patch = build_story(original, menu, story, choices, layout,
                                     update_checksum=state.get('update_checksum', False),
-                                    validate_moves=state.get('validate_move_names', False))
+                                    validate_moves=state.get('validate_move_names', False),
+                                    graphics=graphics, graphic_images=images)
         check_bytes(target, manifest['files']['target'], 'Rebuilt ROM')
         check_bytes(patch, manifest['files']['patch'], 'Rebuilt patch')
         if patch != (ROOT / state['release_patch']).read_bytes():

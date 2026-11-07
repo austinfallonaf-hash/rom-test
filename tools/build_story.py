@@ -10,9 +10,10 @@ from tools.dialogue import encode as encode_dialogue
 from tools.choices import replace_choice
 from tools.n64_checksum import repair6102
 from tools.move_names import validate as validate_move_names
+from tools.graphics import replacement as replace_graphic, validate_loader
 
 
-def build_story(original, menu, story, choices=(), layout=(), *, update_checksum=False, validate_moves=False):
+def build_story(original, menu, story, choices=(), layout=(), *, update_checksum=False, validate_moves=False, graphics=(), graphic_images=None):
     baseline = {r['id']: r for r in records(original)}
     menu_rom, _ = build(original, menu, update_checksum=update_checksum)
     if validate_moves:
@@ -66,6 +67,17 @@ def build_story(original, menu, story, choices=(), layout=(), *, update_checksum
             raise ValueError('Layout instruction overlaps another edit')
         output[offset:offset+4] = target
         spans.append((offset, offset+4))
+    if graphics:
+        validate_loader(output)
+        for entry in graphics:
+            if graphic_images is None or entry['image_path'] not in graphic_images:
+                raise ValueError('Missing recovered sprite input')
+            for offset, content in replace_graphic(original, entry, graphic_images[entry['image_path']]):
+                end = offset+len(content)
+                if any(offset < b and a < end for a,b in spans):
+                    raise ValueError('Sprite replacement overlaps another edit')
+                output[offset:end] = content
+                spans.append((offset,end))
     if update_checksum:
         if output[:0x10] != original[:0x10] or output[0x18:0x1000] != original[0x18:0x1000]:
             raise ValueError('Unexpected header or bootcode change')
@@ -84,6 +96,8 @@ def main():
     p.add_argument('--menu', type=Path, default=Path('translation/save-menu.json'))
     p.add_argument('--story', type=Path, default=Path('translation/intro.json'))
     p.add_argument('--choices', type=Path, help='Optional guarded native Yes/No blocks')
+    p.add_argument('--graphics', type=Path, help='Optional guarded bitmap sprite/caption catalog')
+    p.add_argument('--asset-root', type=Path, default=Path('.'), help='Root containing recovered sprite inputs')
     p.add_argument('--layout', type=Path, help='Optional guarded layout instruction words')
     p.add_argument('--validate-moves', action='store_true', help='Require complete battle move-name coverage and validate all app/part name combinations')
     p.add_argument('--update-checksum', action='store_true', help='Allow guarded UI edits in the CIC-6102 checksum region and repair CRC1/CRC2')
@@ -93,11 +107,13 @@ def main():
     if len({a.rom.resolve(), a.output.resolve(), a.patch.resolve()}) != 3:
         p.error('Input and output paths must be distinct')
     original = a.rom.read_bytes()
+    graphics = json.loads(a.graphics.read_text())['entries'] if a.graphics else []
+    images = {e['image_path']:(a.asset_root/e['image_path']).read_bytes() for e in graphics}
     result, patch = build_story(original, json.loads(a.menu.read_text())['entries'],
                                 json.loads(a.story.read_text())['records'],
                                 json.loads(a.choices.read_text())['entries'] if a.choices else [],
                                 json.loads(a.layout.read_text())['entries'] if a.layout else [],
-                                update_checksum=a.update_checksum, validate_moves=a.validate_moves)
+                                update_checksum=a.update_checksum, validate_moves=a.validate_moves, graphics=graphics, graphic_images=images)
     for path, content in [(a.output, result), (a.patch, patch)]:
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_bytes(content)
