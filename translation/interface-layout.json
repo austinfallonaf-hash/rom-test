@@ -1,0 +1,411 @@
+{
+  "description": "Cumulative layout plus RAW2/HVQ2 dispatcher in unreachable startup alignment padding",
+  "entries": [
+    {
+      "offset": "0x119cdc",
+      "source_hex": "24070030",
+      "target_hex": "24070040",
+      "note": "Delay slot of jal 0x800bffb0: addiu a3,zero,48 becomes addiu a3,zero,64. The frame has x=24, y=86 and height=60; the text labels are drawn at x=36. No branch or target changes."
+    },
+    {
+      "offset": "0xb75f0",
+      "source_hex": "8fc20030",
+      "target_hex": "8fc20030"
+    },
+    {
+      "offset": "0xb75f4",
+      "source_hex": "8fc40030",
+      "target_hex": "8043019f"
+    },
+    {
+      "offset": "0xb75f8",
+      "source_hex": "8083019f",
+      "target_hex": "00032080"
+    },
+    {
+      "offset": "0xb75fc",
+      "source_hex": "00602821",
+      "target_hex": "00832021"
+    },
+    {
+      "offset": "0xb7600",
+      "source_hex": "00052080",
+      "target_hex": "00042080"
+    },
+    {
+      "offset": "0xb7604",
+      "source_hex": "00832021",
+      "target_hex": "00822021"
+    },
+    {
+      "offset": "0xb7608",
+      "source_hex": "00041880",
+      "target_hex": "248400fa"
+    },
+    {
+      "offset": "0xb760c",
+      "source_hex": "00621021",
+      "target_hex": "00001021"
+    },
+    {
+      "offset": "0xb7610",
+      "source_hex": "244300fa",
+      "target_hex": "90830000"
+    },
+    {
+      "offset": "0xb7614",
+      "source_hex": "8fc40080",
+      "target_hex": "1060000e"
+    },
+    {
+      "offset": "0xb7618",
+      "source_hex": "00641021",
+      "target_hex": "00000000"
+    },
+    {
+      "offset": "0xb761c",
+      "source_hex": "90430000",
+      "target_hex": "2c680081"
+    },
+    {
+      "offset": "0xb7620",
+      "source_hex": "14600003",
+      "target_hex": "15000008"
+    },
+    {
+      "offset": "0xb7624",
+      "source_hex": "00000000",
+      "target_hex": "00000000"
+    },
+    {
+      "offset": "0xb7628",
+      "source_hex": "08035cfe",
+      "target_hex": "2c6800a0"
+    },
+    {
+      "offset": "0xb762c",
+      "source_hex": "00000000",
+      "target_hex": "15000004"
+    },
+    {
+      "offset": "0xb7630",
+      "source_hex": "8fc30080",
+      "target_hex": "00000000"
+    },
+    {
+      "offset": "0xb7634",
+      "source_hex": "24620001",
+      "target_hex": "2c6800e0"
+    },
+    {
+      "offset": "0xb7638",
+      "source_hex": "00401821",
+      "target_hex": "15000002"
+    },
+    {
+      "offset": "0xb763c",
+      "source_hex": "afc30080",
+      "target_hex": "00000000"
+    },
+    {
+      "offset": "0xb7640",
+      "source_hex": "08035cfc",
+      "target_hex": "24840001"
+    },
+    {
+      "offset": "0xb7644",
+      "source_hex": "00000000",
+      "target_hex": "24420001"
+    },
+    {
+      "offset": "0xb7648",
+      "source_hex": "08035cfe",
+      "target_hex": "1000fff1"
+    },
+    {
+      "offset": "0xb764c",
+      "source_hex": "00000000",
+      "target_hex": "24840001"
+    },
+    {
+      "offset": "0xb7650",
+      "source_hex": "08035ce4",
+      "target_hex": "00000000"
+    },
+    {
+      "offset": "0xb7654",
+      "source_hex": "00000000",
+      "target_hex": "00000000"
+    },
+    {
+      "offset": "0xb7658",
+      "source_hex": "8fc20080",
+      "target_hex": "00000000"
+    },
+    {
+      "offset": "0xb765c",
+      "source_hex": "00021fc3",
+      "target_hex": "00000000"
+    },
+    {
+      "offset": "0xb7660",
+      "source_hex": "000327c2",
+      "target_hex": "00000000"
+    },
+    {
+      "offset": "0xb7664",
+      "source_hex": "00441821",
+      "target_hex": "00000000"
+    },
+    {
+      "offset": "0xb7668",
+      "source_hex": "00031043",
+      "target_hex": "00000000"
+    },
+    {
+      "offset": "0xb7278",
+      "source_hex": "8fc20038",
+      "target_hex": "8fc20038"
+    },
+    {
+      "offset": "0xb727c",
+      "source_hex": "84430062",
+      "target_hex": "84430062"
+    },
+    {
+      "offset": "0xb7280",
+      "source_hex": "00601021",
+      "target_hex": "00031880"
+    },
+    {
+      "offset": "0xb7284",
+      "source_hex": "00021880",
+      "target_hex": "3c04800f"
+    },
+    {
+      "offset": "0xb7288",
+      "source_hex": "3c04800f",
+      "target_hex": "24848828"
+    },
+    {
+      "offset": "0xb728c",
+      "source_hex": "24848828",
+      "target_hex": "00832021"
+    },
+    {
+      "offset": "0xb7290",
+      "source_hex": "00641021",
+      "target_hex": "8c840000"
+    },
+    {
+      "offset": "0xb7294",
+      "source_hex": "8c430000",
+      "target_hex": "00001021"
+    },
+    {
+      "offset": "0xb7298",
+      "source_hex": "8fc40080",
+      "target_hex": "90830000"
+    },
+    {
+      "offset": "0xb729c",
+      "source_hex": "00641021",
+      "target_hex": "1060000e"
+    },
+    {
+      "offset": "0xb72a0",
+      "source_hex": "90430000",
+      "target_hex": "00000000"
+    },
+    {
+      "offset": "0xb72a4",
+      "source_hex": "14600003",
+      "target_hex": "2c680081"
+    },
+    {
+      "offset": "0xb72a8",
+      "source_hex": "00000000",
+      "target_hex": "15000008"
+    },
+    {
+      "offset": "0xb72ac",
+      "source_hex": "08035c1f",
+      "target_hex": "00000000"
+    },
+    {
+      "offset": "0xb72b0",
+      "source_hex": "00000000",
+      "target_hex": "2c6800a0"
+    },
+    {
+      "offset": "0xb72b4",
+      "source_hex": "8fc30080",
+      "target_hex": "15000004"
+    },
+    {
+      "offset": "0xb72b8",
+      "source_hex": "24620001",
+      "target_hex": "00000000"
+    },
+    {
+      "offset": "0xb72bc",
+      "source_hex": "00401821",
+      "target_hex": "2c6800e0"
+    },
+    {
+      "offset": "0xb72c0",
+      "source_hex": "afc30080",
+      "target_hex": "15000002"
+    },
+    {
+      "offset": "0xb72c4",
+      "source_hex": "08035c1d",
+      "target_hex": "00000000"
+    },
+    {
+      "offset": "0xb72c8",
+      "source_hex": "00000000",
+      "target_hex": "24840001"
+    },
+    {
+      "offset": "0xb72cc",
+      "source_hex": "08035c1f",
+      "target_hex": "24420001"
+    },
+    {
+      "offset": "0xb72d0",
+      "source_hex": "00000000",
+      "target_hex": "1000fff1"
+    },
+    {
+      "offset": "0xb72d4",
+      "source_hex": "08035c06",
+      "target_hex": "24840001"
+    },
+    {
+      "offset": "0xb72d8",
+      "source_hex": "00000000",
+      "target_hex": "00000000"
+    },
+    {
+      "offset": "0xb72dc",
+      "source_hex": "8fc20080",
+      "target_hex": "00000000"
+    },
+    {
+      "offset": "0xb72e0",
+      "source_hex": "00021fc3",
+      "target_hex": "00000000"
+    },
+    {
+      "offset": "0xb72e4",
+      "source_hex": "000327c2",
+      "target_hex": "00000000"
+    },
+    {
+      "offset": "0xb72e8",
+      "source_hex": "00441821",
+      "target_hex": "00000000"
+    },
+    {
+      "offset": "0xb72ec",
+      "source_hex": "00031043",
+      "target_hex": "00000000"
+    },
+    {
+      "offset": "0xb7218",
+      "source_hex": "3c013f80",
+      "target_hex": "3c013f00"
+    },
+    {
+      "offset": "0xb7338",
+      "source_hex": "3c013f80",
+      "target_hex": "3c013f00"
+    },
+    {
+      "offset": "0xb7590",
+      "source_hex": "3c013f80",
+      "target_hex": "3c013f00"
+    },
+    {
+      "offset": "0xb76f0",
+      "source_hex": "3c013f80",
+      "target_hex": "3c013f00"
+    },
+    {
+      "offset": "0xb72f0",
+      "source_hex": "24030005",
+      "target_hex": "2403000a"
+    },
+    {
+      "offset": "0xb7304",
+      "source_hex": "00031080",
+      "target_hex": "00031040"
+    },
+    {
+      "offset": "0xb766c",
+      "source_hex": "24030008",
+      "target_hex": "24030010"
+    },
+    {
+      "offset": "0xb7680",
+      "source_hex": "00031080",
+      "target_hex": "00031040"
+    },
+    {
+      "offset": "0x219ad0",
+      "source_hex": "3c013f80",
+      "target_hex": "3c013f00"
+    },
+    {
+      "offset": "0x103c",
+      "source_hex": "00000000",
+      "target_hex": "94880000"
+    },
+    {
+      "offset": "0x1040",
+      "source_hex": "00000000",
+      "target_hex": "24095241"
+    },
+    {
+      "offset": "0x1044",
+      "source_hex": "00000000",
+      "target_hex": "15090004"
+    },
+    {
+      "offset": "0x1048",
+      "source_hex": "00000000",
+      "target_hex": "00000000"
+    },
+    {
+      "offset": "0x104c",
+      "source_hex": "00000000",
+      "target_hex": "8c860010"
+    },
+    {
+      "offset": "0x1050",
+      "source_hex": "00000000",
+      "target_hex": "0801efb0"
+    },
+    {
+      "offset": "0x1054",
+      "source_hex": "00000000",
+      "target_hex": "24840064"
+    },
+    {
+      "offset": "0x1058",
+      "source_hex": "00000000",
+      "target_hex": "0801a40a"
+    },
+    {
+      "offset": "0x105c",
+      "source_hex": "00000000",
+      "target_hex": "00000000"
+    },
+    {
+      "offset": "0x56270",
+      "source_hex": "0c01a40a",
+      "target_hex": "0c00010f"
+    }
+  ]
+}

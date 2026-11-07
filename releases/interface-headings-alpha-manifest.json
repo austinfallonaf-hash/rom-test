@@ -1,0 +1,53 @@
+{
+  "format": "BPS1",
+  "scope": {
+    "native_records_total": 323,
+    "shift_jis_ui_strings": 832,
+    "native_choice_blocks": 299,
+    "layout_instruction_words": 81,
+    "graphic_captions": 3,
+    "replaced_bitmap_resources": 1,
+    "battle_move_components": 244,
+    "equipment_move_components": 244,
+    "native_app_labels": 45
+  },
+  "translation_status": "partial draft; three baked equipment captions translated; other graphic headings and later story remain",
+  "catalogs": {
+    "menu": "translation/battle-moves-menu.json",
+    "story": "translation/battle-moves-text.json",
+    "choices": "translation/story-choices.json",
+    "layout": "translation/interface-layout.json",
+    "graphics": "translation/interface-graphics.json"
+  },
+  "files": {
+    "source": {
+      "bytes": 33554432,
+      "sha256": "02cda6221c10cba0705f351227e2d6c77e071bdb4f7aa8b5cd3c7c047a2b1881"
+    },
+    "target": {
+      "bytes": 33554432,
+      "sha256": "a4738b503621dbdee606e363a9bf7bfa226929c601204cc3a1c0c42461c01dec"
+    },
+    "patch": {
+      "bytes": 220311,
+      "sha256": "76812f1f682c88530a9cdab9ebd1348359d1468344e211eb50097e136b08916e"
+    }
+  },
+  "update_checksum": true,
+  "n64_checksum": {
+    "variant": "CIC-6102",
+    "crc1": "FFA89600",
+    "crc2": "C278C65F",
+    "bootcode_crc32": "90BB6CB5"
+  },
+  "validate_move_names": true,
+  "move_names": {
+    "recipes": 196,
+    "part_types": 128,
+    "components": 244,
+    "combinations_checked": 25088,
+    "maximum_cells": 16,
+    "equipment_components": 244,
+    "equipment_combinations_checked": 25088
+  }
+}

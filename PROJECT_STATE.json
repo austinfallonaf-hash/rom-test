@@ -1,0 +1,62 @@
+{
+  "format_version": 1,
+  "project": "Robopon 64 English translation",
+  "milestone": "interface-headings-alpha",
+  "recovered_on": "2026-11-05",
+  "timezone": "America/Los_Angeles",
+  "upstream": {
+    "remote": "origin",
+    "branch": "codex/verified-workspace-recovery",
+    "recovered_commit": "b6b220228bdb6074758017c25e83539e12a5ca2d"
+  },
+  "release_manifest": "releases/interface-headings-alpha-manifest.json",
+  "release_patch": "releases/interface-headings-alpha.bps",
+  "playable_rom": "local/interface-headings-alpha.z64",
+  "catalogs": {
+    "menu": "translation/battle-moves-menu.json",
+    "story": "translation/battle-moves-text.json",
+    "choices": "translation/story-choices.json",
+    "layout": "translation/interface-layout.json",
+    "graphics": "translation/interface-graphics.json"
+  },
+  "coverage": {
+    "native_records": 323,
+    "ui_strings": 832,
+    "native_choice_blocks": 299,
+    "graphic_captions": 3
+  },
+  "native_save": {
+    "path": "local/bed-save-final-saved.eep",
+    "bytes": 2048,
+    "sha256": "4b8072efdc08a827141cea1e172205acdb89b17007201d1d1110ff7912f71a00",
+    "slot": "A",
+    "day": 2,
+    "gold": 500,
+    "party_member": "Merlin",
+    "rom_md5_prefix": "212AB2AA",
+    "working_path": "local/native-saves/Robot Ponkottsu 64 - 7tsu no Umi-212AB2AA.eep"
+  },
+  "latest_encrypted_backup": "backups/robopon64-interface-headings-alpha-212AB2AA.zip.gpg",
+  "automated_tests": 108,
+  "next_task": "Translate other graphical headings and later story; refine the shop Parts frame; exercise rare effects, software-capacity warnings and VS/Transfer Pak branches.",
+  "history_recovery": {
+    "source": "user-supplied 16-page conversation PDF",
+    "historical_gardening_artifact": "unavailable",
+    "gardening_status": "reconstructed from the original ROM; wording is not claimed identical to the historical patch"
+  },
+  "checkpoint_ref": "refs/tags/interface-headings-alpha",
+  "runtime_validation": {
+    "rom_md5_prefix": "212AB2AA",
+    "initial_save": "native day 2",
+    "reference_eeprom_unchanged": true,
+    "gold": 500,
+    "party_member": "Merlin",
+    "equipment": "Equipped / Spare Apps / Moves bitmap captions and inherited app/move labels",
+    "older_build_state_loaded": false,
+    "return_to_ship": true,
+    "simulator": "practice battle startup and HUD after equipment screen"
+  },
+  "update_checksum": true,
+  "validate_move_names": true,
+  "backup_payload_files_verified": 477
+}
