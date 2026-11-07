@@ -7,11 +7,13 @@ mkdir -p "$root/local/emulator-config" "$root/local/screenshots" \
 if [[ ! -s "$root/local/emulator-config/mupen64plus.cfg" ]]; then
   cp "$root/tools/keyboard.cfg" "$root/local/emulator-config/mupen64plus.cfg"
 fi
+rom="$(python -c 'from pathlib import Path; import sys; print(Path(sys.argv[1]).resolve(strict=True))' "${ROM_PATH:-$root/local/original.z64}")"
+datadir="$(PYTHONPATH="$root${PYTHONPATH:+:$PYTHONPATH}" python -m tools.prepare_emulator "$rom")"
 cd "$bundle"
 exec ./mupen64plus --corelib "$bundle/libmupen64plus.so.2.0.0" \
-  --datadir "$bundle" --plugindir "$bundle" \
+  --datadir "$datadir" --plugindir "$bundle" \
   --configdir "$root/local/emulator-config" \
   --sshotdir "$root/local/screenshots" --nosaveoptions \
   --set "Core[SaveSRAMPath]=$root/local/native-saves/" \
   --set "Core[SaveStatePath]=$root/local/emulator-states/" \
-  "$@" "${ROM_PATH:-$root/local/original.z64}"
+  "$@" "$rom"

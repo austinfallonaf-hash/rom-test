@@ -6,6 +6,7 @@ import json
 import re
 from pathlib import Path
 from tools.rom_text import EXPECTED_SHA256
+from tools.n64_checksum import repair6102
 
 
 FORMAT = re.compile(r'%[-+0-9.]*[dsxXf]')
@@ -70,7 +71,7 @@ def validate_text(entry):
             raise ValueError(f'English page exceeds {max_lines} lines')
 
 
-def build(original, entries):
+def build(original, entries, *, update_checksum=False):
     if hashlib.sha256(original).hexdigest() != EXPECTED_SHA256:
         raise ValueError('ROM SHA-256 differs from the supplied Japanese original')
     output = bytearray(original)
@@ -82,7 +83,9 @@ def build(original, entries):
         source = entry['source'].encode('shift_jis') + b'\0'
         target = entry['translation'].encode('ascii') + b'\0'
         end = offset + len(source)
-        if offset < 0x101000:
+        if offset < 0x1000:
+            raise ValueError('Header and bootcode edits are not permitted')
+        if offset < 0x101000 and not update_checksum:
             raise ValueError('This prototype does not handle N64 checksum-region changes')
         if end > len(original) or original[offset:end] != source:
             raise ValueError(f'Original bytes do not match at {offset:#x}')
@@ -96,6 +99,10 @@ def build(original, entries):
         target = target.ljust(len(source), b'\0')
         output[offset:end] = target
         patch.extend(offset.to_bytes(3, 'big') + len(target).to_bytes(2, 'big') + target)
+    if update_checksum:
+        output = bytearray(repair6102(output))
+        if output[0x10:0x18] != original[0x10:0x18]:
+            patch.extend(bytes.fromhex('0000100008') + output[0x10:0x18])
     patch.extend(b'EOF')
     return bytes(output), bytes(patch)
 

@@ -8,11 +8,12 @@ from tools.build_patch import build
 from tools.story_text import records
 from tools.dialogue import encode as encode_dialogue
 from tools.choices import replace_choice
+from tools.n64_checksum import repair6102
 
 
-def build_story(original, menu, story, choices=(), layout=()):
+def build_story(original, menu, story, choices=(), layout=(), *, update_checksum=False):
     baseline = {r['id']: r for r in records(original)}
-    menu_rom, _ = build(original, menu)
+    menu_rom, _ = build(original, menu, update_checksum=update_checksum)
     output = bytearray(menu_rom)
     spans = [(int(r['offset'], 0), int(r['offset'], 0)+len(r['source'].encode('shift_jis'))+1) for r in menu]
     seen = set()
@@ -61,7 +62,13 @@ def build_story(original, menu, story, choices=(), layout=()):
             raise ValueError('Layout instruction overlaps another edit')
         output[offset:offset+4] = target
         spans.append((offset, offset+4))
-    if output[:0x101000] != original[:0x101000]:
+    if update_checksum:
+        if output[:0x10] != original[:0x10] or output[0x18:0x1000] != original[0x18:0x1000]:
+            raise ValueError('Unexpected header or bootcode change')
+        output = bytearray(repair6102(output))
+        if output[0x10:0x18] != original[0x10:0x18]:
+            spans.append((0x10, 0x18))
+    elif output[:0x101000] != original[:0x101000]:
         raise ValueError('Unexpected N64 checksum-region change')
     patch = make_patch(original, bytes(output), spans)
     return bytes(output), patch
@@ -74,6 +81,7 @@ def main():
     p.add_argument('--story', type=Path, default=Path('translation/intro.json'))
     p.add_argument('--choices', type=Path, help='Optional guarded native Yes/No blocks')
     p.add_argument('--layout', type=Path, help='Optional guarded layout instruction words')
+    p.add_argument('--update-checksum', action='store_true', help='Allow guarded UI edits in the CIC-6102 checksum region and repair CRC1/CRC2')
     p.add_argument('--output', type=Path, default=Path('local/intro-alpha.z64'))
     p.add_argument('--patch', type=Path, default=Path('local/intro-alpha.bps'))
     a = p.parse_args()
@@ -83,7 +91,8 @@ def main():
     result, patch = build_story(original, json.loads(a.menu.read_text())['entries'],
                                 json.loads(a.story.read_text())['records'],
                                 json.loads(a.choices.read_text())['entries'] if a.choices else [],
-                                json.loads(a.layout.read_text())['entries'] if a.layout else [])
+                                json.loads(a.layout.read_text())['entries'] if a.layout else [],
+                                update_checksum=a.update_checksum)
     for path, content in [(a.output, result), (a.patch, patch)]:
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_bytes(content)
