@@ -1,7 +1,7 @@
 {
   "format_version": 1,
   "project": "Robopon 64 English translation",
-  "milestone": "battle-moves-alpha",
+  "milestone": "interface-headings-alpha",
   "recovered_on": "2026-11-05",
   "timezone": "America/Los_Angeles",
   "upstream": {
@@ -9,19 +9,21 @@
     "branch": "codex/verified-workspace-recovery",
     "recovered_commit": "b6b220228bdb6074758017c25e83539e12a5ca2d"
   },
-  "release_manifest": "releases/battle-moves-alpha-manifest.json",
-  "release_patch": "releases/battle-moves-alpha.bps",
-  "playable_rom": "local/battle-moves-alpha.z64",
+  "release_manifest": "releases/interface-headings-alpha-manifest.json",
+  "release_patch": "releases/interface-headings-alpha.bps",
+  "playable_rom": "local/interface-headings-alpha.z64",
   "catalogs": {
     "menu": "translation/battle-moves-menu.json",
     "story": "translation/battle-moves-text.json",
     "choices": "translation/story-choices.json",
-    "layout": "translation/battle-moves-layout.json"
+    "layout": "translation/interface-layout.json",
+    "graphics": "translation/interface-graphics.json"
   },
   "coverage": {
     "native_records": 323,
     "ui_strings": 832,
-    "native_choice_blocks": 299
+    "native_choice_blocks": 299,
+    "graphic_captions": 3
   },
   "native_save": {
     "path": "local/bed-save-final-saved.eep",
@@ -31,29 +33,30 @@
     "day": 2,
     "gold": 500,
     "party_member": "Merlin",
-    "rom_md5_prefix": "79D7C6D9",
-    "working_path": "local/native-saves/Robot Ponkottsu 64 - 7tsu no Umi-79D7C6D9.eep"
+    "rom_md5_prefix": "212AB2AA",
+    "working_path": "local/native-saves/Robot Ponkottsu 64 - 7tsu no Umi-212AB2AA.eep"
   },
-  "latest_encrypted_backup": "backups/robopon64-battle-moves-alpha-79D7C6D9.zip.gpg",
-  "automated_tests": 101,
-  "next_task": "Translate graphical battle command/stat headings and later story; exercise rare effects, software-capacity warnings, VS/Transfer Pak and remaining result branches.",
+  "latest_encrypted_backup": "backups/robopon64-interface-headings-alpha-212AB2AA.zip.gpg",
+  "automated_tests": 108,
+  "next_task": "Translate other graphical headings and later story; refine the shop Parts frame; exercise rare effects, software-capacity warnings and VS/Transfer Pak branches.",
   "history_recovery": {
     "source": "user-supplied 16-page conversation PDF",
     "historical_gardening_artifact": "unavailable",
     "gardening_status": "reconstructed from the original ROM; wording is not claimed identical to the historical patch"
   },
-  "checkpoint_ref": "refs/tags/battle-moves-alpha",
+  "checkpoint_ref": "refs/tags/interface-headings-alpha",
   "runtime_validation": {
-    "rom_md5_prefix": "79D7C6D9",
+    "rom_md5_prefix": "212AB2AA",
     "initial_save": "native day 2",
     "reference_eeprom_unchanged": true,
     "gold": 500,
     "party_member": "Merlin",
-    "equipment": "Attack and Fire Charm fit two columns; app removal and re-equipping; PWR/EP values",
+    "equipment": "Equipped / Spare Apps / Moves bitmap captions and inherited app/move labels",
     "older_build_state_loaded": false,
-    "simulator": "native-save route to practice battle; normal HUD visible"
+    "return_to_ship": true,
+    "simulator": "practice battle startup and HUD after equipment screen"
   },
   "update_checksum": true,
   "validate_move_names": true,
-  "backup_payload_files_verified": 459
+  "backup_payload_files_verified": 477
 }

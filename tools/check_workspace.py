@@ -63,6 +63,9 @@ def main():
         if current.exists():
             check_bytes(current.read_bytes(), manifest['files']['target'], 'Local playable ROM')
         print(f'PASS: exact source, {len(story)} native records, {len(menu)} UI strings, {len(choices)} choice blocks')
+        if graphics:
+            print(f'PASS: {len(graphics)} guarded sprite replacement(s), '
+                  f"{sum(len(e['captions']) for e in graphics)} bitmap captions")
         print('PASS: reproducible target and shipped BPS patch; original unchanged')
         save = state['native_save']
         save_path = ROOT / save['path']
