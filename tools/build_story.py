@@ -16,7 +16,7 @@ def build_story(original, menu, story, choices=(), layout=(), *, update_checksum
     baseline = {r['id']: r for r in records(original)}
     menu_rom, _ = build(original, menu, update_checksum=update_checksum)
     if validate_moves:
-        validate_move_names(original, menu)
+        validate_move_names(original, menu, include_equipment=True)
     output = bytearray(menu_rom)
     spans = [(int(r['offset'], 0), int(r['offset'], 0)+len(r['source'].encode('shift_jis'))+1) for r in menu]
     seen = set()

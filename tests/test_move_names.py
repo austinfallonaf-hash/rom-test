@@ -48,3 +48,19 @@ class MoveNameTests(unittest.TestCase):
                 with self.assertRaises(ValueError):move_names.validate(rom,self.rows)
         with self.assertRaisesRegex(ValueError, 'Truncated'):
             move_names.validate(self.rom[:64],self.rows)
+
+    def test_equipment_table_is_validated_independently_and_must_agree(self):
+        rom=self.rom+self.rom
+        for offset in [132,140,148,152]:
+            pointer=struct.unpack_from('>I',rom,offset)[0]
+            struct.pack_into('>I',rom,offset,pointer+128)
+        rows=self.rows+[dict(row,offset=hex(int(row['offset'],0)+128)) for row in self.rows]
+        with patch.multiple(move_names,EQUIP_BIAS=0,EQUIP_RECIPE_TABLE=128,
+                            EQUIP_PART_TABLE=144,EQUIP_SUFFIX_TABLE=148,
+                            EQUIP_TEXT_START=156,EQUIP_TEXT_END=256):
+            result=move_names.validate(rom,rows,include_equipment=True)
+            self.assertEqual(result['equipment_components'],4)
+            self.assertEqual(result['equipment_combinations_checked'],4)
+            rows[4]['translation']='Ice '
+            with self.assertRaisesRegex(ValueError,'names differ'):
+                move_names.validate(rom,rows,include_equipment=True)

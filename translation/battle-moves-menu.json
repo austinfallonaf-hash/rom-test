@@ -3553,6 +3553,1387 @@
         16
       ],
       "max_lines": 3
+    },
+    {
+      "offset": "0x21dab0",
+      "source": "オメガストライク",
+      "translation": "Omega Strike"
+    },
+    {
+      "offset": "0x21dac4",
+      "source": "オメガレーザー",
+      "translation": "Omega Laser"
+    },
+    {
+      "offset": "0x21dad4",
+      "source": "アルファストーム",
+      "translation": "Alpha Storm"
+    },
+    {
+      "offset": "0x21dae8",
+      "source": "アルファキャノン",
+      "translation": "Alpha Cannon"
+    },
+    {
+      "offset": "0x21e1c0",
+      "source": "ダウン",
+      "translation": "Down "
+    },
+    {
+      "offset": "0x21e1c8",
+      "source": "パルス",
+      "translation": "Pulse "
+    },
+    {
+      "offset": "0x21e1d0",
+      "source": "アルファ",
+      "translation": "Alpha "
+    },
+    {
+      "offset": "0x21e1dc",
+      "source": "はんげき",
+      "translation": "Counter "
+    },
+    {
+      "offset": "0x21e1e8",
+      "source": "うけみ",
+      "translation": "Roll "
+    },
+    {
+      "offset": "0x21e1f0",
+      "source": "オメガ",
+      "translation": "Omega "
+    },
+    {
+      "offset": "0x21e1f8",
+      "source": "アタック",
+      "translation": "Attack "
+    },
+    {
+      "offset": "0x21e204",
+      "source": "シールド",
+      "translation": "Shield "
+    },
+    {
+      "offset": "0x21e210",
+      "source": "スピード",
+      "translation": "Speed "
+    },
+    {
+      "offset": "0x21e21c",
+      "source": "スコープ",
+      "translation": "Scope "
+    },
+    {
+      "offset": "0x21e228",
+      "source": "がまん",
+      "translation": "Endure"
+    },
+    {
+      "offset": "0x21e230",
+      "source": "ウイルス",
+      "translation": "Virus "
+    },
+    {
+      "offset": "0x21e23c",
+      "source": "オイル",
+      "translation": "Oil "
+    },
+    {
+      "offset": "0x21e244",
+      "source": "すいとり",
+      "translation": "Drain "
+    },
+    {
+      "offset": "0x21e250",
+      "source": "パワー",
+      "translation": "Power "
+    },
+    {
+      "offset": "0x21e258",
+      "source": "ドラゴン",
+      "translation": "Dragon "
+    },
+    {
+      "offset": "0x21e264",
+      "source": "そら",
+      "translation": "Sky "
+    },
+    {
+      "offset": "0x21e26c",
+      "source": "うみ",
+      "translation": "Sea "
+    },
+    {
+      "offset": "0x21e274",
+      "source": "ガス",
+      "translation": "Gas "
+    },
+    {
+      "offset": "0x21e27c",
+      "source": "りく",
+      "translation": "Land"
+    },
+    {
+      "offset": "0x21e284",
+      "source": "キッス",
+      "translation": "Kiss "
+    },
+    {
+      "offset": "0x21e28c",
+      "source": "ライト",
+      "translation": "Light "
+    },
+    {
+      "offset": "0x21e294",
+      "source": "せい",
+      "translation": "Holy"
+    },
+    {
+      "offset": "0x21e29c",
+      "source": "シャドー",
+      "translation": "Shadow "
+    },
+    {
+      "offset": "0x21e2a8",
+      "source": "じゃ",
+      "translation": "Evil"
+    },
+    {
+      "offset": "0x21e2b0",
+      "source": "グランド",
+      "translation": "Ground "
+    },
+    {
+      "offset": "0x21e2bc",
+      "source": "ウィンド",
+      "translation": "Wind "
+    },
+    {
+      "offset": "0x21e2c8",
+      "source": "サンダー",
+      "translation": "Thunder "
+    },
+    {
+      "offset": "0x21e2d4",
+      "source": "アイス",
+      "translation": "Ice "
+    },
+    {
+      "offset": "0x21e2dc",
+      "source": "アクア",
+      "translation": "Aqua "
+    },
+    {
+      "offset": "0x21e2e4",
+      "source": "ファイア",
+      "translation": "Fire "
+    },
+    {
+      "offset": "0x21e2f0",
+      "source": "ダミー",
+      "translation": "Dummy "
+    },
+    {
+      "offset": "0x21e2f8",
+      "source": "ミサイル",
+      "translation": "Missile "
+    },
+    {
+      "offset": "0x21e304",
+      "source": "ロケット",
+      "translation": "Rocket "
+    },
+    {
+      "offset": "0x21e310",
+      "source": "マイン",
+      "translation": "Mine "
+    },
+    {
+      "offset": "0x21e318",
+      "source": "キャノン",
+      "translation": "Cannon "
+    },
+    {
+      "offset": "0x21e324",
+      "source": "サモン",
+      "translation": "Summon"
+    },
+    {
+      "offset": "0x21e32c",
+      "source": "リンク",
+      "translation": "Link "
+    },
+    {
+      "offset": "0x21e334",
+      "source": "ウィン",
+      "translation": "Win "
+    },
+    {
+      "offset": "0x21e33c",
+      "source": "ボルト",
+      "translation": "Bolt "
+    },
+    {
+      "offset": "0x21e344",
+      "source": "ワイズ",
+      "translation": "Wise "
+    },
+    {
+      "offset": "0x21e34c",
+      "source": "ジーク",
+      "translation": "Zeek "
+    },
+    {
+      "offset": "0x21e354",
+      "source": "ヤシャ",
+      "translation": "Yasha "
+    },
+    {
+      "offset": "0x21e35c",
+      "source": "アシュラ",
+      "translation": "Ashura "
+    },
+    {
+      "offset": "0x21e368",
+      "source": "ブラッド",
+      "translation": "Blood "
+    },
+    {
+      "offset": "0x21e374",
+      "source": "デビル",
+      "translation": "Devil "
+    },
+    {
+      "offset": "0x21e37c",
+      "source": "ダーク",
+      "translation": "Dark "
+    },
+    {
+      "offset": "0x21e384",
+      "source": "チャーム",
+      "translation": "Charm "
+    },
+    {
+      "offset": "0x21e390",
+      "source": "クロー",
+      "translation": "Claw"
+    },
+    {
+      "offset": "0x21e398",
+      "source": "おとし",
+      "translation": "Drop"
+    },
+    {
+      "offset": "0x21e3a0",
+      "source": "がため",
+      "translation": "Lock"
+    },
+    {
+      "offset": "0x21e3a8",
+      "source": "メイス",
+      "translation": "Mace"
+    },
+    {
+      "offset": "0x21e3b0",
+      "source": "クラブ",
+      "translation": "Club"
+    },
+    {
+      "offset": "0x21e3b8",
+      "source": "アロー",
+      "translation": "Arrow"
+    },
+    {
+      "offset": "0x21e3c0",
+      "source": "たんさ",
+      "translation": "Scan"
+    },
+    {
+      "offset": "0x21e3c8",
+      "source": "だまし",
+      "translation": "Feint"
+    },
+    {
+      "offset": "0x21e3d0",
+      "source": "ぬすみ",
+      "translation": "Steal"
+    },
+    {
+      "offset": "0x21e3d8",
+      "source": "しばり",
+      "translation": "Bind"
+    },
+    {
+      "offset": "0x21e3e0",
+      "source": "ひっかき",
+      "translation": "Scratch"
+    },
+    {
+      "offset": "0x21e3ec",
+      "source": "ビーム",
+      "translation": "Beam"
+    },
+    {
+      "offset": "0x21e3f4",
+      "source": "レーザー",
+      "translation": "Laser"
+    },
+    {
+      "offset": "0x21e400",
+      "source": "ボム",
+      "translation": "Bomb"
+    },
+    {
+      "offset": "0x21e408",
+      "source": "バルカン",
+      "translation": "Vulcan"
+    },
+    {
+      "offset": "0x21e414",
+      "source": "ショット",
+      "translation": "Shot"
+    },
+    {
+      "offset": "0x21e420",
+      "source": "ガン",
+      "translation": "Gun"
+    },
+    {
+      "offset": "0x21e428",
+      "source": "セルフ",
+      "translation": "Self"
+    },
+    {
+      "offset": "0x21e430",
+      "source": "クライク",
+      "translation": "Klaik"
+    },
+    {
+      "offset": "0x21e43c",
+      "source": "バンプ",
+      "translation": "Bump"
+    },
+    {
+      "offset": "0x21e444",
+      "source": "ファラ",
+      "translation": "Fara"
+    },
+    {
+      "offset": "0x21e44c",
+      "source": "シルバー",
+      "translation": "Silver"
+    },
+    {
+      "offset": "0x21e458",
+      "source": "はらい",
+      "translation": "Sweep"
+    },
+    {
+      "offset": "0x21e460",
+      "source": "づき",
+      "translation": "Jab"
+    },
+    {
+      "offset": "0x21e468",
+      "source": "なげ",
+      "translation": "Toss"
+    },
+    {
+      "offset": "0x21e470",
+      "source": "ぎり",
+      "translation": "Cut"
+    },
+    {
+      "offset": "0x21e478",
+      "source": "タイガー",
+      "translation": "Tiger"
+    },
+    {
+      "offset": "0x21e484",
+      "source": "ウルフ",
+      "translation": "Wolf"
+    },
+    {
+      "offset": "0x21e48c",
+      "source": "パンチ",
+      "translation": "Punch"
+    },
+    {
+      "offset": "0x21e494",
+      "source": "ハンマー",
+      "translation": "Hammer"
+    },
+    {
+      "offset": "0x21e4a0",
+      "source": "ナックル",
+      "translation": "Knuckle"
+    },
+    {
+      "offset": "0x21dafc",
+      "source": "せいれい",
+      "translation": "Spirit ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21db08",
+      "source": "シリウス",
+      "translation": "Sirius ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21db14",
+      "source": "モレーン",
+      "translation": "Moraine ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21db20",
+      "source": "コンボイ",
+      "translation": "Convoy ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21db2c",
+      "source": "マリガン",
+      "translation": "Mulligan",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21db38",
+      "source": "ラムダ",
+      "translation": "Lambda",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21db40",
+      "source": "ロストル",
+      "translation": "Rostol ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21db4c",
+      "source": "イカロス",
+      "translation": "Icarus ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21db58",
+      "source": "マイクロ",
+      "translation": "Micro ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21db64",
+      "source": "ポラリス",
+      "translation": "Polaris ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21db70",
+      "source": "ハイドロ",
+      "translation": "Hydro ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21db7c",
+      "source": "メガトン",
+      "translation": "Megaton ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21db88",
+      "source": "クラウド",
+      "translation": "Cloud ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21db94",
+      "source": "かすみ",
+      "translation": "Mist ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21db9c",
+      "source": "ストップ",
+      "translation": "Stop ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dba8",
+      "source": "ホールド",
+      "translation": "Hold ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dbb4",
+      "source": "エンド",
+      "translation": "End ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dbbc",
+      "source": "ガーズ",
+      "translation": "Guards",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dbc4",
+      "source": "アンチ",
+      "translation": "Anti ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dbcc",
+      "source": "ブラック",
+      "translation": "Black ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dbd8",
+      "source": "トランプ",
+      "translation": "Trump ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dbe4",
+      "source": "リムーブ",
+      "translation": "Remove ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dbf0",
+      "source": "レッド",
+      "translation": "Red ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dbf8",
+      "source": "オフ",
+      "translation": "Off ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dc00",
+      "source": "ウェブ",
+      "translation": "Web ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dc08",
+      "source": "スロー",
+      "translation": "Slow ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dc10",
+      "source": "フライ",
+      "translation": "Fly ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dc18",
+      "source": "リコール",
+      "translation": "Recall ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dc24",
+      "source": "サイコ",
+      "translation": "Psycho",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dc2c",
+      "source": "テレポート",
+      "translation": "Teleport",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dc38",
+      "source": "ゴーゴン",
+      "translation": "Gorgon ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dc44",
+      "source": "ラスト",
+      "translation": "Rust ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dc4c",
+      "source": "ヒート",
+      "translation": "Heat ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dc54",
+      "source": "ブレイク",
+      "translation": "Break ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dc60",
+      "source": "ハッカー",
+      "translation": "Hacker ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dc6c",
+      "source": "ハング",
+      "translation": "Hang ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dc74",
+      "source": "エラー",
+      "translation": "Error ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dc7c",
+      "source": "スモッグ",
+      "translation": "Smog ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dc88",
+      "source": "はいえき",
+      "translation": "Waste ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dc94",
+      "source": "ゴーレム",
+      "translation": "Golem ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dca0",
+      "source": "ラブラブ",
+      "translation": "LoveLove",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dcac",
+      "source": "ピース",
+      "translation": "Peace ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dcb4",
+      "source": "エイジス",
+      "translation": "Aegis ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dcc0",
+      "source": "てっぺき",
+      "translation": "Ironwall",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dccc",
+      "source": "バリヤ",
+      "translation": "Shield",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dcd4",
+      "source": "ダッシュ",
+      "translation": "Dash ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dce0",
+      "source": "かそく",
+      "translation": "Accel ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dce8",
+      "source": "ロスト",
+      "translation": "Lost ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dcf0",
+      "source": "ジョルト",
+      "translation": "Jolt ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dcfc",
+      "source": "とつげき",
+      "translation": "Charge ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dd08",
+      "source": "せいりゅう",
+      "translation": "Seiryu",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dd14",
+      "source": "びゃっこ",
+      "translation": "Byakko",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dd20",
+      "source": "げんぶ",
+      "translation": "Genbu",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dd28",
+      "source": "すざく",
+      "translation": "Suzaku",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dd30",
+      "source": "ワールド",
+      "translation": "World ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dd3c",
+      "source": "くろぬり",
+      "translation": "Blackout",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dd48",
+      "source": "エアリス",
+      "translation": "Aeris ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dd54",
+      "source": "あんこく",
+      "translation": "Darkness",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dd60",
+      "source": "メテオ",
+      "translation": "Meteor",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dd68",
+      "source": "コメット",
+      "translation": "Comet ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dd74",
+      "source": "エース",
+      "translation": "Ace ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dd7c",
+      "source": "サン",
+      "translation": "Sun ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dd84",
+      "source": "ムーン",
+      "translation": "Moon ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dd8c",
+      "source": "セイレーン",
+      "translation": "Siren",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dd98",
+      "source": "おせん",
+      "translation": "Taint ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dda0",
+      "source": "たいふう",
+      "translation": "Typhoon ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21ddac",
+      "source": "うずしお",
+      "translation": "Vortex ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21ddb8",
+      "source": "つなみ",
+      "translation": "Tidal ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21ddc0",
+      "source": "アグロス",
+      "translation": "Agros ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21ddcc",
+      "source": "かんけつ",
+      "translation": "Geyser ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21ddd8",
+      "source": "ケレス",
+      "translation": "Ceres ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dde0",
+      "source": "クレバス",
+      "translation": "Crevasse",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21ddec",
+      "source": "デュアル",
+      "translation": "Dual ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21ddf8",
+      "source": "じしん",
+      "translation": "Quake ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21de00",
+      "source": "めがみ",
+      "translation": "Deity ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21de08",
+      "source": "ようせい",
+      "translation": "Fairy ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21de14",
+      "source": "ガイア",
+      "translation": "Gaia ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21de1c",
+      "source": "ほうしゃ",
+      "translation": "Radiant ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21de28",
+      "source": "ホーリー",
+      "translation": "Holy ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21de34",
+      "source": "クルス",
+      "translation": "Cross ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21de3c",
+      "source": "てんばつ",
+      "translation": "Judgment",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21de48",
+      "source": "クラウン",
+      "translation": "Crown ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21de54",
+      "source": "オーラ",
+      "translation": "Aura ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21de5c",
+      "source": "ラッキー",
+      "translation": "Lucky ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21de68",
+      "source": "どくガス",
+      "translation": "Tox Gas ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21de74",
+      "source": "あくま",
+      "translation": "Devil ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21de7c",
+      "source": "ダークブレス",
+      "translation": "Dark Breath",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21de8c",
+      "source": "ドレイン",
+      "translation": "Drain ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21de98",
+      "source": "インフィニティ",
+      "translation": "Infinity",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dea8",
+      "source": "ハーケン",
+      "translation": "Haken ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21deb4",
+      "source": "めいかい",
+      "translation": "Hades ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dec0",
+      "source": "バベル",
+      "translation": "Babel ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dec8",
+      "source": "デス",
+      "translation": "Doom",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21ded0",
+      "source": "じゃしん",
+      "translation": "EvilGod ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dedc",
+      "source": "きょうふ",
+      "translation": "Fear ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dee8",
+      "source": "じりょく",
+      "translation": "Magnet ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21def4",
+      "source": "ノーム",
+      "translation": "Gnome ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21defc",
+      "source": "ぶんかい",
+      "translation": "Disrupt ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21df08",
+      "source": "じわれ",
+      "translation": "Rift ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21df10",
+      "source": "しっち",
+      "translation": "Marsh ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21df18",
+      "source": "ぢりゅう",
+      "translation": "Soilflow",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21df24",
+      "source": "らくせき",
+      "translation": "Rockfall",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21df30",
+      "source": "さんぷ",
+      "translation": "Spray ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21df38",
+      "source": "ジン",
+      "translation": "Jinn",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21df40",
+      "source": "ストーム",
+      "translation": "Storm ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21df4c",
+      "source": "エッジ",
+      "translation": "Edge ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21df54",
+      "source": "ソニック",
+      "translation": "Sonic ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21df60",
+      "source": "さじん",
+      "translation": "Dust ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21df68",
+      "source": "ふうじん",
+      "translation": "Fujin ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21df74",
+      "source": "ひえん",
+      "translation": "Swift ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21df7c",
+      "source": "ほうでん",
+      "translation": "Spark ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21df88",
+      "source": "せんこう",
+      "translation": "Flash ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21df94",
+      "source": "せんでん",
+      "translation": "Conduit ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dfa0",
+      "source": "サンダーブレス",
+      "translation": "Thunder Breath",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dfb0",
+      "source": "ポセイドン",
+      "translation": "Poseidon",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dfbc",
+      "source": "てんらい",
+      "translation": "Skybolt ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dfc8",
+      "source": "らいじん",
+      "translation": "Raijin ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dfd4",
+      "source": "いかずち",
+      "translation": "Thunder ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dfe0",
+      "source": "ツンドラ",
+      "translation": "Tundra ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dfec",
+      "source": "れいき",
+      "translation": "Chill ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dff4",
+      "source": "ダスト",
+      "translation": "Dust ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21dffc",
+      "source": "アイスブレス",
+      "translation": "Ice Breath",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21e00c",
+      "source": "ヴィリー",
+      "translation": "Willi ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21e018",
+      "source": "ひょうが",
+      "translation": "Glacier ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21e024",
+      "source": "クラック",
+      "translation": "Crack ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21e030",
+      "source": "ふぶき",
+      "translation": "Bliz ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21e038",
+      "source": "フリーズ",
+      "translation": "Freeze ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21e044",
+      "source": "ショート",
+      "translation": "Short ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21e050",
+      "source": "のうむ",
+      "translation": "Fog ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21e058",
+      "source": "ウィーネ",
+      "translation": "Wiene ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21e064",
+      "source": "すいあつ",
+      "translation": "Pressure",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21e070",
+      "source": "シュトロ",
+      "translation": "Shtro ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21e07c",
+      "source": "ゲイル",
+      "translation": "Gale ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21e084",
+      "source": "スリート",
+      "translation": "Sleet ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21e090",
+      "source": "すいじん",
+      "translation": "Suijin ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21e09c",
+      "source": "すいとん",
+      "translation": "Suiton ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21e0a8",
+      "source": "ほうねつ",
+      "translation": "HeatVent",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21e0b4",
+      "source": "スモーク",
+      "translation": "Smoke ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21e0c0",
+      "source": "ファイアブレス",
+      "translation": "Fire Breath",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21e0d0",
+      "source": "バルログ",
+      "translation": "Balrog ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21e0dc",
+      "source": "ねっさ",
+      "translation": "Scorch",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21e0e4",
+      "source": "ねっぷう",
+      "translation": "HotWind ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21e0f0",
+      "source": "ばくらい",
+      "translation": "Blast ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21e0fc",
+      "source": "デストロ",
+      "translation": "Destro ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21e108",
+      "source": "スチーム",
+      "translation": "Steam ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21e114",
+      "source": "ノヴァ",
+      "translation": "Nova ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21e11c",
+      "source": "ナパーム",
+      "translation": "Napalm ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21e128",
+      "source": "じばく",
+      "translation": "Boom ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21e130",
+      "source": "いのり",
+      "translation": "Prayer",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21e138",
+      "source": "きあい",
+      "translation": "Focus ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21e140",
+      "source": "そらだま",
+      "translation": "K-Orb ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21e14c",
+      "source": "うみだま",
+      "translation": "S-Orb ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21e158",
+      "source": "りくだま",
+      "translation": "L-Orb ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21e164",
+      "source": "せいだま",
+      "translation": "H-Orb ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21e170",
+      "source": "じゃだま",
+      "translation": "D-Orb ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21e17c",
+      "source": "つちだま",
+      "translation": "G-Orb ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21e188",
+      "source": "かぜだま",
+      "translation": "A-Orb ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21e194",
+      "source": "らいだま",
+      "translation": "E-Orb ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21e1a0",
+      "source": "れいだま",
+      "translation": "I-Orb ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21e1ac",
+      "source": "みずだま",
+      "translation": "W-Orb ",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x21e1b8",
+      "source": "ひだま",
+      "translation": "F-Orb ",
+      "max_cells": 16
     }
   ]
 }
