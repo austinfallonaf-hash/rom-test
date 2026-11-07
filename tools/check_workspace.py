@@ -50,7 +50,8 @@ def main():
         choices = json.loads((ROOT / catalogs['choices']).read_text())['entries']
         layout = json.loads((ROOT / catalogs['layout']).read_text())['entries'] if catalogs.get('layout') else []
         target, patch = build_story(original, menu, story, choices, layout,
-                                    update_checksum=state.get('update_checksum', False))
+                                    update_checksum=state.get('update_checksum', False),
+                                    validate_moves=state.get('validate_move_names', False))
         check_bytes(target, manifest['files']['target'], 'Rebuilt ROM')
         check_bytes(patch, manifest['files']['patch'], 'Rebuilt patch')
         if patch != (ROOT / state['release_patch']).read_bytes():

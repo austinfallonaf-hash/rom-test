@@ -9,11 +9,14 @@ from tools.story_text import records
 from tools.dialogue import encode as encode_dialogue
 from tools.choices import replace_choice
 from tools.n64_checksum import repair6102
+from tools.move_names import validate as validate_move_names
 
 
-def build_story(original, menu, story, choices=(), layout=(), *, update_checksum=False):
+def build_story(original, menu, story, choices=(), layout=(), *, update_checksum=False, validate_moves=False):
     baseline = {r['id']: r for r in records(original)}
     menu_rom, _ = build(original, menu, update_checksum=update_checksum)
+    if validate_moves:
+        validate_move_names(original, menu)
     output = bytearray(menu_rom)
     spans = [(int(r['offset'], 0), int(r['offset'], 0)+len(r['source'].encode('shift_jis'))+1) for r in menu]
     seen = set()
@@ -82,6 +85,7 @@ def main():
     p.add_argument('--story', type=Path, default=Path('translation/intro.json'))
     p.add_argument('--choices', type=Path, help='Optional guarded native Yes/No blocks')
     p.add_argument('--layout', type=Path, help='Optional guarded layout instruction words')
+    p.add_argument('--validate-moves', action='store_true', help='Require complete battle move-name coverage and validate all app/part name combinations')
     p.add_argument('--update-checksum', action='store_true', help='Allow guarded UI edits in the CIC-6102 checksum region and repair CRC1/CRC2')
     p.add_argument('--output', type=Path, default=Path('local/intro-alpha.z64'))
     p.add_argument('--patch', type=Path, default=Path('local/intro-alpha.bps'))
@@ -93,7 +97,7 @@ def main():
                                 json.loads(a.story.read_text())['records'],
                                 json.loads(a.choices.read_text())['entries'] if a.choices else [],
                                 json.loads(a.layout.read_text())['entries'] if a.layout else [],
-                                update_checksum=a.update_checksum)
+                                update_checksum=a.update_checksum, validate_moves=a.validate_moves)
     for path, content in [(a.output, result), (a.patch, patch)]:
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_bytes(content)
