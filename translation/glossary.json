@@ -310,6 +310,36 @@
       "source": "ドンゴー",
       "english": "Dongo",
       "note": "Provisional battler name; repeated name-like chants remain phonetic."
+    },
+    {
+      "source": "くろの さんじゅうし",
+      "english": "Black Musketeers",
+      "note": "Provisional group name. The two very short reflection records use Black Trio."
+    },
+    {
+      "source": "アトス",
+      "english": "Athos",
+      "note": "Provisional Black Musketeers member name."
+    },
+    {
+      "source": "アラミス",
+      "english": "Aramis",
+      "note": "Provisional Black Musketeers member name."
+    },
+    {
+      "source": "ダルタニアン",
+      "english": "Dartagnan",
+      "note": "Compact ASCII spelling fits the shared 16-cell line with Aramis. Retains the Japanese member name; not replaced with Porthos."
+    },
+    {
+      "source": "ミカチ",
+      "english": "Mikachi",
+      "note": "Provisional childhood friend and granddaughter joining the crew on both routes."
+    },
+    {
+      "source": "いちごムース",
+      "english": "Strawberry Mousse",
+      "note": "Compact six-glyph native inventory label and transfer text use Berry. Mikachi gives this item on both routes."
     }
   ]
 }

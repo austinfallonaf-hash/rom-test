@@ -1,7 +1,7 @@
 {
   "format_version": 1,
   "project": "Robopon 64 English translation",
-  "milestone": "fire-blue-story-alpha",
+  "milestone": "fire-blue-variants-alpha",
   "recovered_on": "2026-11-05",
   "timezone": "America/Los_Angeles",
   "upstream": {
@@ -9,18 +9,18 @@
     "branch": "codex/verified-workspace-recovery",
     "recovered_commit": "b6b220228bdb6074758017c25e83539e12a5ca2d"
   },
-  "release_manifest": "releases/fire-blue-story-alpha-manifest.json",
-  "release_patch": "releases/fire-blue-story-alpha.bps",
-  "playable_rom": "local/fire-blue-story-alpha.z64",
+  "release_manifest": "releases/fire-blue-variants-alpha-manifest.json",
+  "release_patch": "releases/fire-blue-variants-alpha.bps",
+  "playable_rom": "local/fire-blue-variants-alpha.z64",
   "catalogs": {
     "menu": "translation/battle-moves-menu.json",
-    "story": "translation/fire-blue-story-text.json",
+    "story": "translation/fire-blue-variants-text.json",
     "choices": "translation/story-choices.json",
     "layout": "translation/interface-layout.json",
     "graphics": "translation/interface-graphics.json"
   },
   "coverage": {
-    "native_records": 985,
+    "native_records": 1189,
     "ui_strings": 832,
     "native_choice_blocks": 299,
     "graphic_captions": 3
@@ -33,20 +33,20 @@
     "day": 2,
     "gold": 500,
     "party_member": "Merlin",
-    "rom_md5_prefix": "07EC747C",
-    "working_path": "local/native-saves/Robot Ponkottsu 64 - 7tsu no Umi-07EC747C.eep"
+    "rom_md5_prefix": "9A031850",
+    "working_path": "local/native-saves/Robot Ponkottsu 64 - 7tsu no Umi-9A031850.eep"
   },
-  "latest_encrypted_backup": "backups/robopon64-fire-blue-story-alpha-07EC747C.zip.gpg",
-  "automated_tests": 111,
-  "next_task": "Continue musketeers interlude beginning at record 680 and remaining coaster/alternate story banks before the next sea; play new Fire Blue theft, encounter, reward and return paths; graphical headings, Parts frame, capacity warnings and VS/Transfer Pak branches remain.",
+  "latest_encrypted_backup": "backups/robopon64-fire-blue-variants-alpha-9A031850.zip.gpg",
+  "automated_tests": 115,
+  "next_task": "Continue Water Blue story at record 883 (R-3K, then Kurumi). Play both Fire Blue treasure/battle routes, Black Musketeers, Mikachi recruitment and record 831 page split. Graphical headings, roster names, Parts frame, capacity warnings and VS/Transfer Pak branches remain.",
   "history_recovery": {
     "source": "user-supplied 16-page conversation PDF",
     "historical_gardening_artifact": "unavailable",
     "gardening_status": "reconstructed from the original ROM; wording is not claimed identical to the historical patch"
   },
-  "checkpoint_ref": "refs/tags/fire-blue-story-alpha",
+  "checkpoint_ref": "refs/tags/fire-blue-variants-alpha",
   "runtime_validation": {
-    "rom_md5_prefix": "07EC747C",
+    "rom_md5_prefix": "9A031850",
     "initial_save": "native day 2",
     "reference_eeprom_unchanged": true,
     "gold": 500,
@@ -54,10 +54,9 @@
     "older_build_state_loaded": false,
     "new_fire_blue_branches": "build validated; not reached in playthrough",
     "pause_menu": "native file A day 2, 500G, player name and Merlin observed",
-    "alternate_opening": "new file B cold start; records 502\u2013509 (12 pages) through password request; remaining opening and gifts await playthrough",
-    "same_build_exploration_state": "local/fire-blue-story-evidence/opening-502.st0; exact ROM only; saved after cold boot, not loaded for validation"
+    "historical_opening_state": "local/fire-blue-story-evidence/opening-502.st0 belongs only to previous MD5 07EC747C; not loaded"
   },
   "update_checksum": true,
   "validate_move_names": true,
-  "backup_payload_files_verified": 535
+  "backup_payload_files_verified": 551
 }

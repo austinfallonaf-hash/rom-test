@@ -122,3 +122,41 @@ class DialogueTests(unittest.TestCase):
     def test_rejects_excess_empty_cursor_lines(self):
         with self.assertRaisesRegex(ValueError, 'three lines'):
             encode([0x2000]*4, '[2000][2000][2000][2000]')
+
+    def test_declared_page_splits_six_line_source_before_original_portrait(self):
+        source = [0x200A, 1] + [183]*20 + [0x2000] + [183]*20 + [0x2000] + [183]*20
+        source += [0x200A, 1] + [183]*20 + [0x2000] + [183]*20 + [0x2000] + [183]*20
+        text = '[200A:0001]One[2000]two[2000]three[2001][200A:0001]Four[2000]five[2000]six'
+        raw = encode(source, text, layout_pages_before=[3])
+        actual = controls(struct.unpack('>'+'H'*(len(raw)//2), raw))
+        expected = controls(source)
+        expected.insert(3, (0x2001,))
+        self.assertEqual(actual, expected)
+        self.assertLessEqual(len(raw), len(source)*2)
+        with self.assertRaisesRegex(ValueError, 'changed'):
+            encode(source, text)
+
+    def test_declared_page_does_not_permit_changed_portrait_or_extra_page(self):
+        source = [0x200A, 1] + [183]*30 + [0x200A, 2] + [183]*30
+        text = '[200A:0001]One[2001][200A:0002]Two'
+        for changed in [text.replace('0002', '0003'), text+'[2001]']:
+            with self.subTest(text=changed), self.assertRaisesRegex(ValueError, 'changed'):
+                encode(source, changed, layout_pages_before=[1])
+
+    def test_rejects_invalid_layout_page_anchors(self):
+        source = [183]*30 + [0x2000, 0x200A, 2] + [183]*30
+        text = 'One[2000][200A:0002]Two'
+        for anchors in [None, '1', [True], [-1], [2], [0], [1, 1], [1, 0]]:
+            with self.subTest(anchors=anchors), self.assertRaisesRegex(ValueError, 'Layout page'):
+                encode(source, text, layout_pages_before=anchors)
+
+    def test_declared_page_keeps_source_budget_and_original_pages(self):
+        with self.assertRaisesRegex(ValueError, 'Layout page'):
+            encode([0x2001, 0x200A, 1] + [183]*20,
+                   '[2001][200A:0001]One', layout_pages_before=[1])
+        with self.assertRaisesRegex(ValueError, 'budget'):
+            encode([0x200A, 1, 0, 0x200A, 2], '[200A:0001]A[2001][200A:0002]',
+                   layout_pages_before=[1])
+        source = [0x2001] + [183]*10 + [0x2000] + [183]*10 + [0x200A, 2] + [183]*10
+        with self.assertRaisesRegex(ValueError, 'changed'):
+            encode(source, 'One[2000][2001][200A:0002]Two', layout_pages_before=[2])

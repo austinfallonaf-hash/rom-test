@@ -35,7 +35,9 @@ def build_story(original, menu, story, choices=(), layout=(), *, update_checksum
         codes = struct.unpack('>'+'H'*(size//2), bytes.fromhex(actual['source_hex']))
         text = entry['translation']
         if entry.get('kind') == 'dialogue':
-            encoded = encode_dialogue(codes, text, allow_layout_newlines=entry.get('allow_layout_newlines', False))
+            encoded = encode_dialogue(codes, text,
+                                      allow_layout_newlines=entry.get('allow_layout_newlines', False),
+                                      layout_pages_before=entry.get('layout_pages_before', ()))
         else:
             if any(c >= 272 for c in codes):
                 raise ValueError('Control-bearing story records require separate handling')
