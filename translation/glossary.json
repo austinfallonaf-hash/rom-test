@@ -245,6 +245,71 @@
       "source": "ブルー",
       "english": "Blue",
       "note": "Regional hint 436 explicitly uses Blue to mean sea, not the color."
+    },
+    {
+      "source": "マイティはかせ",
+      "english": "Dr. Mighty",
+      "note": "Provisional title/name for the alternate opening's professor."
+    },
+    {
+      "source": "ドルッピごう",
+      "english": "Doluppi",
+      "note": "Provisional ship name in the Mighty/Ram opening; computer prompts use DOLUPPI."
+    },
+    {
+      "source": "ミクロ",
+      "english": "Micro",
+      "note": "Alternate opening Robopon reward, distinct from Merlin. Native roster names remain Japanese."
+    },
+    {
+      "source": "シャークシード",
+      "english": "Shark Seed",
+      "note": "Alternate opening seed reward. The existing compact native inventory label is Shark."
+    },
+    {
+      "source": "ほのおのカラメラ",
+      "english": "Fire Caramela",
+      "note": "Fire Blue treasure. Crowded dialogue uses Fire, also the eight-glyph native inventory field's compact label."
+    },
+    {
+      "source": "ヘンペー",
+      "english": "Henpei",
+      "note": "Provisional name of the Team M thief with a flat face."
+    },
+    {
+      "source": "ガーリマン",
+      "english": "Gariman",
+      "note": "Provisional name of the Fire Caramela's hereditary keeper."
+    },
+    {
+      "source": "マーク",
+      "english": "Mark",
+      "note": "Provisional name of the muscle-obsessed Team M battler."
+    },
+    {
+      "source": "チームＭ",
+      "english": "Team M",
+      "note": "Fire Blue pirate group led by Mura."
+    },
+    {
+      "source": "ムーラ",
+      "english": "Mura",
+      "note": "Provisional Fire Blue boss name; Komura's mother."
+    },
+    {
+      "source": "コムーラ",
+      "english": "Komura",
+      "note": "Mura's baby daughter. Babble is rendered phonetically, without invented decoded meaning."
+    },
+    {
+      "source": "ニクニクじま",
+      "english": "Nikuniku Island",
+      "note": "Provisional name preserving the repeated meat/muscle wordplay."
+    },
+    {
+      "source": "ドンゴー",
+      "english": "Dongo",
+      "note": "Provisional battler name; repeated name-like chants remain phonetic."
     }
   ]
 }
