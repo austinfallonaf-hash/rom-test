@@ -1,7 +1,7 @@
 {
   "format_version": 1,
   "project": "Robopon 64 English translation",
-  "milestone": "interface-headings-alpha",
+  "milestone": "blue-pass-alpha",
   "recovered_on": "2026-11-05",
   "timezone": "America/Los_Angeles",
   "upstream": {
@@ -9,18 +9,18 @@
     "branch": "codex/verified-workspace-recovery",
     "recovered_commit": "b6b220228bdb6074758017c25e83539e12a5ca2d"
   },
-  "release_manifest": "releases/interface-headings-alpha-manifest.json",
-  "release_patch": "releases/interface-headings-alpha.bps",
-  "playable_rom": "local/interface-headings-alpha.z64",
+  "release_manifest": "releases/blue-pass-alpha-manifest.json",
+  "release_patch": "releases/blue-pass-alpha.bps",
+  "playable_rom": "local/blue-pass-alpha.z64",
   "catalogs": {
     "menu": "translation/battle-moves-menu.json",
-    "story": "translation/battle-moves-text.json",
+    "story": "translation/blue-pass-text.json",
     "choices": "translation/story-choices.json",
     "layout": "translation/interface-layout.json",
     "graphics": "translation/interface-graphics.json"
   },
   "coverage": {
-    "native_records": 323,
+    "native_records": 396,
     "ui_strings": 832,
     "native_choice_blocks": 299,
     "graphic_captions": 3
@@ -33,30 +33,30 @@
     "day": 2,
     "gold": 500,
     "party_member": "Merlin",
-    "rom_md5_prefix": "212AB2AA",
-    "working_path": "local/native-saves/Robot Ponkottsu 64 - 7tsu no Umi-212AB2AA.eep"
+    "rom_md5_prefix": "A1FA9CE0",
+    "working_path": "local/native-saves/Robot Ponkottsu 64 - 7tsu no Umi-A1FA9CE0.eep"
   },
-  "latest_encrypted_backup": "backups/robopon64-interface-headings-alpha-212AB2AA.zip.gpg",
+  "latest_encrypted_backup": "backups/robopon64-blue-pass-alpha-A1FA9CE0.zip.gpg",
   "automated_tests": 108,
-  "next_task": "Translate other graphical headings and later story; refine the shop Parts frame; exercise rare effects, software-capacity warnings and VS/Transfer Pak branches.",
+  "next_task": "Continue remaining Moon Blue story (Sharol, Dean, Godoshii and Johnny); play through Pusuke/E-yan branches; other graphical headings, Parts frame, capacity warnings and VS/Transfer Pak branches remain.",
   "history_recovery": {
     "source": "user-supplied 16-page conversation PDF",
     "historical_gardening_artifact": "unavailable",
     "gardening_status": "reconstructed from the original ROM; wording is not claimed identical to the historical patch"
   },
-  "checkpoint_ref": "refs/tags/interface-headings-alpha",
+  "checkpoint_ref": "refs/tags/blue-pass-alpha",
   "runtime_validation": {
-    "rom_md5_prefix": "212AB2AA",
+    "rom_md5_prefix": "A1FA9CE0",
     "initial_save": "native day 2",
     "reference_eeprom_unchanged": true,
     "gold": 500,
     "party_member": "Merlin",
-    "equipment": "Equipped / Spare Apps / Moves bitmap captions and inherited app/move labels",
+    "equipment": "inherited Equipped / Spare Apps / Moves captions and app/move labels",
     "older_build_state_loaded": false,
-    "return_to_ship": true,
-    "simulator": "practice battle startup and HUD after equipment screen"
+    "new_story_branches": "build validated; not yet reached in playthrough",
+    "new_inventory_pass_labels": "build validated; not reached in inventory"
   },
   "update_checksum": true,
   "validate_move_names": true,
-  "backup_payload_files_verified": 477
+  "backup_payload_files_verified": 488
 }
