@@ -1,7 +1,7 @@
 {
   "format_version": 1,
   "project": "Robopon 64 English translation",
-  "milestone": "battler-dome-alpha",
+  "milestone": "fire-blue-story-alpha",
   "recovered_on": "2026-11-05",
   "timezone": "America/Los_Angeles",
   "upstream": {
@@ -9,18 +9,18 @@
     "branch": "codex/verified-workspace-recovery",
     "recovered_commit": "b6b220228bdb6074758017c25e83539e12a5ca2d"
   },
-  "release_manifest": "releases/battler-dome-alpha-manifest.json",
-  "release_patch": "releases/battler-dome-alpha.bps",
-  "playable_rom": "local/battler-dome-alpha.z64",
+  "release_manifest": "releases/fire-blue-story-alpha-manifest.json",
+  "release_patch": "releases/fire-blue-story-alpha.bps",
+  "playable_rom": "local/fire-blue-story-alpha.z64",
   "catalogs": {
     "menu": "translation/battle-moves-menu.json",
-    "story": "translation/battler-dome-text.json",
+    "story": "translation/fire-blue-story-text.json",
     "choices": "translation/story-choices.json",
     "layout": "translation/interface-layout.json",
     "graphics": "translation/interface-graphics.json"
   },
   "coverage": {
-    "native_records": 820,
+    "native_records": 985,
     "ui_strings": 832,
     "native_choice_blocks": 299,
     "graphic_captions": 3
@@ -33,30 +33,31 @@
     "day": 2,
     "gold": 500,
     "party_member": "Merlin",
-    "rom_md5_prefix": "93E5FFD1",
-    "working_path": "local/native-saves/Robot Ponkottsu 64 - 7tsu no Umi-93E5FFD1.eep"
+    "rom_md5_prefix": "07EC747C",
+    "working_path": "local/native-saves/Robot Ponkottsu 64 - 7tsu no Umi-07EC747C.eep"
   },
-  "latest_encrypted_backup": "backups/robopon64-battler-dome-alpha-93E5FFD1.zip.gpg",
+  "latest_encrypted_backup": "backups/robopon64-fire-blue-story-alpha-07EC747C.zip.gpg",
   "automated_tests": 111,
-  "next_task": "Continue alternate opening beginning at native record 502, then Fire Blue encounters beginning at 560; play Dome entry/reward paths and resolve three-versus-four-win source discrepancy; graphical headings, Parts frame, capacity warnings and VS/Transfer Pak branches remain.",
+  "next_task": "Continue musketeers interlude beginning at record 680 and remaining coaster/alternate story banks before the next sea; play new Fire Blue theft, encounter, reward and return paths; graphical headings, Parts frame, capacity warnings and VS/Transfer Pak branches remain.",
   "history_recovery": {
     "source": "user-supplied 16-page conversation PDF",
     "historical_gardening_artifact": "unavailable",
     "gardening_status": "reconstructed from the original ROM; wording is not claimed identical to the historical patch"
   },
-  "checkpoint_ref": "refs/tags/battler-dome-alpha",
+  "checkpoint_ref": "refs/tags/fire-blue-story-alpha",
   "runtime_validation": {
-    "rom_md5_prefix": "93E5FFD1",
+    "rom_md5_prefix": "07EC747C",
     "initial_save": "native day 2",
     "reference_eeprom_unchanged": true,
     "gold": 500,
     "party_member": "Merlin",
-    "equipment": "inherited Equipped / Spare Apps / Moves captions and app/move labels",
     "older_build_state_loaded": false,
-    "new_story_branches": "build validated; not reached in playthrough",
-    "dynamic_dome_rewards": "build validated; not reached in playthrough"
+    "new_fire_blue_branches": "build validated; not reached in playthrough",
+    "pause_menu": "native file A day 2, 500G, player name and Merlin observed",
+    "alternate_opening": "new file B cold start; records 502\u2013509 (12 pages) through password request; remaining opening and gifts await playthrough",
+    "same_build_exploration_state": "local/fire-blue-story-evidence/opening-502.st0; exact ROM only; saved after cold boot, not loaded for validation"
   },
   "update_checksum": true,
   "validate_move_names": true,
-  "backup_payload_files_verified": 510
+  "backup_payload_files_verified": 535
 }
