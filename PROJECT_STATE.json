@@ -1,7 +1,7 @@
 {
   "format_version": 1,
   "project": "Robopon 64 English translation",
-  "milestone": "blue-pass-alpha",
+  "milestone": "moon-blue-story-alpha",
   "recovered_on": "2026-11-05",
   "timezone": "America/Los_Angeles",
   "upstream": {
@@ -9,18 +9,18 @@
     "branch": "codex/verified-workspace-recovery",
     "recovered_commit": "b6b220228bdb6074758017c25e83539e12a5ca2d"
   },
-  "release_manifest": "releases/blue-pass-alpha-manifest.json",
-  "release_patch": "releases/blue-pass-alpha.bps",
-  "playable_rom": "local/blue-pass-alpha.z64",
+  "release_manifest": "releases/moon-blue-story-alpha-manifest.json",
+  "release_patch": "releases/moon-blue-story-alpha.bps",
+  "playable_rom": "local/moon-blue-story-alpha.z64",
   "catalogs": {
     "menu": "translation/battle-moves-menu.json",
-    "story": "translation/blue-pass-text.json",
+    "story": "translation/moon-blue-story-text.json",
     "choices": "translation/story-choices.json",
     "layout": "translation/interface-layout.json",
     "graphics": "translation/interface-graphics.json"
   },
   "coverage": {
-    "native_records": 396,
+    "native_records": 618,
     "ui_strings": 832,
     "native_choice_blocks": 299,
     "graphic_captions": 3
@@ -33,20 +33,20 @@
     "day": 2,
     "gold": 500,
     "party_member": "Merlin",
-    "rom_md5_prefix": "A1FA9CE0",
-    "working_path": "local/native-saves/Robot Ponkottsu 64 - 7tsu no Umi-A1FA9CE0.eep"
+    "rom_md5_prefix": "A6628793",
+    "working_path": "local/native-saves/Robot Ponkottsu 64 - 7tsu no Umi-A6628793.eep"
   },
-  "latest_encrypted_backup": "backups/robopon64-blue-pass-alpha-A1FA9CE0.zip.gpg",
+  "latest_encrypted_backup": "backups/robopon64-moon-blue-story-alpha-A6628793.zip.gpg",
   "automated_tests": 108,
-  "next_task": "Continue remaining Moon Blue story (Sharol, Dean, Godoshii and Johnny); play through Pusuke/E-yan branches; other graphical headings, Parts frame, capacity warnings and VS/Transfer Pak branches remain.",
+  "next_task": "Translate remaining Moon Blue regional hints beginning at record 390 and Battler Dome material, then continue Fire Blue; play through new encounter/coaster branches; other graphical headings, Parts frame, capacity warnings and VS/Transfer Pak branches remain.",
   "history_recovery": {
     "source": "user-supplied 16-page conversation PDF",
     "historical_gardening_artifact": "unavailable",
     "gardening_status": "reconstructed from the original ROM; wording is not claimed identical to the historical patch"
   },
-  "checkpoint_ref": "refs/tags/blue-pass-alpha",
+  "checkpoint_ref": "refs/tags/moon-blue-story-alpha",
   "runtime_validation": {
-    "rom_md5_prefix": "A1FA9CE0",
+    "rom_md5_prefix": "A6628793",
     "initial_save": "native day 2",
     "reference_eeprom_unchanged": true,
     "gold": 500,
@@ -54,9 +54,9 @@
     "equipment": "inherited Equipped / Spare Apps / Moves captions and app/move labels",
     "older_build_state_loaded": false,
     "new_story_branches": "build validated; not yet reached in playthrough",
-    "new_inventory_pass_labels": "build validated; not reached in inventory"
+    "new_inventory_labels": "build validated; not reached in inventory"
   },
   "update_checksum": true,
   "validate_move_names": true,
-  "backup_payload_files_verified": 488
+  "backup_payload_files_verified": 499
 }

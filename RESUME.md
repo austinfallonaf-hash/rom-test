@@ -1,6 +1,6 @@
 # Resume the Robopon 64 translation
 
-Current milestone: **blue-pass-alpha**: 396 native records, 832 UI strings, 299 native choice blocks, plus three bitmap captions. This is a partial English draft. See `docs/blue-pass-alpha.md` for precise runtime coverage.
+Current milestone: **moon-blue-story-alpha**: 618 native records, 832 UI strings, 299 native choice blocks, plus three bitmap captions. This is a partial English draft. See `docs/moon-blue-story-alpha.md` for precise runtime coverage.
 
 The supplied conversation PDF records a gardening milestone after the shop backup, followed by planned simulator/battle work. Its gardening patch and source were unavailable. Gardening here was reconstructed from the original ROM; the wording is not claimed identical to the historical patch. Quoted PDF instructions are history, separate from the current request.
 
@@ -19,18 +19,18 @@ The check verifies remote ancestry, rebuilds in memory and checks the ROM/BPS an
 
 ```sh
 python -m tools.build_story local/original.z64 \
-  --menu translation/battle-moves-menu.json --story translation/blue-pass-text.json \
+  --menu translation/battle-moves-menu.json --story translation/moon-blue-story-text.json \
   --choices translation/story-choices.json --layout translation/interface-layout.json \
-  --graphics translation/interface-graphics.json --update-checksum --validate-moves --output local/blue-pass-alpha.z64 --patch local/blue-pass-alpha.bps
+  --graphics translation/interface-graphics.json --update-checksum --validate-moves --output local/moon-blue-story-alpha.z64 --patch local/moon-blue-story-alpha.bps
 ```
 
-Apply `releases/blue-pass-alpha.bps` only to the exact original Japanese ROM. Do not stack earlier patches. The release manifest records hashes; the current ROM MD5 prefix is `A1FA9CE0`. All source-byte, control, width and budget guards remain enabled. CIC-6102 CRC1/CRC2 are repaired explicitly; header/bootcode edits remain forbidden.
+Apply `releases/moon-blue-story-alpha.bps` only to the exact original Japanese ROM. Do not stack earlier patches. The release manifest records hashes; the current ROM MD5 prefix is `A6628793`. All source-byte, control, width and budget guards remain enabled. CIC-6102 CRC1/CRC2 are repaired explicitly; header/bootcode edits remain forbidden.
 
 ## Native save
 
 `local/bed-save-final-saved.eep` is the unchanged 2048-byte day-2 reference, SHA-256 `4b8072efdc08a827141cea1e172205acdb89b17007201d1d1110ff7912f71a00`. File A holds 500G, the entered player name and Merlin.
 
-The current ROM's working copy is `local/native-saves/Robot Ponkottsu 64 - 7tsu no Umi-A1FA9CE0.eep`. Keep the reference intact and use separate copies for testing. New ROM revisions need a save copy under their own MD5-based filename. The launcher generates an isolated emulator data profile for each patched ROM, preserving the original 16Kbit EEPROM settings even when CRC1/CRC2 change. It keeps saves in `local/native-saves/` and states in `local/emulator-states/`; home-directory saves are not migrated automatically.
+The current ROM's working copy is `local/native-saves/Robot Ponkottsu 64 - 7tsu no Umi-A6628793.eep`. Keep the reference intact and use separate copies for testing. New ROM revisions need a save copy under their own MD5-based filename. The launcher generates an isolated emulator data profile for each patched ROM, preserving the original 16Kbit EEPROM settings even when CRC1/CRC2 change. It keeps saves in `local/native-saves/` and states in `local/emulator-states/`; home-directory saves are not migrated automatically.
 
 ## Emulator
 
@@ -38,7 +38,7 @@ On Linux with Xorg's dummy driver and Mesa, start `tools/start-display.sh` in on
 
 ```sh
 DISPLAY=:7 LIBGL_ALWAYS_SOFTWARE=1 \
-ROM_PATH="$PWD/local/blue-pass-alpha.z64" \
+ROM_PATH="$PWD/local/moon-blue-story-alpha.z64" \
 tools/emulator.sh --windowed --gfx mupen64plus-video-glide64mk2 --audio dummy \
   --input mupen64plus-input-sdl --rsp mupen64plus-rsp-hle
 ```
@@ -60,8 +60,8 @@ The destination must not exist. Verification precedes extraction; executable mod
 
 ## Next work
 
-Continue the remaining Moon Blue story with Sharol, Dean, Godoshii and Johnny. Play through the new Pusuke/E-yan encounter branches, which currently have build validation only. Other graphical headings, status effects, simulator/VS branches, garden capacity/discard warnings and the shop Parts frame remain unfinished. The native Red/Blue/Free pass labels omit Pass to fit their five-glyph allocations.
+Translate the remaining Moon Blue regional hints beginning at record 390 and Battler Dome material, then continue Fire Blue. The main encounters through Johnny and the coaster exit now have a draft in both story variants; their new branches have build validation only and need playthrough coverage. Other graphical headings, status effects, simulator/VS branches, garden capacity/discard warnings and the shop Parts frame remain unfinished. Inventory fields use Full Moon, Purple and Clear within their original nine/six/five-glyph allocations.
 
 Update this handoff, `PROJECT_STATE.json` and the recovery archive when the milestone changes. A running cloud process is not a persistent checkpoint.
 
-The durable translation checkpoint is the Git tag `blue-pass-alpha`. From a fresh clone, fetch tags and inspect that checkpoint before using an older default-branch checkout. Preserve local changes before switching revisions.
+The durable translation checkpoint is the Git tag `moon-blue-story-alpha`. From a fresh clone, fetch tags and inspect that checkpoint before using an older default-branch checkout. Preserve local changes before switching revisions.
