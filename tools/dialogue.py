@@ -59,7 +59,10 @@ def encode(source_codes, text, *, allow_layout_newlines=False):
         elif word == 0x200B:
             if line > 2:
                 raise ValueError('Dialogue page exceeds three lines')
-            cells += 5  # Original name-entry capacity; room for player name.
+            # Dome rewards use argument 6 for a dynamic item label, rather
+            # than a five-cell entered name. Keep that label alone on its
+            # source line: its possible values have not been bounded here.
+            cells += 16 if args[0] == 6 else 5
         position = match.end()
     for c in text[position:]:
         if not 32 <= ord(c) <= 126 or c in '[]':

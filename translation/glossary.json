@@ -165,6 +165,86 @@
       "source": "ラム",
       "english": "Ram",
       "note": "Provisional companion name in the alternate Godoshii encounter, record 338; distinct from the equipment RAM abbreviation."
+    },
+    {
+      "source": "バトラードーム",
+      "english": "Battler Dome",
+      "note": "Tournament facility with Normal Fight ranks and species-restricted Select Fight events."
+    },
+    {
+      "source": "ノーマルファイト",
+      "english": "Normal Fight",
+      "note": "One Robopon; event scripts require three consecutive wins. Regional hint 416 instead says four; both source claims are preserved pending gameplay verification."
+    },
+    {
+      "source": "セレクトファイト",
+      "english": "Select Fight",
+      "note": "Species-restricted tournament; three consecutive wins in the event scripts."
+    },
+    {
+      "source": "フラワーきょうじゅ",
+      "english": "Prof. Flower",
+      "note": "Provisional name/title of the Select Fight host and Nose's research partner."
+    },
+    {
+      "source": "ノーズ",
+      "english": "Nose",
+      "note": "Provisional name of Prof. Flower's assistant and Normal Fight host."
+    },
+    {
+      "source": "メスカル",
+      "english": "Mescal",
+      "note": "Provisional Select Fight species name; native roster names remain untranslated."
+    },
+    {
+      "source": "メルリアス",
+      "english": "Merlias",
+      "note": "Provisional Select Fight species name; native roster names remain untranslated."
+    },
+    {
+      "source": "タンビ",
+      "english": "Tanbi",
+      "note": "Provisional Select Fight species name; native roster names remain untranslated."
+    },
+    {
+      "source": "ピパ",
+      "english": "Pipa",
+      "note": "Provisional Select Fight species name; native roster names remain untranslated."
+    },
+    {
+      "source": "ニークロ",
+      "english": "Nikuro",
+      "note": "Provisional Select Fight species name; native roster names remain untranslated."
+    },
+    {
+      "source": "ウォーター＝ブルー",
+      "english": "Water Blue",
+      "note": "Provisional sea name. Dome scripts also spell it ウォータ＝ブルー."
+    },
+    {
+      "source": "ツリー＝ブルー",
+      "english": "Tree Blue",
+      "note": "Provisional sea name; compact regional list 426 omits the shared Blue suffix."
+    },
+    {
+      "source": "ゴールド＝ブルー",
+      "english": "Gold Blue",
+      "note": "Provisional sea name; compact regional list 426 omits the shared Blue suffix."
+    },
+    {
+      "source": "ランド＝ブルー",
+      "english": "Land Blue",
+      "note": "Provisional sea name; compact regional list 426 omits the shared Blue suffix."
+    },
+    {
+      "source": "サニー＝ブルー",
+      "english": "Sunny Blue",
+      "note": "Provisional sea name; compact regional list 426 omits the shared Blue suffix."
+    },
+    {
+      "source": "ブルー",
+      "english": "Blue",
+      "note": "Regional hint 436 explicitly uses Blue to mean sea, not the color."
     }
   ]
 }

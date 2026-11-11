@@ -41,6 +41,22 @@ class DialogueTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, '16 cells'):
             encode(source, 'abcdefghijkl[200B:0000]')
 
+    def test_dynamic_reward_cannot_share_line_with_prefix(self):
+        source = [183]*30 + [0x200B, 6]
+        with self.assertRaisesRegex(ValueError, '16 cells'):
+            encode(source, 'Got [200B:0006]')
+
+    def test_dynamic_reward_cannot_share_line_with_suffix(self):
+        source = [0x200B, 6] + [183]*30
+        with self.assertRaisesRegex(ValueError, '16 cells'):
+            encode(source, '[200B:0006]!')
+
+    def test_dynamic_reward_alone_preserves_argument_and_next_line(self):
+        source = [0x200B, 6, 0x2000] + [183]*10
+        raw = encode(source, '[200B:0006][2000]Got it!')
+        target = struct.unpack('>'+'H'*(len(raw)//2), raw)
+        self.assertEqual(controls(target), controls(source))
+
     def test_rejects_malformed_token(self):
         with self.assertRaisesRegex(ValueError, 'explicit control'):
             encode(self.source, self.target.replace('[2000]', '[200Z]'))
