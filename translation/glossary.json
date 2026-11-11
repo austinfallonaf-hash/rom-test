@@ -130,6 +130,21 @@
       "source": "レッドシード ～ セピアシード",
       "english": "Red, Blue, White, Yellow, Green, Brown, Gray, Black, Pink, Sepia",
       "note": "Ten colored seed labels (3878–3887). The Seed suffix is omitted in compact native item names because full English names exceed their fixed six/seven-glyph allocations. The shop/category supplies the item type."
+    },
+    {
+      "source": "プーすけ",
+      "english": "Pusuke",
+      "note": "Provisional name of Johnny's subordinate in the Moon Blue encounters; some pu speech quirks are retained."
+    },
+    {
+      "source": "ブルーパス",
+      "english": "Blue Pass",
+      "note": "Reward from E-yan. The compact native inventory label is Blue because the original field allows five glyphs."
+    },
+    {
+      "source": "フリーパス",
+      "english": "Free Pass",
+      "note": "Coaster pass; the compact native inventory label is Free. Its acquisition story remains untranslated."
     }
   ]
 }
