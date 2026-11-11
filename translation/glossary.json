@@ -79,7 +79,7 @@
     {
       "source": "まんげつのカラメラ",
       "english": "Moon Caramela",
-      "note": "Compact dialogue form of Full Moon Caramela, the Moon Blue treasure. The original allocation limits dialogue to sixteen cells per line."
+      "note": "Compact dialogue form of Full Moon Caramela, the Moon Blue treasure. Native nine-glyph inventory label is Full Moon. Dialogue is limited to sixteen cells per line."
     },
     {
       "source": "ムーン＝ブルー",
@@ -144,7 +144,27 @@
     {
       "source": "フリーパス",
       "english": "Free Pass",
-      "note": "Coaster pass; the compact native inventory label is Free. Its acquisition story remains untranslated."
+      "note": "Coaster pass awarded by Sharol, allowing travel around Moon Blue. The five-glyph native inventory label is Free."
+    },
+    {
+      "source": "パープルキー",
+      "english": "Purple Key",
+      "note": "Reward from Dean; opens access to Godoshii's island. Native six-glyph inventory label is Purple."
+    },
+    {
+      "source": "クリアキー",
+      "english": "Clear Key",
+      "note": "Reward from Godoshii; permits the Johnny challenge. Native five-glyph inventory label is Clear."
+    },
+    {
+      "source": "ファイア＝ブルー",
+      "english": "Fire Blue",
+      "note": "Provisional name of the next sea, identified in the Moon Blue departure dialogue. Its later story remains untranslated."
+    },
+    {
+      "source": "ラム",
+      "english": "Ram",
+      "note": "Provisional companion name in the alternate Godoshii encounter, record 338; distinct from the equipment RAM abbreviation."
     }
   ]
 }
