@@ -1,7 +1,7 @@
 {
   "format_version": 1,
   "project": "Robopon 64 English translation",
-  "milestone": "moon-blue-story-alpha",
+  "milestone": "battler-dome-alpha",
   "recovered_on": "2026-11-05",
   "timezone": "America/Los_Angeles",
   "upstream": {
@@ -9,18 +9,18 @@
     "branch": "codex/verified-workspace-recovery",
     "recovered_commit": "b6b220228bdb6074758017c25e83539e12a5ca2d"
   },
-  "release_manifest": "releases/moon-blue-story-alpha-manifest.json",
-  "release_patch": "releases/moon-blue-story-alpha.bps",
-  "playable_rom": "local/moon-blue-story-alpha.z64",
+  "release_manifest": "releases/battler-dome-alpha-manifest.json",
+  "release_patch": "releases/battler-dome-alpha.bps",
+  "playable_rom": "local/battler-dome-alpha.z64",
   "catalogs": {
     "menu": "translation/battle-moves-menu.json",
-    "story": "translation/moon-blue-story-text.json",
+    "story": "translation/battler-dome-text.json",
     "choices": "translation/story-choices.json",
     "layout": "translation/interface-layout.json",
     "graphics": "translation/interface-graphics.json"
   },
   "coverage": {
-    "native_records": 618,
+    "native_records": 820,
     "ui_strings": 832,
     "native_choice_blocks": 299,
     "graphic_captions": 3
@@ -33,30 +33,30 @@
     "day": 2,
     "gold": 500,
     "party_member": "Merlin",
-    "rom_md5_prefix": "A6628793",
-    "working_path": "local/native-saves/Robot Ponkottsu 64 - 7tsu no Umi-A6628793.eep"
+    "rom_md5_prefix": "93E5FFD1",
+    "working_path": "local/native-saves/Robot Ponkottsu 64 - 7tsu no Umi-93E5FFD1.eep"
   },
-  "latest_encrypted_backup": "backups/robopon64-moon-blue-story-alpha-A6628793.zip.gpg",
-  "automated_tests": 108,
-  "next_task": "Translate remaining Moon Blue regional hints beginning at record 390 and Battler Dome material, then continue Fire Blue; play through new encounter/coaster branches; other graphical headings, Parts frame, capacity warnings and VS/Transfer Pak branches remain.",
+  "latest_encrypted_backup": "backups/robopon64-battler-dome-alpha-93E5FFD1.zip.gpg",
+  "automated_tests": 111,
+  "next_task": "Continue alternate opening beginning at native record 502, then Fire Blue encounters beginning at 560; play Dome entry/reward paths and resolve three-versus-four-win source discrepancy; graphical headings, Parts frame, capacity warnings and VS/Transfer Pak branches remain.",
   "history_recovery": {
     "source": "user-supplied 16-page conversation PDF",
     "historical_gardening_artifact": "unavailable",
     "gardening_status": "reconstructed from the original ROM; wording is not claimed identical to the historical patch"
   },
-  "checkpoint_ref": "refs/tags/moon-blue-story-alpha",
+  "checkpoint_ref": "refs/tags/battler-dome-alpha",
   "runtime_validation": {
-    "rom_md5_prefix": "A6628793",
+    "rom_md5_prefix": "93E5FFD1",
     "initial_save": "native day 2",
     "reference_eeprom_unchanged": true,
     "gold": 500,
     "party_member": "Merlin",
     "equipment": "inherited Equipped / Spare Apps / Moves captions and app/move labels",
     "older_build_state_loaded": false,
-    "new_story_branches": "build validated; not yet reached in playthrough",
-    "new_inventory_labels": "build validated; not reached in inventory"
+    "new_story_branches": "build validated; not reached in playthrough",
+    "dynamic_dome_rewards": "build validated; not reached in playthrough"
   },
   "update_checksum": true,
   "validate_move_names": true,
-  "backup_payload_files_verified": 499
+  "backup_payload_files_verified": 510
 }
