@@ -4,7 +4,13 @@ Apply one patch to the original big-endian Japanese ROM with SHA-256
 `02cda6221c10cba0705f351227e2d6c77e071bdb4f7aa8b5cd3c7c047a2b1881`.
 Do not stack patches. Keep a backup of your ROM and saves.
 
-- `water-blue-story-alpha.bps`: current cumulative partial draft with 1,450
+- `roulette-story-alpha.bps`: current cumulative partial draft with 1,671 native
+  records, 832 UI strings, 299 choices and three bitmap captions. Adds the main
+  Roulette rescue route, pirate encounters/traps, arrival/abduction and Gold Blue
+  departure. See `docs/roulette-story-alpha.md` and its manifest for precise scope
+  and validation. Apply only to the original.
+
+- `water-blue-story-alpha.bps`: earlier cumulative partial draft with 1,450
   native records, 832 UI strings, 299 choices and three bitmap captions. Adds
   Water Blue encounters/ID cards, ship-parts quest and swaps, prize game, regional
   hints and radio warning in both routes. See `docs/water-blue-story-alpha.md`

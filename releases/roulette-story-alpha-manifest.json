@@ -1,0 +1,57 @@
+{
+  "format": "BPS1",
+  "scope": {
+    "native_records_total": 1671,
+    "shift_jis_ui_strings": 832,
+    "native_choice_blocks": 299,
+    "layout_instruction_words": 81,
+    "graphic_captions": 3,
+    "replaced_bitmap_resources": 1,
+    "battle_move_components": 244,
+    "equipment_move_components": 244,
+    "native_app_labels": 45,
+    "cut_placeholders_untouched": 25,
+    "new_main_roulette_story_records": 220,
+    "new_inventory_labels": 1,
+    "new_cut_placeholders_untouched": 10
+  },
+  "translation_status": "partial draft; main Dandy/Punch Roulette Island rescue route, pirate encounters and traps, arrival/abduction, Tree Caramela and Gold Blue departure; alternate route and regional hints await translation; new branches build-validated, not played",
+  "catalogs": {
+    "menu": "translation/battle-moves-menu.json",
+    "story": "translation/roulette-story-text.json",
+    "choices": "translation/story-choices.json",
+    "layout": "translation/interface-layout.json",
+    "graphics": "translation/interface-graphics.json"
+  },
+  "files": {
+    "source": {
+      "bytes": 33554432,
+      "sha256": "02cda6221c10cba0705f351227e2d6c77e071bdb4f7aa8b5cd3c7c047a2b1881"
+    },
+    "target": {
+      "bytes": 33554432,
+      "sha256": "626fa8c18de5ba14bc63d119bde4d04a93bf2ab3daf3c4782fadeb5e847b4d7b"
+    },
+    "patch": {
+      "bytes": 425060,
+      "sha256": "9a272cc2fe70cf0099c0896acbd4ddaf3b31ed041c1e771e89a9a12cdb995599"
+    }
+  },
+  "update_checksum": true,
+  "n64_checksum": {
+    "variant": "CIC-6102",
+    "crc1": "FFA89600",
+    "crc2": "C278C65F",
+    "bootcode_crc32": "90BB6CB5"
+  },
+  "validate_move_names": true,
+  "move_names": {
+    "recipes": 196,
+    "part_types": 128,
+    "components": 244,
+    "combinations_checked": 25088,
+    "maximum_cells": 16,
+    "equipment_components": 244,
+    "equipment_combinations_checked": 25088
+  }
+}

@@ -224,7 +224,7 @@
     {
       "source": "ツリー＝ブルー",
       "english": "Tree Blue",
-      "note": "Provisional sea name; compact regional list 426 omits the shared Blue suffix."
+      "note": "Provisional sea name; compact regional list 426 omits the shared Blue suffix. The crowded ransom location uses Tree/Roulette, with Tree meaning Tree Blue."
     },
     {
       "source": "ゴールド＝ブルー",
@@ -435,6 +435,61 @@
       "source": "ＩＤカード：オレンジ",
       "english": "Orange ID",
       "note": "J.D. reward."
+    },
+    {
+      "source": "ルーレッとう",
+      "english": "Roulette Island",
+      "note": "Provisional island/stronghold name. Crowded dialogue and entry prompts use Roulette."
+    },
+    {
+      "source": "キャプテン・ラダー",
+      "english": "Captain Ladder",
+      "note": "Provisional pirate leader name. Crowded dialogue shortens it to Ladder or Captain as in the source. Native speaker labels remain Japanese."
+    },
+    {
+      "source": "シルバーとう",
+      "english": "Silver Island",
+      "note": "Provisional name of the skull-shaped island where Ladder waits."
+    },
+    {
+      "source": "キャム",
+      "english": "Cam",
+      "note": "Provisional cat-pirate name, corresponding to the Japanese Kyamu. Cat-like speech retains meows and nya endings."
+    },
+    {
+      "source": "ダイコック",
+      "english": "Daicook",
+      "note": "Provisional cooking-pun name. Chef and pirate battler; food metaphors are retained."
+    },
+    {
+      "source": "マイドー",
+      "english": "Maido",
+      "note": "Provisional pirate name in the disguised-brother trap."
+    },
+    {
+      "source": "アカネ",
+      "english": "Akane",
+      "note": "Provisional pirate name. Her Kurumi disguise and both rescue-choice outcomes are retained."
+    },
+    {
+      "source": "カイリ",
+      "english": "Kairi",
+      "note": "Provisional name of Ladder's sister; her haughty speech and post-defeat crying are retained."
+    },
+    {
+      "source": "メッカメカ",
+      "english": "Mekkameka",
+      "note": "Provisional place name in the false Kurumi's introduction, not changed to Water Blue."
+    },
+    {
+      "source": "たいじゅのカラメラ",
+      "english": "Tree Caramela",
+      "note": "Compact English for the great-tree treasure. Inventory uses Tree; crowded dialogue also uses Tree. Acquisition message uses Tree Caramela / +1."
+    },
+    {
+      "source": "ジークンとう",
+      "english": "Jeekun Island",
+      "note": "Provisional Gold Blue island name in Ladder's warning."
     }
   ]
 }
