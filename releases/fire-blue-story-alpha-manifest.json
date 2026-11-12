@@ -1,0 +1,57 @@
+{
+  "format": "BPS1",
+  "scope": {
+    "native_records_total": 985,
+    "shift_jis_ui_strings": 832,
+    "native_choice_blocks": 299,
+    "layout_instruction_words": 81,
+    "graphic_captions": 3,
+    "replaced_bitmap_resources": 1,
+    "battle_move_components": 244,
+    "equipment_move_components": 244,
+    "native_app_labels": 45,
+    "new_alternate_opening_records": 58,
+    "new_fire_blue_story_records": 106,
+    "new_inventory_labels": 1,
+    "cut_placeholders_untouched": 14
+  },
+  "translation_status": "partial draft; Mighty/Ram opening and main Fire Blue treasure plot; later interlude, coasters and alternate story banks remain; branch coverage documented separately",
+  "catalogs": {
+    "menu": "translation/battle-moves-menu.json",
+    "story": "translation/fire-blue-story-text.json",
+    "choices": "translation/story-choices.json",
+    "layout": "translation/interface-layout.json",
+    "graphics": "translation/interface-graphics.json"
+  },
+  "files": {
+    "source": {
+      "bytes": 33554432,
+      "sha256": "02cda6221c10cba0705f351227e2d6c77e071bdb4f7aa8b5cd3c7c047a2b1881"
+    },
+    "target": {
+      "bytes": 33554432,
+      "sha256": "3f87b7841c1a293d40bf23c2a5ca5d19d55bc96a7e7c9c396780c0b9211769f2"
+    },
+    "patch": {
+      "bytes": 315821,
+      "sha256": "10b184bf00f5aeeb8800be7de32f6a33b4e7ee5c4cd83aa40b5c4f1bc8cfaba1"
+    }
+  },
+  "update_checksum": true,
+  "n64_checksum": {
+    "variant": "CIC-6102",
+    "crc1": "FFA89600",
+    "crc2": "C278C65F",
+    "bootcode_crc32": "90BB6CB5"
+  },
+  "validate_move_names": true,
+  "move_names": {
+    "recipes": 196,
+    "part_types": 128,
+    "components": 244,
+    "combinations_checked": 25088,
+    "maximum_cells": 16,
+    "equipment_components": 244,
+    "equipment_combinations_checked": 25088
+  }
+}

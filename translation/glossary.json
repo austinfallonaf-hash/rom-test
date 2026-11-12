@@ -79,7 +79,7 @@
     {
       "source": "まんげつのカラメラ",
       "english": "Moon Caramela",
-      "note": "Compact dialogue form of Full Moon Caramela, the Moon Blue treasure. The original allocation limits dialogue to sixteen cells per line."
+      "note": "Compact dialogue form of Full Moon Caramela, the Moon Blue treasure. Native nine-glyph inventory label is Full Moon. Dialogue is limited to sixteen cells per line."
     },
     {
       "source": "ムーン＝ブルー",
@@ -130,6 +130,366 @@
       "source": "レッドシード ～ セピアシード",
       "english": "Red, Blue, White, Yellow, Green, Brown, Gray, Black, Pink, Sepia",
       "note": "Ten colored seed labels (3878–3887). The Seed suffix is omitted in compact native item names because full English names exceed their fixed six/seven-glyph allocations. The shop/category supplies the item type."
+    },
+    {
+      "source": "プーすけ",
+      "english": "Pusuke",
+      "note": "Provisional name of Johnny's subordinate in the Moon Blue encounters; some pu speech quirks are retained."
+    },
+    {
+      "source": "ブルーパス",
+      "english": "Blue Pass",
+      "note": "Reward from E-yan. The compact native inventory label is Blue because the original field allows five glyphs."
+    },
+    {
+      "source": "フリーパス",
+      "english": "Free Pass",
+      "note": "Coaster pass awarded by Sharol, allowing travel around Moon Blue. The five-glyph native inventory label is Free."
+    },
+    {
+      "source": "パープルキー",
+      "english": "Purple Key",
+      "note": "Reward from Dean; opens access to Godoshii's island. Native six-glyph inventory label is Purple."
+    },
+    {
+      "source": "クリアキー",
+      "english": "Clear Key",
+      "note": "Reward from Godoshii; permits the Johnny challenge. Native five-glyph inventory label is Clear."
+    },
+    {
+      "source": "ファイア＝ブルー",
+      "english": "Fire Blue",
+      "note": "Provisional name of the next sea, identified in the Moon Blue departure dialogue. Its later story remains untranslated."
+    },
+    {
+      "source": "ラム",
+      "english": "Ram",
+      "note": "Provisional companion name in the alternate Godoshii encounter, record 338; distinct from the equipment RAM abbreviation."
+    },
+    {
+      "source": "バトラードーム",
+      "english": "Battler Dome",
+      "note": "Tournament facility with Normal Fight ranks and species-restricted Select Fight events."
+    },
+    {
+      "source": "ノーマルファイト",
+      "english": "Normal Fight",
+      "note": "One Robopon; event scripts require three consecutive wins. Regional hint 416 instead says four; both source claims are preserved pending gameplay verification."
+    },
+    {
+      "source": "セレクトファイト",
+      "english": "Select Fight",
+      "note": "Species-restricted tournament; three consecutive wins in the event scripts."
+    },
+    {
+      "source": "フラワーきょうじゅ",
+      "english": "Prof. Flower",
+      "note": "Provisional name/title of the Select Fight host and Nose's research partner."
+    },
+    {
+      "source": "ノーズ",
+      "english": "Nose",
+      "note": "Provisional name of Prof. Flower's assistant and Normal Fight host."
+    },
+    {
+      "source": "メスカル",
+      "english": "Mescal",
+      "note": "Provisional Select Fight species name; native roster names remain untranslated."
+    },
+    {
+      "source": "メルリアス",
+      "english": "Merlias",
+      "note": "Provisional Select Fight species name; native roster names remain untranslated."
+    },
+    {
+      "source": "タンビ",
+      "english": "Tanbi",
+      "note": "Provisional Select Fight species name; native roster names remain untranslated."
+    },
+    {
+      "source": "ピパ",
+      "english": "Pipa",
+      "note": "Provisional Select Fight species name; native roster names remain untranslated."
+    },
+    {
+      "source": "ニークロ",
+      "english": "Nikuro",
+      "note": "Provisional Select Fight species name; native roster names remain untranslated."
+    },
+    {
+      "source": "ウォーター＝ブルー",
+      "english": "Water Blue",
+      "note": "Provisional sea name. Dome scripts also spell it ウォータ＝ブルー."
+    },
+    {
+      "source": "ツリー＝ブルー",
+      "english": "Tree Blue",
+      "note": "Provisional sea name; compact regional list 426 omits the shared Blue suffix. The crowded ransom location uses Tree/Roulette, with Tree meaning Tree Blue."
+    },
+    {
+      "source": "ゴールド＝ブルー",
+      "english": "Gold Blue",
+      "note": "Provisional sea name; compact regional list 426 omits the shared Blue suffix."
+    },
+    {
+      "source": "ランド＝ブルー",
+      "english": "Land Blue",
+      "note": "Provisional sea name; compact regional list 426 omits the shared Blue suffix."
+    },
+    {
+      "source": "サニー＝ブルー",
+      "english": "Sunny Blue",
+      "note": "Provisional sea name; compact regional list 426 omits the shared Blue suffix."
+    },
+    {
+      "source": "ブルー",
+      "english": "Blue",
+      "note": "Regional hint 436 explicitly uses Blue to mean sea, not the color."
+    },
+    {
+      "source": "マイティはかせ",
+      "english": "Dr. Mighty",
+      "note": "Provisional title/name for the alternate opening's professor."
+    },
+    {
+      "source": "ドルッピごう",
+      "english": "Doluppi",
+      "note": "Provisional ship name in the Mighty/Ram opening; computer prompts use DOLUPPI."
+    },
+    {
+      "source": "ミクロ",
+      "english": "Micro",
+      "note": "Alternate opening Robopon reward, distinct from Merlin. Native roster names remain Japanese."
+    },
+    {
+      "source": "シャークシード",
+      "english": "Shark Seed",
+      "note": "Alternate opening seed reward. The existing compact native inventory label is Shark."
+    },
+    {
+      "source": "ほのおのカラメラ",
+      "english": "Fire Caramela",
+      "note": "Fire Blue treasure. Crowded dialogue uses Fire, also the eight-glyph native inventory field's compact label."
+    },
+    {
+      "source": "ヘンペー",
+      "english": "Henpei",
+      "note": "Provisional name of the Team M thief with a flat face."
+    },
+    {
+      "source": "ガーリマン",
+      "english": "Gariman",
+      "note": "Provisional name of the Fire Caramela's hereditary keeper."
+    },
+    {
+      "source": "マーク",
+      "english": "Mark",
+      "note": "Provisional name of the muscle-obsessed Team M battler."
+    },
+    {
+      "source": "チームＭ",
+      "english": "Team M",
+      "note": "Fire Blue pirate group led by Mura."
+    },
+    {
+      "source": "ムーラ",
+      "english": "Mura",
+      "note": "Provisional Fire Blue boss name; Komura's mother."
+    },
+    {
+      "source": "コムーラ",
+      "english": "Komura",
+      "note": "Mura's baby daughter. Babble is rendered phonetically, without invented decoded meaning."
+    },
+    {
+      "source": "ニクニクじま",
+      "english": "Nikuniku Island",
+      "note": "Provisional name preserving the repeated meat/muscle wordplay."
+    },
+    {
+      "source": "ドンゴー",
+      "english": "Dongo",
+      "note": "Provisional battler name; repeated name-like chants remain phonetic."
+    },
+    {
+      "source": "くろの さんじゅうし",
+      "english": "Black Musketeers",
+      "note": "Provisional group name. The two very short reflection records use Black Trio."
+    },
+    {
+      "source": "アトス",
+      "english": "Athos",
+      "note": "Provisional Black Musketeers member name."
+    },
+    {
+      "source": "アラミス",
+      "english": "Aramis",
+      "note": "Provisional Black Musketeers member name."
+    },
+    {
+      "source": "ダルタニアン",
+      "english": "Dartagnan",
+      "note": "Compact ASCII spelling fits the shared 16-cell line with Aramis. Retains the Japanese member name; not replaced with Porthos."
+    },
+    {
+      "source": "ミカチ",
+      "english": "Mikachi",
+      "note": "Provisional childhood friend and granddaughter joining the crew on both routes."
+    },
+    {
+      "source": "いちごムース",
+      "english": "Strawberry Mousse",
+      "note": "Compact six-glyph native inventory label and transfer text use Berry. Mikachi gives this item on both routes."
+    },
+    {
+      "source": "Ｒー３Ｋ",
+      "english": "R-3K",
+      "note": "Provisional guard-robot name; also written Ｒ−３Ｋ in regional hints. Mechanical katakana speech is rendered in uppercase."
+    },
+    {
+      "source": "ドン＝オヤージ",
+      "english": "Don Oyaji",
+      "note": "Provisional Water Blue family patriarch and boss; オヤージ is shortened to Oyaji."
+    },
+    {
+      "source": "クルミ",
+      "english": "Kurumi",
+      "note": "Provisional name of Don Oyaji's daughter."
+    },
+    {
+      "source": "メカオ",
+      "english": "Mekao",
+      "note": "Provisional mechanic son, with deliberately odd comic sentence endings."
+    },
+    {
+      "source": "Ｊ・Ｄ",
+      "english": "J.D.",
+      "note": "Provisional eldest son's name."
+    },
+    {
+      "source": "アニロウ",
+      "english": "Aniro",
+      "note": "Provisional ship builder's name."
+    },
+    {
+      "source": "ウーマンボごう",
+      "english": "U-Manbo",
+      "note": "Provisional replacement ship name. Ship exchanges remain reversible."
+    },
+    {
+      "source": "オバーン",
+      "english": "Oban",
+      "note": "Provisional self-styled princess and prize-game host."
+    },
+    {
+      "source": "ヌキヌキ アイランド",
+      "english": "Nukinuki Island",
+      "note": "Provisional prize-game island name."
+    },
+    {
+      "source": "さざなみのカラメラ",
+      "english": "Ripple Caramela",
+      "note": "Water Blue treasure; compact Ripple is used in crowded dialogue, acquisition messages and its nine-glyph native inventory allocation. R-3K uses uppercase RIPPLE CARAMELA."
+    },
+    {
+      "source": "ウーのかじ",
+      "english": "Helm",
+      "note": "Compact quest/inventory label for the U rudder. The original part-name pun contributes to U-Manbo."
+    },
+    {
+      "source": "マンエンジン",
+      "english": "Engine",
+      "note": "Compact quest/inventory label for the Man Engine."
+    },
+    {
+      "source": "ボースクリュー",
+      "english": "Screw",
+      "note": "Compact quest/inventory label for the Bo Screw/ship propeller."
+    },
+    {
+      "source": "ゴーオール",
+      "english": "Oar",
+      "note": "Compact quest/inventory label for the Go Oar. Aniro explicitly discards this fourth part in the source."
+    },
+    {
+      "source": "ＩＤカード：ピンク",
+      "english": "Pink ID",
+      "note": "Decoded card from Aniro; passes pink beam barriers only."
+    },
+    {
+      "source": "ＩＤカード：イエロー",
+      "english": "Yellow ID",
+      "note": "R-3K reward."
+    },
+    {
+      "source": "ＩＤカード：ブルー",
+      "english": "Blue ID",
+      "note": "Kurumi reward."
+    },
+    {
+      "source": "ＩＤカード：グリーン",
+      "english": "Green ID",
+      "note": "Mekao reward."
+    },
+    {
+      "source": "ＩＤカード：オレンジ",
+      "english": "Orange ID",
+      "note": "J.D. reward."
+    },
+    {
+      "source": "ルーレッとう",
+      "english": "Roulette Island",
+      "note": "Provisional island/stronghold name. Crowded dialogue and entry prompts use Roulette."
+    },
+    {
+      "source": "キャプテン・ラダー",
+      "english": "Captain Ladder",
+      "note": "Provisional pirate leader name. Crowded dialogue shortens it to Ladder or Captain as in the source. Native speaker labels remain Japanese. Farewell 1530 names Caramel itself, while main-route 1300 names Caramela; this source distinction is retained."
+    },
+    {
+      "source": "シルバーとう",
+      "english": "Silver Island",
+      "note": "Provisional name of the skull-shaped island where Ladder waits."
+    },
+    {
+      "source": "キャム",
+      "english": "Cam",
+      "note": "Provisional cat-pirate name, corresponding to the Japanese Kyamu. Cat-like speech retains meows and nya endings."
+    },
+    {
+      "source": "ダイコック",
+      "english": "Daicook",
+      "note": "Provisional cooking-pun name. Chef and pirate battler; food metaphors are retained."
+    },
+    {
+      "source": "マイドー",
+      "english": "Maido",
+      "note": "Provisional pirate name in the disguised-brother trap."
+    },
+    {
+      "source": "アカネ",
+      "english": "Akane",
+      "note": "Provisional pirate name. Her Kurumi disguise and both rescue-choice outcomes are retained."
+    },
+    {
+      "source": "カイリ",
+      "english": "Kairi",
+      "note": "Provisional name of Ladder's sister; her haughty speech and post-defeat crying are retained."
+    },
+    {
+      "source": "メッカメカ",
+      "english": "Mekkameka",
+      "note": "Provisional place name in the false Kurumi's introduction, not changed to Water Blue."
+    },
+    {
+      "source": "たいじゅのカラメラ",
+      "english": "Tree Caramela",
+      "note": "Compact English for the great-tree treasure. Inventory uses Tree; crowded dialogue also uses Tree. Acquisition message uses Tree Caramela / +1."
+    },
+    {
+      "source": "ジークンとう",
+      "english": "Jeekun Island",
+      "note": "Provisional Gold Blue island name in Ladder's warning."
     }
   ]
 }

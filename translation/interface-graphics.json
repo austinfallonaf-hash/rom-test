@@ -1,0 +1,52 @@
+{
+  "description": "Equipment background captions, retaining the original pixels outside the three plates",
+  "entries": [
+    {
+      "resource_id": 1460,
+      "source_blob_sha256": "3812fc5118877867f8cbe8365e61672553dc12038cf1f15a442b76b21d01e2db",
+      "image_path": "translation/assets/equipment-base.rgba16.zlib",
+      "image_sha256": "d9a3e0e89490c968b3d21a2851ee685010a5877078f93e30630d99da64e43274",
+      "dimensions": [
+        320,
+        256
+      ],
+      "destination": "0x1fd5360",
+      "captions": [
+        {
+          "source": "そうびソフト",
+          "translation": "EQUIPPED",
+          "rect": [
+            38,
+            71,
+            120,
+            82
+          ],
+          "sample_x": 37
+        },
+        {
+          "source": "もちものソフト",
+          "translation": "SPARE APPS",
+          "rect": [
+            178,
+            21,
+            266,
+            33
+          ],
+          "sample_x": 177
+        },
+        {
+          "source": "つかえる わざ",
+          "translation": "MOVES",
+          "rect": [
+            118,
+            142,
+            206,
+            154
+          ],
+          "sample_x": 117
+        }
+      ],
+      "image_encoding": "zlib"
+    }
+  ]
+}

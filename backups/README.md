@@ -1,38 +1,63 @@
 # Project backup
 
-Latest snapshot: **shop alpha**, created November 05, 2026 at 01:52 PM PST.
-Coverage: 220 native records, 185 UI strings and 299 native choice blocks.
-All 71 automated tests pass. See `docs/shop-alpha.md` for runtime coverage.
+Latest snapshot: **Roulette variants alpha**, including the alternate Ram rescue
+route, Tree Blue regional hints and arrival/abduction variants, plus all earlier
+work. Coverage: 1,906 native records, 832 UI strings, 299 choice blocks and three
+bitmap captions. The source suite has 115 tests. Both Roulette routes have a
+draft; the training/story bank begins at 1609. See `docs/roulette-variants-alpha.md`
+for exact scope and runtime validation.
 
-`robopon64-progress-2026-11-05_135201-PST.zip.gpg` is a full restore snapshot, including original/current ROMs,
-the supplied emulator, current catalogs/tools/tests/docs/patches, documented
-screenshots, historical checkpoints and the verified native day-2 save.
-Git metadata, credentials, dependency caches and duplicate intermediate ROMs
-are omitted. Source and patch files are also available directly in the repo.
+`robopon64-roulette-variants-alpha-C87382BA.zip.gpg` contains original/current ROMs,
+the supplied emulator, catalogs/tools/tests/docs/patches, current native-A evidence,
+historical evidence/checkpoints, screenshot/input dependencies and preserved
+native saves. It includes the current exact-ROM emulator profile.
 
-The archive uses the same recovery passphrase supplied separately for the
-previous backup. The passphrase is not stored in this repository.
+The archive contains 602 payload files, each verified by size and SHA-256. The
+source suite passes all 115 tests, including after a clean restore.
+
+The archive uses AES-256 and the existing recovery passphrase supplied in the project conversation. The passphrase, Git credentials, repository metadata, raw conversation PDF and duplicate historical ROM builds are excluded. Earlier ROMs can be rebuilt from the original and their included cumulative patches.
 
 ## Restore
 
-Download the encrypted archive and both adjacent checksum files. Run:
+Download the encrypted archive and both adjacent checksum files. In this directory:
 
 ```sh
-sha256sum -c robopon64-progress-2026-11-05_135201-PST.zip.gpg.sha256
-gpg --output robopon64-progress-2026-11-05_135201-PST.zip --decrypt robopon64-progress-2026-11-05_135201-PST.zip.gpg
-sha256sum -c robopon64-progress-2026-11-05_135201-PST.zip.sha256
+sha256sum -c robopon64-roulette-variants-alpha-C87382BA.zip.gpg.sha256
+gpg --output robopon64-roulette-variants-alpha-C87382BA.zip --decrypt robopon64-roulette-variants-alpha-C87382BA.zip.gpg
+sha256sum -c robopon64-roulette-variants-alpha-C87382BA.zip.sha256
 ```
 
-Enter the existing recovery passphrase when prompted. Extract the ZIP and follow
-`rom-test/RESTORE.md`. `BACKUP_MANIFEST.json` lists per-file hashes. The ZIP was
-checked for corruption and every manifest entry verified. Independent patch
-application and a rebuild from the archived source/catalogs reproduce the
-included current ROM. Decrypting the encrypted copy reproduces the ZIP exactly.
+Enter the existing passphrase when prompted. From the latest source checkout, verify and restore into a new directory:
 
-The included current ROM has MD5 prefix `EE13E958`. Its native EEPROM loads
-file A at day 2, 500G, with the entered player name and Merlin. A same-build
-checkpoint, if included, is for that exact ROM only; new patches require cold
-boots for verification.
+```sh
+python tools/verify_backup.py /path/to/robopon64-roulette-variants-alpha-C87382BA.zip
+python -m tools.restore_backup /path/to/robopon64-roulette-variants-alpha-C87382BA.zip /path/to/new-directory
+```
 
-The earlier bed/save snapshot `robopon64-progress-2026-11-05_012741-PST.zip.gpg`
-is retained as a historical backup. It is not required to restore this snapshot.
+Follow the restored `rom-test/RESTORE.md` and `RESUME.md`. `BACKUP_MANIFEST.json` records each payload's size and SHA-256. The restore tool preserves executable modes and the emulator library symlink, and refuses an existing destination.
+
+The default native EEPROM remains the verified day-2 file A with 500G, the entered player name and Merlin. It uses the current ROM's `C87382BA` filename. Separate runtime checkpoints under `local/roulette-variants-evidence/`, `local/roulette-story-evidence/`, `local/water-blue-story-evidence/`, `local/fire-blue-variants-evidence/`, `local/fire-blue-story-evidence/`, `local/battler-dome-evidence/`, `local/moon-blue-story-evidence/`, `local/blue-pass-evidence/`, `local/interface-headings-evidence/`, `local/battle-moves-evidence/`, `local/battle-hud-evidence/` and `local/simulator-evidence/` are test copies, identified by their notes; keep the immutable reference EEPROM intact.
+
+The earlier shop snapshot `robopon64-progress-2026-11-05_135201-PST.zip.gpg` and bed/save snapshot `robopon64-progress-2026-11-05_012741-PST.zip.gpg` remain historical backups. They do not contain the reconstructed simulator milestone. Historical emulator states belong only to their exact ROMs.
+
+The preceding simulator snapshot `robopon64-simulator-alpha-20B19F3D.zip.gpg` remains available with its original 421-file manifest.
+
+The preceding battle HUD snapshot `robopon64-battle-hud-alpha-7A9FF097.zip.gpg` remains available with its original 441-file manifest.
+
+The preceding battle moves snapshot `robopon64-battle-moves-alpha-79D7C6D9.zip.gpg` remains available with its original 459-file manifest.
+
+The preceding interface headings snapshot `robopon64-interface-headings-alpha-212AB2AA.zip.gpg` remains available with its original 477-file manifest.
+
+The preceding Blue Pass snapshot `robopon64-blue-pass-alpha-A1FA9CE0.zip.gpg` remains available with its original 488-file manifest.
+
+The preceding Moon Blue story snapshot `robopon64-moon-blue-story-alpha-A6628793.zip.gpg` remains available with its original 499-file manifest.
+
+The preceding Battler Dome snapshot `robopon64-battler-dome-alpha-93E5FFD1.zip.gpg` remains available with its original 510-file manifest.
+
+The preceding Fire Blue story snapshot `robopon64-fire-blue-story-alpha-07EC747C.zip.gpg` remains available with its original 535-file manifest. Its opening state belongs only to that earlier ROM.
+
+The preceding Fire Blue variants snapshot `robopon64-fire-blue-variants-alpha-9A031850.zip.gpg` remains available with its original 551-file manifest.
+
+The preceding Water Blue story snapshot `robopon64-water-blue-story-alpha-2B41A32E.zip.gpg` remains available with its original 568-file manifest.
+
+The preceding Roulette story snapshot `robopon64-roulette-story-alpha-353AEA96.zip.gpg` remains available with its original 585-file manifest.

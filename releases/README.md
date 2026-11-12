@@ -4,6 +4,30 @@ Apply one patch to the original big-endian Japanese ROM with SHA-256
 `02cda6221c10cba0705f351227e2d6c77e071bdb4f7aa8b5cd3c7c047a2b1881`.
 Do not stack patches. Keep a backup of your ROM and saves.
 
+- `roulette-variants-alpha.bps`: current cumulative partial draft with 1,906
+  native records, 832 UI strings, 299 choices and three bitmap captions. Adds the
+  alternate Roulette route, Tree Blue hints and arrival/abduction variants. See
+  `docs/roulette-variants-alpha.md` and its manifest for scope and validation.
+  Apply only to the original.
+
+- `roulette-story-alpha.bps`: earlier cumulative partial draft with 1,671 native
+  records, 832 UI strings, 299 choices and three bitmap captions. Adds the main
+  Roulette rescue route, pirate encounters/traps, arrival/abduction and Gold Blue
+  departure. See `docs/roulette-story-alpha.md` and its manifest for precise scope
+  and validation. Apply only to the original.
+
+- `water-blue-story-alpha.bps`: earlier cumulative partial draft with 1,450
+  native records, 832 UI strings, 299 choices and three bitmap captions. Adds
+  Water Blue encounters/ID cards, ship-parts quest and swaps, prize game, regional
+  hints and radio warning in both routes. See `docs/water-blue-story-alpha.md`
+  and its manifest for scope and validation. Apply only to the original.
+
+- `fire-blue-variants-alpha.bps`: earlier cumulative partial draft, with 1,189
+  native records, 832 UI strings, 299 choices and three bitmap captions. Adds
+  Black Musketeers interludes, Mikachi recruitment, alternate Fire Blue scenes
+  and regional hints. See `docs/fire-blue-variants-alpha.md` and its manifest
+  for exact scope, layout exception and validation. Apply only to the original.
+
 - `menu-proof.ips`: original two-string proof.
 - `save-menu-alpha.ips`: cumulative eleven-string save-menu alpha; supersedes
   the proof. See `docs/save-menu-alpha.md` for runtime coverage and limitations.
@@ -37,6 +61,11 @@ Neither file is a full translation. No ROM data is supplied with the patches.
   and battle-help guides. See their corresponding documents and manifests.
 - `moon-blue-alpha.bps`: earlier cumulative first-sea story/hint draft, including
   Koron and the Red Pass. See `docs/moon-blue-alpha.md`.
-- `shop-alpha.bps`: latest cumulative patch. Adds shared seed/parts shop UI and
+- `shop-alpha.bps`: earlier cumulative patch. Adds shared seed/parts shop UI and
   ten compact color-seed labels. See `docs/shop-alpha.md` and
   `shop-alpha-manifest.json`. Apply only to the exact original ROM.
+
+- `simulator-alpha.bps`: earlier cumulative patch. Adds reconstructed gardening
+  text/nine seed names and simulator/battle-result UI. See `docs/simulator-alpha.md`
+  for the distinction from the unavailable historical gardening patch and the
+  precise runtime coverage. Apply only to the exact original ROM.
