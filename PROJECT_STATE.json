@@ -1,7 +1,7 @@
 {
   "format_version": 1,
   "project": "Robopon 64 English translation",
-  "milestone": "roulette-story-alpha",
+  "milestone": "roulette-variants-alpha",
   "recovered_on": "2026-11-05",
   "timezone": "America/Los_Angeles",
   "upstream": {
@@ -9,18 +9,18 @@
     "branch": "codex/verified-workspace-recovery",
     "recovered_commit": "b6b220228bdb6074758017c25e83539e12a5ca2d"
   },
-  "release_manifest": "releases/roulette-story-alpha-manifest.json",
-  "release_patch": "releases/roulette-story-alpha.bps",
-  "playable_rom": "local/roulette-story-alpha.z64",
+  "release_manifest": "releases/roulette-variants-alpha-manifest.json",
+  "release_patch": "releases/roulette-variants-alpha.bps",
+  "playable_rom": "local/roulette-variants-alpha.z64",
   "catalogs": {
     "menu": "translation/battle-moves-menu.json",
-    "story": "translation/roulette-story-text.json",
+    "story": "translation/roulette-variants-text.json",
     "choices": "translation/story-choices.json",
     "layout": "translation/interface-layout.json",
     "graphics": "translation/interface-graphics.json"
   },
   "coverage": {
-    "native_records": 1671,
+    "native_records": 1906,
     "ui_strings": 832,
     "native_choice_blocks": 299,
     "graphic_captions": 3
@@ -33,30 +33,30 @@
     "day": 2,
     "gold": 500,
     "party_member": "Merlin",
-    "rom_md5_prefix": "353AEA96",
-    "working_path": "local/native-saves/Robot Ponkottsu 64 - 7tsu no Umi-353AEA96.eep"
+    "rom_md5_prefix": "C87382BA",
+    "working_path": "local/native-saves/Robot Ponkottsu 64 - 7tsu no Umi-C87382BA.eep"
   },
-  "latest_encrypted_backup": "backups/robopon64-roulette-story-alpha-353AEA96.zip.gpg",
+  "latest_encrypted_backup": "backups/robopon64-roulette-variants-alpha-C87382BA.zip.gpg",
   "automated_tests": 115,
-  "next_task": "Continue alternate Roulette story at record 1366, regional hints and arrival/abduction variants through 1608, then training bank 1609. Play main Roulette timing, island-clear gates, disguise choices, rescue, Tree reward and Gold Blue departure. Earlier Water/Fire Blue branches, graphical/roster labels, Parts frame, capacity warnings and VS/Transfer Pak branches remain.",
+  "next_task": "Continue training/story bank at record 1609. Play both Roulette rescue routes, regional hints, timing/gates, disguise choices, Tree reward, departure and the 1300 Caramela / 1530 Caramel source difference. Earlier Water/Fire Blue branches, record 831 page split, graphical/roster labels, Parts frame, capacity warnings and VS/Transfer Pak branches remain.",
   "history_recovery": {
     "source": "user-supplied 16-page conversation PDF",
     "historical_gardening_artifact": "unavailable",
     "gardening_status": "reconstructed from the original ROM; wording is not claimed identical to the historical patch"
   },
-  "checkpoint_ref": "refs/tags/roulette-story-alpha",
+  "checkpoint_ref": "refs/tags/roulette-variants-alpha",
   "runtime_validation": {
-    "rom_md5_prefix": "353AEA96",
+    "rom_md5_prefix": "C87382BA",
     "initial_save": "native day 2",
     "reference_eeprom_unchanged": true,
     "gold": 500,
     "party_member": "Merlin",
     "older_build_state_loaded": false,
-    "new_roulette_branches": "build validated; not reached in playthrough",
+    "new_roulette_variant_branches": "build validated; not reached in playthrough",
     "pause_menu": "native file A day 2, 500G, player name and Merlin observed",
     "historical_opening_state": "local/fire-blue-story-evidence/opening-502.st0 belongs only to MD5 07EC747C; not loaded"
   },
   "update_checksum": true,
   "validate_move_names": true,
-  "backup_payload_files_verified": 585
+  "backup_payload_files_verified": 602
 }
