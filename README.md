@@ -5,19 +5,19 @@ For a resumed cloud workspace, start with [RESUME.md](RESUME.md). Run
 to detect a checkout that is behind GitHub and verify the current release/save.
 `PROJECT_STATE.json` identifies the current catalogs and recovery checkpoint.
 
-The current Fire Blue variants alpha adds both Black Musketeers interludes,
-Mikachi joining either crew, alternate Fire Blue encounters and treasure scenes,
-and regional gate-puzzle hints. It contains 1,189 native records, 832 UI strings,
+The current Water Blue story alpha adds both family encounter routes, colored
+ID cards, Aniro's ship-parts quest and ship exchanges, Oban's prize game, regional
+hints and a radio warning. It contains 1,450 native records, 832 UI strings,
 299 choice blocks and three bitmap captions. This remains a partial English
-draft; Water Blue onward, graphical labels and roster names are unfinished.
+draft; later story banks, graphical labels and roster names are unfinished.
 
 The earlier bed/save build verified an in-game save and cold reload of file A,
 retaining day 2, 500G, the player name and Merlin. Later builds load that native
 save for testing, starting from a cold boot. Old-build emulator savestates are
 not used for validation.
 
-Apply [the cumulative Fire Blue variants BPS](releases/fire-blue-variants-alpha.bps) to the exact
-original ROM. Do not stack earlier patches. See [Fire Blue variants notes](docs/fire-blue-variants-alpha.md) for the new coverage and
+Apply [the cumulative Water Blue story BPS](releases/water-blue-story-alpha.bps) to the exact
+original ROM. Do not stack earlier patches. See [Water Blue story notes](docs/water-blue-story-alpha.md) for the new coverage and
 [simulator and gardening notes](docs/simulator-alpha.md)
 for provenance, tested coverage and limitations, and [shop coverage and validation
 notes](docs/shop-alpha.md), [Moon Blue coverage](docs/moon-blue-alpha.md),
@@ -49,16 +49,16 @@ From `/workspace/rom-test`, Python 3.12, standard library only:
 python tools/rom_text.py local/original.z64 --output local/text-candidates.json
 python -m tools.story_text local/original.z64 --output local/story-records.json
 python -m tools.build_story local/original.z64 \
-  --menu translation/battle-moves-menu.json --story translation/fire-blue-variants-text.json \
+  --menu translation/battle-moves-menu.json --story translation/water-blue-story-text.json \
   --choices translation/story-choices.json \
   --layout translation/interface-layout.json \
-  --graphics translation/interface-graphics.json --update-checksum --validate-moves --output local/fire-blue-variants-alpha.z64 --patch local/fire-blue-variants-alpha.bps
+  --graphics translation/interface-graphics.json --update-checksum --validate-moves --output local/water-blue-story-alpha.z64 --patch local/water-blue-story-alpha.bps
 python -m unittest discover -s tests -v
 ```
 
 The builder checks the entire original hash, each source byte sequence, byte
-budgets, and overlapping edits. It creates `local/fire-blue-variants-alpha.z64` and
-`local/fire-blue-variants-alpha.bps`, preserving the original. Apply the BPS to the exact
+budgets, and overlapping edits. It creates `local/water-blue-story-alpha.z64` and
+`local/water-blue-story-alpha.bps`, preserving the original. Apply the BPS to the exact
 original using a standard BPS patcher. Battle HUD strings lie inside CIC-6102 checksum coverage. The explicit flag
 repairs CRC1/CRC2, preserving bootcode and other header fields. The launcher
 generates an isolated profile preserving the emulator's EEPROM/game settings.
@@ -75,7 +75,7 @@ terminal, run `tools/start-display.sh` (display `:7`, no TCP listener). In anoth
 
 ```sh
 DISPLAY=:7 LIBGL_ALWAYS_SOFTWARE=1 \
-ROM_PATH=/workspace/rom-test/local/fire-blue-variants-alpha.z64 \
+ROM_PATH=/workspace/rom-test/local/water-blue-story-alpha.z64 \
 tools/emulator.sh --windowed --gfx mupen64plus-video-glide64mk2 --audio dummy \
   --input mupen64plus-input-sdl --rsp mupen64plus-rsp-hle
 ```

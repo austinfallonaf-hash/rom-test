@@ -1,7 +1,7 @@
 {
   "format_version": 1,
   "project": "Robopon 64 English translation",
-  "milestone": "fire-blue-variants-alpha",
+  "milestone": "water-blue-story-alpha",
   "recovered_on": "2026-11-05",
   "timezone": "America/Los_Angeles",
   "upstream": {
@@ -9,18 +9,18 @@
     "branch": "codex/verified-workspace-recovery",
     "recovered_commit": "b6b220228bdb6074758017c25e83539e12a5ca2d"
   },
-  "release_manifest": "releases/fire-blue-variants-alpha-manifest.json",
-  "release_patch": "releases/fire-blue-variants-alpha.bps",
-  "playable_rom": "local/fire-blue-variants-alpha.z64",
+  "release_manifest": "releases/water-blue-story-alpha-manifest.json",
+  "release_patch": "releases/water-blue-story-alpha.bps",
+  "playable_rom": "local/water-blue-story-alpha.z64",
   "catalogs": {
     "menu": "translation/battle-moves-menu.json",
-    "story": "translation/fire-blue-variants-text.json",
+    "story": "translation/water-blue-story-text.json",
     "choices": "translation/story-choices.json",
     "layout": "translation/interface-layout.json",
     "graphics": "translation/interface-graphics.json"
   },
   "coverage": {
-    "native_records": 1189,
+    "native_records": 1450,
     "ui_strings": 832,
     "native_choice_blocks": 299,
     "graphic_captions": 3
@@ -33,30 +33,30 @@
     "day": 2,
     "gold": 500,
     "party_member": "Merlin",
-    "rom_md5_prefix": "9A031850",
-    "working_path": "local/native-saves/Robot Ponkottsu 64 - 7tsu no Umi-9A031850.eep"
+    "rom_md5_prefix": "2B41A32E",
+    "working_path": "local/native-saves/Robot Ponkottsu 64 - 7tsu no Umi-2B41A32E.eep"
   },
-  "latest_encrypted_backup": "backups/robopon64-fire-blue-variants-alpha-9A031850.zip.gpg",
+  "latest_encrypted_backup": "backups/robopon64-water-blue-story-alpha-2B41A32E.zip.gpg",
   "automated_tests": 115,
-  "next_task": "Continue Water Blue story at record 883 (R-3K, then Kurumi). Play both Fire Blue treasure/battle routes, Black Musketeers, Mikachi recruitment and record 831 page split. Graphical headings, roster names, Parts frame, capacity warnings and VS/Transfer Pak branches remain.",
+  "next_task": "Continue story bank at record 1136: Koron island entry and Roulette Island, then Captain Ladder/kidnapping material. Play new Water Blue encounters, ID barriers, parts/prize choices, ship swaps and radio warning in both routes. Earlier Fire Blue branches, graphical/roster labels, Parts frame, capacity warnings and VS/Transfer Pak branches still need work.",
   "history_recovery": {
     "source": "user-supplied 16-page conversation PDF",
     "historical_gardening_artifact": "unavailable",
     "gardening_status": "reconstructed from the original ROM; wording is not claimed identical to the historical patch"
   },
-  "checkpoint_ref": "refs/tags/fire-blue-variants-alpha",
+  "checkpoint_ref": "refs/tags/water-blue-story-alpha",
   "runtime_validation": {
-    "rom_md5_prefix": "9A031850",
+    "rom_md5_prefix": "2B41A32E",
     "initial_save": "native day 2",
     "reference_eeprom_unchanged": true,
     "gold": 500,
     "party_member": "Merlin",
     "older_build_state_loaded": false,
-    "new_fire_blue_branches": "build validated; not reached in playthrough",
+    "new_water_blue_branches": "build validated; not reached in playthrough",
     "pause_menu": "native file A day 2, 500G, player name and Merlin observed",
-    "historical_opening_state": "local/fire-blue-story-evidence/opening-502.st0 belongs only to previous MD5 07EC747C; not loaded"
+    "historical_opening_state": "local/fire-blue-story-evidence/opening-502.st0 belongs only to MD5 07EC747C; not loaded"
   },
   "update_checksum": true,
   "validate_move_names": true,
-  "backup_payload_files_verified": 551
+  "backup_payload_files_verified": 568
 }

@@ -1,6 +1,6 @@
 # Restore this project
 
-The latest private asset snapshot is the fire-blue-variants-alpha encrypted ZIP named in
+The latest private asset snapshot is the water-blue-story-alpha encrypted ZIP named in
 `backups/README.md`. Verify its encrypted checksum, decrypt it with the existing
 recovery passphrase, then verify the decrypted ZIP checksum as documented there.
 
@@ -27,6 +27,6 @@ Add `--check-remote` when Git metadata and network access are available.
 
 Recovery is tested in a separate empty directory, including executable modes
 and the emulator library symlink. The current source has 115 tests and verifies
-the fire-blue-variants-alpha ROM/BPS and reference EEPROM against the recorded hashes.
+the water-blue-story-alpha ROM/BPS and reference EEPROM against the recorded hashes.
 The earlier shop snapshot remains a historical backup with 238 payload files
 and its original 71-test source suite.

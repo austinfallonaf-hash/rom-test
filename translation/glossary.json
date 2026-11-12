@@ -340,6 +340,101 @@
       "source": "いちごムース",
       "english": "Strawberry Mousse",
       "note": "Compact six-glyph native inventory label and transfer text use Berry. Mikachi gives this item on both routes."
+    },
+    {
+      "source": "Ｒー３Ｋ",
+      "english": "R-3K",
+      "note": "Provisional guard-robot name; also written Ｒ−３Ｋ in regional hints. Mechanical katakana speech is rendered in uppercase."
+    },
+    {
+      "source": "ドン＝オヤージ",
+      "english": "Don Oyaji",
+      "note": "Provisional Water Blue family patriarch and boss; オヤージ is shortened to Oyaji."
+    },
+    {
+      "source": "クルミ",
+      "english": "Kurumi",
+      "note": "Provisional name of Don Oyaji's daughter."
+    },
+    {
+      "source": "メカオ",
+      "english": "Mekao",
+      "note": "Provisional mechanic son, with deliberately odd comic sentence endings."
+    },
+    {
+      "source": "Ｊ・Ｄ",
+      "english": "J.D.",
+      "note": "Provisional eldest son's name."
+    },
+    {
+      "source": "アニロウ",
+      "english": "Aniro",
+      "note": "Provisional ship builder's name."
+    },
+    {
+      "source": "ウーマンボごう",
+      "english": "U-Manbo",
+      "note": "Provisional replacement ship name. Ship exchanges remain reversible."
+    },
+    {
+      "source": "オバーン",
+      "english": "Oban",
+      "note": "Provisional self-styled princess and prize-game host."
+    },
+    {
+      "source": "ヌキヌキ アイランド",
+      "english": "Nukinuki Island",
+      "note": "Provisional prize-game island name."
+    },
+    {
+      "source": "さざなみのカラメラ",
+      "english": "Ripple Caramela",
+      "note": "Water Blue treasure; compact Ripple is used in crowded dialogue, acquisition messages and its nine-glyph native inventory allocation. R-3K uses uppercase RIPPLE CARAMELA."
+    },
+    {
+      "source": "ウーのかじ",
+      "english": "Helm",
+      "note": "Compact quest/inventory label for the U rudder. The original part-name pun contributes to U-Manbo."
+    },
+    {
+      "source": "マンエンジン",
+      "english": "Engine",
+      "note": "Compact quest/inventory label for the Man Engine."
+    },
+    {
+      "source": "ボースクリュー",
+      "english": "Screw",
+      "note": "Compact quest/inventory label for the Bo Screw/ship propeller."
+    },
+    {
+      "source": "ゴーオール",
+      "english": "Oar",
+      "note": "Compact quest/inventory label for the Go Oar. Aniro explicitly discards this fourth part in the source."
+    },
+    {
+      "source": "ＩＤカード：ピンク",
+      "english": "Pink ID",
+      "note": "Decoded card from Aniro; passes pink beam barriers only."
+    },
+    {
+      "source": "ＩＤカード：イエロー",
+      "english": "Yellow ID",
+      "note": "R-3K reward."
+    },
+    {
+      "source": "ＩＤカード：ブルー",
+      "english": "Blue ID",
+      "note": "Kurumi reward."
+    },
+    {
+      "source": "ＩＤカード：グリーン",
+      "english": "Green ID",
+      "note": "Mekao reward."
+    },
+    {
+      "source": "ＩＤカード：オレンジ",
+      "english": "Orange ID",
+      "note": "J.D. reward."
     }
   ]
 }
