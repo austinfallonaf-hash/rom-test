@@ -1,7 +1,7 @@
 {
   "format_version": 1,
   "project": "Robopon 64 English translation",
-  "milestone": "land-blue-variants-alpha",
+  "milestone": "sunny-blue-rematches-alpha",
   "recovered_on": "2026-11-05",
   "timezone": "America/Los_Angeles",
   "upstream": {
@@ -9,18 +9,18 @@
     "branch": "codex/verified-workspace-recovery",
     "recovered_commit": "b6b220228bdb6074758017c25e83539e12a5ca2d"
   },
-  "release_manifest": "releases/land-blue-variants-alpha-manifest.json",
-  "release_patch": "releases/land-blue-variants-alpha.bps",
-  "playable_rom": "local/land-blue-variants-alpha.z64",
+  "release_manifest": "releases/sunny-blue-rematches-alpha-manifest.json",
+  "release_patch": "releases/sunny-blue-rematches-alpha.bps",
+  "playable_rom": "local/sunny-blue-rematches-alpha.z64",
   "catalogs": {
     "menu": "translation/battle-moves-menu.json",
-    "story": "translation/land-blue-variants-text.json",
+    "story": "translation/sunny-blue-rematches-text.json",
     "choices": "translation/story-choices.json",
     "layout": "translation/interface-layout.json",
     "graphics": "translation/interface-graphics.json"
   },
   "coverage": {
-    "native_records": 2637,
+    "native_records": 2730,
     "ui_strings": 832,
     "native_choice_blocks": 299,
     "graphic_captions": 3
@@ -33,20 +33,20 @@
     "day": 2,
     "gold": 500,
     "party_member": "Merlin",
-    "rom_md5_prefix": "85BA29DD",
-    "working_path": "local/native-saves/Robot Ponkottsu 64 - 7tsu no Umi-85BA29DD.eep"
+    "rom_md5_prefix": "B38C0083",
+    "working_path": "local/native-saves/Robot Ponkottsu 64 - 7tsu no Umi-B38C0083.eep"
   },
-  "latest_encrypted_backup": "backups/robopon64-land-blue-variants-alpha-85BA29DD.zip.gpg",
+  "latest_encrypted_backup": "backups/robopon64-sunny-blue-rematches-alpha-B38C0083.zip.gpg",
   "automated_tests": 115,
-  "next_task": "Continue Sunny Blue/rematch bank at record 2356. Play both Land Blue routes, regional rise/sink gates, Kujiran choices, Earth reward, warnings and departure. Check anchored pages 2041/2226 and the 2054 Land Blue versus 2059/2239/2244 Gold Blue source discrepancy; 2145 hardcodes Gria, 2346 uses entered name. Both Gold Blue and Roulette routes, earlier Water/Fire Blue branches, 831 page split, graphical/roster labels, Parts frame, capacity warnings and VS/Transfer Pak branches remain.",
+  "next_task": "Continue the Sunny Blue final confrontation at record 2448. Play the five-boss rematches and united Musketeers, both Land Blue routes and regional gates; inspect anchored pages 831/2041/2226. Gold Blue, Roulette and earlier Water/Fire Blue branches, graphical/roster labels, Parts frame, capacity warnings and VS/Transfer Pak branches remain.",
   "history_recovery": {
     "source": "user-supplied 16-page conversation PDF",
     "historical_gardening_artifact": "unavailable",
     "gardening_status": "reconstructed from the original ROM; wording is not claimed identical to the historical patch"
   },
-  "checkpoint_ref": "refs/tags/land-blue-variants-alpha",
+  "checkpoint_ref": "refs/tags/sunny-blue-rematches-alpha",
   "runtime_validation": {
-    "rom_md5_prefix": "85BA29DD",
+    "rom_md5_prefix": "B38C0083",
     "initial_save": "native day 2",
     "reference_eeprom_unchanged": true,
     "gold": 500,
@@ -54,9 +54,9 @@
     "older_build_state_loaded": false,
     "pause_menu": "native file A day 2, 500G, player name and Merlin observed",
     "historical_opening_state": "local/fire-blue-story-evidence/opening-502.st0 belongs only to MD5 07EC747C; not loaded",
-    "new_land_blue_variant_branches": "build validated; not reached in playthrough"
+    "new_sunny_blue_rematch_branches": "build validated; not reached in playthrough"
   },
   "update_checksum": true,
   "validate_move_names": true,
-  "backup_payload_files_verified": 670
+  "backup_payload_files_verified": 687
 }

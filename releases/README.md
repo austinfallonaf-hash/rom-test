@@ -4,7 +4,13 @@ Apply one patch to the original big-endian Japanese ROM with SHA-256
 `02cda6221c10cba0705f351227e2d6c77e071bdb4f7aa8b5cd3c7c047a2b1881`.
 Do not stack patches. Keep a backup of your ROM and saves.
 
-- `land-blue-variants-alpha.bps`: current cumulative partial draft with 2,637
+- `sunny-blue-rematches-alpha.bps`: current cumulative partial draft with 2,730
+  native records, 832 UI strings, 299 choices and three bitmap captions. Adds
+  five returning bosses, united Musketeers, farewell and Sun inventory label.
+  See `docs/sunny-blue-rematches-alpha.md` and its manifest for scope and validation.
+  Apply only to the original.
+
+- `land-blue-variants-alpha.bps`: earlier cumulative partial draft with 2,637
   native records, 832 UI strings, 299 choices and three bitmap captions. Adds
   alternate Land Blue, rising-island hints and Kujiran/warning/departure variants.
   See `docs/land-blue-variants-alpha.md` and its manifest for scope and validation.
