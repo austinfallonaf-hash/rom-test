@@ -99,3 +99,15 @@ word-by-word review of every captured frame.
 The tested build subsequently entered the first cabin dialogue without a crash.
 A local checkpoint is `local/cabin-intro-alpha.st0` for this exact ROM build.
 Use it for exploration, and cold-boot any newly translated build for validation.
+
+## Explicit layout pages in later catalogs
+
+The current codec preserves the complete original control stream and permits
+additional pages only at declared source-control indices in `layout_pages_before`.
+An anchor may precede an unpaged original portrait (`200A`) or a name-color start
+(`2003:0001`). The latter supports full English cast names, notably 2490's
+Punch/Dandy/Mikachi list. Other color values, resets and already-paged anchors
+are rejected. This declaration does not authorize changing arguments, removing
+commands, adding arbitrary pages, exceeding three lines/16 cells or growing the
+record. Source metadata and the final ROM bytes remain independently checked.
+See `docs/sunny-blue-finale-alpha.md` for the exact 2490 addition and runtime limit.

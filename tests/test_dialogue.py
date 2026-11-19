@@ -160,3 +160,31 @@ class DialogueTests(unittest.TestCase):
         source = [0x2001] + [183]*10 + [0x2000] + [183]*10 + [0x200A, 2] + [183]*10
         with self.assertRaisesRegex(ValueError, 'changed'):
             encode(source, 'One[2000][2001][200A:0002]Two', layout_pages_before=[2])
+
+    def test_declared_name_page_fits_full_cast_and_preserves_colors(self):
+        source = [0x200A, 2] + [183]*16 + [0x2000]
+        for unused in range(3):
+            source += [0x2003, 1] + [183]*10 + [0x2003, 0]
+        source += [0x2000] + [183]*16
+        text = ('[200A:0002]On the ship,[2000][2003:0001]Punch[2003:0000], '
+                '[2003:0001]Dandy[2003:0000],[2001][2003:0001]Mikachi[2003:0000]'
+                '[2000]will die too!')
+        raw = encode(source, text, layout_pages_before=[6])
+        expected = controls(source)
+        expected.insert(6, (0x2001,))
+        self.assertEqual(controls(struct.unpack('>'+'H'*(len(raw)//2), raw)), expected)
+        with self.assertRaisesRegex(ValueError, 'changed'):
+            encode(source, text)
+        for changed in [text.replace('0001', '0002', 1), text+'[2001]',
+                        text.replace('Mikachi', 'Mikachi is far too long')]:
+            with self.subTest(text=changed), self.assertRaises(ValueError):
+                encode(source, changed, layout_pages_before=[6])
+
+    def test_name_page_rejects_reset_other_colors_and_already_paged_anchor(self):
+        for source in [[0x200A, 2, 0x2003, 0], [0x200A, 2, 0x2003, 5],
+                       [0x2001, 0x2003, 1]]:
+            with self.subTest(source=source), self.assertRaisesRegex(ValueError, 'Layout page'):
+                encode(source + [183]*20, '', layout_pages_before=[1])
+        with self.assertRaisesRegex(ValueError, 'budget'):
+            encode([0x200A, 2, 0x2003, 1], '[200A:0002][2001][2003:0001]',
+                   layout_pages_before=[1])

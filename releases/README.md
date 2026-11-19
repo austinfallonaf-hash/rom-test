@@ -4,7 +4,13 @@ Apply one patch to the original big-endian Japanese ROM with SHA-256
 `02cda6221c10cba0705f351227e2d6c77e071bdb4f7aa8b5cd3c7c047a2b1881`.
 Do not stack patches. Keep a backup of your ROM and saves.
 
-- `sunny-blue-rematches-alpha.bps`: current cumulative partial draft with 2,730
+- `sunny-blue-finale-alpha.bps`: current cumulative partial draft with 2,777
+  native records, 832 UI strings, 299 choices and three bitmap captions. Adds
+  the main Doctor Zero confrontation, Caramel revival, escape and approach.
+  See `docs/sunny-blue-finale-alpha.md` and its manifest for scope and validation.
+  Apply only to the original.
+
+- `sunny-blue-rematches-alpha.bps`: earlier cumulative partial draft with 2,730
   native records, 832 UI strings, 299 choices and three bitmap captions. Adds
   five returning bosses, united Musketeers, farewell and Sun inventory label.
   See `docs/sunny-blue-rematches-alpha.md` and its manifest for scope and validation.

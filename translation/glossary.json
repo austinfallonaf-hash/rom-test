@@ -569,7 +569,7 @@
     {
       "source": "にちりんのカラメラ",
       "english": "Sun Caramela",
-      "note": "Seventh fragment, named in Sunny Blue rematch 2389; nine-cell inventory record 3679 uses Sun. Linlin urges the player to obtain it; this bank does not award it."
+      "note": "Seventh fragment, named by Linlin in 2389. Main finale 2477 awards it; the acquisition message and inventory label 3679 use Sun. Linlin does not award it in the rematch scene."
     },
     {
       "source": "カニオ／サバゾー／ウニコ／サザエ／ワカメ",
@@ -585,6 +585,26 @@
       "source": "オーシャン＝ブルー",
       "english": "Ocean Blue",
       "note": "Musketeers farewell 2430; preserved as a farewell to the sea/world. No additional region is inferred."
+    },
+    {
+      "source": "ドクターゼロ／ゼロ",
+      "english": "Dr. Zero / Zero",
+      "note": "Provisional antagonist name. Uses a mechanical body and seeks a Zero empire. Dialogue describes restored human feeling, then his decision to die as a human; no new backstory or resurrection is inferred."
+    },
+    {
+      "source": "グレイテスト１",
+      "english": "Greatest 1",
+      "note": "Top Robopon battler rank claimed by Dr. Zero in 2453; provisional compact rendering."
+    },
+    {
+      "source": "カラメルの話し方：オラ／モシ",
+      "english": "Caramel: folksy, hesitant speech",
+      "note": "Revival monologue 2481 uses stutters, ya and informal phrasing. Its repeated eye-reading requests, pauses, joke and departure remain; no real-world regional dialect is asserted."
+    },
+    {
+      "source": "あしたからさきのみらい",
+      "english": "the future beyond tomorrow",
+      "note": "Zero's dying explanation in 2488 of what Caramel sees in the player's eyes and will grant. The hero never states a spoken wish; this ambiguity is retained."
     }
   ]
 }

@@ -75,7 +75,8 @@ def encode(source_codes, text, *, allow_layout_newlines=False, layout_pages_befo
         raise ValueError('Dialogue line exceeds 16 cells')
     expected, actual = controls(source_codes), controls(target)
     # Some source paragraphs lack a page separator. A catalog may declare an
-    # extra page only before a particular original portrait command. Expand
+    # extra page only before an original portrait or the start of a colored
+    # name (2003:0001). This lets a cast list retain full English names. Expand
     # that exact expected stream instead of allowing arbitrary page changes.
     if not isinstance(layout_pages_before, (list, tuple)):
         raise ValueError('Layout page anchors must be source-control indices')
@@ -84,9 +85,10 @@ def encode(source_codes, text, *, allow_layout_newlines=False, layout_pages_befo
     if list(layout_pages_before) != sorted(set(layout_pages_before)):
         raise ValueError('Layout page anchors must be unique and ordered')
     for index in layout_pages_before:
-        if (not 0 < index < len(expected) or expected[index][0] != 0x200A
+        if (not 0 < index < len(expected)
+                or (expected[index][0] != 0x200A and expected[index] != (0x2003, 1))
                 or expected[index-1] == (0x2001,)):
-            raise ValueError('Layout page anchor must precede an unpaged original portrait')
+            raise ValueError('Layout page anchor must precede an unpaged original portrait or name color')
     anchored = set(layout_pages_before)
     expected = [command for index, original in enumerate(expected)
                 for command in ([(0x2001,), original] if index in anchored else [original])]
