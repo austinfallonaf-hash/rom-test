@@ -304,7 +304,7 @@
     {
       "source": "ニクニクじま",
       "english": "Nikuniku Island",
-      "note": "Provisional name preserving the repeated meat/muscle wordplay."
+      "note": "Provisional name preserving the repeated meat/muscle wordplay. Crowded dialogue omits Island."
     },
     {
       "source": "ドンゴー",
@@ -314,7 +314,7 @@
     {
       "source": "くろの さんじゅうし",
       "english": "Black Musketeers",
-      "note": "Provisional group name. The two very short reflection records use Black Trio."
+      "note": "Provisional group name. Crowded reflection/collision dialogue uses Black Trio; generic さんじゅうし uses Musketeers."
     },
     {
       "source": "アトス",
@@ -490,6 +490,51 @@
       "source": "ジークンとう",
       "english": "Jeekun Island",
       "note": "Provisional Gold Blue island name in Ladder's warning."
+    },
+    {
+      "source": "ホー",
+      "english": "Ho",
+      "note": "Provisional Gold Blue elder name; Fu is his elder twin. Native speaker labels remain Japanese."
+    },
+    {
+      "source": "フー",
+      "english": "Fu",
+      "note": "Provisional name of Ho's elder twin; conducts the Pao Tai training trial."
+    },
+    {
+      "source": "パオ・タイ",
+      "english": "Pao Tai",
+      "note": "Provisional name of Fu's pupil. Native roster/speaker labels remain Japanese."
+    },
+    {
+      "source": "リー・リンリン",
+      "english": "Li Linlin",
+      "note": "Provisional Gold Blue boss name; abbreviated Linlin when the source uses リンリン."
+    },
+    {
+      "source": "リンリン",
+      "english": "Linlin",
+      "note": "Short name of Li Linlin, the expelled Gold Blue pupil and leader of its invading army."
+    },
+    {
+      "source": "キョンキョンシー",
+      "english": "Kyonkyonshi",
+      "note": "Provisional hopping-vampire character name; stutter and hohi laughter retained."
+    },
+    {
+      "source": "しん・ぎ・たい",
+      "english": "mind, skill and body",
+      "note": "Martial-arts balance of mind, skill and body. Compact dialogue uses mind/skill/body, with initial capitalization as needed."
+    },
+    {
+      "source": "おうごんのカラメラ",
+      "english": "Gold Caramela",
+      "note": "Golden fragment associated with Gold Blue. Crowded dialogue and the nine-cell inventory label use Gold. Distinct from the legendary Caramel."
+    },
+    {
+      "source": "デスペラーマウンテン",
+      "english": "Despera Mountain",
+      "note": "Provisional mountain name. Crowded dialogue uses Mt. Despera."
     }
   ]
 }
