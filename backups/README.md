@@ -1,18 +1,18 @@
 # Project backup
 
-Latest snapshot: **Land Blue story alpha**, including main false/true Musketeers,
-shallow/deep travel, rising islands, Kujiran ship, Earth Caramela and Sunny Blue
-departure, plus all earlier work. Coverage: 2,438 native records, 832 UI strings,
-299 choice blocks and three bitmap captions. The source suite has 115 tests.
-The alternate Land Blue bank begins at 2157. Record 2041 adds a guarded page
-break; see `docs/land-blue-story-alpha.md` for scope and validation.
+Latest snapshot: **Land Blue variants alpha**, including the alternate route,
+rising-island hints and alternate Kujiran/warning/departure scenes, plus all
+prior work. Coverage: 2,637 native records, 832 UI strings, 299 choice blocks and
+three bitmap captions. The source suite has 115 tests. Both Land Blue routes have
+a draft; Sunny Blue/rematch text begins at 2356. Record 2226 inherits the guarded
+page addition from 2041. See `docs/land-blue-variants-alpha.md`.
 
-`robopon64-land-blue-story-alpha-0838AE41.zip.gpg` contains original/current ROMs,
+`robopon64-land-blue-variants-alpha-85BA29DD.zip.gpg` contains original/current ROMs,
 the supplied emulator, catalogs/tools/tests/docs/patches, current native-A evidence,
 historical evidence/checkpoints, screenshot/input dependencies and preserved
 native saves. It includes the current exact-ROM emulator profile.
 
-The archive contains 653 payload files, each verified by size and SHA-256. The
+The archive contains 670 payload files, each verified by size and SHA-256. The
 source suite passes all 115 tests, including after a clean restore.
 
 The archive uses AES-256 and the existing recovery passphrase supplied in the project conversation. The passphrase, Git credentials, repository metadata, raw conversation PDF and duplicate historical ROM builds are excluded. Earlier ROMs can be rebuilt from the original and their included cumulative patches.
@@ -22,27 +22,28 @@ The archive uses AES-256 and the existing recovery passphrase supplied in the pr
 Download the encrypted archive and both adjacent checksum files. In this directory:
 
 ```sh
-sha256sum -c robopon64-land-blue-story-alpha-0838AE41.zip.gpg.sha256
-gpg --output robopon64-land-blue-story-alpha-0838AE41.zip --decrypt robopon64-land-blue-story-alpha-0838AE41.zip.gpg
-sha256sum -c robopon64-land-blue-story-alpha-0838AE41.zip.sha256
+sha256sum -c robopon64-land-blue-variants-alpha-85BA29DD.zip.gpg.sha256
+gpg --output robopon64-land-blue-variants-alpha-85BA29DD.zip --decrypt robopon64-land-blue-variants-alpha-85BA29DD.zip.gpg
+sha256sum -c robopon64-land-blue-variants-alpha-85BA29DD.zip.sha256
 ```
 
 Enter the existing passphrase when prompted. From the latest source checkout, verify and restore into a new directory:
 
 ```sh
-python tools/verify_backup.py /path/to/robopon64-land-blue-story-alpha-0838AE41.zip
-python -m tools.restore_backup /path/to/robopon64-land-blue-story-alpha-0838AE41.zip /path/to/new-directory
+python tools/verify_backup.py /path/to/robopon64-land-blue-variants-alpha-85BA29DD.zip
+python -m tools.restore_backup /path/to/robopon64-land-blue-variants-alpha-85BA29DD.zip /path/to/new-directory
 ```
 
 Follow the restored `rom-test/RESTORE.md` and `RESUME.md`. `BACKUP_MANIFEST.json` records each payload's size and SHA-256. The restore tool preserves executable modes and the emulator library symlink, and refuses an existing destination.
 
 Keep the latest verified restore tree and clear superseded generated test copies
 under `/workspace/work/` when needed. Preserve old manifests and check extracted
-files for changes before removing their test trees. A superseded decrypted staging
+files for changes before removing their test trees. Extra files must match
+canonical copies; preserve unmatched files. A superseded decrypted staging
 ZIP can be removed after its hash matches the recorded checksum. This retention
 step prevents repeated recovery tests from filling the cloud workspace.
 
-The default native EEPROM remains the verified day-2 file A with 500G, the entered player name and Merlin. It uses the current ROM's `0838AE41` filename. Separate runtime checkpoints under `local/land-blue-story-evidence/`, `local/gold-blue-variants-evidence/`, `local/gold-blue-story-evidence/`, `local/roulette-variants-evidence/`, `local/roulette-story-evidence/`, `local/water-blue-story-evidence/`, `local/fire-blue-variants-evidence/`, `local/fire-blue-story-evidence/`, `local/battler-dome-evidence/`, `local/moon-blue-story-evidence/`, `local/blue-pass-evidence/`, `local/interface-headings-evidence/`, `local/battle-moves-evidence/`, `local/battle-hud-evidence/` and `local/simulator-evidence/` are test copies, identified by their notes; keep the immutable reference EEPROM intact.
+The default native EEPROM remains the verified day-2 file A with 500G, the entered player name and Merlin. It uses the current ROM's `85BA29DD` filename. Separate runtime checkpoints under `local/land-blue-variants-evidence/`, `local/land-blue-story-evidence/`, `local/gold-blue-variants-evidence/`, `local/gold-blue-story-evidence/`, `local/roulette-variants-evidence/`, `local/roulette-story-evidence/`, `local/water-blue-story-evidence/`, `local/fire-blue-variants-evidence/`, `local/fire-blue-story-evidence/`, `local/battler-dome-evidence/`, `local/moon-blue-story-evidence/`, `local/blue-pass-evidence/`, `local/interface-headings-evidence/`, `local/battle-moves-evidence/`, `local/battle-hud-evidence/` and `local/simulator-evidence/` are test copies, identified by their notes; keep the immutable reference EEPROM intact.
 
 The earlier shop snapshot `robopon64-progress-2026-11-05_135201-PST.zip.gpg` and bed/save snapshot `robopon64-progress-2026-11-05_012741-PST.zip.gpg` remain historical backups. They do not contain the reconstructed simulator milestone. Historical emulator states belong only to their exact ROMs.
 
@@ -73,3 +74,5 @@ The preceding Roulette variants snapshot `robopon64-roulette-variants-alpha-C873
 The preceding Gold Blue story snapshot `robopon64-gold-blue-story-alpha-166993B3.zip.gpg` remains available with its original 619-file manifest.
 
 The preceding Gold Blue variants snapshot `robopon64-gold-blue-variants-alpha-90537926.zip.gpg` remains available with its original 636-file manifest.
+
+The preceding Land Blue story snapshot `robopon64-land-blue-story-alpha-0838AE41.zip.gpg` remains available with its original 653-file manifest.

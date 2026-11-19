@@ -4,7 +4,13 @@ Apply one patch to the original big-endian Japanese ROM with SHA-256
 `02cda6221c10cba0705f351227e2d6c77e071bdb4f7aa8b5cd3c7c047a2b1881`.
 Do not stack patches. Keep a backup of your ROM and saves.
 
-- `land-blue-story-alpha.bps`: current cumulative partial draft with 2,438 native
+- `land-blue-variants-alpha.bps`: current cumulative partial draft with 2,637
+  native records, 832 UI strings, 299 choices and three bitmap captions. Adds
+  alternate Land Blue, rising-island hints and Kujiran/warning/departure variants.
+  See `docs/land-blue-variants-alpha.md` and its manifest for scope and validation.
+  Apply only to the original.
+
+- `land-blue-story-alpha.bps`: earlier cumulative partial draft with 2,438 native
   records, 832 UI strings, 299 choices and three bitmap captions. Adds main Land
   Blue, shallow/deep Musketeers, rising islands, Kujiran and Earth Caramela. See
   `docs/land-blue-story-alpha.md` and its manifest for scope and validation.

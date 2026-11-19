@@ -554,12 +554,12 @@
     {
       "source": "プッカプカじま",
       "english": "Pukkapuka Island",
-      "note": "Provisional name for the rising islands, retaining the floating wordplay. Conditions include ship proximity and defeating a battler."
+      "note": "Provisional name for the rising islands, retaining the floating wordplay; hint 2302 spells the suffix とう instead of じま. Conditions include ship proximity, moving away and defeating a battler."
     },
     {
       "source": "グリア",
       "english": "Gria",
-      "note": "Provisional rendering of the literal name in warning 2145. The source hardcodes this name; other player-name commands remain variables."
+      "note": "Provisional rendering of the literal name in main warning 2145. Alternate warning 2346 uses the entered-name command instead; both source forms are retained."
     },
     {
       "source": "ゴー フォー ブロック",
