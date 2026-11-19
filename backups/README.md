@@ -36,6 +36,12 @@ python -m tools.restore_backup /path/to/robopon64-gold-blue-variants-alpha-90537
 
 Follow the restored `rom-test/RESTORE.md` and `RESUME.md`. `BACKUP_MANIFEST.json` records each payload's size and SHA-256. The restore tool preserves executable modes and the emulator library symlink, and refuses an existing destination.
 
+Keep the latest verified restore tree and clear superseded generated test copies
+under `/workspace/work/` when needed. Preserve old manifests and check extracted
+files for changes before removing their test trees. A superseded decrypted staging
+ZIP can be removed after its hash matches the recorded checksum. This retention
+step prevents repeated recovery tests from filling the cloud workspace.
+
 The default native EEPROM remains the verified day-2 file A with 500G, the entered player name and Merlin. It uses the current ROM's `90537926` filename. Separate runtime checkpoints under `local/gold-blue-variants-evidence/`, `local/gold-blue-story-evidence/`, `local/roulette-variants-evidence/`, `local/roulette-story-evidence/`, `local/water-blue-story-evidence/`, `local/fire-blue-variants-evidence/`, `local/fire-blue-story-evidence/`, `local/battler-dome-evidence/`, `local/moon-blue-story-evidence/`, `local/blue-pass-evidence/`, `local/interface-headings-evidence/`, `local/battle-moves-evidence/`, `local/battle-hud-evidence/` and `local/simulator-evidence/` are test copies, identified by their notes; keep the immutable reference EEPROM intact.
 
 The earlier shop snapshot `robopon64-progress-2026-11-05_135201-PST.zip.gpg` and bed/save snapshot `robopon64-progress-2026-11-05_012741-PST.zip.gpg` remain historical backups. They do not contain the reconstructed simulator milestone. Historical emulator states belong only to their exact ROMs.

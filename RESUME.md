@@ -64,6 +64,13 @@ python -m tools.restore_backup /path/to/decrypted.zip /path/to/new-directory
 
 The destination must not exist. Verification precedes extraction; executable modes and safe relative symlinks are preserved. It creates `rom-test/` within the destination. Keep the latest source checkout and compare versions before moving restored private assets into it. See `RESTORE.md`.
 
+Keep the latest verified restore tree. Superseded restore-test trees and decrypted
+staging ZIPs under `/workspace/work/` can fill the workspace. Before removing a
+test tree, preserve its manifest and confirm its files have no changes. Remove a
+superseded staging ZIP only when its hash matches a recorded backup checksum.
+Encrypted snapshots, source checkouts and canonical ROM/save assets are separate
+from these generated test copies.
+
 ## Next work
 
 Continue Land Blue at native record 1972. Both Gold Blue routes, the regional
