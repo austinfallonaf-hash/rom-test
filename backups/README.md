@@ -1,18 +1,18 @@
 # Project backup
 
-Latest snapshot: **Gold Blue story alpha**, including the main training trial,
-Linlin's fighters, Gold Caramela, frozen-sea history, arrival/collision and
-Land Blue departure, plus all earlier work. Coverage: 2,072 native records,
-832 UI strings, 299 choice blocks and three bitmap captions. The source suite
-has 115 tests. The alternate Gold Blue bank remains untranslated. See
-`docs/gold-blue-story-alpha.md` for exact scope and runtime validation.
+Latest snapshot: **Gold Blue variants alpha**, including the alternate route,
+Mighty's speech, regional hints, kung-fu film puns and arrival/collision/departure
+variants, plus all earlier work. Coverage: 2,252 native records, 832 UI strings,
+299 choice blocks and three bitmap captions. The source suite has 115 tests.
+Both Gold Blue routes have a draft; Land Blue begins at record 1972. See
+`docs/gold-blue-variants-alpha.md` for exact scope and runtime validation.
 
-`robopon64-gold-blue-story-alpha-166993B3.zip.gpg` contains original/current ROMs,
+`robopon64-gold-blue-variants-alpha-90537926.zip.gpg` contains original/current ROMs,
 the supplied emulator, catalogs/tools/tests/docs/patches, current native-A evidence,
 historical evidence/checkpoints, screenshot/input dependencies and preserved
 native saves. It includes the current exact-ROM emulator profile.
 
-The archive contains 619 payload files, each verified by size and SHA-256. The
+The archive contains 636 payload files, each verified by size and SHA-256. The
 source suite passes all 115 tests, including after a clean restore.
 
 The archive uses AES-256 and the existing recovery passphrase supplied in the project conversation. The passphrase, Git credentials, repository metadata, raw conversation PDF and duplicate historical ROM builds are excluded. Earlier ROMs can be rebuilt from the original and their included cumulative patches.
@@ -22,21 +22,21 @@ The archive uses AES-256 and the existing recovery passphrase supplied in the pr
 Download the encrypted archive and both adjacent checksum files. In this directory:
 
 ```sh
-sha256sum -c robopon64-gold-blue-story-alpha-166993B3.zip.gpg.sha256
-gpg --output robopon64-gold-blue-story-alpha-166993B3.zip --decrypt robopon64-gold-blue-story-alpha-166993B3.zip.gpg
-sha256sum -c robopon64-gold-blue-story-alpha-166993B3.zip.sha256
+sha256sum -c robopon64-gold-blue-variants-alpha-90537926.zip.gpg.sha256
+gpg --output robopon64-gold-blue-variants-alpha-90537926.zip --decrypt robopon64-gold-blue-variants-alpha-90537926.zip.gpg
+sha256sum -c robopon64-gold-blue-variants-alpha-90537926.zip.sha256
 ```
 
 Enter the existing passphrase when prompted. From the latest source checkout, verify and restore into a new directory:
 
 ```sh
-python tools/verify_backup.py /path/to/robopon64-gold-blue-story-alpha-166993B3.zip
-python -m tools.restore_backup /path/to/robopon64-gold-blue-story-alpha-166993B3.zip /path/to/new-directory
+python tools/verify_backup.py /path/to/robopon64-gold-blue-variants-alpha-90537926.zip
+python -m tools.restore_backup /path/to/robopon64-gold-blue-variants-alpha-90537926.zip /path/to/new-directory
 ```
 
 Follow the restored `rom-test/RESTORE.md` and `RESUME.md`. `BACKUP_MANIFEST.json` records each payload's size and SHA-256. The restore tool preserves executable modes and the emulator library symlink, and refuses an existing destination.
 
-The default native EEPROM remains the verified day-2 file A with 500G, the entered player name and Merlin. It uses the current ROM's `166993B3` filename. Separate runtime checkpoints under `local/gold-blue-story-evidence/`, `local/roulette-variants-evidence/`, `local/roulette-story-evidence/`, `local/water-blue-story-evidence/`, `local/fire-blue-variants-evidence/`, `local/fire-blue-story-evidence/`, `local/battler-dome-evidence/`, `local/moon-blue-story-evidence/`, `local/blue-pass-evidence/`, `local/interface-headings-evidence/`, `local/battle-moves-evidence/`, `local/battle-hud-evidence/` and `local/simulator-evidence/` are test copies, identified by their notes; keep the immutable reference EEPROM intact.
+The default native EEPROM remains the verified day-2 file A with 500G, the entered player name and Merlin. It uses the current ROM's `90537926` filename. Separate runtime checkpoints under `local/gold-blue-variants-evidence/`, `local/gold-blue-story-evidence/`, `local/roulette-variants-evidence/`, `local/roulette-story-evidence/`, `local/water-blue-story-evidence/`, `local/fire-blue-variants-evidence/`, `local/fire-blue-story-evidence/`, `local/battler-dome-evidence/`, `local/moon-blue-story-evidence/`, `local/blue-pass-evidence/`, `local/interface-headings-evidence/`, `local/battle-moves-evidence/`, `local/battle-hud-evidence/` and `local/simulator-evidence/` are test copies, identified by their notes; keep the immutable reference EEPROM intact.
 
 The earlier shop snapshot `robopon64-progress-2026-11-05_135201-PST.zip.gpg` and bed/save snapshot `robopon64-progress-2026-11-05_012741-PST.zip.gpg` remain historical backups. They do not contain the reconstructed simulator milestone. Historical emulator states belong only to their exact ROMs.
 
@@ -63,3 +63,5 @@ The preceding Water Blue story snapshot `robopon64-water-blue-story-alpha-2B41A3
 The preceding Roulette story snapshot `robopon64-roulette-story-alpha-353AEA96.zip.gpg` remains available with its original 585-file manifest.
 
 The preceding Roulette variants snapshot `robopon64-roulette-variants-alpha-C87382BA.zip.gpg` remains available with its original 602-file manifest.
+
+The preceding Gold Blue story snapshot `robopon64-gold-blue-story-alpha-166993B3.zip.gpg` remains available with its original 619-file manifest.
