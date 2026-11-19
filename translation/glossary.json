@@ -540,6 +540,31 @@
       "source": "ロボポンへの　みち／もえよ　ロボポン／ロボポン　ききいっぱつ",
       "english": "Way of Robopon / Enter Robopon / The Big Robopon",
       "note": "Regional hint 1913 parodies the Japanese titles of The Way of the Dragon, Enter the Dragon and The Big Boss. English uses compact Robopon film-title puns. Keeps the water and one-inch-punch references."
+    },
+    {
+      "source": "だいちのカラメラ",
+      "english": "Earth Caramela",
+      "note": "The sixth fragment; crowded dialogue, the acquisition message and the eight-cell inventory label use Earth. Record 2141 says it alone grants entry to Despera Mountain, without the other five."
+    },
+    {
+      "source": "クージラン",
+      "english": "Kujiran",
+      "note": "Provisional name of the whale-shaped Robopon and the ship used for deep-area travel. Doluppi in record 2130 is an intentional false identification, immediately corrected."
+    },
+    {
+      "source": "プッカプカじま",
+      "english": "Pukkapuka Island",
+      "note": "Provisional name for the rising islands, retaining the floating wordplay. Conditions include ship proximity and defeating a battler."
+    },
+    {
+      "source": "グリア",
+      "english": "Gria",
+      "note": "Provisional rendering of the literal name in warning 2145. The source hardcodes this name; other player-name commands remain variables."
+    },
+    {
+      "source": "ゴー フォー ブロック",
+      "english": "Go for block!",
+      "note": "The impostors say block rather than the expected Go for broke. Retained as a source malapropism. Record 2059 also retains Gold Blue where 2054 says Land Blue."
     }
   ]
 }

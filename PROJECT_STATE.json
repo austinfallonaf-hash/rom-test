@@ -1,7 +1,7 @@
 {
   "format_version": 1,
   "project": "Robopon 64 English translation",
-  "milestone": "gold-blue-variants-alpha",
+  "milestone": "land-blue-story-alpha",
   "recovered_on": "2026-11-05",
   "timezone": "America/Los_Angeles",
   "upstream": {
@@ -9,18 +9,18 @@
     "branch": "codex/verified-workspace-recovery",
     "recovered_commit": "b6b220228bdb6074758017c25e83539e12a5ca2d"
   },
-  "release_manifest": "releases/gold-blue-variants-alpha-manifest.json",
-  "release_patch": "releases/gold-blue-variants-alpha.bps",
-  "playable_rom": "local/gold-blue-variants-alpha.z64",
+  "release_manifest": "releases/land-blue-story-alpha-manifest.json",
+  "release_patch": "releases/land-blue-story-alpha.bps",
+  "playable_rom": "local/land-blue-story-alpha.z64",
   "catalogs": {
     "menu": "translation/battle-moves-menu.json",
-    "story": "translation/gold-blue-variants-text.json",
+    "story": "translation/land-blue-story-text.json",
     "choices": "translation/story-choices.json",
     "layout": "translation/interface-layout.json",
     "graphics": "translation/interface-graphics.json"
   },
   "coverage": {
-    "native_records": 2252,
+    "native_records": 2438,
     "ui_strings": 832,
     "native_choice_blocks": 299,
     "graphic_captions": 3
@@ -33,20 +33,20 @@
     "day": 2,
     "gold": 500,
     "party_member": "Merlin",
-    "rom_md5_prefix": "90537926",
-    "working_path": "local/native-saves/Robot Ponkottsu 64 - 7tsu no Umi-90537926.eep"
+    "rom_md5_prefix": "0838AE41",
+    "working_path": "local/native-saves/Robot Ponkottsu 64 - 7tsu no Umi-0838AE41.eep"
   },
-  "latest_encrypted_backup": "backups/robopon64-gold-blue-variants-alpha-90537926.zip.gpg",
+  "latest_encrypted_backup": "backups/robopon64-land-blue-story-alpha-0838AE41.zip.gpg",
   "automated_tests": 115,
-  "next_task": "Continue Land Blue bank at record 1972. Play both Gold Blue routes, Pao Tai training, fighters, Linlin, Gold reward/thaw, regional hints, pinball/arrival/collision and departure scenes. Both Roulette routes and earlier Water/Fire Blue branches, record 831 page split, graphical/roster labels, Parts frame, capacity warnings and VS/Transfer Pak branches remain.",
+  "next_task": "Continue alternate Land Blue bank at record 2157. Play main Land Blue: impostors, shallow/deep Musketeers, island-rise conditions, Kujiran swap, Earth reward, warnings and Sunny Blue departure. Check 2041 anchored page break and the Land Blue 2054 / Gold Blue 2059 source discrepancy. Both Gold Blue and Roulette routes, earlier Water/Fire Blue branches, 831 page split, graphical/roster labels, Parts frame, capacity warnings and VS/Transfer Pak branches remain.",
   "history_recovery": {
     "source": "user-supplied 16-page conversation PDF",
     "historical_gardening_artifact": "unavailable",
     "gardening_status": "reconstructed from the original ROM; wording is not claimed identical to the historical patch"
   },
-  "checkpoint_ref": "refs/tags/gold-blue-variants-alpha",
+  "checkpoint_ref": "refs/tags/land-blue-story-alpha",
   "runtime_validation": {
-    "rom_md5_prefix": "90537926",
+    "rom_md5_prefix": "0838AE41",
     "initial_save": "native day 2",
     "reference_eeprom_unchanged": true,
     "gold": 500,
@@ -54,9 +54,9 @@
     "older_build_state_loaded": false,
     "pause_menu": "native file A day 2, 500G, player name and Merlin observed",
     "historical_opening_state": "local/fire-blue-story-evidence/opening-502.st0 belongs only to MD5 07EC747C; not loaded",
-    "new_gold_blue_variant_branches": "build validated; not reached in playthrough"
+    "new_land_blue_story_branches": "build validated; not reached in playthrough"
   },
   "update_checksum": true,
   "validate_move_names": true,
-  "backup_payload_files_verified": 636
+  "backup_payload_files_verified": 653
 }
