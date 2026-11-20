@@ -124,3 +124,16 @@ labels are rejected. Future donor growth must fail until labels are repacked.
 See `docs/roster-names-alpha.md` for the ledger and separate reader-preview proof.
 Bot-name command `200B:0007` reserves eleven cells for the default translated
 roster; player-name argument 0 stays five and dynamic item 6 reserves sixteen.
+
+## Fixed minigame instruction grids
+
+Records 3323–3337 use `kind: fixed_grid`, with newline-separated ASCII rows in
+`translation`. Their readers copy rows of a fixed size, independent of dialogue
+line controls. Records 3323–3327 are seven rows of ten glyphs; even records
+3328–3336 are three rows of 21, and odd records 3329–3337 are three rows of 15.
+`tools/fixed_grid.py` permits only these IDs and exact source dimensions. It
+rejects source controls, wrong row counts, overwide rows and nonprintable/non-ASCII
+targets. Rows are right-padded with blank glyphs and encoded at their original
+full size. Descriptor counts and pointers remain unchanged; newline separators
+do not become `2000` controls. This path does not relax dialogue or label limits.
+See `docs/minigame-guide-alpha.md` for reader locations and runtime coverage.

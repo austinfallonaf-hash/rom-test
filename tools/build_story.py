@@ -7,6 +7,7 @@ from tools.bps import make_patch
 from tools.build_patch import build
 from tools.story_text import POOL, records
 from tools.dialogue import encode as encode_dialogue
+from tools.fixed_grid import encode as encode_fixed_grid
 from tools.choices import replace_choice
 from tools.n64_checksum import repair6102
 from tools.move_names import validate as validate_move_names
@@ -35,7 +36,11 @@ def build_story(original, menu, story, choices=(), layout=(), *, update_checksum
         codes = struct.unpack('>'+'H'*(size//2), bytes.fromhex(actual['source_hex']))
         text = entry['translation']
         has_storage = 'storage' in entry
-        if entry.get('kind') == 'dialogue':
+        if entry.get('kind') == 'fixed_grid':
+            if has_storage:
+                raise ValueError('Fixed-grid records cannot use label storage')
+            encoded = encode_fixed_grid(index, codes, text)
+        elif entry.get('kind') == 'dialogue':
             if has_storage:
                 raise ValueError('Only plain native labels may use storage')
             encoded = encode_dialogue(codes, text,

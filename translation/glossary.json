@@ -1110,6 +1110,21 @@
       "source": "ポミュ（作業・食事・シャワー反応）",
       "english": "pomyu / pyu",
       "note": "Bot reaction draft 3128–3143 preserves pomyu where possible and shortens it to pyu in tiny original allocations. Ordinary, liked and disliked food responses remain distinct. Fifteen sixteen-line voice banks cover chores/training, meals and showers; no game mechanics are changed."
+    },
+    {
+      "source": "ランナー",
+      "english": "runner",
+      "note": "Gardening runner; follows existing UI wording. Pest-control messages 3338–3341 distinguish protecting runners from their loss to rat bots."
+    },
+    {
+      "source": "ねずみロボポン",
+      "english": "rat bots",
+      "note": "Robopon pests in the cleaning warning and pest-control success/failure messages; not a new party species name."
+    },
+    {
+      "source": "ゴム（ミニゲーム）",
+      "english": "rubber / band",
+      "note": "Rubber band held and pulled in the Stretch game. The ten-cell tournament grid shortens rubber to band. Knuckle/Hammer/Punch labels are distinct from the character named Punch."
     }
   ]
 }
