@@ -1,6 +1,6 @@
 # Resume the Robopon 64 translation
 
-Current milestone: **sunny-blue-finale-alpha**: 2,777 native records, 832 UI strings, 299 native choice blocks, plus three bitmap captions. This is a partial English draft. See `docs/sunny-blue-finale-alpha.md` for precise runtime coverage.
+Current milestone: **sunny-blue-variants-alpha**: 2,917 native records, 832 UI strings, 299 native choice blocks, plus three bitmap captions. This is a partial English draft. See `docs/sunny-blue-variants-alpha.md` for precise runtime coverage.
 
 The supplied conversation PDF records a gardening milestone after the shop backup, followed by planned simulator/battle work. Its gardening patch and source were unavailable. Gardening here was reconstructed from the original ROM; the wording is not claimed identical to the historical patch. Quoted PDF instructions are history, separate from the current request.
 
@@ -19,18 +19,18 @@ The check verifies remote ancestry, rebuilds in memory and checks the ROM/BPS an
 
 ```sh
 python -m tools.build_story local/original.z64 \
-  --menu translation/battle-moves-menu.json --story translation/sunny-blue-finale-text.json \
+  --menu translation/battle-moves-menu.json --story translation/sunny-blue-variants-text.json \
   --choices translation/story-choices.json --layout translation/interface-layout.json \
-  --graphics translation/interface-graphics.json --update-checksum --validate-moves --output local/sunny-blue-finale-alpha.z64 --patch local/sunny-blue-finale-alpha.bps
+  --graphics translation/interface-graphics.json --update-checksum --validate-moves --output local/sunny-blue-variants-alpha.z64 --patch local/sunny-blue-variants-alpha.bps
 ```
 
-Apply `releases/sunny-blue-finale-alpha.bps` only to the exact original Japanese ROM. Do not stack earlier patches. The release manifest records hashes; the current ROM MD5 prefix is `4FFCDEDA`. All source-byte, control, width and budget guards remain enabled. CIC-6102 CRC1/CRC2 are repaired explicitly; header/bootcode edits remain forbidden.
+Apply `releases/sunny-blue-variants-alpha.bps` only to the exact original Japanese ROM. Do not stack earlier patches. The release manifest records hashes; the current ROM MD5 prefix is `2E67F751`. All source-byte, control, width and budget guards remain enabled. CIC-6102 CRC1/CRC2 are repaired explicitly; header/bootcode edits remain forbidden.
 
 ## Native save
 
 `local/bed-save-final-saved.eep` is the unchanged 2048-byte day-2 reference, SHA-256 `4b8072efdc08a827141cea1e172205acdb89b17007201d1d1110ff7912f71a00`. File A holds 500G, the entered player name and Merlin.
 
-The current ROM's working copy is `local/native-saves/Robot Ponkottsu 64 - 7tsu no Umi-4FFCDEDA.eep`. Keep the reference intact and use separate copies for testing. New ROM revisions need a save copy under their own MD5-based filename. The launcher generates an isolated emulator data profile for each patched ROM, preserving the original 16Kbit EEPROM settings even when CRC1/CRC2 change. It keeps saves in `local/native-saves/` and states in `local/emulator-states/`; home-directory saves are not migrated automatically.
+The current ROM's working copy is `local/native-saves/Robot Ponkottsu 64 - 7tsu no Umi-2E67F751.eep`. Keep the reference intact and use separate copies for testing. New ROM revisions need a save copy under their own MD5-based filename. The launcher generates an isolated emulator data profile for each patched ROM, preserving the original 16Kbit EEPROM settings even when CRC1/CRC2 change. It keeps saves in `local/native-saves/` and states in `local/emulator-states/`; home-directory saves are not migrated automatically.
 
 ## Emulator
 
@@ -38,7 +38,7 @@ On Linux with Xorg's dummy driver and Mesa, start `tools/start-display.sh` in on
 
 ```sh
 DISPLAY=:7 LIBGL_ALWAYS_SOFTWARE=1 \
-ROM_PATH="$PWD/local/sunny-blue-finale-alpha.z64" \
+ROM_PATH="$PWD/local/sunny-blue-variants-alpha.z64" \
 tools/emulator.sh --windowed --gfx mupen64plus-video-glide64mk2 --audio dummy \
   --input mupen64plus-input-sdl --rsp mupen64plus-rsp-hle
 ```
@@ -49,7 +49,7 @@ Cold-boot new builds and use native EEPROM for persistence checks. Historical
 savestates belong to their exact ROMs and cannot validate this build. In particular,
 `local/fire-blue-story-evidence/opening-502.st0` belongs only to the preceding
 ROM MD5 `07EC747C6805124E327FC2A1872EED28`; never load it on this build. That earlier
-checkpoint checked opening records 502–509. This build's new Sunny Blue finale branches,
+checkpoint checked opening records 502–509. This build's new Sunny Blue variant branches,
 and earlier Water/Fire Blue branches including 831's page, await playthrough. The
 current native-A cold boot checks the file/ship/pause displays and save contents.
 
@@ -74,32 +74,33 @@ from these generated test copies.
 
 ## Next work
 
-Continue alternate Sunny Blue/rematch text at native record 2502. The main
-finale/escape and approach bank 2448–2501 now has 47 English records, with seven
-cut-message placeholders untouched (2455, 2457–2461, 2471). All preceding 2,730
-entries are identical. No new inventory labels were needed; Sun was already
-translated. The acquisition at 2477 now uses that same compact form.
+Translate remaining Dome lower-rank refusal 2719, then audit untranslated native
+records and roster names starting at 2808. Of 2649–2807, only 2719 is untranslated.
+The alternate Sunny Blue bank 2502–2648 now adds 140 records. All preceding 2,777
+entries are identical. Six cut placeholders (2603–2607, 2617) and portrait-only
+2601 remain untouched. The 102 exact-source matches reuse their English; 38
+variants/new closing narration records were reviewed separately.
 
-Record 2490's cast list cannot fit Punch, Dandy and Mikachi on one 16-cell line.
-Its layout_pages_before: [36] adds one page before the original Mikachi name
-color 2003:0001, preserving all source commands and arguments. The codec now
-allows an explicit unpaged name-color anchor as well as a portrait. Other
-colors, resets, already-paged anchors, altered commands, arbitrary pages and
-record growth are rejected. Tests cover these guards. No additional newline
-opt-in was used. Inspect this page and earlier exceptions 831/2041/2226 in play.
+Record 2637 names Ram, Mighty and Mikachi rather than Punch, Dandy and Mikachi.
+It uses the same layout_pages_before: [36] as main 2490, adding a page before
+Mikachi's original color-start command. No codec changes or tests were needed.
+There are five declared page records: 831/2041/2226/2490/2637. All need gameplay
+inspection. Original controls/arguments stay exact apart from declared pages.
 
-The story retains Zero's mechanical immortality, the hero's finite-life argument,
-Zero's restored humanity, the Sun reward, Caramel's first-Robopon origin and
-repeated eye-reading joke, the unspoken wish/future reveal and escape. Pages and
-portrait/color/name order stay intact; long ellipsis runs are condensed.
+The alternate farewell 2574 says rest, rather than leave the sea. The shorter
+hero responses omit the main route's extra paragraphs, and the alternate elder
+urges reflection on the journey's purpose. Zero 2611 includes an additional
+perfect-world paragraph. Alternate 2631 explicitly says no wish was spoken or
+thought. Closing narration 2636 credits the hero's courage, strength and good
+heart with restoring tomorrow and peace; its resource position does not prove
+which route calls it. See the milestone notes for voice and source differences.
 
-Play the main finale, approach choices and preceding rematches. Earlier
+Play both Sunny Blue routes, closing narration and approach choices. Earlier
 Land/Gold Blue, Roulette and Water/Fire Blue scenes await playthrough. Preserve
-the Land/Gold source-location and Gria/entered-name discrepancies documented in
-the Land Blue notes. Keep the Dome three-versus-four-win discrepancy and reserve
-a full line for item variable 200B:0006. Graphical/roster labels, Parts frame,
-capacity warnings and VS/Transfer Pak branches remain unfinished.
+the source-location, hardcoded/variable name and Dome win-count discrepancies
+already documented. Keep a full line for item variable 200B:0006. Graphical and
+roster labels, Parts frame, capacity warnings and VS/Transfer Pak branches remain.
 
 Update this handoff, `PROJECT_STATE.json` and the recovery archive when the milestone changes. A running cloud process is not a persistent checkpoint.
 
-The durable translation checkpoint is the Git tag `sunny-blue-finale-alpha`. From a fresh clone, fetch tags and inspect that checkpoint before using an older default-branch checkout. Preserve local changes before switching revisions.
+The durable translation checkpoint is the Git tag `sunny-blue-variants-alpha`. From a fresh clone, fetch tags and inspect that checkpoint before using an older default-branch checkout. Preserve local changes before switching revisions.
