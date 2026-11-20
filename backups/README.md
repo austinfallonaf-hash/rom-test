@@ -1,17 +1,17 @@
 # Project backup
 
-Latest snapshot: **Bot food alpha**, with bedtime voices and food labels, plus
-all prior work. Coverage: 3,083 native records, 832 UI strings, 299 choice blocks
-and three bitmap captions. The source suite has 128 tests. Earlier name storage
-and saved nicknames remain intact. Next is bot interaction text at 2974.
-See `docs/bot-food-alpha.md`.
+Latest snapshot: **Bot interaction alpha**, adding 105 mood/interaction lines
+and the ship interior prompt. Coverage: 3,189 native records, 832 UI strings,
+299 choice blocks and three bitmap captions. All 128 tests pass. Prior text,
+stored labels and saved nicknames remain intact. Next are task/meal/shower
+reactions from 3080. See `docs/bot-interaction-alpha.md`.
 
-`robopon64-bot-food-alpha-DE539AAB.zip.gpg` contains original/current ROMs,
+`robopon64-bot-interaction-alpha-83F535F2.zip.gpg` contains original/current ROMs,
 the supplied emulator, catalogs/tools/tests/docs/patches, current native-A evidence,
 historical evidence/checkpoints, screenshot/input dependencies and preserved
 native saves. It includes the current exact-ROM emulator profile.
 
-The archive contains 765 payload files, each verified by size and SHA-256. The
+The archive contains 783 payload files, each verified by size and SHA-256. The
 source suite passes all 128 tests, including after a clean restore.
 
 The archive uses AES-256 and the existing recovery passphrase supplied in the project conversation. The passphrase, Git credentials, repository metadata, raw conversation PDF and duplicate historical ROM builds are excluded. Earlier ROMs can be rebuilt from the original and their included cumulative patches.
@@ -21,16 +21,16 @@ The archive uses AES-256 and the existing recovery passphrase supplied in the pr
 Download the encrypted archive and both adjacent checksum files. In this directory:
 
 ```sh
-sha256sum -c robopon64-bot-food-alpha-DE539AAB.zip.gpg.sha256
-gpg --output robopon64-bot-food-alpha-DE539AAB.zip --decrypt robopon64-bot-food-alpha-DE539AAB.zip.gpg
-sha256sum -c robopon64-bot-food-alpha-DE539AAB.zip.sha256
+sha256sum -c robopon64-bot-interaction-alpha-83F535F2.zip.gpg.sha256
+gpg --output robopon64-bot-interaction-alpha-83F535F2.zip --decrypt robopon64-bot-interaction-alpha-83F535F2.zip.gpg
+sha256sum -c robopon64-bot-interaction-alpha-83F535F2.zip.sha256
 ```
 
 Enter the existing passphrase when prompted. From the latest source checkout, verify and restore into a new directory:
 
 ```sh
-python tools/verify_backup.py /path/to/robopon64-bot-food-alpha-DE539AAB.zip
-python -m tools.restore_backup /path/to/robopon64-bot-food-alpha-DE539AAB.zip /path/to/new-directory
+python tools/verify_backup.py /path/to/robopon64-bot-interaction-alpha-83F535F2.zip
+python -m tools.restore_backup /path/to/robopon64-bot-interaction-alpha-83F535F2.zip /path/to/new-directory
 ```
 
 Follow the restored `rom-test/RESTORE.md` and `RESUME.md`. `BACKUP_MANIFEST.json` records each payload's size and SHA-256. The restore tool preserves executable modes and the emulator library symlink, and refuses an existing destination.
@@ -42,7 +42,7 @@ canonical copies; preserve unmatched files. A superseded decrypted staging
 ZIP can be removed after its hash matches the recorded checksum. This retention
 step prevents repeated recovery tests from filling the cloud workspace.
 
-The default native EEPROM remains the verified day-2 file A with 500G, the entered player name and Merlin. It uses the current ROM's `DE539AAB` filename. Separate runtime checkpoints under `local/bot-food-evidence/`, `local/roster-names-evidence/`, `local/sunny-blue-variants-evidence/`, `local/sunny-blue-finale-evidence/`, `local/sunny-blue-rematches-evidence/`, `local/land-blue-variants-evidence/`, `local/land-blue-story-evidence/`, `local/gold-blue-variants-evidence/`, `local/gold-blue-story-evidence/`, `local/roulette-variants-evidence/`, `local/roulette-story-evidence/`, `local/water-blue-story-evidence/`, `local/fire-blue-variants-evidence/`, `local/fire-blue-story-evidence/`, `local/battler-dome-evidence/`, `local/moon-blue-story-evidence/`, `local/blue-pass-evidence/`, `local/interface-headings-evidence/`, `local/battle-moves-evidence/`, `local/battle-hud-evidence/` and `local/simulator-evidence/` are test copies, identified by their notes; keep the immutable reference EEPROM intact.
+The default native EEPROM remains the verified day-2 file A with 500G, the entered player name and Merlin. It uses the current ROM's `83F535F2` filename. Separate runtime checkpoints under `local/bot-interaction-evidence/`, `local/bot-food-evidence/`, `local/roster-names-evidence/`, `local/sunny-blue-variants-evidence/`, `local/sunny-blue-finale-evidence/`, `local/sunny-blue-rematches-evidence/`, `local/land-blue-variants-evidence/`, `local/land-blue-story-evidence/`, `local/gold-blue-variants-evidence/`, `local/gold-blue-story-evidence/`, `local/roulette-variants-evidence/`, `local/roulette-story-evidence/`, `local/water-blue-story-evidence/`, `local/fire-blue-variants-evidence/`, `local/fire-blue-story-evidence/`, `local/battler-dome-evidence/`, `local/moon-blue-story-evidence/`, `local/blue-pass-evidence/`, `local/interface-headings-evidence/`, `local/battle-moves-evidence/`, `local/battle-hud-evidence/` and `local/simulator-evidence/` are test copies, identified by their notes; keep the immutable reference EEPROM intact.
 
 The earlier shop snapshot `robopon64-progress-2026-11-05_135201-PST.zip.gpg` and bed/save snapshot `robopon64-progress-2026-11-05_012741-PST.zip.gpg` remain historical backups. They do not contain the reconstructed simulator milestone. Historical emulator states belong only to their exact ROMs.
 
@@ -85,3 +85,5 @@ The preceding Sunny Blue finale snapshot `robopon64-sunny-blue-finale-alpha-4FFC
 The preceding Sunny Blue variants snapshot `robopon64-sunny-blue-variants-alpha-2E67F751.zip.gpg` remains available with its original 721-file manifest.
 
 The preceding roster names snapshot `robopon64-roster-names-alpha-F386293C.zip.gpg` remains available with its original 743-file manifest.
+
+The preceding bot food snapshot `robopon64-bot-food-alpha-DE539AAB.zip.gpg` remains available with its original 765-file manifest.

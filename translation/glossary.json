@@ -1100,6 +1100,11 @@
       "source": "ポミュ／ザリ／メル／オッス／モシ",
       "english": "pomyu / zari / mel / osu / moshi",
       "note": "Bedtime voices retain compact catchphrases where allocations permit. The bot-name command in 2915 stays intact with eleven cells reserved. 2954 retains the previous compact Berry label for strawberry mousse."
+    },
+    {
+      "source": "たいちょー／タイチョー（ロボポン会話）",
+      "english": "Captain",
+      "note": "Bot interaction voices 3009–3022 address the player as Captain; compact sir elsewhere. No new roster names. Seven source bot-name insertions remain dynamic, with eleven cells reserved. Added line breaks at 3033 and 3035 preserve hunger/immobility meaning within original byte budgets."
     }
   ]
 }

@@ -4,7 +4,12 @@ Apply one patch to the original big-endian Japanese ROM with SHA-256
 `02cda6221c10cba0705f351227e2d6c77e071bdb4f7aa8b5cd3c7c047a2b1881`.
 Do not stack patches. Keep a backup of your ROM and saves.
 
-- `bot-food-alpha.bps`: current cumulative partial draft with 3,083 native
+- `bot-interaction-alpha.bps`: current cumulative partial draft with 3,189 native
+  records, 832 UI strings, 299 choices and three bitmap captions. Adds 105 bot
+  mood/interaction lines and the ship interior prompt. Preserves all earlier
+  text and stored labels. See `docs/bot-interaction-alpha.md` and its manifest.
+
+- `bot-food-alpha.bps`: earlier cumulative partial draft with 3,083 native
   records, 832 UI strings, 299 choices and three bitmap captions. Adds 30 bedtime
   lines and 42 food labels, preserving earlier roster storage and Berry.
   See `docs/bot-food-alpha.md` and its manifest. Apply only to the original.

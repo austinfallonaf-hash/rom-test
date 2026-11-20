@@ -1,7 +1,7 @@
 {
   "format_version": 1,
   "project": "Robopon 64 English translation",
-  "milestone": "bot-food-alpha",
+  "milestone": "bot-interaction-alpha",
   "recovered_on": "2026-11-05",
   "timezone": "America/Los_Angeles",
   "upstream": {
@@ -9,18 +9,18 @@
     "branch": "codex/verified-workspace-recovery",
     "recovered_commit": "b6b220228bdb6074758017c25e83539e12a5ca2d"
   },
-  "release_manifest": "releases/bot-food-alpha-manifest.json",
-  "release_patch": "releases/bot-food-alpha.bps",
-  "playable_rom": "local/bot-food-alpha.z64",
+  "release_manifest": "releases/bot-interaction-alpha-manifest.json",
+  "release_patch": "releases/bot-interaction-alpha.bps",
+  "playable_rom": "local/bot-interaction-alpha.z64",
   "catalogs": {
     "menu": "translation/battle-moves-menu.json",
-    "story": "translation/bot-food-text.json",
+    "story": "translation/bot-interaction-text.json",
     "choices": "translation/story-choices.json",
     "layout": "translation/interface-layout.json",
     "graphics": "translation/interface-graphics.json"
   },
   "coverage": {
-    "native_records": 3083,
+    "native_records": 3189,
     "ui_strings": 832,
     "native_choice_blocks": 299,
     "graphic_captions": 3
@@ -33,20 +33,20 @@
     "day": 2,
     "gold": 500,
     "party_member": "Merlin",
-    "rom_md5_prefix": "DE539AAB",
-    "working_path": "local/native-saves/Robot Ponkottsu 64 - 7tsu no Umi-DE539AAB.eep"
+    "rom_md5_prefix": "83F535F2",
+    "working_path": "local/native-saves/Robot Ponkottsu 64 - 7tsu no Umi-83F535F2.eep"
   },
-  "latest_encrypted_backup": "backups/robopon64-bot-food-alpha-DE539AAB.zip.gpg",
+  "latest_encrypted_backup": "backups/robopon64-bot-interaction-alpha-83F535F2.zip.gpg",
   "automated_tests": 128,
-  "next_task": "Continue bot interaction dialogue at 2974. Preserve all 127 stored label ranges when allocating more text; subtract existing ranges from donor padding. Bedtime voices and remaining food contexts need gameplay checks. Berry 2954 and saved nicknames remain unchanged. Earlier regional scenes, donor scenes, five anchored pages, graphical labels, Parts frame, capacity warnings and VS/Transfer Pak branches remain.",
+  "next_task": "Continue bot task, meal and shower reactions at 3080. Preserve all 127 stored label ranges and all earlier catalog entries. Mood branches, bedtime/food contexts and earlier donor/regional scenes need gameplay checks. New line-break opt-ins 3033 and 3035 keep the original dynamic bot name and accommodate eleven cells. Graphical labels, Parts frame and VS/Transfer Pak remain.",
   "history_recovery": {
     "source": "user-supplied 16-page conversation PDF",
     "historical_gardening_artifact": "unavailable",
     "gardening_status": "reconstructed from the original ROM; wording is not claimed identical to the historical patch"
   },
-  "checkpoint_ref": "refs/tags/bot-food-alpha",
+  "checkpoint_ref": "refs/tags/bot-interaction-alpha",
   "runtime_validation": {
-    "rom_md5_prefix": "DE539AAB",
+    "rom_md5_prefix": "83F535F2",
     "initial_save": "native day 2",
     "reference_eeprom_unchanged": true,
     "gold": 500,
@@ -54,9 +54,9 @@
     "older_build_state_loaded": false,
     "pause_menu": "native file A day 2, 500G, player name and Merlin observed",
     "historical_opening_state": "local/fire-blue-story-evidence/opening-502.st0 belongs only to MD5 07EC747C; not loaded",
-    "new_bedtime_and_food": "build validated; native-A compatibility; separate food-name preview described in evidence"
+    "new_bot_interaction": "build and native-A validation; precise runtime coverage recorded in milestone notes and evidence"
   },
   "update_checksum": true,
   "validate_move_names": true,
-  "backup_payload_files_verified": 765
+  "backup_payload_files_verified": 783
 }
