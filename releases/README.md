@@ -4,7 +4,13 @@ Apply one patch to the original big-endian Japanese ROM with SHA-256
 `02cda6221c10cba0705f351227e2d6c77e071bdb4f7aa8b5cd3c7c047a2b1881`.
 Do not stack patches. Keep a backup of your ROM and saves.
 
-- `sunny-blue-variants-alpha.bps`: current cumulative partial draft with 2,917
+- `roster-names-alpha.bps`: current cumulative partial draft with 3,011 native
+  records, 832 UI strings, 299 choices and three bitmap captions. Adds 93 native
+  roster/speaker labels and the remaining Dome rank refusal. Longer labels borrow
+  guarded text-pool padding. See `docs/roster-names-alpha.md` and its manifest.
+  Apply only to the original.
+
+- `sunny-blue-variants-alpha.bps`: earlier cumulative partial draft with 2,917
   native records, 832 UI strings, 299 choices and three bitmap captions. Adds
   alternate Sunny Blue rematches, finale, closing narration and approach scenes.
   See `docs/sunny-blue-variants-alpha.md` and its manifest for scope and validation.

@@ -5,7 +5,7 @@ import struct
 from pathlib import Path
 from tools.bps import make_patch
 from tools.build_patch import build
-from tools.story_text import records
+from tools.story_text import POOL, records
 from tools.dialogue import encode as encode_dialogue
 from tools.choices import replace_choice
 from tools.n64_checksum import repair6102
@@ -20,7 +20,7 @@ def build_story(original, menu, story, choices=(), layout=(), *, update_checksum
         validate_move_names(original, menu, include_equipment=True)
     output = bytearray(menu_rom)
     spans = [(int(r['offset'], 0), int(r['offset'], 0)+len(r['source'].encode('shift_jis'))+1) for r in menu]
-    seen = set()
+    seen, allocations, relocated = set(), {}, []
     for entry in story:
         index = entry['id']
         if index in seen or index not in baseline:
@@ -34,23 +34,55 @@ def build_story(original, menu, story, choices=(), layout=(), *, update_checksum
         size = actual['byte_length']
         codes = struct.unpack('>'+'H'*(size//2), bytes.fromhex(actual['source_hex']))
         text = entry['translation']
+        has_storage = 'storage' in entry
         if entry.get('kind') == 'dialogue':
+            if has_storage:
+                raise ValueError('Only plain native labels may use storage')
             encoded = encode_dialogue(codes, text,
                                       allow_layout_newlines=entry.get('allow_layout_newlines', False),
                                       layout_pages_before=entry.get('layout_pages_before', ()))
         else:
             if any(c >= 272 for c in codes):
                 raise ValueError('Control-bearing story records require separate handling')
-            if not text or len(text) > min(16, size//2):
+            if not text or len(text) > (16 if has_storage else min(16, size//2)):
                 raise ValueError(f'Record {index}: exceeds original glyph budget')
             if any(not 32 <= ord(c) <= 126 for c in text):
                 raise ValueError('This prototype supports printable ASCII narration only')
             encoded = b''.join((ord(c)-32).to_bytes(2, 'big') for c in text)
+        if has_storage:
+            relocated.append((entry, actual, encoded))
+            continue
         output[offset:offset+size] = encoded.ljust(size, bytes([0]))
+        allocations[index] = (offset, len(encoded), size)
         descriptor = int(actual['descriptor'], 0)
         # Offset remains unchanged. Count is in bytes and controls centering.
         output[descriptor:descriptor+4] = struct.pack('>I', len(encoded))
         spans.extend([(offset, offset+size), (descriptor, descriptor+4)])
+    # Full labels can borrow only an explicitly translated record's unused
+    # trailing allocation. Its active bytes/count stay intact. Original label
+    # bytes remain; only the label descriptor points to the verified pool tail.
+    occupied = []
+    for entry, actual, encoded in relocated:
+        storage = entry['storage']
+        if (not isinstance(storage, dict) or set(storage) != {'record_id', 'byte_offset'}
+                or any(type(storage[k]) is not int for k in storage)):
+            raise ValueError('Storage requires integer record_id and byte_offset')
+        donor, relative = storage['record_id'], storage['byte_offset']
+        if donor not in allocations:
+            raise ValueError('Storage donor must be a translated, non-relocated record')
+        start, used, size = allocations[donor]
+        if relative % 2 or relative < used or relative+len(encoded) > size:
+            raise ValueError('Storage must fit aligned unused donor padding')
+        target, end = start+relative, start+relative+len(encoded)
+        if target < POOL or end > len(output):
+            raise ValueError('Storage must remain in the native text pool')
+        if any(target < b and a < end for a, b in occupied):
+            raise ValueError('Native label storage overlaps another label')
+        occupied.append((target, end))
+        output[target:end] = encoded
+        descriptor = int(actual['descriptor'], 0)
+        output[descriptor:descriptor+8] = struct.pack('>II', len(encoded), target-POOL)
+        spans.append((descriptor, descriptor+8))
     for entry in choices:
         offset, encoded = replace_choice(original, entry)
         if offset < 0x101000:

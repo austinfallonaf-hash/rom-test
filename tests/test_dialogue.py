@@ -46,6 +46,22 @@ class DialogueTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, '16 cells'):
             encode(source, 'Got [200B:0006]')
 
+    def test_bot_name_reserves_eleven_cells_on_both_sides(self):
+        source = [183]*40 + [0x200B, 7]
+        encode(source, '12345[200B:0007]')
+        with self.assertRaisesRegex(ValueError, '16 cells'):
+            encode(source, '123456[200B:0007]')
+        source = [0x200B, 7] + [183]*40
+        with self.assertRaisesRegex(ValueError, '16 cells'):
+            encode(source, '[200B:0007]123456')
+
+    def test_translated_default_bot_names_fit_reserved_width(self):
+        root = Path(__file__).resolve().parents[1]
+        rows = json.loads((root/'translation/roster-names-text.json').read_text())['records']
+        bots = [r['translation'] for r in rows if 2808 <= r['id'] <= 2856]
+        self.assertEqual(len(bots), 49)
+        self.assertTrue(all(0 < len(name) <= 11 for name in bots))
+
     def test_dynamic_reward_cannot_share_line_with_suffix(self):
         source = [0x200B, 6] + [183]*30
         with self.assertRaisesRegex(ValueError, '16 cells'):

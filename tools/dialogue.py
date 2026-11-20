@@ -62,7 +62,9 @@ def encode(source_codes, text, *, allow_layout_newlines=False, layout_pages_befo
             # Dome rewards use argument 6 for a dynamic item label, rather
             # than a five-cell entered name. Keep that label alone on its
             # source line: its possible values have not been bounded here.
-            cells += 16 if args[0] == 6 else 5
+            # Argument 7 is a bot name. The translated native roster reaches
+            # eleven ASCII cells; it is distinct from the five-cell player name.
+            cells += 16 if args[0] == 6 else 11 if args[0] == 7 else 5
         position = match.end()
     for c in text[position:]:
         if not 32 <= ord(c) <= 126 or c in '[]':

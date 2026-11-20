@@ -1,7 +1,7 @@
 {
   "format_version": 1,
   "project": "Robopon 64 English translation",
-  "milestone": "sunny-blue-variants-alpha",
+  "milestone": "roster-names-alpha",
   "recovered_on": "2026-11-05",
   "timezone": "America/Los_Angeles",
   "upstream": {
@@ -9,18 +9,18 @@
     "branch": "codex/verified-workspace-recovery",
     "recovered_commit": "b6b220228bdb6074758017c25e83539e12a5ca2d"
   },
-  "release_manifest": "releases/sunny-blue-variants-alpha-manifest.json",
-  "release_patch": "releases/sunny-blue-variants-alpha.bps",
-  "playable_rom": "local/sunny-blue-variants-alpha.z64",
+  "release_manifest": "releases/roster-names-alpha-manifest.json",
+  "release_patch": "releases/roster-names-alpha.bps",
+  "playable_rom": "local/roster-names-alpha.z64",
   "catalogs": {
     "menu": "translation/battle-moves-menu.json",
-    "story": "translation/sunny-blue-variants-text.json",
+    "story": "translation/roster-names-text.json",
     "choices": "translation/story-choices.json",
     "layout": "translation/interface-layout.json",
     "graphics": "translation/interface-graphics.json"
   },
   "coverage": {
-    "native_records": 2917,
+    "native_records": 3011,
     "ui_strings": 832,
     "native_choice_blocks": 299,
     "graphic_captions": 3
@@ -33,20 +33,20 @@
     "day": 2,
     "gold": 500,
     "party_member": "Merlin",
-    "rom_md5_prefix": "2E67F751",
-    "working_path": "local/native-saves/Robot Ponkottsu 64 - 7tsu no Umi-2E67F751.eep"
+    "rom_md5_prefix": "F386293C",
+    "working_path": "local/native-saves/Robot Ponkottsu 64 - 7tsu no Umi-F386293C.eep"
   },
-  "latest_encrypted_backup": "backups/robopon64-sunny-blue-variants-alpha-2E67F751.zip.gpg",
-  "automated_tests": 117,
-  "next_task": "Translate remaining Dome lower-rank refusal 2719, then audit untranslated native records and roster names starting at 2808. Play both Sunny Blue routes, closing narration and approach choices; inspect anchored pages 831/2041/2226/2490/2637. Earlier regional routes, graphical labels, Parts frame, capacity warnings and VS/Transfer Pak branches remain.",
+  "latest_encrypted_backup": "backups/robopon64-roster-names-alpha-F386293C.zip.gpg",
+  "automated_tests": 128,
+  "next_task": "Continue bot bedtime dialogue 2901\u20132930, then food labels 2931\u20132973 and bot interaction text. Preserve existing 86 storage placements; future donor text growth must fail until names are deliberately repacked. Check remaining roster contexts and donor scenes in play, Dome refusal, five anchored pages and earlier regional routes. Saved nicknames are separate; graphical labels, Parts frame, capacity warnings and VS/Transfer Pak branches remain.",
   "history_recovery": {
     "source": "user-supplied 16-page conversation PDF",
     "historical_gardening_artifact": "unavailable",
     "gardening_status": "reconstructed from the original ROM; wording is not claimed identical to the historical patch"
   },
-  "checkpoint_ref": "refs/tags/sunny-blue-variants-alpha",
+  "checkpoint_ref": "refs/tags/roster-names-alpha",
   "runtime_validation": {
-    "rom_md5_prefix": "2E67F751",
+    "rom_md5_prefix": "F386293C",
     "initial_save": "native day 2",
     "reference_eeprom_unchanged": true,
     "gold": 500,
@@ -54,9 +54,9 @@
     "older_build_state_loaded": false,
     "pause_menu": "native file A day 2, 500G, player name and Merlin observed",
     "historical_opening_state": "local/fire-blue-story-evidence/opening-502.st0 belongs only to MD5 07EC747C; not loaded",
-    "new_sunny_blue_variant_branches": "build validated; not reached in playthrough"
+    "new_roster_and_dome": "build validated; final native save keeps Japanese stored Merlin nickname; separate cold-boot native-pointer preview documented in evidence"
   },
   "update_checksum": true,
   "validate_move_names": true,
-  "backup_payload_files_verified": 721
+  "backup_payload_files_verified": 743
 }

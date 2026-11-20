@@ -111,3 +111,16 @@ are rejected. This declaration does not authorize changing arguments, removing
 commands, adding arbitrary pages, exceeding three lines/16 cells or growing the
 record. Source metadata and the final ROM bytes remain independently checked.
 See `docs/sunny-blue-finale-alpha.md` for the exact 2490 addition and runtime limit.
+
+## Native label storage in translated padding
+
+Plain labels can declare `storage: {"record_id": 2376, "byte_offset": 788}` to
+borrow an aligned unused tail from a translated, non-relocated donor. The label
+keeps its guarded original metadata; its final descriptor receives the new byte
+count and pool-relative pointer. The donor's active bytes and descriptor remain
+unchanged. No ROM/pool expansion is used. Labels remain ASCII, at most 16 cells.
+Malformed/overlapping storage, live-text overlap, overflow and control-bearing
+labels are rejected. Future donor growth must fail until labels are repacked.
+See `docs/roster-names-alpha.md` for the ledger and separate reader-preview proof.
+Bot-name command `200B:0007` reserves eleven cells for the default translated
+roster; player-name argument 0 stays five and dynamic item 6 reserves sixteen.
