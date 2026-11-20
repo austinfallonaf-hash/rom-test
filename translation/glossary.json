@@ -885,6 +885,221 @@
       "source": "200B:0007",
       "english": "bot-name insertion",
       "note": "Now reserves eleven cells for the translated default roster (Mochimocchi is longest). Player name argument 0 remains five; dynamic item argument 6 reserves sixteen. Existing 2709 still fits. Stored nicknames are separate from native label records."
+    },
+    {
+      "source": "きつねラーメン",
+      "english": "Kitsune Ramen",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged. Kitsune denotes the fried-tofu noodle topping."
+    },
+    {
+      "source": "ミソうどん",
+      "english": "Miso Udon",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "ワンタンめん",
+      "english": "Wonton Noodles",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "たちぐいそば",
+      "english": "Standing Soba",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "うどんラーメン",
+      "english": "Udon Ramen",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "ゲキからソバ",
+      "english": "Extra Spicy Soba",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "オイルソーダ",
+      "english": "Oil Soda",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "おとなのコーヒー",
+      "english": "Adult Coffee",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "ハーブティー",
+      "english": "Herbal Tea",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "ジュウハチちゃ",
+      "english": "18 Tea",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged. Literal eighteen-tea name."
+    },
+    {
+      "source": "みそしるドリンク",
+      "english": "Miso Soup Drink",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "こどものココア",
+      "english": "Kids' Cocoa",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "インドカレー",
+      "english": "Indian Curry",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "ゲキあまカレー",
+      "english": "Very Sweet Curry",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "ハヤシライス",
+      "english": "Hayashi Rice",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "ポンカレー",
+      "english": "Pon Curry",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "くさいカレー",
+      "english": "Stinky Curry",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "モンゴルカレー",
+      "english": "Mongolian Curry",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "クリームケーキ",
+      "english": "Cream Cake",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "くりくりケーキ",
+      "english": "Chestnut Cake",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "フルーツトルテ",
+      "english": "Fruit Torte",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "ナポレオンパイ",
+      "english": "Napoleon Pie",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "ダイエットケーキ",
+      "english": "Diet Cake",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "トロピカルアイ",
+      "english": "Tropical Eye",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged. Retains the source food/fish-name wordplay; no official localization is claimed."
+    },
+    {
+      "source": "クッピー",
+      "english": "Kuppy",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged. Retains the source food/fish-name wordplay; no official localization is claimed."
+    },
+    {
+      "source": "ひれおフィッシュ",
+      "english": "Fin-O-Fish",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged. Fin-O-Fish keeps the fin/fillet food-name joke."
+    },
+    {
+      "source": "あきざかな",
+      "english": "Autumn Fish",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "くさいさかな",
+      "english": "Stinky Fish",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "シーラザンス",
+      "english": "Coelazance",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged. Retains the source food/fish-name wordplay; no official localization is claimed."
+    },
+    {
+      "source": "レッドチェリー",
+      "english": "Red Cherry",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "グリーンチェリー",
+      "english": "Green Cherry",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "ブルーチェリー",
+      "english": "Blue Cherry",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "イエローチェリー",
+      "english": "Yellow Cherry",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "アップル",
+      "english": "Apple",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "でんちアメ",
+      "english": "Battery Candy",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "シロクロクッキー",
+      "english": "B&W Cookie",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged. B&W abbreviates black and white."
+    },
+    {
+      "source": "カラフルクッキー",
+      "english": "Colorful Cookie",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "おいしいニク",
+      "english": "Tasty Meat",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "ばくだんチョコ",
+      "english": "Bomb Chocolate",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "チャンコなべ",
+      "english": "Chanko Hotpot",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "ぼんぼんランチ",
+      "english": "Bonbon Lunch",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "つきみサンド",
+      "english": "Tsukimi Sandwich",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged. Tsukimi is the moon-viewing/egg sandwich name."
+    },
+    {
+      "source": "ポミュ／ザリ／メル／オッス／モシ",
+      "english": "pomyu / zari / mel / osu / moshi",
+      "note": "Bedtime voices retain compact catchphrases where allocations permit. The bot-name command in 2915 stays intact with eleven cells reserved. 2954 retains the previous compact Berry label for strawberry mousse."
     }
   ]
 }

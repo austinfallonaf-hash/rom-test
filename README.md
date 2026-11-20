@@ -5,19 +5,19 @@ For a resumed cloud workspace, start with [RESUME.md](RESUME.md). Run
 to detect a checkout that is behind GitHub and verify the current release/save.
 `PROJECT_STATE.json` identifies the current catalogs and recovery checkpoint.
 
-The current roster names alpha adds 93 native roster/speaker labels and the
-remaining Dome rank refusal. It contains 3,011 native records, 832 UI strings,
-299 choice blocks and three bitmap captions. Longer labels use verified padding
-within the existing text pool. Existing saved nicknames are preserved. Bot
-chatter, food labels, graphical labels and other text remain unfinished.
+The current bot food alpha adds bedtime voices and 42 native food labels.
+It contains 3,083 native records, 832 UI strings, 299 choice blocks and three
+bitmap captions. Longer labels use guarded free space in the existing text pool,
+preserving all earlier roster placements. Saved nicknames and the existing Berry
+label remain. Bot interaction text, graphical labels and other work continue.
 
 The earlier bed/save build verified an in-game save and cold reload of file A,
 retaining day 2, 500G, the player name and Merlin. Later builds load that native
 save for testing, starting from a cold boot. Old-build emulator savestates are
 not used for validation.
 
-Apply [the cumulative roster names BPS](releases/roster-names-alpha.bps) to the exact
-original ROM. Do not stack earlier patches. See [roster names notes](docs/roster-names-alpha.md) for the new coverage and
+Apply [the cumulative bot food BPS](releases/bot-food-alpha.bps) to the exact
+original ROM. Do not stack earlier patches. See [bot food notes](docs/bot-food-alpha.md) for the new coverage and
 [simulator and gardening notes](docs/simulator-alpha.md)
 for provenance, tested coverage and limitations, and [shop coverage and validation
 notes](docs/shop-alpha.md), [Moon Blue coverage](docs/moon-blue-alpha.md),
@@ -49,16 +49,16 @@ From `/workspace/rom-test`, Python 3.12, standard library only:
 python tools/rom_text.py local/original.z64 --output local/text-candidates.json
 python -m tools.story_text local/original.z64 --output local/story-records.json
 python -m tools.build_story local/original.z64 \
-  --menu translation/battle-moves-menu.json --story translation/roster-names-text.json \
+  --menu translation/battle-moves-menu.json --story translation/bot-food-text.json \
   --choices translation/story-choices.json \
   --layout translation/interface-layout.json \
-  --graphics translation/interface-graphics.json --update-checksum --validate-moves --output local/roster-names-alpha.z64 --patch local/roster-names-alpha.bps
+  --graphics translation/interface-graphics.json --update-checksum --validate-moves --output local/bot-food-alpha.z64 --patch local/bot-food-alpha.bps
 python -m unittest discover -s tests -v
 ```
 
 The builder checks the entire original hash, each source byte sequence, byte
-budgets, and overlapping edits. It creates `local/roster-names-alpha.z64` and
-`local/roster-names-alpha.bps`, preserving the original. Apply the BPS to the exact
+budgets, and overlapping edits. It creates `local/bot-food-alpha.z64` and
+`local/bot-food-alpha.bps`, preserving the original. Apply the BPS to the exact
 original using a standard BPS patcher. Battle HUD strings lie inside CIC-6102 checksum coverage. The explicit flag
 repairs CRC1/CRC2, preserving bootcode and other header fields. The launcher
 generates an isolated profile preserving the emulator's EEPROM/game settings.
@@ -75,7 +75,7 @@ terminal, run `tools/start-display.sh` (display `:7`, no TCP listener). In anoth
 
 ```sh
 DISPLAY=:7 LIBGL_ALWAYS_SOFTWARE=1 \
-ROM_PATH=/workspace/rom-test/local/roster-names-alpha.z64 \
+ROM_PATH=/workspace/rom-test/local/bot-food-alpha.z64 \
 tools/emulator.sh --windowed --gfx mupen64plus-video-glide64mk2 --audio dummy \
   --input mupen64plus-input-sdl --rsp mupen64plus-rsp-hle
 ```
