@@ -1,8 +1,11 @@
 # Restore this project
 
-The latest private asset snapshot is the bot-interaction-alpha encrypted ZIP named in
-`backups/README.md`. Verify its encrypted checksum, decrypt it with the existing
-recovery passphrase, then verify the decrypted ZIP checksum as documented there.
+The latest private asset snapshot is the bot-reactions-alpha split encrypted ZIP
+named in `backups/README.md`. Download both parts and the index/checksum files.
+Verify the part hashes, concatenate .part001 then .part002, verify the whole
+ciphertext hash, decrypt with the existing recovery passphrase, then verify the
+ZIP hash. `PROJECT_STATE.latest_encrypted_backup` points to the parts JSON index.
+The exact commands are in `backups/README.md`.
 
 Using the latest source checkout, run:
 
@@ -27,6 +30,6 @@ Add `--check-remote` when Git metadata and network access are available.
 
 Recovery is tested in a separate empty directory, including executable modes
 and the emulator library symlink. The current source has 128 tests and verifies
-the bot-interaction-alpha ROM/BPS and reference EEPROM against the recorded hashes.
+the bot-reactions-alpha ROM/BPS and reference EEPROM against the recorded hashes.
 The earlier shop snapshot remains a historical backup with 238 payload files
 and its original 71-test source suite.

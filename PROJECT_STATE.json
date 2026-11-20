@@ -1,7 +1,7 @@
 {
   "format_version": 1,
   "project": "Robopon 64 English translation",
-  "milestone": "bot-interaction-alpha",
+  "milestone": "bot-reactions-alpha",
   "recovered_on": "2026-11-05",
   "timezone": "America/Los_Angeles",
   "upstream": {
@@ -9,18 +9,18 @@
     "branch": "codex/verified-workspace-recovery",
     "recovered_commit": "b6b220228bdb6074758017c25e83539e12a5ca2d"
   },
-  "release_manifest": "releases/bot-interaction-alpha-manifest.json",
-  "release_patch": "releases/bot-interaction-alpha.bps",
-  "playable_rom": "local/bot-interaction-alpha.z64",
+  "release_manifest": "releases/bot-reactions-alpha-manifest.json",
+  "release_patch": "releases/bot-reactions-alpha.bps",
+  "playable_rom": "local/bot-reactions-alpha.z64",
   "catalogs": {
     "menu": "translation/battle-moves-menu.json",
-    "story": "translation/bot-interaction-text.json",
+    "story": "translation/bot-reactions-text.json",
     "choices": "translation/story-choices.json",
     "layout": "translation/interface-layout.json",
     "graphics": "translation/interface-graphics.json"
   },
   "coverage": {
-    "native_records": 3189,
+    "native_records": 3429,
     "ui_strings": 832,
     "native_choice_blocks": 299,
     "graphic_captions": 3
@@ -33,20 +33,20 @@
     "day": 2,
     "gold": 500,
     "party_member": "Merlin",
-    "rom_md5_prefix": "83F535F2",
-    "working_path": "local/native-saves/Robot Ponkottsu 64 - 7tsu no Umi-83F535F2.eep"
+    "rom_md5_prefix": "84DFA87A",
+    "working_path": "local/native-saves/Robot Ponkottsu 64 - 7tsu no Umi-84DFA87A.eep"
   },
-  "latest_encrypted_backup": "backups/robopon64-bot-interaction-alpha-83F535F2.zip.gpg",
+  "latest_encrypted_backup": "backups/robopon64-bot-reactions-alpha-84DFA87A.zip.gpg.parts.json",
   "automated_tests": 128,
-  "next_task": "Continue bot task, meal and shower reactions at 3080. Preserve all 127 stored label ranges and all earlier catalog entries. Mood branches, bedtime/food contexts and earlier donor/regional scenes need gameplay checks. New line-break opt-ins 3033 and 3035 keep the original dynamic bot name and accommodate eleven cells. Graphical labels, Parts frame and VS/Transfer Pak remain.",
+  "next_task": "Continue minigame labels/instructions from 3320. Inspect fixed-grid native instructions (3323 onward) before choosing an encoding/layout; do not truncate them into sixteen-cell labels. Preserve all prior entries and 127 occupied stored-label ranges. Five new newline opt-ins 3192,3196,3199,3213,3216 preserve eighteen dynamic name insertions. New reaction branches and prior mood/bedtime/food/donor/regional scenes still need gameplay checks. Latest encrypted archive is split: verify/rejoin both parts using backups/README.md.",
   "history_recovery": {
     "source": "user-supplied 16-page conversation PDF",
     "historical_gardening_artifact": "unavailable",
     "gardening_status": "reconstructed from the original ROM; wording is not claimed identical to the historical patch"
   },
-  "checkpoint_ref": "refs/tags/bot-interaction-alpha",
+  "checkpoint_ref": "refs/tags/bot-reactions-alpha",
   "runtime_validation": {
-    "rom_md5_prefix": "83F535F2",
+    "rom_md5_prefix": "84DFA87A",
     "initial_save": "native day 2",
     "reference_eeprom_unchanged": true,
     "gold": 500,
@@ -54,9 +54,10 @@
     "older_build_state_loaded": false,
     "pause_menu": "native file A day 2, 500G, player name and Merlin observed",
     "historical_opening_state": "local/fire-blue-story-evidence/opening-502.st0 belongs only to MD5 07EC747C; not loaded",
-    "new_bot_interaction": "build and native-A validation; precise runtime coverage recorded in milestone notes and evidence"
+    "new_bot_reactions": "build and exact-ROM native-A compatibility; new reaction triggers are not reached; see milestone notes/evidence"
   },
   "update_checksum": true,
   "validate_move_names": true,
-  "backup_payload_files_verified": 783
+  "backup_payload_files_verified": 801,
+  "backup_format": "gpg-aes256-split"
 }

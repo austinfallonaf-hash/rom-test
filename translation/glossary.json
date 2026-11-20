@@ -1105,6 +1105,11 @@
       "source": "たいちょー／タイチョー（ロボポン会話）",
       "english": "Captain",
       "note": "Bot interaction voices 3009–3022 address the player as Captain; compact sir elsewhere. No new roster names. Seven source bot-name insertions remain dynamic, with eleven cells reserved. Added line breaks at 3033 and 3035 preserve hunger/immobility meaning within original byte budgets."
+    },
+    {
+      "source": "ポミュ（作業・食事・シャワー反応）",
+      "english": "pomyu / pyu",
+      "note": "Bot reaction draft 3128–3143 preserves pomyu where possible and shortens it to pyu in tiny original allocations. Ordinary, liked and disliked food responses remain distinct. Fifteen sixteen-line voice banks cover chores/training, meals and showers; no game mechanics are changed."
     }
   ]
 }
