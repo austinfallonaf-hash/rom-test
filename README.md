@@ -5,19 +5,20 @@ For a resumed cloud workspace, start with [RESUME.md](RESUME.md). Run
 to detect a checkout that is behind GitHub and verify the current release/save.
 `PROJECT_STATE.json` identifies the current catalogs and recovery checkpoint.
 
-The current ship facility captions alpha adds seven labels, completing the eight
-floating facility captions. Names follow the existing navigation menus. It contains
-4,049 native records, 873 UI strings, 299 choices and three bitmap captions.
-Other UI/bitmap text and gameplay checks remain unfinished. The latest encrypted
-backup uses two verified parts; see [recovery instructions](backups/README.md).
+The current bot-status graphics alpha adds HUNGER, STRESS, TRAITS, PARTS and APPS
+to the profile background. It contains 4,049 native records, 873 UI strings,
+299 choices and eight bitmap captions in two resources. The compact resource
+program preserves existing equipment pixels, book text and the final 64 bytes.
+Other UI/graphics and gameplay checks remain unfinished. Recovery uses two
+verified encrypted parts; see [recovery instructions](backups/README.md).
 
 The earlier bed/save build verified an in-game save and cold reload of file A,
 retaining day 2, 500G, the player name and Merlin. Later builds load that native
 save for testing, starting from a cold boot. Old-build emulator savestates are
 not used for validation.
 
-Apply [the cumulative facility captions BPS](releases/facility-captions-alpha.bps) to the exact
-original ROM. Do not stack earlier patches. See [facility caption notes](docs/facility-captions-alpha.md) for the new coverage and
+Apply [the cumulative status graphics BPS](releases/status-graphics-alpha.bps) to the exact
+original ROM. Do not stack earlier patches. See [status graphics notes](docs/status-graphics-alpha.md) for the new coverage and
 [simulator and gardening notes](docs/simulator-alpha.md)
 for provenance, tested coverage and limitations, and [shop coverage and validation
 notes](docs/shop-alpha.md), [Moon Blue coverage](docs/moon-blue-alpha.md),
@@ -52,13 +53,13 @@ python -m tools.build_story local/original.z64 \
   --menu translation/facility-captions-menu.json --story translation/late-dialogue-text.json \
   --choices translation/story-choices.json \
   --layout translation/interface-layout.json \
-  --graphics translation/interface-graphics.json --update-checksum --validate-moves --output local/facility-captions-alpha.z64 --patch local/facility-captions-alpha.bps
+  --graphics translation/status-graphics.json --update-checksum --validate-moves --output local/status-graphics-alpha.z64 --patch local/status-graphics-alpha.bps
 python -m unittest discover -s tests -v
 ```
 
 The builder checks the entire original hash, each source byte sequence, byte
-budgets, and overlapping edits. It creates `local/facility-captions-alpha.z64` and
-`local/facility-captions-alpha.bps`, preserving the original. Apply the BPS to the exact
+budgets, and overlapping edits. It creates `local/status-graphics-alpha.z64` and
+`local/status-graphics-alpha.bps`, preserving the original. Apply the BPS to the exact
 original using a standard BPS patcher. Battle HUD strings lie inside CIC-6102 checksum coverage. The explicit flag
 repairs CRC1/CRC2, preserving bootcode and other header fields. The launcher
 generates an isolated profile preserving the emulator's EEPROM/game settings.
@@ -75,7 +76,7 @@ terminal, run `tools/start-display.sh` (display `:7`, no TCP listener). In anoth
 
 ```sh
 DISPLAY=:7 LIBGL_ALWAYS_SOFTWARE=1 \
-ROM_PATH=/workspace/rom-test/local/facility-captions-alpha.z64 \
+ROM_PATH=/workspace/rom-test/local/status-graphics-alpha.z64 \
 tools/emulator.sh --windowed --gfx mupen64plus-video-glide64mk2 --audio dummy \
   --input mupen64plus-input-sdl --rsp mupen64plus-rsp-hle
 ```

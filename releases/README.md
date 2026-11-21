@@ -4,7 +4,12 @@ Apply one patch to the original big-endian Japanese ROM with SHA-256
 `02cda6221c10cba0705f351227e2d6c77e071bdb4f7aa8b5cd3c7c047a2b1881`.
 Do not stack patches. Keep a backup of your ROM and saves.
 
-- `facility-captions-alpha.bps`: current cumulative partial draft with 4,049 native
+- `status-graphics-alpha.bps`: current cumulative partial draft with 4,049 native
+  records, 873 UI strings, 299 choices and eight bitmap captions. Adds five profile
+  headings using compact resource-local patches, preserving book/equipment pixels.
+  See `docs/status-graphics-alpha.md` and its manifest. Apply to the exact original.
+
+- `facility-captions-alpha.bps`: earlier cumulative partial draft with 4,049 native
   records, 873 UI strings, 299 choices and three bitmap captions. Adds seven ship
   facility labels using the existing centered reader. Other UI/graphics remain.
   See `docs/facility-captions-alpha.md` and its manifest. Apply to the exact original.

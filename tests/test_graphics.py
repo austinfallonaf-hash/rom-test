@@ -40,7 +40,7 @@ class GraphicsTests(unittest.TestCase):
         image=bytes(64*32*2)
         row={'rect':[2,2,62,13],'sample_x':1,'translation':'APPS'}
         for change in [{'translation':'APPS!'}, {'translation':'A'*11},
-                       {'rect':[0,0,65,10]}, {'sample_x':3}]:
+                       {'rect':[0,0,65,10]}, {'sample_x':3}, {'ink_hex':'00'}, {'shadow_hex':'bad'}]:
             with self.subTest(change=change), self.assertRaises(ValueError):
                 caption_image(image,64,32,[dict(row,**change)])
         with self.assertRaisesRegex(ValueError,'Overlapping'):
@@ -80,13 +80,8 @@ class GraphicsTests(unittest.TestCase):
         output[0x56270:0x56274]=bytes.fromhex('0c00010f')
         validate_loader(output)
 
-    def test_shipped_mips_dispatches_without_changing_hvq_arguments_or_return(self):
-        root=Path(__file__).resolve().parents[1]
-        rows=json.loads((root/'translation/interface-layout.json').read_text())['entries']
+    def test_legacy_mips_dispatches_without_changing_hvq_arguments_or_return(self):
         code={0x8000043c+4*i:int.from_bytes(DISPATCHER[4*i:4*i+4],'big') for i in range(9)}
-        actual={int(r['offset'],0)+0x7ffff400:int(r['target_hex'],16)
-                for r in rows if 0x103c<=int(r['offset'],0)<0x1060}
-        self.assertEqual(actual,code)
         for magic,expected in [(b'HVQ2',0x80069028),(b'RAW2',0x8007bec0)]:
             with self.subTest(magic=magic):
                 memory=bytearray(512);memory[64:68]=magic

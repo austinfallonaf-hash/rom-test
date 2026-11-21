@@ -1815,6 +1815,11 @@
       "source": "そうこ (facility caption)",
       "english": "Store",
       "note": "Compact bot-storage facility label, matching navigation. The six-byte source allocation cannot hold Storage. This is not a shop."
+    },
+    {
+      "source": "そうごうせいかく (profile bitmap)",
+      "english": "Traits",
+      "note": "Compact heading for the overall personality panel; only caption pixels change. Hunger/Stress retain their green/blue distinction; Parts/Apps follow existing interface terminology."
     }
   ]
 }

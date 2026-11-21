@@ -1,4 +1,4 @@
-"""Guarded RAW2 sprite replacement and small bitmap captions for the known loader."""
+"""Guarded sprite sources, caption rasterization and program/legacy RAW2 storage."""
 import hashlib
 import struct
 import zlib
@@ -8,9 +8,14 @@ FIRST_ID = 0x3F0
 DISPATCHER = bytes.fromhex("948800002409524115090004000000008c8600100801efb0248400640801a40a00000000")
 
 
-def validate_loader(output):
-    if output[0x103C:0x1060] != DISPATCHER or output[0x56270:0x56274] != bytes.fromhex("0c00010f"):
-        raise ValueError("RAW2 sprite requires the exact guarded loader dispatcher")
+def validate_loader(output, entries=()):
+    from tools.sprite_program import EXEC_DISPATCHER
+    use_program=any(e.get("program") for e in entries)
+    if use_program and any(e.get("program") not in ("copy", "hvq_patch") for e in entries):
+        raise ValueError("Program and legacy RAW2 sprites cannot share a dispatcher")
+    expected=EXEC_DISPATCHER if use_program else DISPATCHER
+    if output[0x103C:0x1060] != expected or output[0x56270:0x56274] != bytes.fromhex("0c00010f"):
+        raise ValueError("Sprite requires the exact guarded loader dispatcher")
 
 # Original five-by-seven capital letters, stored as rows of five bits.
 FONT = dict(zip(' ABCDEFGHIJKLMNOPQRSTUVWXYZ', [
@@ -47,7 +52,9 @@ def caption_image(source, width, height, captions):
             output[(y*width+x0)*2:(y*width+x1)*2] = pixel*(x1-x0)
         x = x0+(x1-x0-(len(text)*6-1))//2
         y = y0+(y1-y0-8)//2
-        for dy,dx,color in [(1,1,b'\0\0'),(0,0,b'\xff\xfe')]:
+        ink=bytes.fromhex(row.get('ink_hex','fffe'));shadow=bytes.fromhex(row.get('shadow_hex','0000'))
+        if len(ink)!=2 or len(shadow)!=2:raise ValueError('Caption colors require RGBA16 words')
+        for dy,dx,color in [(1,1,shadow),(0,0,ink)]:
             for index,char in enumerate(text):
                 for gy,bits in enumerate(FONT[char]):
                     for gx in range(5):
@@ -57,7 +64,7 @@ def caption_image(source, width, height, captions):
     return bytes(output)
 
 
-def replacement(original, entry, image):
+def replacement(original, entry, image, entries=()):
     resource = entry['resource_id']
     count, relative = struct.unpack_from('>II',original,TABLE)
     index = resource-FIRST_ID
@@ -89,6 +96,34 @@ def replacement(original, entry, image):
     if hashlib.sha256(image).hexdigest() != entry['image_sha256']:
         raise ValueError('Recovered sprite SHA-256 differs')
     pixels = caption_image(image,width,height,entry['captions'])
+    if entry.get('program'):
+        from tools.sprite_program import payload as program_payload, caption_runs, apply_runs
+        if entry['program'] not in ('copy','hvq_patch'):raise ValueError('Unknown sprite program')
+        if entry['program']=='hvq_patch' and apply_runs(image,width,height,caption_runs(pixels,width,height,entry['captions']))!=pixels:
+            raise ValueError('Sprite caption run proof differs')
+        payload=program_payload(blob,pixels,width,height,entry['captions'],copy=entry['program']=='copy')
+        destination=int(entry['destination'],0)
+        if entry['program']=='hvq_patch':
+            owner_id=entry.get('reclaim_resource_id');owners=[e for e in entries if e.get('resource_id')==owner_id]
+            if len(owners)!=1 or owners[0].get('program')!='copy' or owner_id==resource:
+                raise ValueError('Reclaimed sprite requires its relocated copy owner')
+            oi=owner_id-FIRST_ID
+            if not 0<=oi<count:raise ValueError('Invalid reclaimed sprite owner')
+            oo,osize=struct.unpack_from('>II',original,TABLE+8+8*oi);start=TABLE+relative+oo
+            if destination!=start or len(payload)>osize or start%4:
+                raise ValueError('Sprite program exceeds reclaimed source allocation')
+            if hashlib.sha256(original[start:start+osize]).hexdigest()!=owners[0]['source_blob_sha256']:
+                raise ValueError('Reclaimed source hash differs')
+            od=int(owners[0]['destination'],0)
+            if start<=od<start+osize:raise ValueError('Reclaimed owner was not relocated')
+            for ri in range(count):
+                ro,rs=struct.unpack_from('>II',original,TABLE+8+8*ri);a=TABLE+relative+ro
+                if ri!=oi and destination<a+rs and a<destination+len(payload):
+                    raise ValueError('Reclaimed sprite source has an alias or overlap')
+        elif (destination%16 or destination<0x101000 or destination+len(payload)>len(original) or original[destination:destination+len(payload)]!=b'\xff'*len(payload)):
+            raise ValueError('Sprite program copy destination is not unused ROM tail')
+        record=struct.pack('>II',destination-TABLE-relative,len(payload))
+        return [(descriptor,record),(destination,payload)]
     header = bytearray(blob[:100]);header[:4]=b'RAW2'
     struct.pack_into('>I',header,0x10,len(pixels))
     payload = bytes(header)+pixels

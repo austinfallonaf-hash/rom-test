@@ -1,0 +1,134 @@
+{
+  "description": "Program-backed equipment copy plus caption-only profile patch using the original HVQ decoder",
+  "entries": [
+    {
+      "resource_id": 1460,
+      "source_blob_sha256": "3812fc5118877867f8cbe8365e61672553dc12038cf1f15a442b76b21d01e2db",
+      "image_path": "translation/assets/equipment-base.rgba16.zlib",
+      "image_sha256": "d9a3e0e89490c968b3d21a2851ee685010a5877078f93e30630d99da64e43274",
+      "dimensions": [
+        320,
+        256
+      ],
+      "destination": "0x1fd5360",
+      "captions": [
+        {
+          "source": "そうびソフト",
+          "translation": "EQUIPPED",
+          "rect": [
+            38,
+            71,
+            120,
+            82
+          ],
+          "sample_x": 37
+        },
+        {
+          "source": "もちものソフト",
+          "translation": "SPARE APPS",
+          "rect": [
+            178,
+            21,
+            266,
+            33
+          ],
+          "sample_x": 177
+        },
+        {
+          "source": "つかえる わざ",
+          "translation": "MOVES",
+          "rect": [
+            118,
+            142,
+            206,
+            154
+          ],
+          "sample_x": 117
+        }
+      ],
+      "image_encoding": "zlib",
+      "program": "copy"
+    },
+    {
+      "resource_id": 1450,
+      "source_blob_sha256": "7659a160f97a48abbd5f7684b4d0be1bfde01a67bd0462d6b7d9e87d9df209fc",
+      "image_path": "translation/assets/status-base.rgba16.zlib",
+      "image_sha256": "cde14909a5fa959b67a18b929742a023bada87c16793156d7e6362b80e639943",
+      "dimensions": [
+        320,
+        256
+      ],
+      "destination": "0x1b477d8",
+      "image_encoding": "zlib",
+      "program": "hvq_patch",
+      "reclaim_resource_id": 1460,
+      "captions": [
+        {
+          "source": "くうふく",
+          "translation": "HUNGER",
+          "rect": [
+            204,
+            21,
+            257,
+            33
+          ],
+          "sample_x": 203,
+          "ink_hex": "0441",
+          "shadow_hex": "fffe"
+        },
+        {
+          "source": "ストレス",
+          "translation": "STRESS",
+          "rect": [
+            204,
+            53,
+            257,
+            65
+          ],
+          "sample_x": 203,
+          "ink_hex": "0031",
+          "shadow_hex": "fffe"
+        },
+        {
+          "source": "そうごうせいかく",
+          "translation": "TRAITS",
+          "rect": [
+            64,
+            53,
+            118,
+            63
+          ],
+          "sample_x": 63,
+          "ink_hex": "084f",
+          "shadow_hex": "fffe"
+        },
+        {
+          "source": "パーツ",
+          "translation": "PARTS",
+          "rect": [
+            174,
+            92,
+            211,
+            104
+          ],
+          "sample_x": 173,
+          "ink_hex": "084f",
+          "shadow_hex": "fffe"
+        },
+        {
+          "source": "ソフト",
+          "translation": "APPS",
+          "rect": [
+            174,
+            134,
+            211,
+            146
+          ],
+          "sample_x": 173,
+          "ink_hex": "084f",
+          "shadow_hex": "fffe"
+        }
+      ]
+    }
+  ]
+}

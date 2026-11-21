@@ -1,20 +1,19 @@
 # Project backup
 
-Latest snapshot: **Ship facility captions alpha**, adding seven UI strings and
-completing the eight floating facility labels. Coverage: 4,049 native records,
-873 UI strings, 299 choices and three bitmap captions. All 150 tests pass.
-Other UI/graphics and runtime coverage remain incomplete.
-See `docs/facility-captions-alpha.md`.
+Latest snapshot: **Bot status graphics alpha**, adding five bitmap headings.
+Coverage: 4,049 native records, 873 UI strings, 299 choices and eight bitmap
+captions in two resources. All 158 tests pass. Other UI/graphics and gameplay
+coverage remain incomplete. See `docs/status-graphics-alpha.md`.
 
 The encrypted archive is split into two parts so each is below GitHub's file
-limit. `robopon64-facility-captions-alpha-AD3B8484.zip.gpg.parts.json` records the
+limit. `robopon64-status-graphics-alpha-5DF41F0A.zip.gpg.parts.json` records the
 ordered filenames, byte counts and hashes, plus the whole ciphertext identity.
 Both parts together contain the original/current ROMs, emulator, source catalogs,
 tools/tests/docs/patches, historical/current runtime evidence, screenshot/input
 dependencies and native saves. The exact-ROM emulator profile is included.
 
-The archive contains **996 payload files**, verified by size and SHA-256. The
-source suite passes all 150 tests, including after clean restoration.
+The archive contains **1,036 payload files**, verified by size and SHA-256. The
+source suite passes all 158 tests, including after clean restoration.
 
 The archive uses AES-256 and the existing recovery passphrase supplied in the project conversation. The passphrase, Git credentials, repository metadata, raw conversation PDF and duplicate historical ROM builds are excluded. Earlier ROMs can be rebuilt from the original and their included cumulative patches.
 
@@ -34,8 +33,8 @@ git sparse-checkout set --no-cone --stdin <<'PATTERNS'
 /*
 !/backups/*
 /backups/README.md
-/backups/robopon64-book-interface-alpha-*
 /backups/robopon64-facility-captions-alpha-*
+/backups/robopon64-status-graphics-alpha-*
 PATTERNS
 ```
 
@@ -55,11 +54,11 @@ Download both `.part001` and `.part002`, the JSON index and all three checksum
 files from this directory. Keep their filenames intact. Verify and join in order:
 
 ```sh
-sha256sum -c robopon64-facility-captions-alpha-AD3B8484.zip.gpg.parts.sha256
-cat robopon64-facility-captions-alpha-AD3B8484.zip.gpg.part001 robopon64-facility-captions-alpha-AD3B8484.zip.gpg.part002 > robopon64-facility-captions-alpha-AD3B8484.zip.gpg
-sha256sum -c robopon64-facility-captions-alpha-AD3B8484.zip.gpg.sha256
-gpg --output robopon64-facility-captions-alpha-AD3B8484.zip --decrypt robopon64-facility-captions-alpha-AD3B8484.zip.gpg
-sha256sum -c robopon64-facility-captions-alpha-AD3B8484.zip.sha256
+sha256sum -c robopon64-status-graphics-alpha-5DF41F0A.zip.gpg.parts.sha256
+cat robopon64-status-graphics-alpha-5DF41F0A.zip.gpg.part001 robopon64-status-graphics-alpha-5DF41F0A.zip.gpg.part002 > robopon64-status-graphics-alpha-5DF41F0A.zip.gpg
+sha256sum -c robopon64-status-graphics-alpha-5DF41F0A.zip.gpg.sha256
+gpg --output robopon64-status-graphics-alpha-5DF41F0A.zip --decrypt robopon64-status-graphics-alpha-5DF41F0A.zip.gpg
+sha256sum -c robopon64-status-graphics-alpha-5DF41F0A.zip.sha256
 ```
 
 Use a new staging directory to avoid overwriting an earlier decrypted copy.
@@ -69,8 +68,8 @@ contains only ciphertext; it is not independently decryptable.
 Enter the existing passphrase when prompted. From the latest source checkout, verify and restore into a new directory:
 
 ```sh
-python tools/verify_backup.py /path/to/robopon64-facility-captions-alpha-AD3B8484.zip
-python -m tools.restore_backup /path/to/robopon64-facility-captions-alpha-AD3B8484.zip /path/to/new-directory
+python tools/verify_backup.py /path/to/robopon64-status-graphics-alpha-5DF41F0A.zip
+python -m tools.restore_backup /path/to/robopon64-status-graphics-alpha-5DF41F0A.zip /path/to/new-directory
 ```
 
 Follow the restored `rom-test/RESTORE.md` and `RESUME.md`. `BACKUP_MANIFEST.json` records each payload's size and SHA-256. The restore tool preserves executable modes and the emulator library symlink, and refuses an existing destination.
@@ -82,7 +81,7 @@ canonical copies; preserve unmatched files. A superseded decrypted staging
 ZIP can be removed after its hash matches the recorded checksum. This retention
 step prevents repeated recovery tests from filling the cloud workspace.
 
-The default native EEPROM remains the verified day-2 file A with 500G, the entered player name and Merlin. It uses the current ROM's `AD3B8484` filename. Separate runtime checkpoints under `local/facility-captions-evidence/`, `local/book-interface-evidence/`, `local/late-dialogue-evidence/`, `local/bot-book-evidence/`, `local/equipment-labels-evidence/`, `local/chore-dialogue-evidence/`, `local/minigame-guide-evidence/`, `local/bot-reactions-evidence/`, `local/bot-interaction-evidence/`, `local/bot-food-evidence/`, `local/roster-names-evidence/`, `local/sunny-blue-variants-evidence/`, `local/sunny-blue-finale-evidence/`, `local/sunny-blue-rematches-evidence/`, `local/land-blue-variants-evidence/`, `local/land-blue-story-evidence/`, `local/gold-blue-variants-evidence/`, `local/gold-blue-story-evidence/`, `local/roulette-variants-evidence/`, `local/roulette-story-evidence/`, `local/water-blue-story-evidence/`, `local/fire-blue-variants-evidence/`, `local/fire-blue-story-evidence/`, `local/battler-dome-evidence/`, `local/moon-blue-story-evidence/`, `local/blue-pass-evidence/`, `local/interface-headings-evidence/`, `local/battle-moves-evidence/`, `local/battle-hud-evidence/` and `local/simulator-evidence/` are test copies, identified by their notes; keep the immutable reference EEPROM intact.
+The default native EEPROM remains the verified day-2 file A with 500G, the entered player name and Merlin. It uses the current ROM's `5DF41F0A` filename. Separate runtime checkpoints under `local/status-graphics-evidence/`, `local/facility-captions-evidence/`, `local/book-interface-evidence/`, `local/late-dialogue-evidence/`, `local/bot-book-evidence/`, `local/equipment-labels-evidence/`, `local/chore-dialogue-evidence/`, `local/minigame-guide-evidence/`, `local/bot-reactions-evidence/`, `local/bot-interaction-evidence/`, `local/bot-food-evidence/`, `local/roster-names-evidence/`, `local/sunny-blue-variants-evidence/`, `local/sunny-blue-finale-evidence/`, `local/sunny-blue-rematches-evidence/`, `local/land-blue-variants-evidence/`, `local/land-blue-story-evidence/`, `local/gold-blue-variants-evidence/`, `local/gold-blue-story-evidence/`, `local/roulette-variants-evidence/`, `local/roulette-story-evidence/`, `local/water-blue-story-evidence/`, `local/fire-blue-variants-evidence/`, `local/fire-blue-story-evidence/`, `local/battler-dome-evidence/`, `local/moon-blue-story-evidence/`, `local/blue-pass-evidence/`, `local/interface-headings-evidence/`, `local/battle-moves-evidence/`, `local/battle-hud-evidence/` and `local/simulator-evidence/` are test copies, identified by their notes; keep the immutable reference EEPROM intact.
 
 The earlier shop snapshot `robopon64-progress-2026-11-05_135201-PST.zip.gpg` and bed/save snapshot `robopon64-progress-2026-11-05_012741-PST.zip.gpg` remain historical backups. They do not contain the reconstructed simulator milestone. Historical emulator states belong only to their exact ROMs.
 
@@ -142,4 +141,6 @@ The older bot-book snapshot `robopon64-bot-book-alpha-6AB9FC59.zip.gpg.parts.jso
 
 The older late-dialogue snapshot `robopon64-late-dialogue-alpha-DC99F55B.zip.gpg.parts.json` retains its original 933-file manifest; its ciphertext remains recoverable from Git/GitHub.
 
-The preceding book-interface snapshot `robopon64-book-interface-alpha-D85FAF7B.zip.gpg.parts.json` retains its original 964-file manifest; its working ciphertext parts and verified restore are kept.
+The older book-interface snapshot `robopon64-book-interface-alpha-D85FAF7B.zip.gpg.parts.json` retains its original 964-file manifest; its ciphertext remains recoverable from Git/GitHub.
+
+The preceding facility-captions snapshot `robopon64-facility-captions-alpha-AD3B8484.zip.gpg.parts.json` retains its original 996-file manifest; its working ciphertext parts and verified restore are kept.

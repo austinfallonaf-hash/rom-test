@@ -360,47 +360,56 @@
     {
       "offset": "0x103c",
       "source_hex": "00000000",
-      "target_hex": "94880000"
+      "target_hex": "94880000",
+      "note": "Sprite decoder dispatch: original HVQ2 calls retain arguments and return. Program-backed assets run from their uncached RDRAM input alias; their first two words branch past the 100-byte header. Existing stack and caller return stay intact."
     },
     {
       "offset": "0x1040",
       "source_hex": "00000000",
-      "target_hex": "24095241"
+      "target_hex": "24094856",
+      "note": "Sprite decoder dispatch: original HVQ2 calls retain arguments and return. Program-backed assets run from their uncached RDRAM input alias; their first two words branch past the 100-byte header. Existing stack and caller return stay intact."
     },
     {
       "offset": "0x1044",
       "source_hex": "00000000",
-      "target_hex": "15090004"
+      "target_hex": "11090004",
+      "note": "Sprite decoder dispatch: original HVQ2 calls retain arguments and return. Program-backed assets run from their uncached RDRAM input alias; their first two words branch past the 100-byte header. Existing stack and caller return stay intact."
     },
     {
       "offset": "0x1048",
       "source_hex": "00000000",
-      "target_hex": "00000000"
+      "target_hex": "3c082000",
+      "note": "Sprite decoder dispatch: original HVQ2 calls retain arguments and return. Program-backed assets run from their uncached RDRAM input alias; their first two words branch past the 100-byte header. Existing stack and caller return stay intact."
     },
     {
       "offset": "0x104c",
       "source_hex": "00000000",
-      "target_hex": "8c860010"
+      "target_hex": "0088c825",
+      "note": "Sprite decoder dispatch: original HVQ2 calls retain arguments and return. Program-backed assets run from their uncached RDRAM input alias; their first two words branch past the 100-byte header. Existing stack and caller return stay intact."
     },
     {
       "offset": "0x1050",
       "source_hex": "00000000",
-      "target_hex": "0801efb0"
+      "target_hex": "03200008",
+      "note": "Sprite decoder dispatch: original HVQ2 calls retain arguments and return. Program-backed assets run from their uncached RDRAM input alias; their first two words branch past the 100-byte header. Existing stack and caller return stay intact."
     },
     {
       "offset": "0x1054",
       "source_hex": "00000000",
-      "target_hex": "24840064"
+      "target_hex": "00000000",
+      "note": "Sprite decoder dispatch: original HVQ2 calls retain arguments and return. Program-backed assets run from their uncached RDRAM input alias; their first two words branch past the 100-byte header. Existing stack and caller return stay intact."
     },
     {
       "offset": "0x1058",
       "source_hex": "00000000",
-      "target_hex": "0801a40a"
+      "target_hex": "0801a40a",
+      "note": "Sprite decoder dispatch: original HVQ2 calls retain arguments and return. Program-backed assets run from their uncached RDRAM input alias; their first two words branch past the 100-byte header. Existing stack and caller return stay intact."
     },
     {
       "offset": "0x105c",
       "source_hex": "00000000",
-      "target_hex": "00000000"
+      "target_hex": "00000000",
+      "note": "Sprite decoder dispatch: original HVQ2 calls retain arguments and return. Program-backed assets run from their uncached RDRAM input alias; their first two words branch past the 100-byte header. Existing stack and caller return stay intact."
     },
     {
       "offset": "0x56270",

@@ -128,11 +128,11 @@ def build_story(original, menu, story, choices=(), layout=(), *, update_checksum
         output[offset:offset+4] = target
         spans.append((offset, offset+4))
     if graphics:
-        validate_loader(output)
+        validate_loader(output, graphics)
         for entry in graphics:
             if graphic_images is None or entry['image_path'] not in graphic_images:
                 raise ValueError('Missing recovered sprite input')
-            for offset, content in replace_graphic(original, entry, graphic_images[entry['image_path']]):
+            for offset, content in replace_graphic(original, entry, graphic_images[entry['image_path']], graphics):
                 end = offset+len(content)
                 if any(offset < b and a < end for a,b in spans):
                     raise ValueError('Sprite replacement overlaps another edit')
