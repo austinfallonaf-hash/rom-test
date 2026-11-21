@@ -1,0 +1,1739 @@
+{
+  "description": "Cumulative shop, reconstructed gardening, simulator selection and battle results",
+  "entries": [
+    {
+      "offset": "0x2212D8",
+      "source": "しようする セーブデータを\\Nえらんでください",
+      "translation": "Select a\\Nsave file."
+    },
+    {
+      "offset": "0x221324",
+      "source": "あたらしいファイル",
+      "translation": "New File"
+    },
+    {
+      "offset": "0x221290",
+      "source": "はい",
+      "translation": "Yes"
+    },
+    {
+      "offset": "0x221298",
+      "source": "いいえ",
+      "translation": "No"
+    },
+    {
+      "offset": "0x2212a0",
+      "source": "Ｂボタン：キャンセル",
+      "translation": "B: Cancel"
+    },
+    {
+      "offset": "0x2212b8",
+      "source": "ゲームかいし",
+      "translation": "Start",
+      "max_cells": 6
+    },
+    {
+      "offset": "0x2212c8",
+      "source": "データさくじょ",
+      "translation": "Delete",
+      "max_cells": 6
+    },
+    {
+      "offset": "0x221308",
+      "source": "パールトンのこり",
+      "translation": "P left",
+      "max_cells": 8
+    },
+    {
+      "offset": "0x221338",
+      "source": "データがありません",
+      "translation": "No save data."
+    },
+    {
+      "offset": "0x22134c",
+      "source": "セーブデータＡを\\Nさくじょします\\Nよろしいですか？",
+      "translation": "Delete file A?\\NContinue?"
+    },
+    {
+      "offset": "0x221380",
+      "source": "セーブデータＢを\\Nさくじょします\\Nよろしいですか？",
+      "translation": "Delete file B?\\NContinue?"
+    },
+    {
+      "offset": "0x1c11e0",
+      "source": "ひらがな",
+      "translation": "Hira",
+      "max_cells": 4
+    },
+    {
+      "offset": "0x1c11ec",
+      "source": "カタカナ",
+      "translation": "Kana",
+      "max_cells": 4
+    },
+    {
+      "offset": "0x1c11f8",
+      "source": "ナマエ",
+      "translation": "Name",
+      "max_cells": 6
+    },
+    {
+      "offset": "0x1c1200",
+      "source": "ナマエ　ニュウリョク",
+      "translation": "Name Entry",
+      "max_cells": 12
+    },
+    {
+      "offset": "0x1c1218",
+      "source": "けってい",
+      "translation": "OK",
+      "max_cells": 4
+    },
+    {
+      "offset": "0x1c1224",
+      "source": "さくじょ",
+      "translation": "Del",
+      "max_cells": 4
+    },
+    {
+      "offset": "0x1c1230",
+      "source": "スペース",
+      "translation": "Spc",
+      "max_cells": 4
+    },
+    {
+      "offset": "0x21e4ec",
+      "source": "ロボポン",
+      "translation": "Bots",
+      "max_cells": 4
+    },
+    {
+      "offset": "0x21e4f6",
+      "source": "パーツ",
+      "translation": "Gear",
+      "max_cells": 4
+    },
+    {
+      "offset": "0x21e500",
+      "source": "ソフト",
+      "translation": "Apps",
+      "max_cells": 4
+    },
+    {
+      "offset": "0x21e50a",
+      "source": "たべもの",
+      "translation": "Food",
+      "max_cells": 4
+    },
+    {
+      "offset": "0x21e514",
+      "source": "アイテム",
+      "translation": "Item",
+      "max_cells": 4
+    },
+    {
+      "offset": "0x21e51e",
+      "source": "カラメラ",
+      "translation": "Gems",
+      "max_cells": 4
+    },
+    {
+      "offset": "0x21e528",
+      "source": "ならび",
+      "translation": "Sort",
+      "max_cells": 4
+    },
+    {
+      "offset": "0x21e534",
+      "source": "そうび",
+      "translation": "Set",
+      "max_cells": 3
+    },
+    {
+      "offset": "0x21e53e",
+      "source": "すてる",
+      "translation": "Del",
+      "max_cells": 3
+    },
+    {
+      "offset": "0x21e548",
+      "source": "こうどう",
+      "translation": "Task",
+      "max_cells": 4
+    },
+    {
+      "offset": "0x21e624",
+      "source": "すてる",
+      "translation": "Del",
+      "max_cells": 3
+    },
+    {
+      "offset": "0x21e62c",
+      "source": "やめる",
+      "translation": "No",
+      "max_cells": 3
+    },
+    {
+      "offset": "0x21e7a8",
+      "source": "はい",
+      "translation": "Yes",
+      "max_cells": 3
+    },
+    {
+      "offset": "0x21e7b0",
+      "source": "いいえ",
+      "translation": "No",
+      "max_cells": 3
+    },
+    {
+      "offset": "0x21e554",
+      "source": "そうじ",
+      "translation": "Clean",
+      "max_cells": 7
+    },
+    {
+      "offset": "0x21e55c",
+      "source": "さかなつり",
+      "translation": "Fish",
+      "max_cells": 7
+    },
+    {
+      "offset": "0x21e568",
+      "source": "マッサージ",
+      "translation": "Massage",
+      "max_cells": 7
+    },
+    {
+      "offset": "0x21e574",
+      "source": "メンテナンス",
+      "translation": "Repair",
+      "max_cells": 7
+    },
+    {
+      "offset": "0x21e584",
+      "source": "パールトンくべ",
+      "translation": "Fuel",
+      "max_cells": 7
+    },
+    {
+      "offset": "0x21e594",
+      "source": "おしょくじ",
+      "translation": "Feed",
+      "max_cells": 7
+    },
+    {
+      "offset": "0x21e5a0",
+      "source": "シャワー",
+      "translation": "Wash",
+      "max_cells": 7
+    },
+    {
+      "offset": "0x21e5ac",
+      "source": "のばしてポン",
+      "translation": "Stretch",
+      "max_cells": 7
+    },
+    {
+      "offset": "0x21e5bc",
+      "source": "ジャンプでポン",
+      "translation": "Jump",
+      "max_cells": 7
+    },
+    {
+      "offset": "0x21e5cc",
+      "source": "ねらってポン",
+      "translation": "Aim",
+      "max_cells": 7
+    },
+    {
+      "offset": "0x21e5dc",
+      "source": "キャッチでポン",
+      "translation": "Catch",
+      "max_cells": 7
+    },
+    {
+      "offset": "0x21e5ec",
+      "source": "わたってポン",
+      "translation": "Cross",
+      "max_cells": 7
+    },
+    {
+      "offset": "0x21e7b8",
+      "source": "アームパンチ",
+      "translation": "Punch",
+      "max_cells": 7
+    },
+    {
+      "offset": "0x21e7c8",
+      "source": "アームナイト",
+      "translation": "Knight",
+      "max_cells": 7
+    },
+    {
+      "offset": "0x21e7d8",
+      "source": "アームヒーラー",
+      "translation": "Healer",
+      "max_cells": 7
+    },
+    {
+      "offset": "0x21e7e8",
+      "source": "アームガンマン",
+      "translation": "Gunner",
+      "max_cells": 7
+    },
+    {
+      "offset": "0x21e7f8",
+      "source": "アームシーフ",
+      "translation": "Thief",
+      "max_cells": 7
+    },
+    {
+      "offset": "0x21e808",
+      "source": "アームファイター",
+      "translation": "Fighter",
+      "max_cells": 7
+    },
+    {
+      "offset": "0x21e81c",
+      "source": "アームデビル",
+      "translation": "Devil",
+      "max_cells": 7
+    },
+    {
+      "offset": "0x21e82c",
+      "source": "アームソーサー",
+      "translation": "Caster",
+      "max_cells": 7
+    },
+    {
+      "offset": "0x21e910",
+      "source": "タイプ：ノーマル",
+      "translation": "T:Normal",
+      "max_cells": 8
+    },
+    {
+      "offset": "0x21e924",
+      "source": "タイプ：ひ",
+      "translation": "T:Fire",
+      "max_cells": 8
+    },
+    {
+      "offset": "0x21e930",
+      "source": "タイプ：みず",
+      "translation": "T:Water",
+      "max_cells": 8
+    },
+    {
+      "offset": "0x21e940",
+      "source": "タイプ：かぜ",
+      "translation": "T:Wind",
+      "max_cells": 8
+    },
+    {
+      "offset": "0x21e950",
+      "source": "タイプ：つち",
+      "translation": "T:Earth",
+      "max_cells": 8
+    },
+    {
+      "offset": "0x21e960",
+      "source": "タイプ：かみなり",
+      "translation": "T:Elec",
+      "max_cells": 8
+    },
+    {
+      "offset": "0x21e974",
+      "source": "タイプ：こおり",
+      "translation": "T:Ice",
+      "max_cells": 8
+    },
+    {
+      "offset": "0x21e984",
+      "source": "タイプ：せい",
+      "translation": "T:Holy",
+      "max_cells": 8
+    },
+    {
+      "offset": "0x21e994",
+      "source": "タイプ：じゃ",
+      "translation": "T:Dark",
+      "max_cells": 8
+    },
+    {
+      "offset": "0x21e9a4",
+      "source": "タイプ：りく",
+      "translation": "T:Land",
+      "max_cells": 8
+    },
+    {
+      "offset": "0x21e9b4",
+      "source": "タイプ：うみ",
+      "translation": "T:Sea",
+      "max_cells": 8
+    },
+    {
+      "offset": "0x21e9c4",
+      "source": "タイプ：そら",
+      "translation": "T:Sky",
+      "max_cells": 8
+    },
+    {
+      "offset": "0x21e650",
+      "source": "こうげき　%3d",
+      "translation": "ATK %3d",
+      "max_cells": 10,
+      "format_cells": [
+        3
+      ]
+    },
+    {
+      "offset": "0x21e660",
+      "source": "ぼうぎょ　%3d",
+      "translation": "DEF %3d",
+      "max_cells": 10,
+      "format_cells": [
+        3
+      ]
+    },
+    {
+      "offset": "0x21e670",
+      "source": "すばやさ　%3d",
+      "translation": "SPD %3d",
+      "max_cells": 10,
+      "format_cells": [
+        3
+      ]
+    },
+    {
+      "offset": "0x21e83c",
+      "source": "こうげき　　%3d",
+      "translation": "ATK %3d",
+      "max_cells": 10,
+      "format_cells": [
+        3
+      ]
+    },
+    {
+      "offset": "0x21e84c",
+      "source": "ぼうぎょ　　%3d",
+      "translation": "DEF %3d",
+      "max_cells": 10,
+      "format_cells": [
+        3
+      ]
+    },
+    {
+      "offset": "0x21e85c",
+      "source": "すばやさ　　%3d",
+      "translation": "SPD %3d",
+      "max_cells": 10,
+      "format_cells": [
+        3
+      ]
+    },
+    {
+      "offset": "0x21e68c",
+      "source": "こうげき　---",
+      "translation": "ATK ---",
+      "max_cells": 10
+    },
+    {
+      "offset": "0x21e69c",
+      "source": "ぼうぎょ　---",
+      "translation": "DEF ---",
+      "max_cells": 10
+    },
+    {
+      "offset": "0x21e6ac",
+      "source": "すばやさ　---",
+      "translation": "SPD ---",
+      "max_cells": 10
+    },
+    {
+      "offset": "0x21e87c",
+      "source": "こうげき　　---",
+      "translation": "ATK ---",
+      "max_cells": 10
+    },
+    {
+      "offset": "0x21e88c",
+      "source": "ぼうぎょ　　---",
+      "translation": "DEF ---",
+      "max_cells": 10
+    },
+    {
+      "offset": "0x21e89c",
+      "source": "すばやさ　　---",
+      "translation": "SPD ---",
+      "max_cells": 10
+    },
+    {
+      "offset": "0x21e86c",
+      "source": "ＲＡＭ：　%3dＭ",
+      "translation": "RAM: %3dM",
+      "max_cells": 10,
+      "format_cells": [
+        3
+      ]
+    },
+    {
+      "offset": "0x21e8ac",
+      "source": "ＲＡＭ：　---Ｍ",
+      "translation": "RAM: ---M",
+      "max_cells": 10
+    },
+    {
+      "offset": "0x21e8f0",
+      "source": "ＲＡＭ",
+      "translation": "RAM",
+      "max_cells": 3
+    },
+    {
+      "offset": "0x21e4d0",
+      "source": "%6dにち",
+      "translation": "%6d d",
+      "max_cells": 8,
+      "format_cells": [
+        6
+      ]
+    },
+    {
+      "offset": "0x21e9dc",
+      "source": "こうげき",
+      "translation": "Attack",
+      "max_cells": 7
+    },
+    {
+      "offset": "0x21e9e8",
+      "source": "ぼうぎょ",
+      "translation": "Defense",
+      "max_cells": 7
+    },
+    {
+      "offset": "0x21e9f4",
+      "source": "すばやさ",
+      "translation": "Speed",
+      "max_cells": 7
+    },
+    {
+      "offset": "0x21ea04",
+      "source": "ＣＰＵ：%2dチップ",
+      "translation": "CPU:%2d",
+      "max_cells": 8,
+      "format_cells": [
+        3
+      ]
+    },
+    {
+      "offset": "0x21ea18",
+      "source": "つぎのしんかまで",
+      "translation": "Evolve",
+      "max_cells": 8
+    },
+    {
+      "offset": "0x21ea2c",
+      "source": "エネだまあと：%d",
+      "translation": "Orbs:%d",
+      "max_cells": 12,
+      "format_cells": [
+        6
+      ]
+    },
+    {
+      "offset": "0x21ea40",
+      "source": "このロボポンは",
+      "translation": "This bot",
+      "max_cells": 12
+    },
+    {
+      "offset": "0x21ea50",
+      "source": "しんかしない",
+      "translation": "can't evolve",
+      "max_cells": 12
+    },
+    {
+      "offset": "0x21e604",
+      "source": "\\C004%s\\C000を　すてますか？",
+      "translation": "\\C004%s\\C000\\NDrop it?",
+      "max_cells": 16,
+      "format_cells": [
+        16
+      ]
+    },
+    {
+      "offset": "0x21e634",
+      "source": "\\C004%s\\C000をすてますか？",
+      "translation": "\\C004%s\\C000\\NDrop it?",
+      "max_cells": 16,
+      "format_cells": [
+        16
+      ]
+    },
+    {
+      "offset": "0x21e8bc",
+      "source": "そうびパーツの\\NＲＡＭようりょうが\\Nたりません！",
+      "translation": "Not enough\\NRAM for\\Nthis gear!",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x10331c",
+      "source": "しんかさせる",
+      "translation": "Evolve",
+      "max_cells": 8
+    },
+    {
+      "offset": "0x10332c",
+      "source": "ロボポンについて",
+      "translation": "Bot Help",
+      "max_cells": 8
+    },
+    {
+      "offset": "0x103340",
+      "source": "バトルについて",
+      "translation": "Battle",
+      "max_cells": 8
+    },
+    {
+      "offset": "0x103350",
+      "source": "シップについて",
+      "translation": "Ship",
+      "max_cells": 8
+    },
+    {
+      "offset": "0x103360",
+      "source": "なまえをかえる",
+      "translation": "Rename",
+      "max_cells": 8
+    },
+    {
+      "offset": "0x103370",
+      "source": "ロボポンかいしゅう",
+      "translation": "Recall",
+      "max_cells": 8
+    },
+    {
+      "offset": "0x103680",
+      "source": "なにについて　ききたいのですか？",
+      "translation": "Which topic?",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x1036a4",
+      "source": "なにについて　ききたいのじゃ？",
+      "translation": "Which topic?",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x1036e0",
+      "source": "ほかに　ききたいことは\\Nありますか？",
+      "translation": "Anything else?\\NAsk away!",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x103708",
+      "source": "ほかに　ききたいことは\\Nあるかな？",
+      "translation": "Anything else?\\NAsk away!",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x10372c",
+      "source": "パールトン",
+      "translation": "Pearlton",
+      "max_cells": 8
+    },
+    {
+      "offset": "0x103744",
+      "source": "うえきばち",
+      "translation": "Pots",
+      "max_cells": 8
+    },
+    {
+      "offset": "0x10375c",
+      "source": "ベッド",
+      "translation": "Bed",
+      "max_cells": 8
+    },
+    {
+      "offset": "0x103774",
+      "source": "ＧＢコンバート",
+      "translation": "GB Link",
+      "max_cells": 8
+    },
+    {
+      "offset": "0x10378c",
+      "source": "バトシム",
+      "translation": "Battles",
+      "max_cells": 8
+    },
+    {
+      "offset": "0x1037a4",
+      "source": "ロボポンずかん",
+      "translation": "Bot Book",
+      "max_cells": 8
+    },
+    {
+      "offset": "0x1037bc",
+      "source": "そうこ",
+      "translation": "Store",
+      "max_cells": 8
+    },
+    {
+      "offset": "0x1037d4",
+      "source": "スターコレクション",
+      "translation": "Stars",
+      "max_cells": 8
+    },
+    {
+      "offset": "0x103304",
+      "source": "はい",
+      "translation": "Yes ",
+      "max_cells": 6,
+      "note": "Trailing spaces preserve original byte-length sizing for this Japanese popup; visible labels are Yes/No."
+    },
+    {
+      "offset": "0x10330c",
+      "source": "いいえ",
+      "translation": "No    ",
+      "max_cells": 6,
+      "note": "Trailing spaces preserve original byte-length sizing for this Japanese popup; visible labels are Yes/No."
+    },
+    {
+      "offset": "0x10339c",
+      "source": "どうです　がんばってますか？",
+      "translation": "How's it going?",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x1033bc",
+      "source": "どうじゃ　がんばっとるか？",
+      "translation": "How's it going?",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x104480",
+      "source": "まだ　\\C004ロボポン\\C000が　おてつだいを\\Nおわらせていないので\\Nねることは　できません",
+      "translation": "A \\C004bot\\C000 still has\\Nchores to do.\\NYou can't sleep.",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x1044d8",
+      "source": "ベッドで　やすみますか？\\Nどうじに　これまでの　きろくが\\Nセーブされます",
+      "translation": "Rest in bed?\\NYour progress\\Nwill be saved.",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x104920",
+      "source": "３Ｆへ",
+      "translation": "3F",
+      "max_cells": 3
+    },
+    {
+      "offset": "0x104928",
+      "source": "２Ｆへ",
+      "translation": "2F",
+      "max_cells": 3
+    },
+    {
+      "offset": "0x104930",
+      "source": "１Ｆへ",
+      "translation": "1F",
+      "max_cells": 3
+    },
+    {
+      "offset": "0x104944",
+      "source": "ベッド",
+      "translation": "Bed",
+      "max_cells": 8
+    },
+    {
+      "offset": "0x10494c",
+      "source": "うえきばち",
+      "translation": "Pots",
+      "max_cells": 8
+    },
+    {
+      "offset": "0x104958",
+      "source": "かんぱん",
+      "translation": "Deck",
+      "max_cells": 8
+    },
+    {
+      "offset": "0x104964",
+      "source": "そうじゅうせき",
+      "translation": "Helm",
+      "max_cells": 8
+    },
+    {
+      "offset": "0x104974",
+      "source": "ＧＢコンバート",
+      "translation": "GB Link",
+      "max_cells": 8
+    },
+    {
+      "offset": "0x104984",
+      "source": "バトシム",
+      "translation": "Btl Sim",
+      "max_cells": 8
+    },
+    {
+      "offset": "0x104990",
+      "source": "ロボポンずかん",
+      "translation": "Book",
+      "max_cells": 6
+    },
+    {
+      "offset": "0x1049a0",
+      "source": "はかせ",
+      "translation": "Doctor",
+      "max_cells": 8
+    },
+    {
+      "offset": "0x1049a8",
+      "source": "そうこ",
+      "translation": "Store",
+      "max_cells": 8
+    },
+    {
+      "offset": "0x1049b0",
+      "source": "スターコレクション",
+      "translation": "Stars",
+      "max_cells": 8
+    },
+    {
+      "offset": "0x104584",
+      "source": "きょうも　がんばろ〜",
+      "translation": "Let's do our\\Nbest!",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x1035d8",
+      "source": "ＣＰＵ",
+      "translation": "CPU",
+      "max_cells": 6
+    },
+    {
+      "offset": "0x1035f0",
+      "source": "パーツ",
+      "translation": "Gear",
+      "max_cells": 6
+    },
+    {
+      "offset": "0x103608",
+      "source": "ソフト",
+      "translation": "Apps",
+      "max_cells": 6
+    },
+    {
+      "offset": "0x103620",
+      "source": "おてつだい",
+      "translation": "Chores",
+      "max_cells": 6
+    },
+    {
+      "offset": "0x103638",
+      "source": "トレーニング",
+      "translation": "Train",
+      "max_cells": 6
+    },
+    {
+      "offset": "0x103650",
+      "source": "おしょくじ",
+      "translation": "Food",
+      "max_cells": 6
+    },
+    {
+      "offset": "0x103668",
+      "source": "シャワーあび",
+      "translation": "Shower",
+      "max_cells": 6
+    },
+    {
+      "offset": "0x1038d4",
+      "source": "わざ",
+      "translation": "Move",
+      "max_cells": 6
+    },
+    {
+      "offset": "0x1038ec",
+      "source": "エネだま",
+      "translation": "Orbs",
+      "max_cells": 6
+    },
+    {
+      "offset": "0x103904",
+      "source": "じょうたい",
+      "translation": "Status",
+      "max_cells": 6
+    },
+    {
+      "offset": "0x10391c",
+      "source": "いれかえ",
+      "translation": "Swap",
+      "max_cells": 6
+    },
+    {
+      "offset": "0x103934",
+      "source": "レベルアップ",
+      "translation": "Level",
+      "max_cells": 6
+    },
+    {
+      "offset": "0x103fc8",
+      "source": "うみに　でますか？",
+      "translation": "Head to sea?",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x103fe4",
+      "source": "でない",
+      "translation": "No    ",
+      "max_cells": 6,
+      "note": "Trailing spaces retain the original byte-count sizing of the GO!/No popup."
+    },
+    {
+      "offset": "0x121b50",
+      "source": "シード",
+      "translation": "Seed",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x121b58",
+      "source": "パーツ",
+      "translation": "Parts",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x121b64",
+      "source": "パーツのおみせ",
+      "translation": "Parts     ",
+      "max_cells": 16,
+      "note": "Compact English heading with trailing spaces for the existing Shift-JIS byte-count centering routine."
+    },
+    {
+      "offset": "0x121b74",
+      "source": "シードのおみせ",
+      "translation": "Seeds     ",
+      "max_cells": 16,
+      "note": "Compact English heading with trailing spaces for the existing Shift-JIS byte-count centering routine."
+    },
+    {
+      "offset": "0x121bd8",
+      "source": "しょじきん",
+      "translation": "Cash",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x121bf0",
+      "source": "かう",
+      "translation": "Buy ",
+      "max_cells": 4,
+      "note": "Keep original byte length for popup label sizing."
+    },
+    {
+      "offset": "0x121bf8",
+      "source": "うる",
+      "translation": "Sell",
+      "max_cells": 4,
+      "note": "Keep original byte length for popup label sizing."
+    },
+    {
+      "offset": "0x121c00",
+      "source": "でる",
+      "translation": "Exit",
+      "max_cells": 4,
+      "note": "Keep original byte length for popup label sizing."
+    },
+    {
+      "offset": "0x121c14",
+      "source": "ソフト",
+      "translation": "Apps",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x121c28",
+      "source": "おう いらっしゃい\\N７つのうみの パーツショップへ\\Nようこそ！\\Lどんな　ごようかな？",
+      "translation": "Hey! Welcome\\Nto Seven Seas\\NParts Shop!\\LHow can I help?",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x121c7c",
+      "source": "おう いらっしゃい\\N７つのうみの シードショップへ\\Nようこそ！\\Lどんな　ごようかな？",
+      "translation": "Hey! Welcome\\Nto Seven Seas\\NSeed Shop!\\LHow can I help?",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x121cd0",
+      "source": "どんな　ごようかな？",
+      "translation": "How can I help?",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x121ce8",
+      "source": "で　どれを　かうんだい？",
+      "translation": "Buy which one?",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x121d04",
+      "source": "はもう　もてないよ\\Nうるか　すてるかしないと\\Nだめみたいいだ",
+      "translation": "\\NNo more room!\\NSell or discard.",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x121d44",
+      "source": "オイオイ　なんてこった！\\Nおかねが　たりないじゃないか！\\Nそれじゃ　モノはうれないよ！",
+      "translation": "Not enough gold!\\NI can't sell it\\Nto you!",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x121da8",
+      "source": "だね　\\Nこれだと ",
+      "translation": "\\NBuy for ",
+      "max_cells": 16,
+      "note": "Composite prompt: item name, this prefix, price, then the G?/Is that OK? suffix. Buy/Sell price lines fit a six-digit price in sixteen cells."
+    },
+    {
+      "offset": "0x121dbc",
+      "source": "ゴールドに\\Nなるけど それでも いいかい？",
+      "translation": "G?\\NIs that OK?",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x121de8",
+      "source": "はい",
+      "translation": "Yes ",
+      "max_cells": 4,
+      "note": "Keep original byte length for popup label sizing."
+    },
+    {
+      "offset": "0x121df0",
+      "source": "いいえ",
+      "translation": "No    ",
+      "max_cells": 6,
+      "note": "Keep original byte length for popup label sizing."
+    },
+    {
+      "offset": "0x121df8",
+      "source": "ありがとよ！ ほかにも\\Nなにか ようはあるかい？",
+      "translation": "Thanks!\\NAnything else?",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x121e28",
+      "source": "そうかい そうかい！ ほかに\\Nなにか ようはあるかい？",
+      "translation": "All right.\\NAnything else?",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x121e64",
+      "source": "パンチ",
+      "translation": "Punch",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x121e6c",
+      "source": "ナイト",
+      "translation": "Knight",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x121e74",
+      "source": "ヒーラー",
+      "translation": "Healer",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x121e80",
+      "source": "ガンマン",
+      "translation": "Gunman",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x121e8c",
+      "source": "シーフ",
+      "translation": "Thief",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x121e94",
+      "source": "ファイター",
+      "translation": "Fighter",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x121ea0",
+      "source": "デビル",
+      "translation": "Devil",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x121ea8",
+      "source": "ソーサー",
+      "translation": "Saucer",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x121eb4",
+      "source": "ノーマル",
+      "translation": "Normal",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x121ee4",
+      "source": "こうげき　%3d",
+      "translation": "ATK %3d",
+      "max_cells": 16,
+      "format_cells": [
+        3
+      ]
+    },
+    {
+      "offset": "0x121ef4",
+      "source": "ぼうぎょ　%3d",
+      "translation": "DEF %3d",
+      "max_cells": 16,
+      "format_cells": [
+        3
+      ]
+    },
+    {
+      "offset": "0x121f04",
+      "source": "すばやさ　%3d",
+      "translation": "SPD %3d",
+      "max_cells": 16,
+      "format_cells": [
+        3
+      ]
+    },
+    {
+      "offset": "0x121f14",
+      "source": "せんよう",
+      "translation": "Only",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x121f20",
+      "source": "ＲＡＭ",
+      "translation": "RAM",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x121f2c",
+      "source": "で　どれを　うってくれるんだい？",
+      "translation": "Sell which one?",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x121f50",
+      "source": "か　\\Nこれだと ",
+      "translation": "\\NSell at ",
+      "max_cells": 16,
+      "note": "Composite prompt: item name, this prefix, price, then the G?/Is that OK? suffix. Buy/Sell price lines fit a six-digit price in sixteen cells."
+    },
+    {
+      "offset": "0x121f60",
+      "source": "ゴールドに\\Nなるけど　うってくれるのかい？",
+      "translation": "G?\\NIs that OK?",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x121f90",
+      "source": "で　なにをうってくれるんだい？",
+      "translation": "What will you\\Nsell me?",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x121fb0",
+      "source": "うれる",
+      "translation": "Sell",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x121fb8",
+      "source": "を　もってない\\Nようだね",
+      "translation": "\\NYou have none.",
+      "max_cells": 16
+    },
+    {
+      "offset": "0x121fd4",
+      "source": "まいどありー\\Nまた きてくれよ！",
+      "translation": "Thanks!\\NCome back soon!",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x103290",
+      "source": "ロボポンシード",
+      "translation": "Bot   ",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x1032a0",
+      "source": "ソフトシード",
+      "translation": "App   ",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x1032b0",
+      "source": "はちに　うえるシードを\\Nえらんでください",
+      "translation": "Choose a seed\\Nto plant.",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x104164",
+      "source": "みる",
+      "translation": "View",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x10416c",
+      "source": "みない",
+      "translation": "Skip",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x104174",
+      "source": "かれた\\C001ランナー\\C000を　けします…",
+      "translation": "Clear dead\\N\\C001runner\\C000...",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x1042ac",
+      "source": "しかし　シップないの　\\C002ロボポン\\C000が\\Nいっぱいです\\Lこれいじょう　\\C002ロボポン\\C000を\\Nふやすことは　できません\\Lランナーに　なっている\\N\\C002ロボポン\\C000を　\\C001しょぶん\\C000しますか？",
+      "translation": "The ship is full\\Nof \\C002bots\\C000.\\LNo more \\C002bots\\C000\\Ncan be added.\\L\\C002Bot\\C000 on runner:\\N\\C001discard\\C000 it?",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x1043b0",
+      "source": "しかし　\\C004\\H000\\C000の　もっている\\N\\C002ソフト\\C000が　いっぱいです\\Lこれいじょう　\\C002ソフト\\C000を\\Nふやすことは　できません\\Lランナーに　なっている\\N\\C002ソフト\\C000を　\\C001しょぶん\\C000しますか？",
+      "translation": "\\C004\\H000\\C000 has\\Ntoo many \\C002apps\\C000.\\LNo more \\C002apps\\C000\\Ncan be added.\\L\\C002App\\C000 on runner:\\N\\C001discard\\C000 it?",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x1032dc",
+      "source": "\"\\C005%s\\C000\"を\\Nはちに　うえますか？",
+      "translation": "\\C005%s\\C000\\NPlant this seed?",
+      "max_cells": 16,
+      "format_cells": [
+        16
+      ],
+      "max_lines": 3
+    },
+    {
+      "offset": "0x1041b0",
+      "source": "\\C005\\H000\\C000は　ランナーから\\N\\C004%s\\C000を　もぎとった！\\L\\C004%s\\C000の　なまえを\\Nかえますか？",
+      "translation": "\\C005\\H000\\C000 picked\\N\\C004%s\\C000!\\LName this\\N\\C004%s\\C000?",
+      "max_cells": 16,
+      "format_cells": [
+        5,
+        5
+      ],
+      "max_lines": 3
+    },
+    {
+      "offset": "0x104218",
+      "source": "\\C005\\H000\\C000は　ランナーから\\N\\C004%s\\C000を　もぎとった！\\Lフロアーは\\N\\C004ロボポン\\C000でいっぱいです\\L\\C004%s\\C000を\\Nそうこに　おくります",
+      "translation": "\\C005\\H000\\C000 picked\\N\\C004%s\\C000!\\LThe floor is\\Nfull of \\C004bots\\C000.\\LSending\\N\\C004%s\\C000\\Nto storage.",
+      "max_cells": 16,
+      "format_cells": [
+        5,
+        5
+      ],
+      "max_lines": 3
+    },
+    {
+      "offset": "0x104370",
+      "source": "\\C004\\H000\\C000は　ランナーから\\N\\C002%s\\C000を　もぎとった！",
+      "translation": "\\C004\\H000\\C000 picked\\N\\C002%s\\C000",
+      "max_cells": 16,
+      "format_cells": [
+        16
+      ],
+      "max_lines": 3
+    },
+    {
+      "offset": "0x104034",
+      "source": "バトルシミュレーションを\\Nしますか？",
+      "translation": "Start a practice\\Nbattle?",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x12d3a0",
+      "source": "ＶＳタイプセレクト",
+      "translation": "VS Type       ",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x12d3bc",
+      "source": "１Ｐｖｓ２Ｐ",
+      "translation": "1P vs 2P",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x12d3ce",
+      "source": "１ＰｖｓＣＯＭ",
+      "translation": "1P vs CPU",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x12d3e0",
+      "source": "ロボポンいちらん",
+      "translation": "Bot List        ",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x12d3f4",
+      "source": "Ａボタン",
+      "translation": "A",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x12d400",
+      "source": "：けってい",
+      "translation": ": OK",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x12d40c",
+      "source": "Ｂボタン",
+      "translation": "B",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x12d418",
+      "source": "：キャンセル",
+      "translation": ": Back",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x12d428",
+      "source": "バトルでつかえる　ＧＢロボポンだよ！",
+      "translation": "GB bots you can\\Nuse in battle.",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x12d464",
+      "source": "せんばつロボポン",
+      "translation": "Preset Bots",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x12d47e",
+      "source": "６４ロボポン　データＡ",
+      "translation": "64 Bots: File A",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x12d498",
+      "source": "６４ロボポン　データＢ",
+      "translation": "64 Bots: File B",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x12d4b2",
+      "source": "ＧＢロボポン　コンバート",
+      "translation": "GB Bot Link",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x12d4cc",
+      "source": "よわい",
+      "translation": "Low",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x12d4d4",
+      "source": "ふつう",
+      "translation": "Mid",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x12d4dc",
+      "source": "つよい",
+      "translation": "High",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x12d4e4",
+      "source": "ロボポンのつよさは？",
+      "translation": "Strength        ",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x12d4fc",
+      "source": "ＧＢロボポンの　データ",
+      "translation": "GB bot data",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x12d514",
+      "source": "　　コンバート　ちゅう…",
+      "translation": "Linking...",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x12d530",
+      "source": "セーブＡにアクセスちゅう",
+      "translation": "Loading file A",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x12d54c",
+      "source": "セーブＢにアクセスちゅう",
+      "translation": "Loading file B",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x12d568",
+      "source": "データＡに　ロボポンは",
+      "translation": "File A has",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x12d580",
+      "source": "　　　いません！！　　",
+      "translation": "no bots!",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x12d598",
+      "source": "データＢに　ロボポンは",
+      "translation": "File B has",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x12d5b0",
+      "source": "ちょっと　まってね！",
+      "translation": "Please wait...",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x12d5c8",
+      "source": "コンバート　かんりょう！",
+      "translation": "Link complete!",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x12d5f0",
+      "source": "バトラードーム",
+      "translation": "Battle Dome",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x12d600",
+      "source": "かいぞくせん",
+      "translation": "Pirate Ship",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x12d610",
+      "source": "うずしお",
+      "translation": "Vortex",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x12d620",
+      "source": "ワルワルとう",
+      "translation": "WaruWaru",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x12d630",
+      "source": "ニクニクとう",
+      "translation": "NikuNiku",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x12d640",
+      "source": "メッカメカとう",
+      "translation": "MechaMecha",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x12d650",
+      "source": "ルーレッとう",
+      "translation": "Roulette",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x12d660",
+      "source": "ジークンとう",
+      "translation": "Jeekun",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x12d670",
+      "source": "プッカプカとう",
+      "translation": "Pukapuka",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x12d680",
+      "source": "ステージＤＲ０",
+      "translation": "Stage DR0",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x12d6a4",
+      "source": "ステージセレクト",
+      "translation": "Stage     ",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x137208",
+      "source": "キャラセレクト",
+      "translation": "Select      ",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x13724c",
+      "source": "ＨＰ　　：%3d",
+      "translation": "HP: %3d",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x13725c",
+      "source": "ＥＰ　　：%3d",
+      "translation": "EP: %3d",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x13726c",
+      "source": "こうげき：%3d",
+      "translation": "ATK:%3d",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x13727c",
+      "source": "ぼうぎょ：%3d",
+      "translation": "DEF:%3d",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x13728c",
+      "source": "すばやさ：%3d",
+      "translation": "SPD:%3d",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x13729c",
+      "source": "ＣＰＵ　：　%2d",
+      "translation": "CPU:%2d",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x1372ac",
+      "source": "パーツ",
+      "translation": "Gear",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x1372b4",
+      "source": "ソフト",
+      "translation": "Apps",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x1372c0",
+      "source": "きりかえ",
+      "translation": "Swap",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x1372cc",
+      "source": "スタート",
+      "translation": "Start",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x1fd708",
+      "source": "バトルに　しょうりした！",
+      "translation": "Battle won!",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x1fd724",
+      "source": "バトルに　はいぼくした！",
+      "translation": "Battle lost.",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x1fd750",
+      "source": "%dビットチップになった！",
+      "translation": "CPU: %d bits",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x1fd76c",
+      "source": "そうごうりょくが　あがった！！",
+      "translation": "Total power up!",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x1fda14",
+      "source": "エネだまを　%dコたべた！",
+      "translation": "Ate %d orbs!",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x1fda30",
+      "source": "ＨＰ",
+      "translation": "HP",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x1fda38",
+      "source": "ＥＰ",
+      "translation": "EP",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x1fda40",
+      "source": "こうげきりょく",
+      "translation": "ATK",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x1fda50",
+      "source": "ぼうぎょりょく",
+      "translation": "DEF",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x1fda60",
+      "source": "すばやさ",
+      "translation": "Speed",
+      "max_cells": 16,
+      "max_lines": 3
+    },
+    {
+      "offset": "0x1fd78c",
+      "source": "%sは\\N%dパールトン　てにいれた！\\N%dゴールド　てにいれた！",
+      "translation": "%s\\N%d Pearlton\\N%d Gold",
+      "max_cells": 16,
+      "format_cells": [
+        16,
+        6,
+        6
+      ],
+      "max_lines": 3
+    },
+    {
+      "offset": "0x1fd7c8",
+      "source": "%sを　てにいれた！",
+      "translation": "%s\\NObtained!",
+      "max_cells": 16,
+      "format_cells": [
+        16
+      ],
+      "max_lines": 3
+    },
+    {
+      "offset": "0x1fd9a0",
+      "source": "%sは\\Nおなかが　すいた！\\Nストレスが　チョットへった！",
+      "translation": "%s\\NHungry!\\NStress eased.",
+      "max_cells": 16,
+      "format_cells": [
+        16
+      ],
+      "max_lines": 3
+    },
+    {
+      "offset": "0x1fd9d8",
+      "source": "%sは\\Nおなかが　かなりすいた！！\\Nストレスが　たまった！",
+      "translation": "%s\\NVery hungry!\\NStress rose!",
+      "max_cells": 16,
+      "format_cells": [
+        16
+      ],
+      "max_lines": 3
+    },
+    {
+      "offset": "0x1fda80",
+      "source": "%sが　%dあがった！",
+      "translation": "%s +%d",
+      "max_cells": 16,
+      "format_cells": [
+        5,
+        6
+      ],
+      "max_lines": 3
+    }
+  ]
+}

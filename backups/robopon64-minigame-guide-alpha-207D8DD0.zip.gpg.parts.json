@@ -1,0 +1,29 @@
+{
+  "format_version": 1,
+  "format": "gpg-aes256-split",
+  "source_revision": "a4bb82dff6de9d75d716cb1453599a8e08b21c9f",
+  "cipher": "AES256",
+  "chunk_bytes": 67108864,
+  "ciphertext": {
+    "filename": "robopon64-minigame-guide-alpha-207D8DD0.zip.gpg",
+    "bytes": 108146241,
+    "sha256": "b81a24b7dd086afe746d7895be2049394494fc7027ce4a9da80fe52fba3f4eb0"
+  },
+  "plaintext": {
+    "filename": "robopon64-minigame-guide-alpha-207D8DD0.zip",
+    "bytes": 108146125,
+    "sha256": "177b03c8f3f37b3aff9030845c4f11ff1fb9c1de6c84236035401110bb85f0f5"
+  },
+  "parts": [
+    {
+      "filename": "robopon64-minigame-guide-alpha-207D8DD0.zip.gpg.part001",
+      "bytes": 67108864,
+      "sha256": "85399ecff0c2b365f65cc1ae4ac3aef4f467cf5cd03cd468130e0d88852e3439"
+    },
+    {
+      "filename": "robopon64-minigame-guide-alpha-207D8DD0.zip.gpg.part002",
+      "bytes": 41037377,
+      "sha256": "3c76de7d1237c5174e343c7ae969224e4c5573af4a2dc062920daf46b6ce9f97"
+    }
+  ]
+}

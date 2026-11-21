@@ -9,7 +9,7 @@
     {
       "source": "カラメル",
       "english": "Caramel",
-      "note": "Legendary being in the opening narration"
+      "note": "Legendary being in the opening narration Native label 2856 uses this spelling; saved nicknames are separate."
     },
     {
       "source": "カラメラ",
@@ -29,17 +29,17 @@
     {
       "source": "ダンディはかせ",
       "english": "Dr. Dandy",
-      "note": "Provisional title/name"
+      "note": "Provisional title/name Native label 2861 uses this spelling; saved nicknames are separate."
     },
     {
       "source": "パンチ",
       "english": "Punch",
-      "note": "Provisional character name; elongated nickname パンチー also rendered Punch"
+      "note": "Provisional character name; elongated nickname パンチー also rendered Punch Native label 2859 uses this spelling; saved nicknames are separate."
     },
     {
       "source": "メルリン",
       "english": "Merlin",
-      "note": "First Robopon reward; party/HUD text is not yet translated"
+      "note": "First Robopon reward; party/HUD text is not yet translated Native label 2849 uses this spelling; saved nicknames are separate."
     },
     {
       "source": "アシュラシード",
@@ -74,17 +74,17 @@
     {
       "source": "コロン",
       "english": "Koron",
-      "note": "Provisional pirate name; first Moon Blue encounter and Red Pass reward."
+      "note": "Provisional pirate name; first Moon Blue encounter and Red Pass reward. Native label 2870 uses this spelling; saved nicknames are separate. Native label 2891 uses this spelling; saved nicknames are separate."
     },
     {
       "source": "まんげつのカラメラ",
       "english": "Moon Caramela",
-      "note": "Compact dialogue form of Full Moon Caramela, the Moon Blue treasure. The original allocation limits dialogue to sixteen cells per line."
+      "note": "Compact dialogue form of Full Moon Caramela, the Moon Blue treasure. Native nine-glyph inventory label is Full Moon. Dialogue is limited to sixteen cells per line."
     },
     {
       "source": "ムーン＝ブルー",
       "english": "Moon Blue",
-      "note": "Provisional name for the first sea."
+      "note": "Provisional name for the first sea. Full native region label 4108 retains the shared Blue suffix."
     },
     {
       "source": "レッドパス",
@@ -104,32 +104,1722 @@
     {
       "source": "ジョニー",
       "english": "Johnny",
-      "note": "Provisional name of the Moon Blue boss."
+      "note": "Provisional name of the Moon Blue boss. Native label 2876 uses this spelling; saved nicknames are separate."
     },
     {
       "source": "エーやん",
       "english": "E-yan",
-      "note": "Provisional battler name in the information keeper list."
+      "note": "Provisional battler name in the information keeper list. Native label 2872 uses this spelling; saved nicknames are separate."
     },
     {
       "source": "シャロル",
       "english": "Sharol",
-      "note": "Provisional battler name; verify against later story."
+      "note": "Provisional battler name; verify against later story. Native label 2873 uses this spelling; saved nicknames are separate."
     },
     {
       "source": "ディーン",
       "english": "Dean",
-      "note": "Provisional battler name."
+      "note": "Provisional battler name. Native label 2874 uses this spelling; saved nicknames are separate."
     },
     {
       "source": "ゴドシー",
       "english": "Godoshii",
-      "note": "Provisional battler name; verify against later story."
+      "note": "Provisional battler name; verify against later story. Native label 2875 uses this spelling; saved nicknames are separate."
     },
     {
       "source": "レッドシード ～ セピアシード",
       "english": "Red, Blue, White, Yellow, Green, Brown, Gray, Black, Pink, Sepia",
       "note": "Ten colored seed labels (3878–3887). The Seed suffix is omitted in compact native item names because full English names exceed their fixed six/seven-glyph allocations. The shop/category supplies the item type."
+    },
+    {
+      "source": "プーすけ",
+      "english": "Pusuke",
+      "note": "Provisional name of Johnny's subordinate in the Moon Blue encounters; some pu speech quirks are retained. Native label 2871 uses this spelling; saved nicknames are separate."
+    },
+    {
+      "source": "ブルーパス",
+      "english": "Blue Pass",
+      "note": "Reward from E-yan. The compact native inventory label is Blue because the original field allows five glyphs."
+    },
+    {
+      "source": "フリーパス",
+      "english": "Free Pass",
+      "note": "Coaster pass awarded by Sharol, allowing travel around Moon Blue. The five-glyph native inventory label is Free."
+    },
+    {
+      "source": "パープルキー",
+      "english": "Purple Key",
+      "note": "Reward from Dean; opens access to Godoshii's island. Native six-glyph inventory label is Purple."
+    },
+    {
+      "source": "クリアキー",
+      "english": "Clear Key",
+      "note": "Reward from Godoshii; permits the Johnny challenge. Native five-glyph inventory label is Clear."
+    },
+    {
+      "source": "ファイア＝ブルー",
+      "english": "Fire Blue",
+      "note": "Provisional name of the next sea, identified in the Moon Blue departure dialogue. Its native story is now drafted; separate UI and gameplay checks remain. Full native region label 4109 retains the shared Blue suffix."
+    },
+    {
+      "source": "ラム",
+      "english": "Ram",
+      "note": "Provisional companion name in the alternate Godoshii encounter, record 338; distinct from the equipment RAM abbreviation. Native label 2860 uses this spelling; saved nicknames are separate."
+    },
+    {
+      "source": "バトラードーム",
+      "english": "Battler Dome",
+      "note": "Tournament facility with Normal Fight ranks and species-restricted Select Fight events."
+    },
+    {
+      "source": "ノーマルファイト",
+      "english": "Normal Fight",
+      "note": "One Robopon; event scripts require three consecutive wins. Regional hint 416 instead says four; both source claims are preserved pending gameplay verification."
+    },
+    {
+      "source": "セレクトファイト",
+      "english": "Select Fight",
+      "note": "Species-restricted tournament; three consecutive wins in the event scripts."
+    },
+    {
+      "source": "フラワーきょうじゅ",
+      "english": "Prof. Flower",
+      "note": "Provisional name/title of the Select Fight host and Nose's research partner."
+    },
+    {
+      "source": "ノーズ",
+      "english": "Nose",
+      "note": "Provisional name of Prof. Flower's assistant and Normal Fight host."
+    },
+    {
+      "source": "メスカル",
+      "english": "Mescal",
+      "note": "Provisional Select Fight species name; native roster names remain untranslated. Native label 2844 uses this spelling; saved nicknames are separate."
+    },
+    {
+      "source": "メルリアス",
+      "english": "Merlias",
+      "note": "Provisional Select Fight species name; native roster names remain untranslated. Native label 2850 uses this spelling; saved nicknames are separate."
+    },
+    {
+      "source": "タンビ",
+      "english": "Tanbi",
+      "note": "Provisional Select Fight species name; native roster names remain untranslated. Native label 2854 uses this spelling; saved nicknames are separate."
+    },
+    {
+      "source": "ピパ",
+      "english": "Pipa",
+      "note": "Provisional Select Fight species name; native roster names remain untranslated. Native label 2855 uses this spelling; saved nicknames are separate."
+    },
+    {
+      "source": "ニークロ",
+      "english": "Nikuro",
+      "note": "Provisional Select Fight species name; native roster names remain untranslated. Native label 2853 uses this spelling; saved nicknames are separate."
+    },
+    {
+      "source": "ウォーター＝ブルー",
+      "english": "Water Blue",
+      "note": "Provisional sea name. Dome scripts also spell it ウォータ＝ブルー."
+    },
+    {
+      "source": "ツリー＝ブルー",
+      "english": "Tree Blue",
+      "note": "Provisional sea name; compact regional list 426 omits the shared Blue suffix. The crowded ransom location uses Tree/Roulette, with Tree meaning Tree Blue. Full native region label 4111 retains the shared Blue suffix."
+    },
+    {
+      "source": "ゴールド＝ブルー",
+      "english": "Gold Blue",
+      "note": "Provisional sea name; compact regional list 426 omits the shared Blue suffix. Full native region label 4112 retains the shared Blue suffix."
+    },
+    {
+      "source": "ランド＝ブルー",
+      "english": "Land Blue",
+      "note": "Provisional sea name; compact regional list 426 omits the shared Blue suffix. Full native region label 4113 retains the shared Blue suffix."
+    },
+    {
+      "source": "サニー＝ブルー",
+      "english": "Sunny Blue",
+      "note": "Provisional sea name; compact regional list 426 omits the shared Blue suffix. Full native region label 4114 retains the shared Blue suffix."
+    },
+    {
+      "source": "ブルー",
+      "english": "Blue",
+      "note": "Regional hint 436 explicitly uses Blue to mean sea, not the color."
+    },
+    {
+      "source": "マイティはかせ",
+      "english": "Dr. Mighty",
+      "note": "Provisional title/name for the alternate opening's professor. Native label 2862 uses this spelling; saved nicknames are separate."
+    },
+    {
+      "source": "ドルッピごう",
+      "english": "Doluppi",
+      "note": "Provisional ship name in the Mighty/Ram opening; computer prompts use DOLUPPI."
+    },
+    {
+      "source": "ミクロ",
+      "english": "Micro",
+      "note": "Alternate opening Robopon reward, distinct from Merlin. Native roster names remain Japanese. Native label 2851 uses this spelling; saved nicknames are separate."
+    },
+    {
+      "source": "シャークシード",
+      "english": "Shark Seed",
+      "note": "Alternate opening seed reward. The existing compact native inventory label is Shark."
+    },
+    {
+      "source": "ほのおのカラメラ",
+      "english": "Fire Caramela",
+      "note": "Fire Blue treasure. Crowded dialogue uses Fire, also the eight-glyph native inventory field's compact label."
+    },
+    {
+      "source": "ヘンペー",
+      "english": "Henpei",
+      "note": "Provisional name of the Team M thief with a flat face. Native label 2878 uses this spelling; saved nicknames are separate."
+    },
+    {
+      "source": "ガーリマン",
+      "english": "Gariman",
+      "note": "Provisional name of the Fire Caramela's hereditary keeper. Native label 2877 uses this spelling; saved nicknames are separate."
+    },
+    {
+      "source": "マーク",
+      "english": "Mark",
+      "note": "Provisional name of the muscle-obsessed Team M battler. Native label 2879 uses this spelling; saved nicknames are separate."
+    },
+    {
+      "source": "チームＭ",
+      "english": "Team M",
+      "note": "Fire Blue pirate group led by Mura."
+    },
+    {
+      "source": "ムーラ",
+      "english": "Mura",
+      "note": "Provisional Fire Blue boss name; Komura's mother. Native label 2882 uses this spelling; saved nicknames are separate."
+    },
+    {
+      "source": "コムーラ",
+      "english": "Komura",
+      "note": "Mura's baby daughter. Babble is rendered phonetically, without invented decoded meaning. Native label 2880 uses this spelling; saved nicknames are separate."
+    },
+    {
+      "source": "ニクニクじま",
+      "english": "Nikuniku Island",
+      "note": "Provisional name preserving the repeated meat/muscle wordplay. Crowded dialogue omits Island."
+    },
+    {
+      "source": "ドンゴー",
+      "english": "Dongo",
+      "note": "Provisional battler name; repeated name-like chants remain phonetic. Native label 2881 uses this spelling; saved nicknames are separate."
+    },
+    {
+      "source": "くろの さんじゅうし",
+      "english": "Black Musketeers",
+      "note": "Provisional group name. Crowded reflection/collision dialogue uses Black Trio; generic さんじゅうし uses Musketeers."
+    },
+    {
+      "source": "アトス",
+      "english": "Athos",
+      "note": "Provisional Black Musketeers member name. Native label 2864 uses this spelling; saved nicknames are separate."
+    },
+    {
+      "source": "アラミス",
+      "english": "Aramis",
+      "note": "Provisional Black Musketeers member name. Native label 2866 uses this spelling; saved nicknames are separate."
+    },
+    {
+      "source": "ダルタニアン",
+      "english": "Dartagnan",
+      "note": "Compact ASCII spelling fits the shared 16-cell line with Aramis. Retains the Japanese member name; not replaced with Porthos."
+    },
+    {
+      "source": "ミカチ",
+      "english": "Mikachi",
+      "note": "Provisional childhood friend and granddaughter joining the crew on both routes. Native label 2863 uses this spelling; saved nicknames are separate."
+    },
+    {
+      "source": "いちごムース",
+      "english": "Strawberry Mousse",
+      "note": "Compact six-glyph native inventory label and transfer text use Berry. Mikachi gives this item on both routes."
+    },
+    {
+      "source": "Ｒー３Ｋ",
+      "english": "R-3K",
+      "note": "Provisional guard-robot name; also written Ｒ−３Ｋ in regional hints. Mechanical katakana speech is rendered in uppercase."
+    },
+    {
+      "source": "ドン＝オヤージ",
+      "english": "Don Oyaji",
+      "note": "Provisional Water Blue family patriarch and boss; オヤージ is shortened to Oyaji."
+    },
+    {
+      "source": "クルミ",
+      "english": "Kurumi",
+      "note": "Provisional name of Don Oyaji's daughter. Native label 2886 uses this spelling; saved nicknames are separate."
+    },
+    {
+      "source": "メカオ",
+      "english": "Mekao",
+      "note": "Provisional mechanic son, with deliberately odd comic sentence endings. Native label 2887 uses this spelling; saved nicknames are separate."
+    },
+    {
+      "source": "Ｊ・Ｄ",
+      "english": "J.D.",
+      "note": "Provisional eldest son's name. Native label 2888 uses this spelling; saved nicknames are separate."
+    },
+    {
+      "source": "アニロウ",
+      "english": "Aniro",
+      "note": "Provisional ship builder's name."
+    },
+    {
+      "source": "ウーマンボごう",
+      "english": "U-Manbo",
+      "note": "Provisional replacement ship name. Ship exchanges remain reversible."
+    },
+    {
+      "source": "オバーン",
+      "english": "Oban",
+      "note": "Provisional self-styled princess and prize-game host. Native label 2884 uses this spelling; saved nicknames are separate."
+    },
+    {
+      "source": "ヌキヌキ アイランド",
+      "english": "Nukinuki Island",
+      "note": "Provisional prize-game island name."
+    },
+    {
+      "source": "さざなみのカラメラ",
+      "english": "Ripple Caramela",
+      "note": "Water Blue treasure; compact Ripple is used in crowded dialogue, acquisition messages and its nine-glyph native inventory allocation. R-3K uses uppercase RIPPLE CARAMELA."
+    },
+    {
+      "source": "ウーのかじ",
+      "english": "Helm",
+      "note": "Compact quest/inventory label for the U rudder. The original part-name pun contributes to U-Manbo."
+    },
+    {
+      "source": "マンエンジン",
+      "english": "Engine",
+      "note": "Compact quest/inventory label for the Man Engine."
+    },
+    {
+      "source": "ボースクリュー",
+      "english": "Screw",
+      "note": "Compact quest/inventory label for the Bo Screw/ship propeller."
+    },
+    {
+      "source": "ゴーオール",
+      "english": "Oar",
+      "note": "Compact quest/inventory label for the Go Oar. Aniro explicitly discards this fourth part in the source."
+    },
+    {
+      "source": "ＩＤカード：ピンク",
+      "english": "Pink ID",
+      "note": "Decoded card from Aniro; passes pink beam barriers only."
+    },
+    {
+      "source": "ＩＤカード：イエロー",
+      "english": "Yellow ID",
+      "note": "R-3K reward."
+    },
+    {
+      "source": "ＩＤカード：ブルー",
+      "english": "Blue ID",
+      "note": "Kurumi reward."
+    },
+    {
+      "source": "ＩＤカード：グリーン",
+      "english": "Green ID",
+      "note": "Mekao reward."
+    },
+    {
+      "source": "ＩＤカード：オレンジ",
+      "english": "Orange ID",
+      "note": "J.D. reward."
+    },
+    {
+      "source": "ルーレッとう",
+      "english": "Roulette Island",
+      "note": "Provisional island/stronghold name. Crowded dialogue and entry prompts use Roulette."
+    },
+    {
+      "source": "キャプテン・ラダー",
+      "english": "Captain Ladder",
+      "note": "Provisional pirate leader name. Crowded dialogue shortens it to Ladder or Captain as in the source. Native speaker labels remain Japanese. Farewell 1530 names Caramel itself, while main-route 1300 names Caramela; this source distinction is retained. Native label 2894 uses this spelling; saved nicknames are separate."
+    },
+    {
+      "source": "シルバーとう",
+      "english": "Silver Island",
+      "note": "Provisional name of the skull-shaped island where Ladder waits."
+    },
+    {
+      "source": "キャム",
+      "english": "Cam",
+      "note": "Provisional cat-pirate name, corresponding to the Japanese Kyamu. Cat-like speech retains meows and nya endings. Native label 2890 uses this spelling; saved nicknames are separate."
+    },
+    {
+      "source": "ダイコック",
+      "english": "Daicook",
+      "note": "Provisional cooking-pun name. Chef and pirate battler; food metaphors are retained. Native label 2892 uses this spelling; saved nicknames are separate."
+    },
+    {
+      "source": "マイドー",
+      "english": "Maido",
+      "note": "Provisional pirate name in the disguised-brother trap."
+    },
+    {
+      "source": "アカネ",
+      "english": "Akane",
+      "note": "Provisional pirate name. Her Kurumi disguise and both rescue-choice outcomes are retained."
+    },
+    {
+      "source": "カイリ",
+      "english": "Kairi",
+      "note": "Provisional name of Ladder's sister; her haughty speech and post-defeat crying are retained. Native label 2893 uses this spelling; saved nicknames are separate."
+    },
+    {
+      "source": "メッカメカ",
+      "english": "Mekkameka",
+      "note": "Provisional place name in the false Kurumi's introduction, not changed to Water Blue."
+    },
+    {
+      "source": "たいじゅのカラメラ",
+      "english": "Tree Caramela",
+      "note": "Compact English for the great-tree treasure. Inventory uses Tree; crowded dialogue also uses Tree. Acquisition message uses Tree Caramela / +1."
+    },
+    {
+      "source": "ジークンとう",
+      "english": "Jeekun Island",
+      "note": "Provisional Gold Blue island name in Ladder's warning."
+    },
+    {
+      "source": "ホー",
+      "english": "Ho",
+      "note": "Provisional Gold Blue elder name; Fu is his elder twin. Native speaker labels remain Japanese."
+    },
+    {
+      "source": "フー",
+      "english": "Fu",
+      "note": "Provisional name of Ho's elder twin; conducts the Pao Tai training trial."
+    },
+    {
+      "source": "パオ・タイ",
+      "english": "Pao Tai",
+      "note": "Provisional name of Fu's pupil. Native roster/speaker labels remain Japanese. Native label 2896 uses this spelling; saved nicknames are separate."
+    },
+    {
+      "source": "リー・リンリン",
+      "english": "Li Linlin",
+      "note": "Provisional Gold Blue boss name; abbreviated Linlin when the source uses リンリン. Native label 2900 uses this spelling; saved nicknames are separate."
+    },
+    {
+      "source": "リンリン",
+      "english": "Linlin",
+      "note": "Short name of Li Linlin, the expelled Gold Blue pupil and leader of its invading army."
+    },
+    {
+      "source": "キョンキョンシー",
+      "english": "Kyonkyonshi",
+      "note": "Provisional hopping-vampire character name; stutter and hohi laughter retained."
+    },
+    {
+      "source": "しん・ぎ・たい",
+      "english": "mind, skill and body",
+      "note": "Martial-arts balance of mind, skill and body. Compact dialogue uses mind/skill/body, with initial capitalization as needed."
+    },
+    {
+      "source": "おうごんのカラメラ",
+      "english": "Gold Caramela",
+      "note": "Golden fragment associated with Gold Blue. Crowded dialogue and the nine-cell inventory label use Gold. Distinct from the legendary Caramel."
+    },
+    {
+      "source": "デスペラーマウンテン",
+      "english": "Despera Mountain",
+      "note": "Provisional mountain name. Crowded dialogue uses Mt. Despera."
+    },
+    {
+      "source": "ロボポンへの　みち／もえよ　ロボポン／ロボポン　ききいっぱつ",
+      "english": "Way of Robopon / Enter Robopon / The Big Robopon",
+      "note": "Regional hint 1913 parodies the Japanese titles of The Way of the Dragon, Enter the Dragon and The Big Boss. English uses compact Robopon film-title puns. Keeps the water and one-inch-punch references."
+    },
+    {
+      "source": "だいちのカラメラ",
+      "english": "Earth Caramela",
+      "note": "The sixth fragment; crowded dialogue, the acquisition message and the eight-cell inventory label use Earth. Record 2141 says it alone grants entry to Despera Mountain, without the other five."
+    },
+    {
+      "source": "クージラン",
+      "english": "Kujiran",
+      "note": "Provisional name of the whale-shaped Robopon and the ship used for deep-area travel. Doluppi in record 2130 is an intentional false identification, immediately corrected. Native label 2839 uses this spelling; saved nicknames are separate."
+    },
+    {
+      "source": "プッカプカじま",
+      "english": "Pukkapuka Island",
+      "note": "Provisional name for the rising islands, retaining the floating wordplay; hint 2302 spells the suffix とう instead of じま. Conditions include ship proximity, moving away and defeating a battler."
+    },
+    {
+      "source": "グリア",
+      "english": "Gria",
+      "note": "Provisional rendering of the literal name in main warning 2145. Alternate warning 2346 uses the entered-name command instead; both source forms are retained. Native label 2857 uses this spelling; saved nicknames are separate."
+    },
+    {
+      "source": "ゴー フォー ブロック",
+      "english": "Go for block!",
+      "note": "The impostors say block rather than the expected Go for broke. Retained as a source malapropism. Record 2059 also retains Gold Blue where 2054 says Land Blue."
+    },
+    {
+      "source": "にちりんのカラメラ",
+      "english": "Sun Caramela",
+      "note": "Seventh fragment, named by Linlin in 2389. Main finale 2477 awards it; the acquisition message and inventory label 3679 use Sun. Linlin does not award it in the rematch scene."
+    },
+    {
+      "source": "カニオ／サバゾー／ウニコ／サザエ／ワカメ",
+      "english": "Kanio / Sabazo / Uniko / Sazae / Wakame",
+      "note": "Don Oyaji's baby-name skit in 2376. Retains Japanese sea-food names and puns: crab, mackerel, sea urchin, turban shell and seaweed. The dialogue is deliberately silly."
+    },
+    {
+      "source": "カミカゼはふかぬ",
+      "english": "no divine wind",
+      "note": "Musketeers 2425: no miraculous favorable wind or luck against the player and Caramela; no aircraft-attack reference."
+    },
+    {
+      "source": "オーシャン＝ブルー",
+      "english": "Ocean Blue",
+      "note": "Musketeers farewell 2430; preserved as a farewell to the sea/world. No additional region is inferred."
+    },
+    {
+      "source": "ドクターゼロ／ゼロ",
+      "english": "Dr. Zero / Zero",
+      "note": "Provisional antagonist name. Uses a mechanical body and seeks a Zero empire. Dialogue describes restored human feeling, then his decision to die as a human; no new backstory or resurrection is inferred."
+    },
+    {
+      "source": "グレイテスト１",
+      "english": "Greatest 1",
+      "note": "Top Robopon battler rank claimed by Dr. Zero in 2453; provisional compact rendering."
+    },
+    {
+      "source": "カラメルの話し方：オラ／モシ",
+      "english": "Caramel: folksy, hesitant speech",
+      "note": "Revival monologue 2481 uses stutters, ya and informal phrasing. Its repeated eye-reading requests, pauses, joke and departure remain; no real-world regional dialect is asserted."
+    },
+    {
+      "source": "あしたからさきのみらい",
+      "english": "the future beyond tomorrow",
+      "note": "Zero's dying explanation in 2488 of what Caramel sees in the player's eyes and will grant. The hero never states a spoken wish; this ambiguity is retained."
+    },
+    {
+      "source": "われわれはしばらくやすむことにするよ",
+      "english": "We'll rest for a while.",
+      "note": "Alternate Musketeers farewell 2574 says rest, unlike main 2428's leaving the sea. Their different source meanings are retained."
+    },
+    {
+      "source": "ラム・マイティ・ミカチ",
+      "english": "Ram, Mighty, Mikachi",
+      "note": "Alternate threat 2637 names this crew, replacing main 2490 Punch/Dandy/Mikachi. The full cast uses the same explicit page before Mikachi at source-control index 36; all original colors remain."
+    },
+    {
+      "source": "２６３６：あしたをとりもどしたのです",
+      "english": "won tomorrow",
+      "note": "Closing narration credits the player's courage, strength and moral resolve for restoring tomorrow and lasting peace. The condensed English says brave, strong and just; its source location alone does not establish which route calls it."
+    },
+    {
+      "source": "ロボまる",
+      "english": "Robomaru",
+      "note": "Provisional native roster/speaker label; existing battle spellings are reused where available. Saved nicknames are not rewritten."
+    },
+    {
+      "source": "ドリリアン",
+      "english": "Drillian",
+      "note": "Provisional native roster/speaker label; existing battle spellings are reused where available. Saved nicknames are not rewritten."
+    },
+    {
+      "source": "デンチャン",
+      "english": "Denchan",
+      "note": "Provisional native roster/speaker label; existing battle spellings are reused where available. Saved nicknames are not rewritten."
+    },
+    {
+      "source": "メガロ",
+      "english": "Megalo",
+      "note": "Provisional native roster/speaker label; existing battle spellings are reused where available. Saved nicknames are not rewritten."
+    },
+    {
+      "source": "ブッピー",
+      "english": "Buppy",
+      "note": "Provisional native roster/speaker label; existing battle spellings are reused where available. Saved nicknames are not rewritten."
+    },
+    {
+      "source": "ギャルル",
+      "english": "Gyaruru",
+      "note": "Provisional native roster/speaker label; existing battle spellings are reused where available. Saved nicknames are not rewritten."
+    },
+    {
+      "source": "ヒトミ",
+      "english": "Hitomi",
+      "note": "Provisional native roster/speaker label; existing battle spellings are reused where available. Saved nicknames are not rewritten."
+    },
+    {
+      "source": "ムサシ",
+      "english": "Musashi",
+      "note": "Provisional native roster/speaker label; existing battle spellings are reused where available. Saved nicknames are not rewritten."
+    },
+    {
+      "source": "コジロウ",
+      "english": "Kojiro",
+      "note": "Provisional native roster/speaker label; existing battle spellings are reused where available. Saved nicknames are not rewritten."
+    },
+    {
+      "source": "アーメフト",
+      "english": "Ameft",
+      "note": "Provisional native roster/speaker label; existing battle spellings are reused where available. Saved nicknames are not rewritten."
+    },
+    {
+      "source": "カイゾーグ",
+      "english": "Kaizorg",
+      "note": "Provisional native roster/speaker label; existing battle spellings are reused where available. Saved nicknames are not rewritten."
+    },
+    {
+      "source": "ハオウ",
+      "english": "Haoh",
+      "note": "Provisional native roster/speaker label; existing battle spellings are reused where available. Saved nicknames are not rewritten."
+    },
+    {
+      "source": "ドクロイド",
+      "english": "Dokuroyd",
+      "note": "Provisional native roster/speaker label; existing battle spellings are reused where available. Saved nicknames are not rewritten."
+    },
+    {
+      "source": "ナース",
+      "english": "Nurse",
+      "note": "Provisional native roster/speaker label; existing battle spellings are reused where available. Saved nicknames are not rewritten."
+    },
+    {
+      "source": "デビアン",
+      "english": "Devian",
+      "note": "Provisional native roster/speaker label; existing battle spellings are reused where available. Saved nicknames are not rewritten."
+    },
+    {
+      "source": "オヤカタ",
+      "english": "Oyakata",
+      "note": "Provisional native roster/speaker label; existing battle spellings are reused where available. Saved nicknames are not rewritten."
+    },
+    {
+      "source": "キュラ",
+      "english": "Kyura",
+      "note": "Provisional native roster/speaker label; existing battle spellings are reused where available. Saved nicknames are not rewritten."
+    },
+    {
+      "source": "ボイラース",
+      "english": "Boilars",
+      "note": "Provisional native roster/speaker label; existing battle spellings are reused where available. Saved nicknames are not rewritten."
+    },
+    {
+      "source": "テッキュー",
+      "english": "Tekkyu",
+      "note": "Provisional native roster/speaker label; existing battle spellings are reused where available. Saved nicknames are not rewritten."
+    },
+    {
+      "source": "カプカプ",
+      "english": "Kapukapu",
+      "note": "Provisional native roster/speaker label; existing battle spellings are reused where available. Saved nicknames are not rewritten."
+    },
+    {
+      "source": "タンイチ",
+      "english": "Tanichi",
+      "note": "Provisional native roster/speaker label; existing battle spellings are reused where available. Saved nicknames are not rewritten."
+    },
+    {
+      "source": "マーシャル",
+      "english": "Marshal",
+      "note": "Provisional native roster/speaker label; existing battle spellings are reused where available. Saved nicknames are not rewritten."
+    },
+    {
+      "source": "ヌーハーフ",
+      "english": "Nuhalf",
+      "note": "Provisional native roster/speaker label; existing battle spellings are reused where available. Saved nicknames are not rewritten."
+    },
+    {
+      "source": "ベンザー",
+      "english": "Benzer",
+      "note": "Provisional native roster/speaker label; existing battle spellings are reused where available. Saved nicknames are not rewritten."
+    },
+    {
+      "source": "ドライバル",
+      "english": "Drival",
+      "note": "Provisional native roster/speaker label; existing battle spellings are reused where available. Saved nicknames are not rewritten."
+    },
+    {
+      "source": "ホッケイ",
+      "english": "Hockey",
+      "note": "Provisional native roster/speaker label; existing battle spellings are reused where available. Saved nicknames are not rewritten."
+    },
+    {
+      "source": "シルバーン",
+      "english": "Silvern",
+      "note": "Provisional native roster/speaker label; existing battle spellings are reused where available. Saved nicknames are not rewritten."
+    },
+    {
+      "source": "ゴールドン",
+      "english": "Goldon",
+      "note": "Provisional native roster/speaker label; existing battle spellings are reused where available. Saved nicknames are not rewritten."
+    },
+    {
+      "source": "モチモッチ",
+      "english": "Mochimocchi",
+      "note": "Provisional native roster/speaker label; existing battle spellings are reused where available. Saved nicknames are not rewritten."
+    },
+    {
+      "source": "ピッチ",
+      "english": "Pitch",
+      "note": "Provisional native roster/speaker label; existing battle spellings are reused where available. Saved nicknames are not rewritten."
+    },
+    {
+      "source": "ドルッピ",
+      "english": "Doluppi",
+      "note": "Provisional native roster/speaker label; existing battle spellings are reused where available. Saved nicknames are not rewritten."
+    },
+    {
+      "source": "ウーマンボ",
+      "english": "U-Manbo",
+      "note": "Provisional native roster/speaker label; existing battle spellings are reused where available. Saved nicknames are not rewritten."
+    },
+    {
+      "source": "ギョジン",
+      "english": "Gyojin",
+      "note": "Provisional native roster/speaker label; existing battle spellings are reused where available. Saved nicknames are not rewritten."
+    },
+    {
+      "source": "フライヤー",
+      "english": "Flyer",
+      "note": "Provisional native roster/speaker label; existing battle spellings are reused where available. Saved nicknames are not rewritten."
+    },
+    {
+      "source": "グラジ",
+      "english": "Glaji",
+      "note": "Provisional native roster/speaker label; existing battle spellings are reused where available. Saved nicknames are not rewritten."
+    },
+    {
+      "source": "ザリガ",
+      "english": "Zariga",
+      "note": "Provisional native roster/speaker label; existing battle spellings are reused where available. Saved nicknames are not rewritten."
+    },
+    {
+      "source": "ザリーグ",
+      "english": "Zarigue",
+      "note": "Provisional native roster/speaker label; existing battle spellings are reused where available. Saved nicknames are not rewritten."
+    },
+    {
+      "source": "シフォン",
+      "english": "Chiffon",
+      "note": "Provisional native roster/speaker label; existing battle spellings are reused where available. Saved nicknames are not rewritten."
+    },
+    {
+      "source": "ロッポニカ",
+      "english": "Ropponica",
+      "note": "Provisional native roster/speaker label; existing battle spellings are reused where available. Saved nicknames are not rewritten."
+    },
+    {
+      "source": "マクロ",
+      "english": "Macro",
+      "note": "Provisional native roster/speaker label; existing battle spellings are reused where available. Saved nicknames are not rewritten."
+    },
+    {
+      "source": "パーム",
+      "english": "Palm",
+      "note": "Provisional native roster/speaker label; existing battle spellings are reused where available. Saved nicknames are not rewritten."
+    },
+    {
+      "source": "ポルトス",
+      "english": "Porthos",
+      "note": "Provisional native roster/speaker label; existing battle spellings are reused where available. Saved nicknames are not rewritten. Source says Porthos, unlike story dialogue Dartagnan; both source forms remain."
+    },
+    {
+      "source": "かいしゅうや",
+      "english": "Collector",
+      "note": "Provisional native roster/speaker label; existing battle spellings are reused where available. Saved nicknames are not rewritten."
+    },
+    {
+      "source": "いっぱんじん",
+      "english": "Civilian",
+      "note": "Provisional native roster/speaker label; existing battle spellings are reused where available. Saved nicknames are not rewritten."
+    },
+    {
+      "source": "ドクターゼロ",
+      "english": "Dr. Zero",
+      "note": "Provisional native roster/speaker label; existing battle spellings are reused where available. Saved nicknames are not rewritten."
+    },
+    {
+      "source": "アニオウ",
+      "english": "Anio",
+      "note": "Provisional native roster/speaker label; existing battle spellings are reused where available. Saved nicknames are not rewritten. Source spells Anio (アニオウ), unlike story Aniro (アニロウ)."
+    },
+    {
+      "source": "Ｒ３−Ｋ",
+      "english": "R-3K",
+      "note": "Provisional native roster/speaker label; existing battle spellings are reused where available. Saved nicknames are not rewritten."
+    },
+    {
+      "source": "ドン・オヤージ",
+      "english": "Don Oyaji",
+      "note": "Provisional native roster/speaker label; existing battle spellings are reused where available. Saved nicknames are not rewritten."
+    },
+    {
+      "source": "フーろうし",
+      "english": "Master Fu",
+      "note": "Provisional native roster/speaker label; existing battle spellings are reused where available. Saved nicknames are not rewritten."
+    },
+    {
+      "source": "キョン・キョンシー",
+      "english": "Kyonkyonshi",
+      "note": "Provisional native roster/speaker label; existing battle spellings are reused where available. Saved nicknames are not rewritten."
+    },
+    {
+      "source": "ライゲン",
+      "english": "Raigen",
+      "note": "Provisional native roster/speaker label; existing battle spellings are reused where available. Saved nicknames are not rewritten."
+    },
+    {
+      "source": "ロン・チュー",
+      "english": "Ron Chu",
+      "note": "Provisional native roster/speaker label; existing battle spellings are reused where available. Saved nicknames are not rewritten."
+    },
+    {
+      "source": "200B:0007",
+      "english": "bot-name insertion",
+      "note": "Now reserves eleven cells for the translated default roster (Mochimocchi is longest). Player name argument 0 remains five; dynamic item argument 6 reserves sixteen. Existing 2709 still fits. Stored nicknames are separate from native label records."
+    },
+    {
+      "source": "きつねラーメン",
+      "english": "Kitsune Ramen",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged. Kitsune denotes the fried-tofu noodle topping."
+    },
+    {
+      "source": "ミソうどん",
+      "english": "Miso Udon",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "ワンタンめん",
+      "english": "Wonton Noodles",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "たちぐいそば",
+      "english": "Standing Soba",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "うどんラーメン",
+      "english": "Udon Ramen",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "ゲキからソバ",
+      "english": "Extra Spicy Soba",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "オイルソーダ",
+      "english": "Oil Soda",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "おとなのコーヒー",
+      "english": "Adult Coffee",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "ハーブティー",
+      "english": "Herbal Tea",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "ジュウハチちゃ",
+      "english": "18 Tea",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged. Literal eighteen-tea name."
+    },
+    {
+      "source": "みそしるドリンク",
+      "english": "Miso Soup Drink",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "こどものココア",
+      "english": "Kids' Cocoa",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "インドカレー",
+      "english": "Indian Curry",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "ゲキあまカレー",
+      "english": "Very Sweet Curry",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "ハヤシライス",
+      "english": "Hayashi Rice",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "ポンカレー",
+      "english": "Pon Curry",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "くさいカレー",
+      "english": "Stinky Curry",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "モンゴルカレー",
+      "english": "Mongolian Curry",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "クリームケーキ",
+      "english": "Cream Cake",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "くりくりケーキ",
+      "english": "Chestnut Cake",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "フルーツトルテ",
+      "english": "Fruit Torte",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "ナポレオンパイ",
+      "english": "Napoleon Pie",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "ダイエットケーキ",
+      "english": "Diet Cake",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "トロピカルアイ",
+      "english": "Tropical Eye",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged. Retains the source food/fish-name wordplay; no official localization is claimed."
+    },
+    {
+      "source": "クッピー",
+      "english": "Kuppy",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged. Retains the source food/fish-name wordplay; no official localization is claimed."
+    },
+    {
+      "source": "ひれおフィッシュ",
+      "english": "Fin-O-Fish",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged. Fin-O-Fish keeps the fin/fillet food-name joke."
+    },
+    {
+      "source": "あきざかな",
+      "english": "Autumn Fish",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "くさいさかな",
+      "english": "Stinky Fish",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "シーラザンス",
+      "english": "Coelazance",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged. Retains the source food/fish-name wordplay; no official localization is claimed."
+    },
+    {
+      "source": "レッドチェリー",
+      "english": "Red Cherry",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "グリーンチェリー",
+      "english": "Green Cherry",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "ブルーチェリー",
+      "english": "Blue Cherry",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "イエローチェリー",
+      "english": "Yellow Cherry",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "アップル",
+      "english": "Apple",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "でんちアメ",
+      "english": "Battery Candy",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "シロクロクッキー",
+      "english": "B&W Cookie",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged. B&W abbreviates black and white."
+    },
+    {
+      "source": "カラフルクッキー",
+      "english": "Colorful Cookie",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "おいしいニク",
+      "english": "Tasty Meat",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "ばくだんチョコ",
+      "english": "Bomb Chocolate",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "チャンコなべ",
+      "english": "Chanko Hotpot",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "ぼんぼんランチ",
+      "english": "Bonbon Lunch",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged."
+    },
+    {
+      "source": "つきみサンド",
+      "english": "Tsukimi Sandwich",
+      "note": "Native food label; provisional wording within sixteen cells. Item IDs, food effects and recipes are unchanged. Tsukimi is the moon-viewing/egg sandwich name."
+    },
+    {
+      "source": "ポミュ／ザリ／メル／オッス／モシ",
+      "english": "pomyu / zari / mel / osu / moshi",
+      "note": "Bedtime voices retain compact catchphrases where allocations permit. The bot-name command in 2915 stays intact with eleven cells reserved. 2954 retains the previous compact Berry label for strawberry mousse."
+    },
+    {
+      "source": "たいちょー／タイチョー（ロボポン会話）",
+      "english": "Captain",
+      "note": "Bot interaction voices 3009–3022 address the player as Captain; compact sir elsewhere. No new roster names. Seven source bot-name insertions remain dynamic, with eleven cells reserved. Added line breaks at 3033 and 3035 preserve hunger/immobility meaning within original byte budgets."
+    },
+    {
+      "source": "ポミュ（作業・食事・シャワー反応）",
+      "english": "pomyu / pyu",
+      "note": "Bot reaction draft 3128–3143 preserves pomyu where possible and shortens it to pyu in tiny original allocations. Ordinary, liked and disliked food responses remain distinct. Fifteen sixteen-line voice banks cover chores/training, meals and showers; no game mechanics are changed."
+    },
+    {
+      "source": "ランナー",
+      "english": "runner",
+      "note": "Gardening runner; follows existing UI wording. Pest-control messages 3338–3341 distinguish protecting runners from their loss to rat bots."
+    },
+    {
+      "source": "ねずみロボポン",
+      "english": "rat bots",
+      "note": "Robopon pests in the cleaning warning and pest-control success/failure messages; not a new party species name."
+    },
+    {
+      "source": "ゴム（ミニゲーム）",
+      "english": "rubber / band",
+      "note": "Rubber band held and pulled in the Stretch game. The ten-cell tournament grid shortens rubber to band. Knuckle/Hammer/Punch labels are distinct from the character named Punch."
+    },
+    {
+      "source": "ムーたいりく",
+      "english": "Mu continent",
+      "note": "Ongoing-chore boast at 3425; preserves the source joke, not a claim that a new area or event is implemented."
+    },
+    {
+      "source": "マギシステム",
+      "english": "Magi System",
+      "note": "Computer-repair joke at 3495; provisional literal wording. Source typing at 3430 retains Y-U-U-K-I / S-U-T-E-K-I and the slow-typing apology."
+    },
+    {
+      "source": "ワカサギつり",
+      "english": "smelt fishing",
+      "note": "Wakasagi is Japanese smelt. The rural voice at 3503 prefers this fishing style; no fishing mechanics are changed."
+    },
+    {
+      "source": "ナックルアーム",
+      "english": "Knuckle Arm",
+      "note": "Native equipment label 3537; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ヘヴィナックル",
+      "english": "Heavy Knuckle",
+      "note": "Native equipment label 3538; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ハンマーアーム",
+      "english": "Hammer Arm",
+      "note": "Native equipment label 3539; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ヘヴィハンマー",
+      "english": "Heavy Hammer",
+      "note": "Native equipment label 3540; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "サンボアーム",
+      "english": "Sambo Arm",
+      "note": "Native equipment label 3541; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ボクサーアーム",
+      "english": "Boxer Arm",
+      "note": "Native equipment label 3542; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ムエタイアーム",
+      "english": "Muay Thai Arm",
+      "note": "Native equipment label 3543; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ウルフハング",
+      "english": "Wolf Hang",
+      "note": "Native equipment label 3544; provisional project spelling. Source IDs and effects unchanged. Keeps source ハング rather than silently rewriting it as Fang."
+    },
+    {
+      "source": "タイガーアーム",
+      "english": "Tiger Arm",
+      "note": "Native equipment label 3545; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ぶとうハンド",
+      "english": "Martial Hand",
+      "note": "Native equipment label 3546; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ぼうそうアーム",
+      "english": "Mad Arm",
+      "note": "Native equipment label 3547; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ダガーアーム",
+      "english": "Dagger Arm",
+      "note": "Native equipment label 3548; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ソードアーム",
+      "english": "Sword Arm",
+      "note": "Native equipment label 3549; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "サムライソード",
+      "english": "Samurai Sword",
+      "note": "Native equipment label 3550; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ムラマサアーム",
+      "english": "Muramasa Arm",
+      "note": "Native equipment label 3551; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "トマホーク",
+      "english": "Tomahawk",
+      "note": "Native equipment label 3552; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ライントハンド",
+      "english": "Raint Hand",
+      "note": "Native equipment label 3553; provisional project spelling. Source IDs and effects unchanged. Provisional rendering of ライント; requires an official reference to resolve."
+    },
+    {
+      "source": "ピックアーム",
+      "english": "Pick Arm",
+      "note": "Native equipment label 3554; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "レイピアアーム",
+      "english": "Rapier Arm",
+      "note": "Native equipment label 3555; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "スピアアーム",
+      "english": "Spear Arm",
+      "note": "Native equipment label 3556; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "グレイブアーム",
+      "english": "Glaive Arm",
+      "note": "Native equipment label 3557; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ヴァイドハンド",
+      "english": "Vaid Hand",
+      "note": "Native equipment label 3558; provisional project spelling. Source IDs and effects unchanged. Provisional rendering of ヴァイド; do not silently change to Void."
+    },
+    {
+      "source": "ハーブアーム",
+      "english": "Herb Arm",
+      "note": "Native equipment label 3559; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "タロットアーム",
+      "english": "Tarot Arm",
+      "note": "Native equipment label 3560; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ミスリルアーム",
+      "english": "Mithril Arm",
+      "note": "Native equipment label 3561; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "エンゼルアーム",
+      "english": "Angel Arm",
+      "note": "Native equipment label 3562; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ゴッドハンド",
+      "english": "God Hand",
+      "note": "Native equipment label 3563; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ミカドアーム",
+      "english": "Mikado Arm",
+      "note": "Native equipment label 3564; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ルーンアーム",
+      "english": "Rune Arm",
+      "note": "Native equipment label 3565; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ウラヌスハンド",
+      "english": "Uranus Hand",
+      "note": "Native equipment label 3566; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "じょうかハンド",
+      "english": "Purifying Hand",
+      "note": "Native equipment label 3567; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ジャッジハンド",
+      "english": "Judge Hand",
+      "note": "Native equipment label 3568; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ガイアハンド",
+      "english": "Gaia Hand",
+      "note": "Native equipment label 3569; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ガンハンド",
+      "english": "Gun Hand",
+      "note": "Native equipment label 3570; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ライフルアーム",
+      "english": "Rifle Arm",
+      "note": "Native equipment label 3571; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ショットガン",
+      "english": "Shotgun",
+      "note": "Native equipment label 3572; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ガトリング",
+      "english": "Gatling",
+      "note": "Native equipment label 3573; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "バルカンアーム",
+      "english": "Vulcan Arm",
+      "note": "Native equipment label 3574; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "グレネード",
+      "english": "Grenade",
+      "note": "Native equipment label 3575; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "バズーカアーム",
+      "english": "Bazooka Arm",
+      "note": "Native equipment label 3576; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "レーザーアーム",
+      "english": "Laser Arm",
+      "note": "Native equipment label 3577; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "メガレーザー",
+      "english": "Mega Laser",
+      "note": "Native equipment label 3578; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ビームアーム",
+      "english": "Beam Arm",
+      "note": "Native equipment label 3579; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ハイパービーム",
+      "english": "Hyper Beam",
+      "note": "Native equipment label 3580; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ナイフアーム",
+      "english": "Knife Arm",
+      "note": "Native equipment label 3581; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "カギヅメ",
+      "english": "Claw",
+      "note": "Native equipment label 3582; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "りゅうのつめ",
+      "english": "Dragon Claw",
+      "note": "Native equipment label 3583; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "なげなわアーム",
+      "english": "Lasso Arm",
+      "note": "Native equipment label 3584; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "スリハンド",
+      "english": "Pickpocket Hand",
+      "note": "Native equipment label 3585; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ぶんどりアーム",
+      "english": "Plunder Arm",
+      "note": "Native equipment label 3586; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "イカサマアーム",
+      "english": "Cheat Arm",
+      "note": "Native equipment label 3587; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "たんさアーム",
+      "english": "Scan Arm",
+      "note": "Native equipment label 3588; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ふきや",
+      "english": "Blowgun",
+      "note": "Native equipment label 3589; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "だいごうきゅう",
+      "english": "Great Bow",
+      "note": "Native equipment label 3590; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "クロスボウ",
+      "english": "Crossbow",
+      "note": "Native equipment label 3591; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "タイレルアーム",
+      "english": "Tyrell Arm",
+      "note": "Native equipment label 3592; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "クラブアーム",
+      "english": "Club Arm",
+      "note": "Native equipment label 3593; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "メイスアーム",
+      "english": "Mace Arm",
+      "note": "Native equipment label 3594; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "フレイルアーム",
+      "english": "Flail Arm",
+      "note": "Native equipment label 3595; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "レッスルアーム",
+      "english": "Wrestle Arm",
+      "note": "Native equipment label 3596; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "バスターアーム",
+      "english": "Buster Arm",
+      "note": "Native equipment label 3597; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "パワーアーム",
+      "english": "Power Arm",
+      "note": "Native equipment label 3598; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ブレイドアーム",
+      "english": "Blade Arm",
+      "note": "Native equipment label 3599; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ケイブアーム",
+      "english": "Cave Arm",
+      "note": "Native equipment label 3600; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "カトックアーム",
+      "english": "Katock Arm",
+      "note": "Native equipment label 3601; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "パイルバンカー",
+      "english": "Pile Bunker",
+      "note": "Native equipment label 3602; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ハイパークロー",
+      "english": "Hyper Claw",
+      "note": "Native equipment label 3603; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ナーガハンド",
+      "english": "Naga Hand",
+      "note": "Native equipment label 3605; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "デスハンド",
+      "english": "Doom Hand",
+      "note": "Native equipment label 3606; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "スキュラハンド",
+      "english": "Scylla Hand",
+      "note": "Native equipment label 3607; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "グールハンド",
+      "english": "Ghoul Hand",
+      "note": "Native equipment label 3608; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ブラッドハンド",
+      "english": "Blood Hand",
+      "note": "Native equipment label 3609; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "アシュラハンド",
+      "english": "Ashura Hand",
+      "note": "Native equipment label 3610; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ヤシャハンド",
+      "english": "Yasha Hand",
+      "note": "Native equipment label 3611; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ジークハンド",
+      "english": "Zeek Hand",
+      "note": "Native equipment label 3612; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ワイズアーム",
+      "english": "Wise Arm",
+      "note": "Native equipment label 3613; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "スレッジハンド",
+      "english": "Sledge Hand",
+      "note": "Native equipment label 3614; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ブレンアーム",
+      "english": "Bren Arm",
+      "note": "Native equipment label 3615; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ケミカルハンド",
+      "english": "Chemical Hand",
+      "note": "Native equipment label 3616; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "マジックアーム",
+      "english": "Magic Arm",
+      "note": "Native equipment label 3617; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ライトニング",
+      "english": "Lightning",
+      "note": "Native equipment label 3618; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ウィンアーム",
+      "english": "Win Arm",
+      "note": "Native equipment label 3619; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "シェルハンド",
+      "english": "Shell Hand",
+      "note": "Native equipment label 3620; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ロッポウアーム",
+      "english": "Roppo Arm",
+      "note": "Native equipment label 3621; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "レジストアーム",
+      "english": "Resist Arm",
+      "note": "Native equipment label 3622; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "サーブハンド",
+      "english": "Serve Hand",
+      "note": "Native equipment label 3623; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ラートルハンド",
+      "english": "Rattle Hand",
+      "note": "Native equipment label 3624; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "エリコルアーム",
+      "english": "Erikol Arm",
+      "note": "Native equipment label 3625; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "プロペラ",
+      "english": "Propeller",
+      "note": "Native equipment label 3626; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ウイング",
+      "english": "Wing",
+      "note": "Native equipment label 3627; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ジェット",
+      "english": "Jet",
+      "note": "Native equipment label 3628; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ターボジェット",
+      "english": "Turbo Jet",
+      "note": "Native equipment label 3629; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "グライダー",
+      "english": "Glider",
+      "note": "Native equipment label 3630; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ブースター",
+      "english": "Booster",
+      "note": "Native equipment label 3631; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "カミカゼ",
+      "english": "Kamikaze",
+      "note": "Native equipment label 3632; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "きじゅう",
+      "english": "Machine Gun",
+      "note": "Native equipment label 3633; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ソニック",
+      "english": "Sonic",
+      "note": "Native equipment label 3634; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ばくだん",
+      "english": "Bomb",
+      "note": "Native equipment label 3635; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "アトミック",
+      "english": "Atomic",
+      "note": "Native equipment label 3636; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "スクリュー",
+      "english": "Screw",
+      "note": "Native equipment label 3637; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ホバー",
+      "english": "Hover",
+      "note": "Native equipment label 3638; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ソナー",
+      "english": "Sonar",
+      "note": "Native equipment label 3639; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ウェーブ",
+      "english": "Wave",
+      "note": "Native equipment label 3640; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "２０ミリほう",
+      "english": "20mm Cannon",
+      "note": "Native equipment label 3641; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "３６ミリほう",
+      "english": "36mm Cannon",
+      "note": "Native equipment label 3642; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "４６ミリほう",
+      "english": "46mm Cannon",
+      "note": "Native equipment label 3643; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ヘッジボム",
+      "english": "Hedge Bomb",
+      "note": "Native equipment label 3644; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "バトルガンマー",
+      "english": "Battle Gammar",
+      "note": "Native equipment label 3645; provisional project spelling. Source IDs and effects unchanged. Preserves ガンマー; do not silently substitute Gunner."
+    },
+    {
+      "source": "ぎょらい",
+      "english": "Torpedo",
+      "note": "Native equipment label 3646; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "きらい",
+      "english": "Sea Mine",
+      "note": "Native equipment label 3647; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ローラー",
+      "english": "Roller",
+      "note": "Native equipment label 3648; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ビッグローラー",
+      "english": "Big Roller",
+      "note": "Native equipment label 3649; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "とげローラー",
+      "english": "Spiked Roller",
+      "note": "Native equipment label 3650; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "キャタピラ",
+      "english": "Caterpillar",
+      "note": "Native equipment label 3651; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ヘルキャタピラ",
+      "english": "Hell Caterpillar",
+      "note": "Native equipment label 3652; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "マシンガン",
+      "english": "Machine Gun",
+      "note": "Native equipment label 3653; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ストロングほう",
+      "english": "Strong Cannon",
+      "note": "Native equipment label 3654; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "キャノンほう",
+      "english": "Cannon",
+      "note": "Native equipment label 3655; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "バズーカー",
+      "english": "Bazooka",
+      "note": "Native equipment label 3656; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "マイン",
+      "english": "Mine",
+      "note": "Native equipment label 3657; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "きかんほう",
+      "english": "Machine Cannon",
+      "note": "Native equipment label 3658; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ロケットほう",
+      "english": "Rocket Cannon",
+      "note": "Native equipment label 3659; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ミサイル",
+      "english": "Missile",
+      "note": "Native equipment label 3660; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "スパイクタイヤ",
+      "english": "Spiked Tire",
+      "note": "Native equipment label 3661; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ビッグフット",
+      "english": "Bigfoot",
+      "note": "Native equipment label 3662; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ばくちく",
+      "english": "Firecrackers",
+      "note": "Native equipment label 3663; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "てなげだん",
+      "english": "Hand Grenade",
+      "note": "Native equipment label 3664; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ブータン",
+      "english": "Bootan",
+      "note": "Provisional name in bio 3710; distinct source from Buppy (ブッピー). It learns to work before becoming a cleaning bot."
+    },
+    {
+      "source": "ルード",
+      "english": "Rude",
+      "note": "Provisional enemy/group term in biographies 3750 and 3775. Original gameplay affiliations unchanged."
+    },
+    {
+      "source": "コデビアン",
+      "english": "Kodevian",
+      "note": "Provisional minion name in bio 3751; Devian commands its army."
+    },
+    {
+      "source": "コギャル",
+      "english": "kogal",
+      "note": "Youth-fashion reference in bio 3714; retained as the source personality programming."
+    },
+    {
+      "source": "ウォータ＝ブルー",
+      "english": "Water Blue",
+      "note": "Native region label 4110; follows established sea terminology, source IDs unchanged."
+    },
+    {
+      "source": "ナ〜ム〜 / ポクポクポク / チ〜ン",
+      "english": "Namu, namu! / Tap-tap, ding!",
+      "note": "Companion 3951 retains the mock funeral chant, wooden-percussion/bell sounds and RIP punchline; not a new event or mechanic."
+    },
+    {
+      "source": "ロボポンファイル / ロボポンずかん",
+      "english": "Bot Book",
+      "note": "Book interface and console use the existing feature name; not a save-file label. Logged is the count of registered species, not all 46 possible entries."
+    },
+    {
+      "source": "そうこ (facility caption)",
+      "english": "Store",
+      "note": "Compact bot-storage facility label, matching navigation. The six-byte source allocation cannot hold Storage. This is not a shop."
+    },
+    {
+      "source": "そうごうせいかく (profile bitmap)",
+      "english": "Traits",
+      "note": "Compact heading for the overall personality panel; only caption pixels change. Hunger/Stress retain their green/blue distinction; Parts/Apps follow existing interface terminology."
     }
   ]
 }

@@ -1,0 +1,61 @@
+{
+  "format": "BPS1",
+  "scope": {
+    "native_records_total": 1450,
+    "shift_jis_ui_strings": 832,
+    "native_choice_blocks": 299,
+    "layout_instruction_words": 81,
+    "graphic_captions": 3,
+    "replaced_bitmap_resources": 1,
+    "battle_move_components": 244,
+    "equipment_move_components": 244,
+    "native_app_labels": 45,
+    "cut_placeholders_untouched": 15,
+    "new_water_blue_encounter_records": 150,
+    "new_ship_quest_records": 50,
+    "new_prize_game_records": 28,
+    "new_radio_warning_records": 6,
+    "new_regional_hint_records": 17,
+    "new_inventory_labels": 10,
+    "new_control_only_record_untouched": 1
+  },
+  "translation_status": "partial draft; both Water Blue encounter and ship-quest routes, colored ID cards, prize game, regional hints and radio warning; new branches build-validated, not played",
+  "catalogs": {
+    "menu": "translation/battle-moves-menu.json",
+    "story": "translation/water-blue-story-text.json",
+    "choices": "translation/story-choices.json",
+    "layout": "translation/interface-layout.json",
+    "graphics": "translation/interface-graphics.json"
+  },
+  "files": {
+    "source": {
+      "bytes": 33554432,
+      "sha256": "02cda6221c10cba0705f351227e2d6c77e071bdb4f7aa8b5cd3c7c047a2b1881"
+    },
+    "target": {
+      "bytes": 33554432,
+      "sha256": "fc16d0d3f8a13e8ba5c6c436dd5bf99b2386d6041700a85cb447123c9fa15d27"
+    },
+    "patch": {
+      "bytes": 400376,
+      "sha256": "4ca23d851545a4f069a8d55813255a8d4081a10470ea9313d49f5eb45361fd26"
+    }
+  },
+  "update_checksum": true,
+  "n64_checksum": {
+    "variant": "CIC-6102",
+    "crc1": "FFA89600",
+    "crc2": "C278C65F",
+    "bootcode_crc32": "90BB6CB5"
+  },
+  "validate_move_names": true,
+  "move_names": {
+    "recipes": 196,
+    "part_types": 128,
+    "components": 244,
+    "combinations_checked": 25088,
+    "maximum_cells": 16,
+    "equipment_components": 244,
+    "equipment_combinations_checked": 25088
+  }
+}
