@@ -4,7 +4,12 @@ Apply one patch to the original big-endian Japanese ROM with SHA-256
 `02cda6221c10cba0705f351227e2d6c77e071bdb4f7aa8b5cd3c7c047a2b1881`.
 Do not stack patches. Keep a backup of your ROM and saves.
 
-- `minigame-guide-alpha.bps`: current cumulative partial draft with 3,451 native
+- `chore-dialogue-alpha.bps`: current cumulative partial draft with 3,646 native
+  records, 832 UI strings, 299 choices and three bitmap captions. Adds 195 ongoing
+  chore lines across fifteen voices. See `docs/chore-dialogue-alpha.md` and its
+  manifest. Apply directly to the exact Japanese original.
+
+- `minigame-guide-alpha.bps`: earlier cumulative partial draft with 3,451 native
   records, 832 UI strings, 299 choices and three bitmap captions. Adds fifteen
   fixed-grid guides, three labels and four pest-control messages. See
   `docs/minigame-guide-alpha.md` and its manifest. Apply directly to the original.

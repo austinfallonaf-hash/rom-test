@@ -1,6 +1,6 @@
 # Restore this project
 
-The latest private asset snapshot is the minigame-guide-alpha split encrypted ZIP
+The latest private asset snapshot is the chore-dialogue-alpha split encrypted ZIP
 named in `backups/README.md`. Download both parts and the index/checksum files.
 Verify the part hashes, concatenate .part001 then .part002, verify the whole
 ciphertext hash, decrypt with the existing recovery passphrase, then verify the
@@ -30,6 +30,6 @@ Add `--check-remote` when Git metadata and network access are available.
 
 Recovery is tested in a separate empty directory, including executable modes
 and the emulator library symlink. The current source has 134 tests and verifies
-the minigame-guide-alpha ROM/BPS and reference EEPROM against the recorded hashes.
+the chore-dialogue-alpha ROM/BPS and reference EEPROM against the recorded hashes.
 The earlier shop snapshot remains a historical backup with 238 payload files
 and its original 71-test source suite.
