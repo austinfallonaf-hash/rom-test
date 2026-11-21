@@ -1,7 +1,7 @@
 {
   "format_version": 1,
   "project": "Robopon 64 English translation",
-  "milestone": "book-interface-alpha",
+  "milestone": "facility-captions-alpha",
   "recovered_on": "2026-11-05",
   "timezone": "America/Los_Angeles",
   "upstream": {
@@ -9,11 +9,11 @@
     "branch": "codex/verified-workspace-recovery",
     "recovered_commit": "b6b220228bdb6074758017c25e83539e12a5ca2d"
   },
-  "release_manifest": "releases/book-interface-alpha-manifest.json",
-  "release_patch": "releases/book-interface-alpha.bps",
-  "playable_rom": "local/book-interface-alpha.z64",
+  "release_manifest": "releases/facility-captions-alpha-manifest.json",
+  "release_patch": "releases/facility-captions-alpha.bps",
+  "playable_rom": "local/facility-captions-alpha.z64",
   "catalogs": {
-    "menu": "translation/book-interface-menu.json",
+    "menu": "translation/facility-captions-menu.json",
     "story": "translation/late-dialogue-text.json",
     "choices": "translation/story-choices.json",
     "layout": "translation/interface-layout.json",
@@ -21,7 +21,7 @@
   },
   "coverage": {
     "native_records": 4049,
-    "ui_strings": 866,
+    "ui_strings": 873,
     "native_choice_blocks": 299,
     "graphic_captions": 3
   },
@@ -33,20 +33,20 @@
     "day": 2,
     "gold": 500,
     "party_member": "Merlin",
-    "rom_md5_prefix": "D85FAF7B",
-    "working_path": "local/native-saves/Robot Ponkottsu 64 - 7tsu no Umi-D85FAF7B.eep"
+    "rom_md5_prefix": "AD3B8484",
+    "working_path": "local/native-saves/Robot Ponkottsu 64 - 7tsu no Umi-AD3B8484.eep"
   },
-  "latest_encrypted_backup": "backups/robopon64-book-interface-alpha-D85FAF7B.zip.gpg.parts.json",
-  "automated_tests": 149,
-  "next_task": "Continue separate UI/bitmap text, starting with seven remaining facility captions near 0xFB78E-0xFB8DE (Stars, Storage, GB Link, Battle Sim, Helm, Pots and Bed). Bot-status hunger/stress/trait plates still need graphic investigation; only 64 ROM-tail bytes remain free. Preserve all 4049 native records, 256 donor labels/162 donors, 184 book allocations, 15 fixed grids, 66 native exclusions, 866 UI strings and 107 layout guards. New UI number/type branches and earlier native triggers retain their documented gameplay limits. Cold-boot each exact new ROM with an isolated native EEPROM; never load older-ROM states. Keep only current/preceding encrypted working copies via the documented non-cone sparse patterns, adding the next slug before staging. Verify generated restores/canonical copies/source revisions/encrypted archives and preserve extras before cleanup; keep latest/preceding verified restore trees.",
+  "latest_encrypted_backup": "backups/robopon64-facility-captions-alpha-AD3B8484.zip.gpg.parts.json",
+  "automated_tests": 150,
+  "next_task": "Investigate bot-status hunger/stress/trait graphics and a compact replacement or overlay strategy that preserves the 184 book allocations and final 64 bytes of ROM tail. The eight floating facility captions are drafted; captions alone do not establish their operations. Preserve all 4049 native records, 873 UI strings, 256 donor labels/162 donors, 184 book allocations, 15 fixed grids, 66 native exclusions and 107 layout guards. Keep the ASCII centering guard for any facility-caption subset; existing code is unchanged. Earlier UI/native branch and gameplay limits remain. Cold-boot each exact new ROM with isolated native EEPROM; never load older-ROM states. Update non-cone sparse patterns for the next backup slug before staging, retain current/preceding ciphertext working copies and verified restores, verify generated copies against manifest/canonical assets/source revisions/encrypted archives and preserve extras before cleanup.",
   "history_recovery": {
     "source": "user-supplied 16-page conversation PDF",
     "historical_gardening_artifact": "unavailable",
     "gardening_status": "reconstructed from the original ROM; wording is not claimed identical to the historical patch"
   },
-  "checkpoint_ref": "refs/tags/book-interface-alpha",
+  "checkpoint_ref": "refs/tags/facility-captions-alpha",
   "runtime_validation": {
-    "rom_md5_prefix": "D85FAF7B",
+    "rom_md5_prefix": "AD3B8484",
     "initial_save": "native day 2",
     "reference_eeprom_unchanged": true,
     "gold": 500,
@@ -54,11 +54,11 @@
     "older_build_state_loaded": false,
     "pause_menu": "native file A day 2, 500G, player name and Merlin observed",
     "historical_opening_state": "local/fire-blue-story-evidence/opening-502.st0 belongs only to MD5 07EC747C; not loaded",
-    "new_book_interface": "Final native-A cold boot: centered Book console/title, three-line intro, undiscovered number/type and measurement fields, Logged count, Merlin entry 38 data and unchanged four-line biography observed. Original save/stats/equipment intact; three EEPROMs unchanged, no save/state. Other class/type/GB number branches build-validated, not played."
+    "new_facility_captions": "Exact native-A cold boot retains day 2/500G/player/Merlin stats and equipment. All eight floating facility captions observed through R navigation, including seven new translations. Labels fit and center correctly. Facility operations not activated; three EEPROMs unchanged, no save/state/preview."
   },
   "update_checksum": true,
   "validate_move_names": true,
-  "backup_payload_files_verified": 964,
+  "backup_payload_files_verified": 996,
   "backup_format": "gpg-aes256-split",
   "native_coverage_audit": "translation/native-coverage.json",
   "workspace_backup_checkout": {
@@ -67,8 +67,8 @@
       "/*",
       "!/backups/*",
       "/backups/README.md",
-      "/backups/robopon64-late-dialogue-alpha-*",
-      "/backups/robopon64-book-interface-alpha-*"
+      "/backups/robopon64-book-interface-alpha-*",
+      "/backups/robopon64-facility-captions-alpha-*"
     ],
     "older_backups": "Omitted working copies remain in local Git and on the canonical GitHub branch; update patterns for the next milestone before staging new parts."
   }

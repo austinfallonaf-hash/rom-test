@@ -93,6 +93,21 @@ class BookUiLayoutTests(unittest.TestCase):
         bad=[dict(x) for x in layout];bad[0]['target_hex']='3c013f80'
         with self.assertRaises(ValueError):require_layout(menu,bad)
 
+    def test_each_facility_caption_requires_centering_without_book_entry(self):
+        from tools.ui_layout import FACILITY_CAPTIONS
+        layout = [{'offset':hex(p),'source_hex':a,'target_hex':b}
+                  for p,(a,b) in required_words().items()
+                  if FACILITY_START <= p < FACILITY_START+40]
+        for offset in FACILITY_CAPTIONS:
+            menu = [{'offset':hex(offset)}]
+            with self.subTest(offset=hex(offset)):
+                require_layout(menu, layout)
+                with self.assertRaisesRegex(ValueError, 'exact caption'):
+                    require_layout(menu, [])
+                for missing in range(len(layout)):
+                    with self.assertRaises(ValueError):
+                        require_layout(menu, layout[:missing]+layout[missing+1:])
+
     def test_older_ui_does_not_require_new_layout(self):
         require_layout([{'offset':'0x221324'}],[])
         # The UI guard runs before the source ROM check, including iterators.

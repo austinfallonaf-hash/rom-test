@@ -1,4 +1,6 @@
-"""Required, guarded readers for the verified Bot Book UI strings."""
+"""Required, guarded readers for ship facility captions and Bot Book UI."""
+
+FACILITY_CAPTIONS = (0xFB78E, 0xFB7BE, 0xFB7EE, 0xFB81E, 0xFB84E, 0xFB87E, 0xFB8AE, 0xFB8DE)
 
 HEIGHT_WEIGHT = (0x1085DC, 0x1086D0, 0x108C78, 0x108D54, 0x109058, 0x109134)
 
@@ -34,7 +36,7 @@ def required_words():
 def require_layout(menu, layout):
     menu = {int(e['offset'], 0): e for e in menu}
     needed = set()
-    if 0xFB84E in menu:
+    if any(offset in menu for offset in FACILITY_CAPTIONS):
         needed.update(p for p in required_words() if FACILITY_START <= p < FACILITY_START+40)
     if 0x10D9F8 in menu:
         needed.update(TITLE_WORDS)
@@ -44,4 +46,4 @@ def require_layout(menu, layout):
         needed.update(HEIGHT_WEIGHT[1::2])
     actual = {int(e['offset'], 0): (e['source_hex'], e['target_hex']) for e in layout}
     if any(actual.get(p) != required_words()[p] for p in needed):
-        raise ValueError('Bot Book UI requires its exact caption centering and measurement layout')
+        raise ValueError('Translated UI requires its exact caption centering and measurement layout')

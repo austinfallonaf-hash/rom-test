@@ -1810,6 +1810,11 @@
       "source": "ロボポンファイル / ロボポンずかん",
       "english": "Bot Book",
       "note": "Book interface and console use the existing feature name; not a save-file label. Logged is the count of registered species, not all 46 possible entries."
+    },
+    {
+      "source": "そうこ (facility caption)",
+      "english": "Store",
+      "note": "Compact bot-storage facility label, matching navigation. The six-byte source allocation cannot hold Storage. This is not a shop."
     }
   ]
 }
