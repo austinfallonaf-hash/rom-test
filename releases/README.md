@@ -4,7 +4,13 @@ Apply one patch to the original big-endian Japanese ROM with SHA-256
 `02cda6221c10cba0705f351227e2d6c77e071bdb4f7aa8b5cd3c7c047a2b1881`.
 Do not stack patches. Keep a backup of your ROM and saves.
 
-- `bot-book-alpha.bps`: current cumulative partial draft with 3,965 native records,
+- `late-dialogue-alpha.bps`: current cumulative partial draft with 4,049 native
+  records, 832 UI strings, 299 choices and three bitmap captions. Adds 77 dialogue
+  records and seven region labels. The native table's only untranslated records
+  are 48 cut markers and 18 portrait-only entries; separate UI/graphics remain.
+  See `docs/late-dialogue-alpha.md` and its manifest. Apply to the exact original.
+
+- `bot-book-alpha.bps`: earlier cumulative partial draft with 3,965 native records,
   832 UI strings, 299 choices and three bitmap captions. Adds 184 lines across
   46 biographies, guarded tail placement and one condensed book-reader word.
   See `docs/bot-book-alpha.md` and its manifest. Apply to the exact original.

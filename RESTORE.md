@@ -1,6 +1,6 @@
 # Restore this project
 
-The latest private asset snapshot is the bot-book-alpha split encrypted ZIP
+The latest private asset snapshot is the late-dialogue-alpha split encrypted ZIP
 named in `backups/README.md`. Download both parts and the index/checksum files.
 Verify the part hashes, concatenate .part001 then .part002, verify the whole
 ciphertext hash, decrypt with the existing recovery passphrase, then verify the
@@ -30,6 +30,14 @@ Add `--check-remote` when Git metadata and network access are available.
 
 Recovery is tested in a separate empty directory, including executable modes
 and the emulator library symlink. The current source has 143 tests and verifies
-the bot-book-alpha ROM/BPS and reference EEPROM against the recorded hashes.
+the late-dialogue-alpha ROM/BPS and reference EEPROM against the recorded hashes.
 The earlier shop snapshot remains a historical backup with 238 payload files
 and its original 71-test source suite.
+
+A space-limited Git checkout may omit historical encrypted backup working
+copies with non-cone sparse checkout. All older snapshots remain in local Git
+and on the canonical GitHub branch. The current/preceding parts are present;
+backups/README.md gives exact patterns and commands to retrieve an older file
+or restore the full tracked tree. Original/private assets are not removed by
+these patterns. The ZIP excludes Git metadata, so a plain restored directory
+does not inherit the checkout configuration.

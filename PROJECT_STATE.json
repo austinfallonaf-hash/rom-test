@@ -1,7 +1,7 @@
 {
   "format_version": 1,
   "project": "Robopon 64 English translation",
-  "milestone": "bot-book-alpha",
+  "milestone": "late-dialogue-alpha",
   "recovered_on": "2026-11-05",
   "timezone": "America/Los_Angeles",
   "upstream": {
@@ -9,18 +9,18 @@
     "branch": "codex/verified-workspace-recovery",
     "recovered_commit": "b6b220228bdb6074758017c25e83539e12a5ca2d"
   },
-  "release_manifest": "releases/bot-book-alpha-manifest.json",
-  "release_patch": "releases/bot-book-alpha.bps",
-  "playable_rom": "local/bot-book-alpha.z64",
+  "release_manifest": "releases/late-dialogue-alpha-manifest.json",
+  "release_patch": "releases/late-dialogue-alpha.bps",
+  "playable_rom": "local/late-dialogue-alpha.z64",
   "catalogs": {
     "menu": "translation/battle-moves-menu.json",
-    "story": "translation/bot-book-text.json",
+    "story": "translation/late-dialogue-text.json",
     "choices": "translation/story-choices.json",
     "layout": "translation/interface-layout.json",
     "graphics": "translation/interface-graphics.json"
   },
   "coverage": {
-    "native_records": 3965,
+    "native_records": 4049,
     "ui_strings": 832,
     "native_choice_blocks": 299,
     "graphic_captions": 3
@@ -33,20 +33,20 @@
     "day": 2,
     "gold": 500,
     "party_member": "Merlin",
-    "rom_md5_prefix": "6AB9FC59",
-    "working_path": "local/native-saves/Robot Ponkottsu 64 - 7tsu no Umi-6AB9FC59.eep"
+    "rom_md5_prefix": "DC99F55B",
+    "working_path": "local/native-saves/Robot Ponkottsu 64 - 7tsu no Umi-DC99F55B.eep"
   },
-  "latest_encrypted_backup": "backups/robopon64-bot-book-alpha-6AB9FC59.zip.gpg.parts.json",
+  "latest_encrypted_backup": "backups/robopon64-late-dialogue-alpha-DC99F55B.zip.gpg.parts.json",
   "automated_tests": 143,
-  "next_task": "Continue native dialogue from 3918; 3878\u20133917 are already translated. Inspect all source controls, highlights and speaker variants; preserve the 48 cut placeholders and 18 portrait-only records. Keep all 249 donor-stored labels in 155 donors and all 184 eight-byte-aligned book_storage_offset placements intact. Book text occupies 0x1FFD3D0\u20130x1FFFFC0; only the final 64 tail bytes remain free. Do not allocate these bytes casually or grow a line into the next allocation. Generic labels retain sixteen-cell rules; book_line is only for verified 3694\u20133877 with its guarded half-width reader. All earlier 3781 entries/active bytes/descriptors and 15 grids are unchanged. Prior gameplay limits and other book entries remain; see notes/evidence. Latest backup uses two parts; see backups/README.md.",
+  "next_task": "Continue separate Shift-JIS UI and bitmap text, starting with the observed Bot Book introduction at 0x104108 and its data labels/headings. Native coverage is audited in translation/native-coverage.json: 4049 drafts, 48 cut placeholders and 18 portrait-only records; do not translate exclusions to inflate coverage. Preserve all 256 donor ranges in 162 donors, all 184 book_storage_offset placements, 15 fixed grids and 88 layout guards. Book tail still ends at 0x1FFFFC0 with only 64 free bytes. Source controls/arguments and all preceding active text remain exact. New event triggers and prior gameplay limits need checks; see notes/evidence. This checkout omits older encrypted backup working copies using non-cone sparse patterns; all remain in Git/GitHub. Add the next backup slug to the patterns before git add and retain only current/preceding local snapshots. Keep latest/preceding verified restore trees and verify generated duplicates before cleanup.",
   "history_recovery": {
     "source": "user-supplied 16-page conversation PDF",
     "historical_gardening_artifact": "unavailable",
     "gardening_status": "reconstructed from the original ROM; wording is not claimed identical to the historical patch"
   },
-  "checkpoint_ref": "refs/tags/bot-book-alpha",
+  "checkpoint_ref": "refs/tags/late-dialogue-alpha",
   "runtime_validation": {
-    "rom_md5_prefix": "6AB9FC59",
+    "rom_md5_prefix": "DC99F55B",
     "initial_save": "native day 2",
     "reference_eeprom_unchanged": true,
     "gold": 500,
@@ -54,10 +54,22 @@
     "older_build_state_loaded": false,
     "pause_menu": "native file A day 2, 500G, player name and Merlin observed",
     "historical_opening_state": "local/fire-blue-story-evidence/opening-502.st0 belongs only to MD5 07EC747C; not loaded",
-    "new_bot_book": "Exact final-ROM native A; Merlin book entry 38 (3842\u20133845) observed; descriptor-only real 36-cell line fits all four rows; four unchanged EEPROMs, no states or in-game save. Other biographies not played; intro/graphical headings/data labels remain Japanese. See notes/evidence."
+    "new_late_dialogue": "Exact final native-A Moon Blue file/pause captions and Merlin profile observed. Descriptor-only cold-boot preview displays actual 10-cell Water Blue in file A and all four actual pages of 4096, including saved player name, through doctor/Pearlton. Three descriptor copies only; no event/save changes. File B code-guarded, empty. New native event triggers remain unplayed. Both isolated EEPROMs unchanged; no states."
   },
   "update_checksum": true,
   "validate_move_names": true,
-  "backup_payload_files_verified": 896,
-  "backup_format": "gpg-aes256-split"
+  "backup_payload_files_verified": 933,
+  "backup_format": "gpg-aes256-split",
+  "native_coverage_audit": "translation/native-coverage.json",
+  "workspace_backup_checkout": {
+    "mode": "git sparse-checkout, non-cone",
+    "patterns": [
+      "/*",
+      "!/backups/*",
+      "/backups/README.md",
+      "/backups/robopon64-bot-book-alpha-*",
+      "/backups/robopon64-late-dialogue-alpha-*"
+    ],
+    "older_backups": "Omitted working copies remain in local Git and on the canonical GitHub branch; update patterns for the next milestone before staging new parts."
+  }
 }

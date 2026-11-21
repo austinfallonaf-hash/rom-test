@@ -436,6 +436,18 @@
       "source_hex": "3c013f80",
       "target_hex": "3c013f00",
       "note": "Bot Book biography reader only: horizontal scale 1.0 to 0.5. Four separate native records per entry, x=52, y=166+14*row. Vertical scale stays 1.0; 36 ASCII cells occupy the original 216 pixels. ID calculation and native draw call unchanged."
+    },
+    {
+      "offset": "0x220580",
+      "source_hex": "3c013f80",
+      "target_hex": "3c013f40",
+      "note": "Save-file A region caption: horizontal scale 1.0 to 0.75. The longest translated region label has ten cells (90 pixels); the original box allows 112. Native x, y=65, vertical scale and region-ID lookup/draw call stay unchanged."
+    },
+    {
+      "offset": "0x220900",
+      "source_hex": "3c013f80",
+      "target_hex": "3c013f40",
+      "note": "Save-file B region caption: horizontal scale 1.0 to 0.75. The longest translated region label has ten cells (90 pixels); the original box allows 112. Native x, y=65, vertical scale and region-ID lookup/draw call stay unchanged."
     }
   ]
 }

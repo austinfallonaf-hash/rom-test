@@ -84,7 +84,7 @@
     {
       "source": "ムーン＝ブルー",
       "english": "Moon Blue",
-      "note": "Provisional name for the first sea."
+      "note": "Provisional name for the first sea. Full native region label 4108 retains the shared Blue suffix."
     },
     {
       "source": "レッドパス",
@@ -159,7 +159,7 @@
     {
       "source": "ファイア＝ブルー",
       "english": "Fire Blue",
-      "note": "Provisional name of the next sea, identified in the Moon Blue departure dialogue. Its later story remains untranslated."
+      "note": "Provisional name of the next sea, identified in the Moon Blue departure dialogue. Its native story is now drafted; separate UI and gameplay checks remain. Full native region label 4109 retains the shared Blue suffix."
     },
     {
       "source": "ラム",
@@ -224,22 +224,22 @@
     {
       "source": "ツリー＝ブルー",
       "english": "Tree Blue",
-      "note": "Provisional sea name; compact regional list 426 omits the shared Blue suffix. The crowded ransom location uses Tree/Roulette, with Tree meaning Tree Blue."
+      "note": "Provisional sea name; compact regional list 426 omits the shared Blue suffix. The crowded ransom location uses Tree/Roulette, with Tree meaning Tree Blue. Full native region label 4111 retains the shared Blue suffix."
     },
     {
       "source": "ゴールド＝ブルー",
       "english": "Gold Blue",
-      "note": "Provisional sea name; compact regional list 426 omits the shared Blue suffix."
+      "note": "Provisional sea name; compact regional list 426 omits the shared Blue suffix. Full native region label 4112 retains the shared Blue suffix."
     },
     {
       "source": "ランド＝ブルー",
       "english": "Land Blue",
-      "note": "Provisional sea name; compact regional list 426 omits the shared Blue suffix."
+      "note": "Provisional sea name; compact regional list 426 omits the shared Blue suffix. Full native region label 4113 retains the shared Blue suffix."
     },
     {
       "source": "サニー＝ブルー",
       "english": "Sunny Blue",
-      "note": "Provisional sea name; compact regional list 426 omits the shared Blue suffix."
+      "note": "Provisional sea name; compact regional list 426 omits the shared Blue suffix. Full native region label 4114 retains the shared Blue suffix."
     },
     {
       "source": "ブルー",
@@ -1795,6 +1795,16 @@
       "source": "コギャル",
       "english": "kogal",
       "note": "Youth-fashion reference in bio 3714; retained as the source personality programming."
+    },
+    {
+      "source": "ウォータ＝ブルー",
+      "english": "Water Blue",
+      "note": "Native region label 4110; follows established sea terminology, source IDs unchanged."
+    },
+    {
+      "source": "ナ〜ム〜 / ポクポクポク / チ〜ン",
+      "english": "Namu, namu! / Tap-tap, ding!",
+      "note": "Companion 3951 retains the mock funeral chant, wooden-percussion/bell sounds and RIP punchline; not a new event or mechanic."
     }
   ]
 }
