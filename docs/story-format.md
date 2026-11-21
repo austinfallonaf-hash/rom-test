@@ -137,3 +137,34 @@ targets. Rows are right-padded with blank glyphs and encoded at their original
 full size. Descriptor counts and pointers remain unchanged; newline separators
 do not become `2000` controls. This path does not relax dialogue or label limits.
 See `docs/minigame-guide-alpha.md` for reader locations and runtime coverage.
+
+## Bot-book biography lines in remaining ROM padding
+
+The book reader at `0x109BB0–0x109C88` draws four separate records per entry:
+`3694 + 4 * selected_entry + row`, for rows 0–3. Text begins at native x=52,
+y=166+14*row. Source records 3694–3877 have 12–18 glyphs apiece and contain no
+controls. These are independent length-delimited lines, unlike the fixed grids.
+
+`kind: "book_line"` is restricted to those 184 IDs. It accepts 1–36 printable
+ASCII cells and requires the exact horizontal-scale edit at `0x109C04` from
+`3C013F80` (1.0) to `3C013F00` (0.5). Vertical scale, row positions, record-ID
+calculation and native draw call remain unchanged. At six pixels per Latin
+cell, 36 cells fit the source's 216-pixel maximum. Generic labels retain their
+sixteen-cell guard; fixed-grid shapes and dialogue rules remain separate.
+
+Each line declares an integer `book_storage_offset`, aligned to eight bytes,
+inside `0x1FFD3D0–0x2000000`. This is original 0xFF padding after the existing
+RAW2 graphic, which ends at `0x1FFD3C4`. The builder verifies the original padding,
+zero-pads each allocation to eight bytes for the native reader, redirects its
+count/pool-relative descriptor and leaves its original Japanese slot intact.
+It rejects missing/misaligned/out-of-range/occupied placements, overlapping edits,
+legacy donor storage on book lines, and book offsets on other kinds. These lines
+are not donors. Graphics and layout edits share the same overlap guards.
+
+The native descriptor loader at `0x470DC` uses the full 32-bit pool-relative
+pointer and rounds the allocation size to eight bytes; the glyph loop consumes
+only the declared count. No pointer-width change, compression, interpreter hook,
+ROM-size increase or save-format change is needed. The book occupies 11,248 bytes
+through `0x1FFFFC0`; the final 64 bytes stay 0xFF. Preserve these placements when
+continuing. Longer wording or a larger graphic must not consume another record's
+allocation. Existing donor-label ranges remain unchanged and separately guarded.

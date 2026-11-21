@@ -1,20 +1,20 @@
 # Project backup
 
-Latest snapshot: **Equipment labels alpha**, adding 127 equipment names,
-eight Pearlton warnings and four guarded name-scale edits. Coverage: 3,781 native
-records, 832 UI strings, 299 choices and three bitmap captions. All 134 tests
-pass. Prior text/storage and saved nicknames remain intact. Continue bot-book
-text from 3694. See `docs/equipment-labels-alpha.md`.
+Latest snapshot: **Bot-book alpha**, adding 184 lines across 46 biographies,
+a guarded 36-cell reader and remaining ROM-tail storage. Coverage: 3,965 native
+records, 832 UI strings, 299 choices and three bitmap captions. All 143 tests
+pass. Earlier text/storage, graphic and saved nicknames remain intact. Continue
+native dialogue from 3918. See `docs/bot-book-alpha.md`.
 
 The encrypted archive is split into two parts so each is below GitHub's file
-limit. `robopon64-equipment-labels-alpha-89C91C55.zip.gpg.parts.json` records the
+limit. `robopon64-bot-book-alpha-6AB9FC59.zip.gpg.parts.json` records the
 ordered filenames, byte counts and hashes, plus the whole ciphertext identity.
 Both parts together contain the original/current ROMs, emulator, source catalogs,
 tools/tests/docs/patches, historical/current runtime evidence, screenshot/input
 dependencies and native saves. The exact-ROM emulator profile is included.
 
-The archive contains **865 payload files**, verified by size and SHA-256. The
-source suite passes all 134 tests, including after clean restoration.
+The archive contains **896 payload files**, verified by size and SHA-256. The
+source suite passes all 143 tests, including after clean restoration.
 
 The archive uses AES-256 and the existing recovery passphrase supplied in the project conversation. The passphrase, Git credentials, repository metadata, raw conversation PDF and duplicate historical ROM builds are excluded. Earlier ROMs can be rebuilt from the original and their included cumulative patches.
 
@@ -24,11 +24,11 @@ Download both `.part001` and `.part002`, the JSON index and all three checksum
 files from this directory. Keep their filenames intact. Verify and join in order:
 
 ```sh
-sha256sum -c robopon64-equipment-labels-alpha-89C91C55.zip.gpg.parts.sha256
-cat robopon64-equipment-labels-alpha-89C91C55.zip.gpg.part001 robopon64-equipment-labels-alpha-89C91C55.zip.gpg.part002 > robopon64-equipment-labels-alpha-89C91C55.zip.gpg
-sha256sum -c robopon64-equipment-labels-alpha-89C91C55.zip.gpg.sha256
-gpg --output robopon64-equipment-labels-alpha-89C91C55.zip --decrypt robopon64-equipment-labels-alpha-89C91C55.zip.gpg
-sha256sum -c robopon64-equipment-labels-alpha-89C91C55.zip.sha256
+sha256sum -c robopon64-bot-book-alpha-6AB9FC59.zip.gpg.parts.sha256
+cat robopon64-bot-book-alpha-6AB9FC59.zip.gpg.part001 robopon64-bot-book-alpha-6AB9FC59.zip.gpg.part002 > robopon64-bot-book-alpha-6AB9FC59.zip.gpg
+sha256sum -c robopon64-bot-book-alpha-6AB9FC59.zip.gpg.sha256
+gpg --output robopon64-bot-book-alpha-6AB9FC59.zip --decrypt robopon64-bot-book-alpha-6AB9FC59.zip.gpg
+sha256sum -c robopon64-bot-book-alpha-6AB9FC59.zip.sha256
 ```
 
 Use a new staging directory to avoid overwriting an earlier decrypted copy.
@@ -38,8 +38,8 @@ contains only ciphertext; it is not independently decryptable.
 Enter the existing passphrase when prompted. From the latest source checkout, verify and restore into a new directory:
 
 ```sh
-python tools/verify_backup.py /path/to/robopon64-equipment-labels-alpha-89C91C55.zip
-python -m tools.restore_backup /path/to/robopon64-equipment-labels-alpha-89C91C55.zip /path/to/new-directory
+python tools/verify_backup.py /path/to/robopon64-bot-book-alpha-6AB9FC59.zip
+python -m tools.restore_backup /path/to/robopon64-bot-book-alpha-6AB9FC59.zip /path/to/new-directory
 ```
 
 Follow the restored `rom-test/RESTORE.md` and `RESUME.md`. `BACKUP_MANIFEST.json` records each payload's size and SHA-256. The restore tool preserves executable modes and the emulator library symlink, and refuses an existing destination.
@@ -51,7 +51,7 @@ canonical copies; preserve unmatched files. A superseded decrypted staging
 ZIP can be removed after its hash matches the recorded checksum. This retention
 step prevents repeated recovery tests from filling the cloud workspace.
 
-The default native EEPROM remains the verified day-2 file A with 500G, the entered player name and Merlin. It uses the current ROM's `89C91C55` filename. Separate runtime checkpoints under `local/equipment-labels-evidence/`, `local/chore-dialogue-evidence/`, `local/minigame-guide-evidence/`, `local/bot-reactions-evidence/`, `local/bot-interaction-evidence/`, `local/bot-food-evidence/`, `local/roster-names-evidence/`, `local/sunny-blue-variants-evidence/`, `local/sunny-blue-finale-evidence/`, `local/sunny-blue-rematches-evidence/`, `local/land-blue-variants-evidence/`, `local/land-blue-story-evidence/`, `local/gold-blue-variants-evidence/`, `local/gold-blue-story-evidence/`, `local/roulette-variants-evidence/`, `local/roulette-story-evidence/`, `local/water-blue-story-evidence/`, `local/fire-blue-variants-evidence/`, `local/fire-blue-story-evidence/`, `local/battler-dome-evidence/`, `local/moon-blue-story-evidence/`, `local/blue-pass-evidence/`, `local/interface-headings-evidence/`, `local/battle-moves-evidence/`, `local/battle-hud-evidence/` and `local/simulator-evidence/` are test copies, identified by their notes; keep the immutable reference EEPROM intact.
+The default native EEPROM remains the verified day-2 file A with 500G, the entered player name and Merlin. It uses the current ROM's `6AB9FC59` filename. Separate runtime checkpoints under `local/bot-book-evidence/`, `local/equipment-labels-evidence/`, `local/chore-dialogue-evidence/`, `local/minigame-guide-evidence/`, `local/bot-reactions-evidence/`, `local/bot-interaction-evidence/`, `local/bot-food-evidence/`, `local/roster-names-evidence/`, `local/sunny-blue-variants-evidence/`, `local/sunny-blue-finale-evidence/`, `local/sunny-blue-rematches-evidence/`, `local/land-blue-variants-evidence/`, `local/land-blue-story-evidence/`, `local/gold-blue-variants-evidence/`, `local/gold-blue-story-evidence/`, `local/roulette-variants-evidence/`, `local/roulette-story-evidence/`, `local/water-blue-story-evidence/`, `local/fire-blue-variants-evidence/`, `local/fire-blue-story-evidence/`, `local/battler-dome-evidence/`, `local/moon-blue-story-evidence/`, `local/blue-pass-evidence/`, `local/interface-headings-evidence/`, `local/battle-moves-evidence/`, `local/battle-hud-evidence/` and `local/simulator-evidence/` are test copies, identified by their notes; keep the immutable reference EEPROM intact.
 
 The earlier shop snapshot `robopon64-progress-2026-11-05_135201-PST.zip.gpg` and bed/save snapshot `robopon64-progress-2026-11-05_012741-PST.zip.gpg` remain historical backups. They do not contain the reconstructed simulator milestone. Historical emulator states belong only to their exact ROMs.
 
@@ -104,3 +104,5 @@ The preceding bot reactions snapshot `robopon64-bot-reactions-alpha-84DFA87A.zip
 The preceding minigame guide snapshot `robopon64-minigame-guide-alpha-207D8DD0.zip.gpg.parts.json` remains available with both ciphertext parts and its original 822-file manifest.
 
 The preceding chore dialogue snapshot `robopon64-chore-dialogue-alpha-40285335.zip.gpg.parts.json` remains available with both ciphertext parts and its original 840-file manifest.
+
+The preceding equipment labels snapshot `robopon64-equipment-labels-alpha-89C91C55.zip.gpg.parts.json` remains available with both ciphertext parts and its original 865-file manifest.

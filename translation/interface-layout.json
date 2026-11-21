@@ -430,6 +430,12 @@
       "source_hex": "3c013f80",
       "target_hex": "3c013f00",
       "note": "Gear Set equipped-part caption during selection at x=48/y=106: horizontal scale 1.0 to 0.5, matching initial view. Vertical scale, positions, ID lookup and draw call are unchanged."
+    },
+    {
+      "offset": "0x109c04",
+      "source_hex": "3c013f80",
+      "target_hex": "3c013f00",
+      "note": "Bot Book biography reader only: horizontal scale 1.0 to 0.5. Four separate native records per entry, x=52, y=166+14*row. Vertical scale stays 1.0; 36 ASCII cells occupy the original 216 pixels. ID calculation and native draw call unchanged."
     }
   ]
 }

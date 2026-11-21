@@ -1775,6 +1775,26 @@
       "source": "てなげだん",
       "english": "Hand Grenade",
       "note": "Native equipment label 3664; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ブータン",
+      "english": "Bootan",
+      "note": "Provisional name in bio 3710; distinct source from Buppy (ブッピー). It learns to work before becoming a cleaning bot."
+    },
+    {
+      "source": "ルード",
+      "english": "Rude",
+      "note": "Provisional enemy/group term in biographies 3750 and 3775. Original gameplay affiliations unchanged."
+    },
+    {
+      "source": "コデビアン",
+      "english": "Kodevian",
+      "note": "Provisional minion name in bio 3751; Devian commands its army."
+    },
+    {
+      "source": "コギャル",
+      "english": "kogal",
+      "note": "Youth-fashion reference in bio 3714; retained as the source personality programming."
     }
   ]
 }

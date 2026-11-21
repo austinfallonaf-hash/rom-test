@@ -8,6 +8,7 @@ from tools.build_patch import build
 from tools.story_text import POOL, records
 from tools.dialogue import encode as encode_dialogue
 from tools.fixed_grid import encode as encode_fixed_grid
+from tools.book_text import encode as encode_book_line, placement as book_placement, require_layout as require_book_layout
 from tools.choices import replace_choice
 from tools.n64_checksum import repair6102
 from tools.move_names import validate as validate_move_names
@@ -15,6 +16,7 @@ from tools.graphics import replacement as replace_graphic, validate_loader
 
 
 def build_story(original, menu, story, choices=(), layout=(), *, update_checksum=False, validate_moves=False, graphics=(), graphic_images=None):
+    story = tuple(story)
     baseline = {r['id']: r for r in records(original)}
     menu_rom, _ = build(original, menu, update_checksum=update_checksum)
     if validate_moves:
@@ -22,6 +24,8 @@ def build_story(original, menu, story, choices=(), layout=(), *, update_checksum
     output = bytearray(menu_rom)
     spans = [(int(r['offset'], 0), int(r['offset'], 0)+len(r['source'].encode('shift_jis'))+1) for r in menu]
     seen, allocations, relocated = set(), {}, []
+    if any(entry.get('kind') == 'book_line' for entry in story):
+        require_book_layout(layout)
     for entry in story:
         index = entry['id']
         if index in seen or index not in baseline:
@@ -36,6 +40,20 @@ def build_story(original, menu, story, choices=(), layout=(), *, update_checksum
         codes = struct.unpack('>'+'H'*(size//2), bytes.fromhex(actual['source_hex']))
         text = entry['translation']
         has_storage = 'storage' in entry
+        if 'book_storage_offset' in entry and entry.get('kind') != 'book_line':
+            raise ValueError('ROM-tail book storage is only for verified bot-book lines')
+        if entry.get('kind') == 'book_line':
+            if has_storage:
+                raise ValueError('Bot-book lines use their reserved ROM-tail placement')
+            encoded = encode_book_line(index, codes, text)
+            target, padded = book_placement(original, entry, encoded)
+            if any(target < end and start < target+len(padded) for start, end in spans):
+                raise ValueError('Bot-book storage overlaps another edit')
+            output[target:target+len(padded)] = padded
+            descriptor = int(actual['descriptor'], 0)
+            output[descriptor:descriptor+8] = struct.pack('>II', len(encoded), target-POOL)
+            spans.extend([(target, target+len(padded)), (descriptor, descriptor+8)])
+            continue
         if entry.get('kind') == 'fixed_grid':
             if has_storage:
                 raise ValueError('Fixed-grid records cannot use label storage')

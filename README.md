@@ -5,19 +5,19 @@ For a resumed cloud workspace, start with [RESUME.md](RESUME.md). Run
 to detect a checkout that is behind GitHub and verify the current release/save.
 `PROJECT_STATE.json` identifies the current catalogs and recovery checkpoint.
 
-The current equipment labels alpha adds 127 equipment names and eight ship-fuel
-warnings. It contains 3,781 native records, 832 UI strings, 299 choice blocks
-and three bitmap captions. Four guarded font-scale edits fit long equipment names
-in the profile, Gear Set caption and item rows. The latest encrypted backup uses two verified
-parts; see [recovery instructions](backups/README.md).
+The current bot-book alpha adds 184 lines across 46 four-line biographies.
+It contains 3,965 native records, 832 UI strings, 299 choice blocks and three
+bitmap captions. A condensed reader and guarded ROM-tail storage retain fuller
+English descriptions. The latest encrypted backup uses two verified parts;
+see [recovery instructions](backups/README.md).
 
 The earlier bed/save build verified an in-game save and cold reload of file A,
 retaining day 2, 500G, the player name and Merlin. Later builds load that native
 save for testing, starting from a cold boot. Old-build emulator savestates are
 not used for validation.
 
-Apply [the cumulative equipment labels BPS](releases/equipment-labels-alpha.bps) to the exact
-original ROM. Do not stack earlier patches. See [equipment labels notes](docs/equipment-labels-alpha.md) for the new coverage and
+Apply [the cumulative bot-book BPS](releases/bot-book-alpha.bps) to the exact
+original ROM. Do not stack earlier patches. See [bot-book notes](docs/bot-book-alpha.md) for the new coverage and
 [simulator and gardening notes](docs/simulator-alpha.md)
 for provenance, tested coverage and limitations, and [shop coverage and validation
 notes](docs/shop-alpha.md), [Moon Blue coverage](docs/moon-blue-alpha.md),
@@ -49,16 +49,16 @@ From `/workspace/rom-test`, Python 3.12, standard library only:
 python tools/rom_text.py local/original.z64 --output local/text-candidates.json
 python -m tools.story_text local/original.z64 --output local/story-records.json
 python -m tools.build_story local/original.z64 \
-  --menu translation/battle-moves-menu.json --story translation/equipment-labels-text.json \
+  --menu translation/battle-moves-menu.json --story translation/bot-book-text.json \
   --choices translation/story-choices.json \
   --layout translation/interface-layout.json \
-  --graphics translation/interface-graphics.json --update-checksum --validate-moves --output local/equipment-labels-alpha.z64 --patch local/equipment-labels-alpha.bps
+  --graphics translation/interface-graphics.json --update-checksum --validate-moves --output local/bot-book-alpha.z64 --patch local/bot-book-alpha.bps
 python -m unittest discover -s tests -v
 ```
 
 The builder checks the entire original hash, each source byte sequence, byte
-budgets, and overlapping edits. It creates `local/equipment-labels-alpha.z64` and
-`local/equipment-labels-alpha.bps`, preserving the original. Apply the BPS to the exact
+budgets, and overlapping edits. It creates `local/bot-book-alpha.z64` and
+`local/bot-book-alpha.bps`, preserving the original. Apply the BPS to the exact
 original using a standard BPS patcher. Battle HUD strings lie inside CIC-6102 checksum coverage. The explicit flag
 repairs CRC1/CRC2, preserving bootcode and other header fields. The launcher
 generates an isolated profile preserving the emulator's EEPROM/game settings.
@@ -75,7 +75,7 @@ terminal, run `tools/start-display.sh` (display `:7`, no TCP listener). In anoth
 
 ```sh
 DISPLAY=:7 LIBGL_ALWAYS_SOFTWARE=1 \
-ROM_PATH=/workspace/rom-test/local/equipment-labels-alpha.z64 \
+ROM_PATH=/workspace/rom-test/local/bot-book-alpha.z64 \
 tools/emulator.sh --windowed --gfx mupen64plus-video-glide64mk2 --audio dummy \
   --input mupen64plus-input-sdl --rsp mupen64plus-rsp-hle
 ```
@@ -86,8 +86,8 @@ preserves nonempty existing configuration. Native saves now live in
 travel with the workspace. Existing saves in the user's default Mupen directory
 are not moved automatically. Return = Start, left Shift = A,
 left Control = B, arrows = stick, Escape = exit. While walking aboard the ship,
-Face the bed and press left Shift (A) to interact. `c` (R trigger) opens
-the ship's floor/destination navigation. At the title, press Return to
+Face the bed and press left Shift (A) to interact. Hold `c` (R trigger) for ship navigation. Use the stick arrows for floors,
+A to open destinations, arrows to choose, and A again to travel. At the title, press Return to
 open the scenario menu, then left Shift to select it and reach save selection.
 Allow screen transitions to finish before pressing the next key.
 Glide64mk2 is recommended for this alpha: Rice can draw foreground ship objects

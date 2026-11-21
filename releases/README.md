@@ -4,7 +4,12 @@ Apply one patch to the original big-endian Japanese ROM with SHA-256
 `02cda6221c10cba0705f351227e2d6c77e071bdb4f7aa8b5cd3c7c047a2b1881`.
 Do not stack patches. Keep a backup of your ROM and saves.
 
-- `equipment-labels-alpha.bps`: current cumulative partial draft with 3,781 native
+- `bot-book-alpha.bps`: current cumulative partial draft with 3,965 native records,
+  832 UI strings, 299 choices and three bitmap captions. Adds 184 lines across
+  46 biographies, guarded tail placement and one condensed book-reader word.
+  See `docs/bot-book-alpha.md` and its manifest. Apply to the exact original.
+
+- `equipment-labels-alpha.bps`: earlier cumulative partial draft with 3,781 native
   records, 832 UI strings, 299 choices and three bitmap captions. Adds 127 equipment
   labels, eight fuel warnings and four guarded equipment-name font-scale edits.
   See `docs/equipment-labels-alpha.md` and its manifest. Apply to the exact original.
