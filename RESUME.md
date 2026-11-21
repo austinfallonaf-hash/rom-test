@@ -1,6 +1,6 @@
 # Resume the Robopon 64 translation
 
-Current milestone: **late-dialogue-alpha**: 4,049 native records, 832 UI strings, 299 native choice blocks, plus three bitmap captions. This is a partial English draft. See `docs/late-dialogue-alpha.md` for precise runtime coverage.
+Current milestone: **book-interface-alpha**: 4,049 native records, 866 UI strings, 299 native choice blocks, plus three bitmap captions. This is a partial English draft. See `docs/book-interface-alpha.md` for precise runtime coverage.
 
 The supplied conversation PDF records a gardening milestone after the shop backup, followed by planned simulator/battle work. Its gardening patch and source were unavailable. Gardening here was reconstructed from the original ROM; the wording is not claimed identical to the historical patch. Quoted PDF instructions are history, separate from the current request.
 
@@ -13,24 +13,24 @@ python -m tools.check_workspace --check-remote --require-save
 python -m unittest discover -s tests -q
 ```
 
-The check verifies remote ancestry, rebuilds in memory and checks the ROM/BPS and reference EEPROM without changing files. The current suite has 143 tests. Fetching does not update a stale checkout: compare `git log --oneline HEAD..origin/codex/verified-workspace-recovery` after fetching before merging or switching. Omit `--check-remote` for an offline archive and confirm freshness separately.
+The check verifies remote ancestry, rebuilds in memory and checks the ROM/BPS and reference EEPROM without changing files. The current suite has 149 tests. Fetching does not update a stale checkout: compare `git log --oneline HEAD..origin/codex/verified-workspace-recovery` after fetching before merging or switching. Omit `--check-remote` for an offline archive and confirm freshness separately.
 
 ## Rebuild
 
 ```sh
 python -m tools.build_story local/original.z64 \
-  --menu translation/battle-moves-menu.json --story translation/late-dialogue-text.json \
+  --menu translation/book-interface-menu.json --story translation/late-dialogue-text.json \
   --choices translation/story-choices.json --layout translation/interface-layout.json \
-  --graphics translation/interface-graphics.json --update-checksum --validate-moves --output local/late-dialogue-alpha.z64 --patch local/late-dialogue-alpha.bps
+  --graphics translation/interface-graphics.json --update-checksum --validate-moves --output local/book-interface-alpha.z64 --patch local/book-interface-alpha.bps
 ```
 
-Apply `releases/late-dialogue-alpha.bps` only to the exact original Japanese ROM. Do not stack earlier patches. The release manifest records hashes; the current ROM MD5 prefix is `DC99F55B`. All source-byte, control, width and budget guards remain enabled. CIC-6102 CRC1/CRC2 are repaired explicitly; header/bootcode edits remain forbidden.
+Apply `releases/book-interface-alpha.bps` only to the exact original Japanese ROM. Do not stack earlier patches. The release manifest records hashes; the current ROM MD5 prefix is `D85FAF7B`. All source-byte, control, width and budget guards remain enabled. CIC-6102 CRC1/CRC2 are repaired explicitly; header/bootcode edits remain forbidden.
 
 ## Native save
 
 `local/bed-save-final-saved.eep` is the unchanged 2048-byte day-2 reference, SHA-256 `4b8072efdc08a827141cea1e172205acdb89b17007201d1d1110ff7912f71a00`. File A holds 500G, the entered player name and Merlin.
 
-The current ROM's working copy is `local/native-saves/Robot Ponkottsu 64 - 7tsu no Umi-DC99F55B.eep`. Keep the reference intact and use separate copies for testing. New ROM revisions need a save copy under their own MD5-based filename. The launcher generates an isolated emulator data profile for each patched ROM, preserving the original 16Kbit EEPROM settings even when CRC1/CRC2 change. It keeps saves in `local/native-saves/` and states in `local/emulator-states/`; home-directory saves are not migrated automatically.
+The current ROM's working copy is `local/native-saves/Robot Ponkottsu 64 - 7tsu no Umi-D85FAF7B.eep`. Keep the reference intact and use separate copies for testing. New ROM revisions need a save copy under their own MD5-based filename. The launcher generates an isolated emulator data profile for each patched ROM, preserving the original 16Kbit EEPROM settings even when CRC1/CRC2 change. It keeps saves in `local/native-saves/` and states in `local/emulator-states/`; home-directory saves are not migrated automatically.
 
 ## Emulator
 
@@ -38,7 +38,7 @@ On Linux with Xorg's dummy driver and Mesa, start `tools/start-display.sh` in on
 
 ```sh
 DISPLAY=:7 LIBGL_ALWAYS_SOFTWARE=1 \
-ROM_PATH="$PWD/local/late-dialogue-alpha.z64" \
+ROM_PATH="$PWD/local/book-interface-alpha.z64" \
 tools/emulator.sh --windowed --gfx mupen64plus-video-glide64mk2 --audio dummy \
   --input mupen64plus-input-sdl --rsp mupen64plus-rsp-hle
 ```
@@ -74,64 +74,57 @@ from these generated test copies.
 
 ## Next work
 
-Continue the **separate Shift-JIS UI and graphical text**, beginning with the
-observed Bot Book introduction at **0x104108**, then its data labels/headings.
-The game remains partly Japanese. Native-table coverage is now explicitly
-audited in translation/native-coverage.json: **4,049 drafts, 48 cut placeholders
-and 18 portrait-only entries**. There are no other untranslated records in this
-verified 4,115-record table. Do not translate the exclusions to inflate coverage;
-they contain a cut marker or just a portrait control, not substantive dialogue.
+Continue the **separate UI and bitmap text**, beginning with the seven remaining
+facility captions near **0xFB78E–0xFB8DE**: Stars, Storage, GB Link, Battle Sim,
+Helm, Pots and Bed. Bot-status hunger/stress and trait plates need graphical
+investigation. The game remains partly Japanese. Native coverage is unchanged:
+4,049 drafts, 48 cut placeholders and 18 portrait-only entries; keep the exclusions.
 
-The latest batch adds 52 companion lines, 15 evolution reactions, ten achievement
-messages and seven full region names. All original controls remain exact,
-including ten five-cell player-name and one eleven-cell bot-name insertion at
-3976. No new line/page exceptions or interpreter changes are used. The seven
-labels use 130 donor bytes. All preceding 3,965 entries/active bytes/descriptors
-remain intact. New triggers are not implied tested by their translation.
+The current batch adds 34 UI strings for the Bot Book. Console/title now read
+Bot Book; classes/types follow existing terminology. Both `%03d` arguments retain
+three-cell reservations. The introduction keeps three lines. Height/Weight use
+six guarded horizontal-scale words at 0.75 in the three native data states;
+vertical scale, positions, numeric fields and units stay exact. The console/title now use 13 additional guarded ASCII-aware centering words.
+Layout now has 107 guards. All previous 832 UI strings and the entire native table/pool are exact.
 
-Preserve **256 donor-stored labels in 162 donors**, every aligned book placement,
-all fifteen fixed grids and 88 layout guards. Book text still occupies
-0x1FFD3D0–0x1FFFFC0, leaving **64 bytes** at the end of the ROM. Do not repurpose
-these bytes or grow a line into a neighboring allocation. Derive donor gaps
-by subtracting every occupied range and each donor's live text. Two file-menu
-region-caption scale words at 0x220580 and 0x220900 now use 0.75 horizontally;
-the longest region label is ten cells, fitting in 90 pixels. Positions, vertical
-scale and lookup/draw calls remain unchanged. The pause caption stays full size.
+The exact final ROM cold-boots into native file A, retaining day 2, 500G,
+the entered player name and Merlin’s original stats, Charm and Fire v1. The Book
+console caption and gold page heading display Bot Book, correctly centered inside
+their plates. The three-line introduction fits. The initial undiscovered entry
+displays the translated dash number/type states, Height, Weight and Logged count.
+Entry 38 displays Merlin with 64 No./038, GB No./161, Caster, T:Water,
+Height 120cm, Weight 130kg and the unchanged four-line biography.
+The isolated runtime, default working and immutable reference EEPROMs retain the
+same hash. No in-game save or savestate load/create is used.
 
-The final ROM cold-boots into native file A: Moon Blue appears in file selection
-and the pause menu; day 2, 500G, saved names, Merlin’s stats, Charm and Fire v1
-are intact. A separate cold-boot descriptor-only preview displays the actual
-ten-cell Water Blue label in file A, fitting the field, and all four pages of
-new record 4096 through the doctor’s Pearlton help slot, including the existing
-five-cell saved player name. Only three descriptors differ in that preview;
-actual payloads, code, event flags and save data remain unchanged. This checks
-display, not the achievement’s native trigger. File B is empty, so its mirrored
-caption reader is source/ROM-guarded rather than gameplay-tested. Both isolated
-EEPROMs match the immutable reference; no in-game save or savestate is used.
+Preserve all **256 donor labels in 162 donors**, **184 book allocations**,
+fifteen fixed grids, 66 native exclusions and 107 layout guards. Book storage ends
+at 0x1FFFFC0, leaving **64 bytes**. Derive donor gaps by subtracting active text
+and every occupied interval; never repurpose an allocation or tail padding.
+The console caption at 0xFB84E changes checksum-covered bytes; the explicit
+CIC-6102 repair gives **FF5EDDAC 400FB7B6**. Each new MD5 needs its own save/profile.
 
-This checkout uses **non-cone sparse checkout** to keep only the latest and
-preceding encrypted backup working copies, freeing 2.3 GB. Older snapshots are
-still in local Git and on GitHub; no historical snapshot was deleted from the
-repository. Add the next backup slug to the patterns before staging its new
-parts. See backups/README.md for exact current patterns and recovery commands.
-The Git configuration is not inside the private ZIP; a fresh clone can reapply
-these patterns. Original ROM, EEPROMs, source, patches and private local assets
-remain present. Keep the latest/preceding verified restore trees. Before dropping
-an older generated restore, verify its manifest, canonical/source contents and
-encrypted archive and preserve extra files. Do not delete unique private assets.
+Non-cone sparse checkout keeps only current/preceding encrypted working copies.
+Older ciphertext remains in local Git and on GitHub. Add the next backup slug
+before staging; see backups/README.md for current patterns and recovery commands.
+Git configuration is not archived. Keep latest/preceding verified restore trees;
+verify manifests, canonical assets, source revisions and encrypted archives and
+preserve extra files before removing superseded generated copies. Do not remove
+unique private assets. The older 896-file bot-book restore was verified and its
+34 extras retained before cleanup; the preceding 933-file late-dialogue restore
+remains alongside this checkpoint’s new restore.
 
-For ship navigation hold c (R), use the analog arrows for a floor, A to open
-its destinations, arrows to choose and A to travel, then release R. At the
-doctor, walk toward the desk and use A to open the interaction menu. Send scripted
-held-key sequences through one XTest connection without refocusing between keys.
-Always cold-boot new ROMs and use native EEPROM copies; never use an older ROM's
-savestate for validation. Earlier book/equipment/fuel/chore/minigame/pest/
-reaction/name/newline/donor/regional branches retain their gameplay limits.
+For ship navigation use one XTest connection without refocusing while R is held:
+hold c, Down to 2F, A, Down three times to Book, A and release R. Face/walk toward
+the console with Up, then A. Wait for the introduction and use A for View. Scroll
+to native entry 38 for Merlin and A for its four biography lines. Return from a
+profile with B three times before navigation. Cold-boot every exact new ROM;
+never use an older ROM’s state. Earlier gameplay/branch limits remain.
 
 Recovery uses two ciphertext parts, the JSON index and three checksum files.
 Verify parts, join in order, verify ciphertext, decrypt, then verify the ZIP.
-The existing passphrase applies and remains outside Git.
+The existing passphrase stays outside Git.
 
 Update this handoff, `PROJECT_STATE.json` and the recovery archive when the milestone changes. A running cloud process is not a persistent checkpoint.
 
-The durable translation checkpoint is the Git tag `late-dialogue-alpha`. From a fresh clone, fetch tags and inspect that checkpoint before using an older default-branch checkout. Preserve local changes before switching revisions.
+The durable translation checkpoint is the Git tag `book-interface-alpha`. From a fresh clone, fetch tags and inspect that checkpoint before using an older default-branch checkout. Preserve local changes before switching revisions.

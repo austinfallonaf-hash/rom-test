@@ -1805,6 +1805,11 @@
       "source": "ナ〜ム〜 / ポクポクポク / チ〜ン",
       "english": "Namu, namu! / Tap-tap, ding!",
       "note": "Companion 3951 retains the mock funeral chant, wooden-percussion/bell sounds and RIP punchline; not a new event or mechanic."
+    },
+    {
+      "source": "ロボポンファイル / ロボポンずかん",
+      "english": "Bot Book",
+      "note": "Book interface and console use the existing feature name; not a save-file label. Logged is the count of registered species, not all 46 possible entries."
     }
   ]
 }

@@ -448,6 +448,120 @@
       "source_hex": "3c013f80",
       "target_hex": "3c013f40",
       "note": "Save-file B region caption: horizontal scale 1.0 to 0.75. The longest translated region label has ten cells (90 pixels); the original box allows 112. Native x, y=65, vertical scale and region-ID lookup/draw call stay unchanged."
+    },
+    {
+      "offset": "0x1085dc",
+      "source_hex": "3c013f80",
+      "target_hex": "3c013f40",
+      "note": "Bot Book Height/Weight label only, in one of three native data states: horizontal scale 1.0 to 0.75, so six English cells occupy 54 of the 60 pixels before the numeric field. Vertical scale, positions, value/unit readers and native text call unchanged."
+    },
+    {
+      "offset": "0x1086d0",
+      "source_hex": "3c013f80",
+      "target_hex": "3c013f40",
+      "note": "Bot Book Height/Weight label only, in one of three native data states: horizontal scale 1.0 to 0.75, so six English cells occupy 54 of the 60 pixels before the numeric field. Vertical scale, positions, value/unit readers and native text call unchanged."
+    },
+    {
+      "offset": "0x108c78",
+      "source_hex": "3c013f80",
+      "target_hex": "3c013f40",
+      "note": "Bot Book Height/Weight label only, in one of three native data states: horizontal scale 1.0 to 0.75, so six English cells occupy 54 of the 60 pixels before the numeric field. Vertical scale, positions, value/unit readers and native text call unchanged."
+    },
+    {
+      "offset": "0x108d54",
+      "source_hex": "3c013f80",
+      "target_hex": "3c013f40",
+      "note": "Bot Book Height/Weight label only, in one of three native data states: horizontal scale 1.0 to 0.75, so six English cells occupy 54 of the 60 pixels before the numeric field. Vertical scale, positions, value/unit readers and native text call unchanged."
+    },
+    {
+      "offset": "0x109058",
+      "source_hex": "3c013f80",
+      "target_hex": "3c013f40",
+      "note": "Bot Book Height/Weight label only, in one of three native data states: horizontal scale 1.0 to 0.75, so six English cells occupy 54 of the 60 pixels before the numeric field. Vertical scale, positions, value/unit readers and native text call unchanged."
+    },
+    {
+      "offset": "0x109134",
+      "source_hex": "3c013f80",
+      "target_hex": "3c013f40",
+      "note": "Bot Book Height/Weight label only, in one of three native data states: horizontal scale 1.0 to 0.75, so six English cells occupy 54 of the 60 pixels before the numeric field. Vertical scale, positions, value/unit readers and native text call unchanged."
+    },
+    {
+      "offset": "0xe081c",
+      "source_hex": "00401821",
+      "target_hex": "8fc30030",
+      "note": "Caption centering only: count ASCII bytes as cells while retaining the original leading-Shift-JIS calculation. Console uses cells*6; the local title uses ASCII bytes*6 or original Japanese bytes*3. No extra storage, calls, stack, drawing, event or save changes."
+    },
+    {
+      "offset": "0xe0820",
+      "source_hex": "00031042",
+      "target_hex": "90630000",
+      "note": "Caption centering only: count ASCII bytes as cells while retaining the original leading-Shift-JIS calculation. Console uses cells*6; the local title uses ASCII bytes*6 or original Japanese bytes*3. No extra storage, calls, stack, drawing, event or save changes."
+    },
+    {
+      "offset": "0xe0824",
+      "source_hex": "00402021",
+      "target_hex": "000319c2",
+      "note": "Caption centering only: count ASCII bytes as cells while retaining the original leading-Shift-JIS calculation. Console uses cells*6; the local title uses ASCII bytes*6 or original Japanese bytes*3. No extra storage, calls, stack, drawing, event or save changes."
+    },
+    {
+      "offset": "0xe0828",
+      "source_hex": "00041840",
+      "target_hex": "00621006",
+      "note": "Caption centering only: count ASCII bytes as cells while retaining the original leading-Shift-JIS calculation. Console uses cells*6; the local title uses ASCII bytes*6 or original Japanese bytes*3. No extra storage, calls, stack, drawing, event or save changes."
+    },
+    {
+      "offset": "0xe082c",
+      "source_hex": "00621821",
+      "target_hex": "00021840",
+      "note": "Caption centering only: count ASCII bytes as cells while retaining the original leading-Shift-JIS calculation. Console uses cells*6; the local title uses ASCII bytes*6 or original Japanese bytes*3. No extra storage, calls, stack, drawing, event or save changes."
+    },
+    {
+      "offset": "0xe0830",
+      "source_hex": "00031040",
+      "target_hex": "00621821",
+      "note": "Caption centering only: count ASCII bytes as cells while retaining the original leading-Shift-JIS calculation. Console uses cells*6; the local title uses ASCII bytes*6 or original Japanese bytes*3. No extra storage, calls, stack, drawing, event or save changes."
+    },
+    {
+      "offset": "0xe0834",
+      "source_hex": "00401821",
+      "target_hex": "00031840",
+      "note": "Caption centering only: count ASCII bytes as cells while retaining the original leading-Shift-JIS calculation. Console uses cells*6; the local title uses ASCII bytes*6 or original Japanese bytes*3. No extra storage, calls, stack, drawing, event or save changes."
+    },
+    {
+      "offset": "0x10ce3c",
+      "source_hex": "2462000c",
+      "target_hex": "2464000c",
+      "note": "Caption centering only: count ASCII bytes as cells while retaining the original leading-Shift-JIS calculation. Console uses cells*6; the local title uses ASCII bytes*6 or original Japanese bytes*3. No extra storage, calls, stack, drawing, event or save changes."
+    },
+    {
+      "offset": "0x10ce44",
+      "source_hex": "00402021",
+      "target_hex": "90880000",
+      "note": "Caption centering only: count ASCII bytes as cells while retaining the original leading-Shift-JIS calculation. Console uses cells*6; the local title uses ASCII bytes*6 or original Japanese bytes*3. No extra storage, calls, stack, drawing, event or save changes."
+    },
+    {
+      "offset": "0x10ce48",
+      "source_hex": "00402021",
+      "target_hex": "2d040080",
+      "note": "Caption centering only: count ASCII bytes as cells while retaining the original leading-Shift-JIS calculation. Console uses cells*6; the local title uses ASCII bytes*6 or original Japanese bytes*3. No extra storage, calls, stack, drawing, event or save changes."
+    },
+    {
+      "offset": "0x10ce4c",
+      "source_hex": "00041840",
+      "target_hex": "00821004",
+      "note": "Caption centering only: count ASCII bytes as cells while retaining the original leading-Shift-JIS calculation. Console uses cells*6; the local title uses ASCII bytes*6 or original Japanese bytes*3. No extra storage, calls, stack, drawing, event or save changes."
+    },
+    {
+      "offset": "0x10ce50",
+      "source_hex": "00621821",
+      "target_hex": "00021840",
+      "note": "Caption centering only: count ASCII bytes as cells while retaining the original leading-Shift-JIS calculation. Console uses cells*6; the local title uses ASCII bytes*6 or original Japanese bytes*3. No extra storage, calls, stack, drawing, event or save changes."
+    },
+    {
+      "offset": "0x10ce54",
+      "source_hex": "00601021",
+      "target_hex": "00621021",
+      "note": "Caption centering only: count ASCII bytes as cells while retaining the original leading-Shift-JIS calculation. Console uses cells*6; the local title uses ASCII bytes*6 or original Japanese bytes*3. No extra storage, calls, stack, drawing, event or save changes."
     }
   ]
 }

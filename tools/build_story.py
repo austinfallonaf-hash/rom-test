@@ -8,6 +8,7 @@ from tools.build_patch import build
 from tools.story_text import POOL, records
 from tools.dialogue import encode as encode_dialogue
 from tools.fixed_grid import encode as encode_fixed_grid
+from tools.ui_layout import require_layout as require_ui_layout
 from tools.book_text import encode as encode_book_line, placement as book_placement, require_layout as require_book_layout
 from tools.choices import replace_choice
 from tools.n64_checksum import repair6102
@@ -17,6 +18,8 @@ from tools.graphics import replacement as replace_graphic, validate_loader
 
 def build_story(original, menu, story, choices=(), layout=(), *, update_checksum=False, validate_moves=False, graphics=(), graphic_images=None):
     story = tuple(story)
+    menu, layout = tuple(menu), tuple(layout)
+    require_ui_layout(menu, layout)
     baseline = {r['id']: r for r in records(original)}
     menu_rom, _ = build(original, menu, update_checksum=update_checksum)
     if validate_moves:
