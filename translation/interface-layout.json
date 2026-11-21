@@ -406,6 +406,30 @@
       "offset": "0x56270",
       "source_hex": "0c01a40a",
       "target_hex": "0c00010f"
+    },
+    {
+      "offset": "0x21b3a8",
+      "source_hex": "3c013f80",
+      "target_hex": "3c013f00",
+      "note": "Bot profile equipment caption: horizontal scale 1.0 to 0.5. Native x=188/y=112 and vertical scale 1.0 remain; sixteen ASCII cells occupy 96 pixels within the right caption box. Only the name draw call changes."
+    },
+    {
+      "offset": "0x217540",
+      "source_hex": "3c013f80",
+      "target_hex": "3c013f00",
+      "note": "Equipment selection right-column item names: horizontal scale 1.0 to 0.5. Native x=188, row positions and vertical scale 1.0 remain; sixteen ASCII cells occupy 96 pixels."
+    },
+    {
+      "offset": "0x216604",
+      "source_hex": "3c013f80",
+      "target_hex": "3c013f00",
+      "note": "Gear Set initial equipped-part caption at x=48/y=106: horizontal scale 1.0 to 0.5. Vertical scale, coordinates, gear ID lookup and native draw call remain unchanged; sixteen cells fit in 96 pixels."
+    },
+    {
+      "offset": "0x2171c0",
+      "source_hex": "3c013f80",
+      "target_hex": "3c013f00",
+      "note": "Gear Set equipped-part caption during selection at x=48/y=106: horizontal scale 1.0 to 0.5, matching initial view. Vertical scale, positions, ID lookup and draw call are unchanged."
     }
   ]
 }

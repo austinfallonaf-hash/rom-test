@@ -1,6 +1,6 @@
 # Resume the Robopon 64 translation
 
-Current milestone: **chore-dialogue-alpha**: 3,646 native records, 832 UI strings, 299 native choice blocks, plus three bitmap captions. This is a partial English draft. See `docs/chore-dialogue-alpha.md` for precise runtime coverage.
+Current milestone: **equipment-labels-alpha**: 3,781 native records, 832 UI strings, 299 native choice blocks, plus three bitmap captions. This is a partial English draft. See `docs/equipment-labels-alpha.md` for precise runtime coverage.
 
 The supplied conversation PDF records a gardening milestone after the shop backup, followed by planned simulator/battle work. Its gardening patch and source were unavailable. Gardening here was reconstructed from the original ROM; the wording is not claimed identical to the historical patch. Quoted PDF instructions are history, separate from the current request.
 
@@ -19,18 +19,18 @@ The check verifies remote ancestry, rebuilds in memory and checks the ROM/BPS an
 
 ```sh
 python -m tools.build_story local/original.z64 \
-  --menu translation/battle-moves-menu.json --story translation/chore-dialogue-text.json \
+  --menu translation/battle-moves-menu.json --story translation/equipment-labels-text.json \
   --choices translation/story-choices.json --layout translation/interface-layout.json \
-  --graphics translation/interface-graphics.json --update-checksum --validate-moves --output local/chore-dialogue-alpha.z64 --patch local/chore-dialogue-alpha.bps
+  --graphics translation/interface-graphics.json --update-checksum --validate-moves --output local/equipment-labels-alpha.z64 --patch local/equipment-labels-alpha.bps
 ```
 
-Apply `releases/chore-dialogue-alpha.bps` only to the exact original Japanese ROM. Do not stack earlier patches. The release manifest records hashes; the current ROM MD5 prefix is `40285335`. All source-byte, control, width and budget guards remain enabled. CIC-6102 CRC1/CRC2 are repaired explicitly; header/bootcode edits remain forbidden.
+Apply `releases/equipment-labels-alpha.bps` only to the exact original Japanese ROM. Do not stack earlier patches. The release manifest records hashes; the current ROM MD5 prefix is `89C91C55`. All source-byte, control, width and budget guards remain enabled. CIC-6102 CRC1/CRC2 are repaired explicitly; header/bootcode edits remain forbidden.
 
 ## Native save
 
 `local/bed-save-final-saved.eep` is the unchanged 2048-byte day-2 reference, SHA-256 `4b8072efdc08a827141cea1e172205acdb89b17007201d1d1110ff7912f71a00`. File A holds 500G, the entered player name and Merlin.
 
-The current ROM's working copy is `local/native-saves/Robot Ponkottsu 64 - 7tsu no Umi-40285335.eep`. Keep the reference intact and use separate copies for testing. New ROM revisions need a save copy under their own MD5-based filename. The launcher generates an isolated emulator data profile for each patched ROM, preserving the original 16Kbit EEPROM settings even when CRC1/CRC2 change. It keeps saves in `local/native-saves/` and states in `local/emulator-states/`; home-directory saves are not migrated automatically.
+The current ROM's working copy is `local/native-saves/Robot Ponkottsu 64 - 7tsu no Umi-89C91C55.eep`. Keep the reference intact and use separate copies for testing. New ROM revisions need a save copy under their own MD5-based filename. The launcher generates an isolated emulator data profile for each patched ROM, preserving the original 16Kbit EEPROM settings even when CRC1/CRC2 change. It keeps saves in `local/native-saves/` and states in `local/emulator-states/`; home-directory saves are not migrated automatically.
 
 ## Emulator
 
@@ -38,7 +38,7 @@ On Linux with Xorg's dummy driver and Mesa, start `tools/start-display.sh` in on
 
 ```sh
 DISPLAY=:7 LIBGL_ALWAYS_SOFTWARE=1 \
-ROM_PATH="$PWD/local/chore-dialogue-alpha.z64" \
+ROM_PATH="$PWD/local/equipment-labels-alpha.z64" \
 tools/emulator.sh --windowed --gfx mupen64plus-video-glide64mk2 --audio dummy \
   --input mupen64plus-input-sdl --rsp mupen64plus-rsp-hle
 ```
@@ -74,29 +74,35 @@ from these generated test copies.
 
 ## Next work
 
-Continue native equipment labels from record 3537. Ongoing-chore dialogue
-3342–3536 now has 195 drafts across fifteen thirteen-line voices. All previous
-3,451 entries, active bytes and descriptors are identical, including all fifteen
-fixed grids and all 130 stored labels in 36 donors. No new storage, pages,
-newline opt-ins or engine/codec changes were needed.
+Continue bot-book text from native record **3694**; 3673–3693 were translated
+earlier. These entries use four lines with varying native widths. Inspect their
+reader before choosing encoding; do not force unverified records through the
+existing fixed-grid path or truncate information to satisfy the label guard.
 
-Three source bot-name insertions at 3435, 3445 and 3456 keep argument 200B:0007
-and eleven-cell reservations. Chatter retains cleaning/fishing/massage/repair/
-fuel contexts, weather, Pearlton, catchphrases and jokes. Mu, the UFO/cow anecdote,
-Magi System and the slow-typed Y-U-U-K-I / S-U-T-E-K-I remain source jokes; they
-do not add map areas, events or mechanics. Smelt is the wakasagi fishing term.
+The equipment milestone adds 127 labels (3537–3664 except existing Charm 3604)
+and eight Pearlton warnings (3665–3672). 119 labels use explicit donor tails and
+eight fit inline. Preserve all **249 stored-label ranges in 155 donors**. The
+prior 130 placements are unchanged. Subtract every occupied interval before
+allocating; a donor may be any explicitly translated non-relocated record, but
+its live encoded text is never free. All fifteen existing fixed grids retain
+full counts and their exact guarded layouts. All earlier 3,646 entries, active
+bytes and descriptors are unchanged. Charm, Berry and saved nicknames remain.
 
-For equipment names, reuse existing battle/part spellings and skip previously
-translated IDs such as Charm 3604. Keep prior entries and storage placements
-unless a deliberate correction/repacking is made. Subtract all occupied ranges
-before using any donor padding. Grid records 3323–3337 keep their guarded 7x10,
-3x21 and 3x15 full-size layouts; do not use the grid path for unverified records.
+Four guarded horizontal-scale words at 0x21B3A8, 0x217540, 0x216604 and
+0x2171C0 change 1.0 to 0.5 for the profile, Gear Set equipped caption and
+right-column item rows. Positions, vertical scales, IDs
+and draw calls stay exact. A descriptor-only preview displays the actual
+sixteen-cell Hell Caterpillar text in Charm's fields. The release still uses
+Charm. See the notes and local/equipment-labels-evidence for exact identities
+and observed screens. The profile and Gear Set equipped caption were observed;
+the empty right-hand inventory does not exercise item rows. Reference/default/isolated EEPROMs are unchanged; no
+savestate or in-game save was used in this milestone.
 
-The exact final ROM cold-boots and loads native file A. New ongoing-chore triggers
-remain build-validated, not fully played. Check them and earlier minigame/pest/
-reaction/name/newline/donor/regional branches in gameplay. Never load an older
-ROM's savestate to validate a new build. Graphical labels, Parts frame, capacity
-warnings, five anchored pages and VS/Transfer Pak remain unfinished.
+Fuel warnings and other equipment contexts remain build-validated and need
+gameplay checks, as do prior chore/minigame/pest/reaction/name/newline/donor/
+regional scenes. Never load an older ROM's savestate to validate a new build.
+Graphical labels, Parts frame, capacity warnings, five anchored pages and
+VS/Transfer Pak remain unfinished.
 
 The recovery archive uses .part001 and .part002. PROJECT_STATE's backup field
 points to the JSON index. Verify part hashes, concatenate in order, verify the
@@ -106,4 +112,4 @@ existing passphrase applies.
 
 Update this handoff, `PROJECT_STATE.json` and the recovery archive when the milestone changes. A running cloud process is not a persistent checkpoint.
 
-The durable translation checkpoint is the Git tag `chore-dialogue-alpha`. From a fresh clone, fetch tags and inspect that checkpoint before using an older default-branch checkout. Preserve local changes before switching revisions.
+The durable translation checkpoint is the Git tag `equipment-labels-alpha`. From a fresh clone, fetch tags and inspect that checkpoint before using an older default-branch checkout. Preserve local changes before switching revisions.

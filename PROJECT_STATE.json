@@ -1,7 +1,7 @@
 {
   "format_version": 1,
   "project": "Robopon 64 English translation",
-  "milestone": "chore-dialogue-alpha",
+  "milestone": "equipment-labels-alpha",
   "recovered_on": "2026-11-05",
   "timezone": "America/Los_Angeles",
   "upstream": {
@@ -9,18 +9,18 @@
     "branch": "codex/verified-workspace-recovery",
     "recovered_commit": "b6b220228bdb6074758017c25e83539e12a5ca2d"
   },
-  "release_manifest": "releases/chore-dialogue-alpha-manifest.json",
-  "release_patch": "releases/chore-dialogue-alpha.bps",
-  "playable_rom": "local/chore-dialogue-alpha.z64",
+  "release_manifest": "releases/equipment-labels-alpha-manifest.json",
+  "release_patch": "releases/equipment-labels-alpha.bps",
+  "playable_rom": "local/equipment-labels-alpha.z64",
   "catalogs": {
     "menu": "translation/battle-moves-menu.json",
-    "story": "translation/chore-dialogue-text.json",
+    "story": "translation/equipment-labels-text.json",
     "choices": "translation/story-choices.json",
     "layout": "translation/interface-layout.json",
     "graphics": "translation/interface-graphics.json"
   },
   "coverage": {
-    "native_records": 3646,
+    "native_records": 3781,
     "ui_strings": 832,
     "native_choice_blocks": 299,
     "graphic_captions": 3
@@ -33,20 +33,20 @@
     "day": 2,
     "gold": 500,
     "party_member": "Merlin",
-    "rom_md5_prefix": "40285335",
-    "working_path": "local/native-saves/Robot Ponkottsu 64 - 7tsu no Umi-40285335.eep"
+    "rom_md5_prefix": "89C91C55",
+    "working_path": "local/native-saves/Robot Ponkottsu 64 - 7tsu no Umi-89C91C55.eep"
   },
-  "latest_encrypted_backup": "backups/robopon64-chore-dialogue-alpha-40285335.zip.gpg.parts.json",
+  "latest_encrypted_backup": "backups/robopon64-equipment-labels-alpha-89C91C55.zip.gpg.parts.json",
   "automated_tests": 134,
-  "next_task": "Continue native equipment labels from 3537. Reuse established part/move terminology and skip already-translated IDs (including Charm 3604); do not overwrite old entries casually. Preserve all 130 stored-label ranges in 36 donors and all fifteen fixed grids. Derive donor free intervals by subtracting every occupied range. Three chore-name insertions 3435,3445,3456 preserve their source arguments and reserve eleven cells. New chore triggers and prior minigame/pest/reaction/regional branches need gameplay checks. Latest encrypted archive uses two parts; see backups/README.md.",
+  "next_task": "Continue bot-book native records from 3694; 3673\u20133693 are already translated. Inspect their four-line fixed reading layout and 12\u201318-cell source widths before choosing encoding; do not force unverified records through the existing grid path or discard text to satisfy the label guard. Preserve all 249 stored-label ranges in 155 donors by subtracting every occupied range before allocation. Earlier 3646 entries, active bytes and descriptors and all fifteen fixed grids remain intact. Charm 3604, Berry and saved nicknames are unchanged. Profile/equipped-caption long-name previews cover one displayed label; other item contexts and fuel-warning/chore/minigame/regional triggers need gameplay checks. Latest archive uses two parts; see backups/README.md.",
   "history_recovery": {
     "source": "user-supplied 16-page conversation PDF",
     "historical_gardening_artifact": "unavailable",
     "gardening_status": "reconstructed from the original ROM; wording is not claimed identical to the historical patch"
   },
-  "checkpoint_ref": "refs/tags/chore-dialogue-alpha",
+  "checkpoint_ref": "refs/tags/equipment-labels-alpha",
   "runtime_validation": {
-    "rom_md5_prefix": "40285335",
+    "rom_md5_prefix": "89C91C55",
     "initial_save": "native day 2",
     "reference_eeprom_unchanged": true,
     "gold": 500,
@@ -54,10 +54,10 @@
     "older_build_state_loaded": false,
     "pause_menu": "native file A day 2, 500G, player name and Merlin observed",
     "historical_opening_state": "local/fire-blue-story-evidence/opening-502.st0 belongs only to MD5 07EC747C; not loaded",
-    "new_chore_dialogue": "exact-ROM native-A compatibility; new chore triggers are build-validated and still need gameplay checks; see notes/evidence"
+    "new_equipment_labels": "16-cell Hell Caterpillar descriptor-only preview in profile and Gear Set equipped captions; four horizontal scale edits; final exact-ROM native-A compatibility; other equipment contexts and fuel-warning triggers need gameplay checks; see notes/evidence"
   },
   "update_checksum": true,
   "validate_move_names": true,
-  "backup_payload_files_verified": 840,
+  "backup_payload_files_verified": 865,
   "backup_format": "gpg-aes256-split"
 }

@@ -1140,6 +1140,641 @@
       "source": "ワカサギつり",
       "english": "smelt fishing",
       "note": "Wakasagi is Japanese smelt. The rural voice at 3503 prefers this fishing style; no fishing mechanics are changed."
+    },
+    {
+      "source": "ナックルアーム",
+      "english": "Knuckle Arm",
+      "note": "Native equipment label 3537; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ヘヴィナックル",
+      "english": "Heavy Knuckle",
+      "note": "Native equipment label 3538; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ハンマーアーム",
+      "english": "Hammer Arm",
+      "note": "Native equipment label 3539; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ヘヴィハンマー",
+      "english": "Heavy Hammer",
+      "note": "Native equipment label 3540; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "サンボアーム",
+      "english": "Sambo Arm",
+      "note": "Native equipment label 3541; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ボクサーアーム",
+      "english": "Boxer Arm",
+      "note": "Native equipment label 3542; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ムエタイアーム",
+      "english": "Muay Thai Arm",
+      "note": "Native equipment label 3543; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ウルフハング",
+      "english": "Wolf Hang",
+      "note": "Native equipment label 3544; provisional project spelling. Source IDs and effects unchanged. Keeps source ハング rather than silently rewriting it as Fang."
+    },
+    {
+      "source": "タイガーアーム",
+      "english": "Tiger Arm",
+      "note": "Native equipment label 3545; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ぶとうハンド",
+      "english": "Martial Hand",
+      "note": "Native equipment label 3546; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ぼうそうアーム",
+      "english": "Mad Arm",
+      "note": "Native equipment label 3547; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ダガーアーム",
+      "english": "Dagger Arm",
+      "note": "Native equipment label 3548; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ソードアーム",
+      "english": "Sword Arm",
+      "note": "Native equipment label 3549; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "サムライソード",
+      "english": "Samurai Sword",
+      "note": "Native equipment label 3550; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ムラマサアーム",
+      "english": "Muramasa Arm",
+      "note": "Native equipment label 3551; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "トマホーク",
+      "english": "Tomahawk",
+      "note": "Native equipment label 3552; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ライントハンド",
+      "english": "Raint Hand",
+      "note": "Native equipment label 3553; provisional project spelling. Source IDs and effects unchanged. Provisional rendering of ライント; requires an official reference to resolve."
+    },
+    {
+      "source": "ピックアーム",
+      "english": "Pick Arm",
+      "note": "Native equipment label 3554; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "レイピアアーム",
+      "english": "Rapier Arm",
+      "note": "Native equipment label 3555; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "スピアアーム",
+      "english": "Spear Arm",
+      "note": "Native equipment label 3556; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "グレイブアーム",
+      "english": "Glaive Arm",
+      "note": "Native equipment label 3557; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ヴァイドハンド",
+      "english": "Vaid Hand",
+      "note": "Native equipment label 3558; provisional project spelling. Source IDs and effects unchanged. Provisional rendering of ヴァイド; do not silently change to Void."
+    },
+    {
+      "source": "ハーブアーム",
+      "english": "Herb Arm",
+      "note": "Native equipment label 3559; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "タロットアーム",
+      "english": "Tarot Arm",
+      "note": "Native equipment label 3560; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ミスリルアーム",
+      "english": "Mithril Arm",
+      "note": "Native equipment label 3561; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "エンゼルアーム",
+      "english": "Angel Arm",
+      "note": "Native equipment label 3562; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ゴッドハンド",
+      "english": "God Hand",
+      "note": "Native equipment label 3563; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ミカドアーム",
+      "english": "Mikado Arm",
+      "note": "Native equipment label 3564; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ルーンアーム",
+      "english": "Rune Arm",
+      "note": "Native equipment label 3565; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ウラヌスハンド",
+      "english": "Uranus Hand",
+      "note": "Native equipment label 3566; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "じょうかハンド",
+      "english": "Purifying Hand",
+      "note": "Native equipment label 3567; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ジャッジハンド",
+      "english": "Judge Hand",
+      "note": "Native equipment label 3568; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ガイアハンド",
+      "english": "Gaia Hand",
+      "note": "Native equipment label 3569; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ガンハンド",
+      "english": "Gun Hand",
+      "note": "Native equipment label 3570; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ライフルアーム",
+      "english": "Rifle Arm",
+      "note": "Native equipment label 3571; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ショットガン",
+      "english": "Shotgun",
+      "note": "Native equipment label 3572; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ガトリング",
+      "english": "Gatling",
+      "note": "Native equipment label 3573; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "バルカンアーム",
+      "english": "Vulcan Arm",
+      "note": "Native equipment label 3574; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "グレネード",
+      "english": "Grenade",
+      "note": "Native equipment label 3575; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "バズーカアーム",
+      "english": "Bazooka Arm",
+      "note": "Native equipment label 3576; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "レーザーアーム",
+      "english": "Laser Arm",
+      "note": "Native equipment label 3577; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "メガレーザー",
+      "english": "Mega Laser",
+      "note": "Native equipment label 3578; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ビームアーム",
+      "english": "Beam Arm",
+      "note": "Native equipment label 3579; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ハイパービーム",
+      "english": "Hyper Beam",
+      "note": "Native equipment label 3580; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ナイフアーム",
+      "english": "Knife Arm",
+      "note": "Native equipment label 3581; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "カギヅメ",
+      "english": "Claw",
+      "note": "Native equipment label 3582; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "りゅうのつめ",
+      "english": "Dragon Claw",
+      "note": "Native equipment label 3583; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "なげなわアーム",
+      "english": "Lasso Arm",
+      "note": "Native equipment label 3584; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "スリハンド",
+      "english": "Pickpocket Hand",
+      "note": "Native equipment label 3585; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ぶんどりアーム",
+      "english": "Plunder Arm",
+      "note": "Native equipment label 3586; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "イカサマアーム",
+      "english": "Cheat Arm",
+      "note": "Native equipment label 3587; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "たんさアーム",
+      "english": "Scan Arm",
+      "note": "Native equipment label 3588; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ふきや",
+      "english": "Blowgun",
+      "note": "Native equipment label 3589; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "だいごうきゅう",
+      "english": "Great Bow",
+      "note": "Native equipment label 3590; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "クロスボウ",
+      "english": "Crossbow",
+      "note": "Native equipment label 3591; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "タイレルアーム",
+      "english": "Tyrell Arm",
+      "note": "Native equipment label 3592; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "クラブアーム",
+      "english": "Club Arm",
+      "note": "Native equipment label 3593; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "メイスアーム",
+      "english": "Mace Arm",
+      "note": "Native equipment label 3594; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "フレイルアーム",
+      "english": "Flail Arm",
+      "note": "Native equipment label 3595; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "レッスルアーム",
+      "english": "Wrestle Arm",
+      "note": "Native equipment label 3596; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "バスターアーム",
+      "english": "Buster Arm",
+      "note": "Native equipment label 3597; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "パワーアーム",
+      "english": "Power Arm",
+      "note": "Native equipment label 3598; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ブレイドアーム",
+      "english": "Blade Arm",
+      "note": "Native equipment label 3599; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ケイブアーム",
+      "english": "Cave Arm",
+      "note": "Native equipment label 3600; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "カトックアーム",
+      "english": "Katock Arm",
+      "note": "Native equipment label 3601; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "パイルバンカー",
+      "english": "Pile Bunker",
+      "note": "Native equipment label 3602; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ハイパークロー",
+      "english": "Hyper Claw",
+      "note": "Native equipment label 3603; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ナーガハンド",
+      "english": "Naga Hand",
+      "note": "Native equipment label 3605; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "デスハンド",
+      "english": "Doom Hand",
+      "note": "Native equipment label 3606; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "スキュラハンド",
+      "english": "Scylla Hand",
+      "note": "Native equipment label 3607; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "グールハンド",
+      "english": "Ghoul Hand",
+      "note": "Native equipment label 3608; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ブラッドハンド",
+      "english": "Blood Hand",
+      "note": "Native equipment label 3609; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "アシュラハンド",
+      "english": "Ashura Hand",
+      "note": "Native equipment label 3610; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ヤシャハンド",
+      "english": "Yasha Hand",
+      "note": "Native equipment label 3611; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ジークハンド",
+      "english": "Zeek Hand",
+      "note": "Native equipment label 3612; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ワイズアーム",
+      "english": "Wise Arm",
+      "note": "Native equipment label 3613; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "スレッジハンド",
+      "english": "Sledge Hand",
+      "note": "Native equipment label 3614; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ブレンアーム",
+      "english": "Bren Arm",
+      "note": "Native equipment label 3615; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ケミカルハンド",
+      "english": "Chemical Hand",
+      "note": "Native equipment label 3616; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "マジックアーム",
+      "english": "Magic Arm",
+      "note": "Native equipment label 3617; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ライトニング",
+      "english": "Lightning",
+      "note": "Native equipment label 3618; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ウィンアーム",
+      "english": "Win Arm",
+      "note": "Native equipment label 3619; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "シェルハンド",
+      "english": "Shell Hand",
+      "note": "Native equipment label 3620; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ロッポウアーム",
+      "english": "Roppo Arm",
+      "note": "Native equipment label 3621; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "レジストアーム",
+      "english": "Resist Arm",
+      "note": "Native equipment label 3622; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "サーブハンド",
+      "english": "Serve Hand",
+      "note": "Native equipment label 3623; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ラートルハンド",
+      "english": "Rattle Hand",
+      "note": "Native equipment label 3624; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "エリコルアーム",
+      "english": "Erikol Arm",
+      "note": "Native equipment label 3625; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "プロペラ",
+      "english": "Propeller",
+      "note": "Native equipment label 3626; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ウイング",
+      "english": "Wing",
+      "note": "Native equipment label 3627; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ジェット",
+      "english": "Jet",
+      "note": "Native equipment label 3628; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ターボジェット",
+      "english": "Turbo Jet",
+      "note": "Native equipment label 3629; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "グライダー",
+      "english": "Glider",
+      "note": "Native equipment label 3630; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ブースター",
+      "english": "Booster",
+      "note": "Native equipment label 3631; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "カミカゼ",
+      "english": "Kamikaze",
+      "note": "Native equipment label 3632; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "きじゅう",
+      "english": "Machine Gun",
+      "note": "Native equipment label 3633; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ソニック",
+      "english": "Sonic",
+      "note": "Native equipment label 3634; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ばくだん",
+      "english": "Bomb",
+      "note": "Native equipment label 3635; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "アトミック",
+      "english": "Atomic",
+      "note": "Native equipment label 3636; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "スクリュー",
+      "english": "Screw",
+      "note": "Native equipment label 3637; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ホバー",
+      "english": "Hover",
+      "note": "Native equipment label 3638; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ソナー",
+      "english": "Sonar",
+      "note": "Native equipment label 3639; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ウェーブ",
+      "english": "Wave",
+      "note": "Native equipment label 3640; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "２０ミリほう",
+      "english": "20mm Cannon",
+      "note": "Native equipment label 3641; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "３６ミリほう",
+      "english": "36mm Cannon",
+      "note": "Native equipment label 3642; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "４６ミリほう",
+      "english": "46mm Cannon",
+      "note": "Native equipment label 3643; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ヘッジボム",
+      "english": "Hedge Bomb",
+      "note": "Native equipment label 3644; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "バトルガンマー",
+      "english": "Battle Gammar",
+      "note": "Native equipment label 3645; provisional project spelling. Source IDs and effects unchanged. Preserves ガンマー; do not silently substitute Gunner."
+    },
+    {
+      "source": "ぎょらい",
+      "english": "Torpedo",
+      "note": "Native equipment label 3646; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "きらい",
+      "english": "Sea Mine",
+      "note": "Native equipment label 3647; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ローラー",
+      "english": "Roller",
+      "note": "Native equipment label 3648; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ビッグローラー",
+      "english": "Big Roller",
+      "note": "Native equipment label 3649; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "とげローラー",
+      "english": "Spiked Roller",
+      "note": "Native equipment label 3650; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "キャタピラ",
+      "english": "Caterpillar",
+      "note": "Native equipment label 3651; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ヘルキャタピラ",
+      "english": "Hell Caterpillar",
+      "note": "Native equipment label 3652; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "マシンガン",
+      "english": "Machine Gun",
+      "note": "Native equipment label 3653; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ストロングほう",
+      "english": "Strong Cannon",
+      "note": "Native equipment label 3654; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "キャノンほう",
+      "english": "Cannon",
+      "note": "Native equipment label 3655; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "バズーカー",
+      "english": "Bazooka",
+      "note": "Native equipment label 3656; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "マイン",
+      "english": "Mine",
+      "note": "Native equipment label 3657; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "きかんほう",
+      "english": "Machine Cannon",
+      "note": "Native equipment label 3658; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ロケットほう",
+      "english": "Rocket Cannon",
+      "note": "Native equipment label 3659; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ミサイル",
+      "english": "Missile",
+      "note": "Native equipment label 3660; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "スパイクタイヤ",
+      "english": "Spiked Tire",
+      "note": "Native equipment label 3661; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ビッグフット",
+      "english": "Bigfoot",
+      "note": "Native equipment label 3662; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "ばくちく",
+      "english": "Firecrackers",
+      "note": "Native equipment label 3663; provisional project spelling. Source IDs and effects unchanged."
+    },
+    {
+      "source": "てなげだん",
+      "english": "Hand Grenade",
+      "note": "Native equipment label 3664; provisional project spelling. Source IDs and effects unchanged."
     }
   ]
 }
