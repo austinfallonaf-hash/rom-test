@@ -7,7 +7,8 @@ from unittest.mock import patch
 
 from tools.graphics import caption_image, replacement, validate_loader
 from tools.sprite_program import (EXEC_HEADER, EXEC_DISPATCHER, COPY_PROGRAM,
-                                  apply_runs, caption_runs, patch_code, payload)
+                                  apply_runs, caption_runs, patch_code, payload,
+                                  caption_palette, apply_palette)
 
 
 def run_mips(code_blocks, registers, memory, hooks, stop, limit=500000):
@@ -24,8 +25,11 @@ def run_mips(code_blocks, registers, memory, hooks, stop, limit=500000):
         if word is None:word=int.from_bytes(get(pc,4),'big')
         op,rs,rt,rd,sh,fn=word>>26,(word>>21)&31,(word>>16)&31,(word>>11)&31,(word>>6)&31,word&63
         imm=word&65535;signed=imm if imm<32768 else imm-65536;v=regs[rs];t=regs[rt];following=(next_pc+4)&0xffffffff;addr=(v+signed)&0xffffffff
+        if op in (35,43):assert addr%4==0, f'Unaligned word at {addr:x}'
+        if op in (37,41):assert addr%2==0, f'Unaligned halfword at {addr:x}'
         if op==0:
             if fn==0:regs[rd]=t<<sh
+            elif fn==2:regs[rd]=t>>sh
             elif fn==8:following=v
             elif fn==9:regs[rd]=pc+8;following=v
             elif fn==33:regs[rd]=v+t
@@ -37,6 +41,7 @@ def run_mips(code_blocks, registers, memory, hooks, stop, limit=500000):
             if (v==t)==(op==4):following=(pc+4+signed*4)&0xffffffff
         elif op==2:following=((pc+4)&0xf0000000)|((word&0x3ffffff)<<2)
         elif op==9:regs[rt]=v+signed
+        elif op==12:regs[rt]=v&imm
         elif op==13:regs[rt]=v|imm
         elif op==15:regs[rt]=imm<<16
         elif op==35:regs[rt]=int.from_bytes(get(addr,4),'big')
@@ -106,6 +111,52 @@ class SpriteProgramTests(unittest.TestCase):
         with self.assertRaises(ValueError):caption_runs(source,64,32,[])
         with self.assertRaises(ValueError):patch_code(32768,32769,320)
 
+    def test_native_palette_handles_scaled_text_long_runs_and_row_gradients(self):
+        source=b''.join((0x1085+y*64).to_bytes(2,'big')*128 for y in range(32))
+        rows=[{'rect':[2,2,126,20],'sample_x':1,'translation':'EQUIPPED','scale':2},
+              {'rect':[2,22,126,32],'sample_x':1,'translation':'SPARE PARTS','ink_hex':'0031','shadow_hex':'fffe'}]
+        expected=caption_image(source,128,32,rows);head=bytearray(self.header());struct.pack_into('>H',head,22,128)
+        blob=payload(bytes(head),expected,128,32,rows,palette_source=source)
+        self.execute(blob,source,expected)
+        self.assertEqual(apply_palette(source,128,32,caption_palette(source,expected,128,32,rows)),expected)
+
+    def test_native_palette_allows_duplicate_background_and_ink_colors(self):
+        source=self.image();rows=[dict(self.rows()[0],ink_hex='1085',shadow_hex='0031')]
+        expected=caption_image(source,64,32,rows)
+        self.execute(payload(self.header(),expected,64,32,rows,palette_source=source),source,expected)
+
+    def test_palette_rejects_invalid_colors_geometry_truncation_and_run_codes(self):
+        source=self.image();rows=self.rows();expected=caption_image(source,64,32,rows)
+        stream=caption_palette(source,expected,64,32,rows)
+        self.assertEqual(apply_palette(source,64,32,stream),expected)
+        for code in [0,0xc1,63]:
+            bad=bytearray(stream);bad[18]=code
+            with self.subTest(code=code),self.assertRaises(ValueError):apply_palette(source,64,32,bytes(bad))
+        for data in [stream[:3],stream[:-5],stream+b'bad',b'\0'*4]:
+            with self.subTest(size=len(data)),self.assertRaises(ValueError):apply_palette(source,64,32,data)
+        bad=bytearray(stream);struct.pack_into('>I',bad,4,len(source))
+        with self.assertRaises(ValueError):apply_palette(source,64,32,bytes(bad))
+        outside=bytearray(expected);outside[2*(2*64+2):2*(2*64+2)+2]=b'\x12\x34'
+        with self.assertRaises(ValueError):caption_palette(source,bytes(outside),64,32,rows)
+        with self.assertRaises(ValueError):caption_palette(source,expected,64,32,[])
+        with self.assertRaises(ValueError):caption_palette(source,expected,64,32,[dict(rows[0],sample_x=3)])
+
+    def test_palette_fits_exact_reclaimed_capacity_that_full_color_runs_exceed(self):
+        original,entry,owner=self.fixture();pixels=caption_image(self.image(),64,32,self.rows())
+        compact=payload(self.header(),pixels,64,32,self.rows(),palette_source=self.image())
+        self.assertLess(len(compact),len(payload(self.header(),pixels,64,32,self.rows())))
+        blob=self.header()+b'\0'*(len(compact)-100)
+        original[0x320:0x320+len(blob)]=blob;struct.pack_into('>I',original,0x114,len(blob))
+        owner=dict(owner,source_blob_sha256=hashlib.sha256(blob).hexdigest())
+        packed=dict(entry,program='hvq_palette')
+        with patch('tools.graphics.TABLE',0x100):
+            self.assertEqual(replacement(original,packed,self.image(),[packed,owner])[1][1],compact)
+            with self.assertRaisesRegex(ValueError,'allocation'):
+                replacement(original,entry,self.image(),[entry,owner])
+            struct.pack_into('>I',original,0x114,len(blob)-1)
+            with self.assertRaisesRegex(ValueError,'allocation'):
+                replacement(original,packed,self.image(),[packed,owner])
+
     def fixture(self):
         original=bytearray(b'\xff'*0x120000);head=self.header();owner=head+b'\0'*(4096-100)
         struct.pack_into('>II',original,0x100,2,32);struct.pack_into('>II',original,0x108,0,100);struct.pack_into('>II',original,0x110,0x200,4096)
@@ -162,7 +213,7 @@ class SpriteProgramTests(unittest.TestCase):
 
     def test_shipped_dispatcher_and_program_loader_guard(self):
         root=Path(__file__).resolve().parents[1];rows=json.loads((root/'translation/interface-layout.json').read_text())['entries'];code=b''.join(bytes.fromhex(e['target_hex']) for e in rows if 0x103c<=int(e['offset'],0)<0x1060);self.assertEqual(code,EXEC_DISPATCHER)
-        output=bytearray(0x57000);output[0x103c:0x1060]=EXEC_DISPATCHER;output[0x56270:0x56274]=bytes.fromhex('0c00010f');entries=[{'program':'copy'},{'program':'hvq_patch'}];validate_loader(output,entries)
+        output=bytearray(0x57000);output[0x103c:0x1060]=EXEC_DISPATCHER;output[0x56270:0x56274]=bytes.fromhex('0c00010f');entries=[{'program':'copy'},{'program':'hvq_patch'},{'program':'hvq_palette'}];validate_loader(output,entries)
         with self.assertRaises(ValueError):validate_loader(output,[{'program':'copy'},{}])
         output[0x103c]^=1
         with self.assertRaises(ValueError):validate_loader(output,entries)

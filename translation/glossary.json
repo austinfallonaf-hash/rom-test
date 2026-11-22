@@ -1825,6 +1825,11 @@
       "source": "セーブデータ A / B (save selection bitmap)",
       "english": "File A / File B",
       "note": "Save-slot plates use FILE A/FILE B at twice the small bitmap font size, matching the existing Select a save file prompt. Does not alter file operations or saved names."
+    },
+    {
+      "source": "そうびパーツ / もちものパーツ (Parts bitmap)",
+      "english": "Equipped / Spare Parts",
+      "note": "Gear screen headings match the Apps equipment interface. Only two caption rectangles change; no equipment operations or statistics are changed."
     }
   ]
 }

@@ -11,7 +11,7 @@ DISPATCHER = bytes.fromhex("948800002409524115090004000000008c8600100801efb02484
 def validate_loader(output, entries=()):
     from tools.sprite_program import EXEC_DISPATCHER
     use_program=any(e.get("program") for e in entries)
-    if use_program and any(e.get("program") not in ("copy", "hvq_patch") for e in entries):
+    if use_program and any(e.get("program") not in ("copy", "hvq_patch", "hvq_palette") for e in entries):
         raise ValueError("Program and legacy RAW2 sprites cannot share a dispatcher")
     expected=EXEC_DISPATCHER if use_program else DISPATCHER
     if output[0x103C:0x1060] != expected or output[0x56270:0x56274] != bytes.fromhex("0c00010f"):
@@ -101,17 +101,19 @@ def replacement(original, entry, image, entries=()):
         raise ValueError('Recovered sprite SHA-256 differs')
     pixels = caption_image(image,width,height,entry['captions'])
     if entry.get('program'):
-        from tools.sprite_program import payload as program_payload, caption_runs, apply_runs
-        if entry['program'] not in ('copy','hvq_patch'):raise ValueError('Unknown sprite program')
+        from tools.sprite_program import payload as program_payload, caption_runs, apply_runs, caption_palette, apply_palette
+        if entry['program'] not in ('copy','hvq_patch','hvq_palette'):raise ValueError('Unknown sprite program')
         if entry['program']=='hvq_patch' and apply_runs(image,width,height,caption_runs(pixels,width,height,entry['captions']))!=pixels:
             raise ValueError('Sprite caption run proof differs')
-        payload=program_payload(blob,pixels,width,height,entry['captions'],copy=entry['program']=='copy')
+        if entry['program']=='hvq_palette' and apply_palette(image,width,height,caption_palette(image,pixels,width,height,entry['captions']))!=pixels:
+            raise ValueError('Sprite palette run proof differs')
+        payload=program_payload(blob,pixels,width,height,entry['captions'],copy=entry['program']=='copy',palette_source=image if entry['program']=='hvq_palette' else None)
         destination=int(entry['destination'],0)
-        if entry['program']=='hvq_patch':
+        if entry['program'] in ('hvq_patch','hvq_palette'):
             owner_id=entry.get('reclaim_resource_id');owners=[e for e in entries if e.get('resource_id')==owner_id]
-            # Either program format makes the owner independent of its old blob.
+            # Each program format makes the owner independent of its old blob.
             # The builder validates that owner's replacement and all final overlaps.
-            if len(owners)!=1 or owners[0].get('program') not in ('copy','hvq_patch') or owner_id==resource:
+            if len(owners)!=1 or owners[0].get('program') not in ('copy','hvq_patch','hvq_palette') or owner_id==resource:
                 raise ValueError('Reclaimed sprite requires its relocated program owner')
             oi=owner_id-FIRST_ID
             if not 0<=oi<count:raise ValueError('Invalid reclaimed sprite owner')
