@@ -1,0 +1,29 @@
+{
+  "format_version": 1,
+  "format": "gpg-aes256-split",
+  "source_revision": "e477382a1a1167c35c62396b8559a199d04bc4ab",
+  "cipher": "AES256",
+  "chunk_bytes": 83886080,
+  "ciphertext": {
+    "filename": "robopon64-recall-rename-alpha-220E75A3.zip.gpg",
+    "bytes": 149633972,
+    "sha256": "480554cdb0bb6cfab0801cd29f66d2995878e052cb3589dae9c7a19c8a6da7b7"
+  },
+  "plaintext": {
+    "filename": "robopon64-recall-rename-alpha-220E75A3.zip",
+    "bytes": 149633857,
+    "sha256": "cb56ad511c10c4ebfcbc136448fd3c0ed67410f6c5f926fb010c6fbc48f925b4"
+  },
+  "parts": [
+    {
+      "filename": "robopon64-recall-rename-alpha-220E75A3.zip.gpg.part001",
+      "bytes": 83886080,
+      "sha256": "7e8bfddf30be0467c3e131b29fa85d04b0bee276225dad9a4d04919ec29226b7"
+    },
+    {
+      "filename": "robopon64-recall-rename-alpha-220E75A3.zip.gpg.part002",
+      "bytes": 65747892,
+      "sha256": "841131fb27049da09fed7d1a6077d8cb207e7db60328d928cabadc22aae9d1a9"
+    }
+  ]
+}
