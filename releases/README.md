@@ -4,7 +4,12 @@ Apply one patch to the original big-endian Japanese ROM with SHA-256
 `02cda6221c10cba0705f351227e2d6c77e071bdb4f7aa8b5cd3c7c047a2b1881`.
 Do not stack patches. Keep a backup of your ROM and saves.
 
-- `evolution-interface-alpha.bps`: current cumulative partial draft with 4,049 native
+- `recall-rename-alpha.bps`: current cumulative partial draft with 4,049 native
+  records, 891 UI strings, 299 choices and twelve bitmap captions. Adds six Doctor
+  Recall/Rename prompts, preserving earlier text, graphics, code and saved names.
+  See `docs/recall-rename-alpha.md` and its manifest. Apply to the exact original.
+
+- `evolution-interface-alpha.bps`: earlier cumulative partial draft with 4,049 native
   records, 885 UI strings, 299 choices and twelve bitmap captions. Adds twelve
   evolution prompts/status labels; earlier graphics, code and Book stay exact.
   See `docs/evolution-interface-alpha.md` and its manifest. Apply to the exact original.

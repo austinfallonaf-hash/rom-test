@@ -1,7 +1,7 @@
 {
   "format_version": 1,
   "project": "Robopon 64 English translation",
-  "milestone": "evolution-interface-alpha",
+  "milestone": "recall-rename-alpha",
   "recovered_on": "2026-11-05",
   "timezone": "America/Los_Angeles",
   "upstream": {
@@ -9,11 +9,11 @@
     "branch": "codex/verified-workspace-recovery",
     "recovered_commit": "b6b220228bdb6074758017c25e83539e12a5ca2d"
   },
-  "release_manifest": "releases/evolution-interface-alpha-manifest.json",
-  "release_patch": "releases/evolution-interface-alpha.bps",
-  "playable_rom": "local/evolution-interface-alpha.z64",
+  "release_manifest": "releases/recall-rename-alpha-manifest.json",
+  "release_patch": "releases/recall-rename-alpha.bps",
+  "playable_rom": "local/recall-rename-alpha.z64",
   "catalogs": {
-    "menu": "translation/evolution-menu.json",
+    "menu": "translation/recall-rename-menu.json",
     "story": "translation/late-dialogue-text.json",
     "choices": "translation/story-choices.json",
     "layout": "translation/interface-layout.json",
@@ -21,7 +21,7 @@
   },
   "coverage": {
     "native_records": 4049,
-    "ui_strings": 885,
+    "ui_strings": 891,
     "native_choice_blocks": 299,
     "graphic_captions": 12
   },
@@ -33,22 +33,22 @@
     "day": 2,
     "gold": 500,
     "party_member": "Merlin",
-    "rom_md5_prefix": "267BE64B",
-    "working_path": "local/native-saves/Robot Ponkottsu 64 - 7tsu no Umi-267BE64B.eep",
+    "rom_md5_prefix": "220E75A3",
+    "working_path": "local/native-saves/Robot Ponkottsu 64 - 7tsu no Umi-220E75A3.eep",
     "player_name": "グリアああ",
     "player_name_offset": "0x3F"
   },
-  "latest_encrypted_backup": "backups/robopon64-evolution-interface-alpha-267BE64B.zip.gpg.parts.json",
+  "latest_encrypted_backup": "backups/robopon64-recall-rename-alpha-220E75A3.zip.gpg.parts.json",
   "automated_tests": 164,
-  "next_task": "Continue untranslated UI and remaining graphics, including Recall/Rename and unused evolution branches. The supposed save-screen progress label was the saved player name グリアああ, verified as Shift-JIS at EEPROM 0x3F; it is not translation work. Preserve that saved data. Use translation/evolution-menu.json with translation/parts-graphics.json. All four resource programs, ownership chain, 107 layout guards, 184 Book allocations and final 64 FF bytes remain exact. Preserve all 4049 native records, 885 UI strings and 299 choices. Cold-boot exact ROMs from isolated reference EEPROM copies; never load old states or save near bed during menu tests. Check the screen before dependent input. Keep current/preceding encrypted snapshots and verified restores; verify hashes and preserve extras before generated-copy cleanup. Do not claim successful evolution or unplayed doctor/confirmation/chores branches as runtime-tested.",
+  "next_task": "Continue remaining untranslated interaction UI, including name-entry labels and ship/training prompts. Use translation/recall-rename-menu.json with translation/parts-graphics.json. Keep all 4049 native records, 891 UI strings, 299 choices, four graphics programs, ownership chain, 107 layout guards, 184 Book allocations and final 64 FF bytes intact. Saved player name グリアああ and Merlin nickname remain data. Cold-boot exact ROMs from isolated reference EEPROMs; no old states or bed saving in menu tests. Confirm each screen before dependent input. Other doctor, Collector summon/service, committed rename/name entry and successful evolution remain unplayed. Keep current/preceding encrypted snapshots and verified restores; verify hashes and preserve extras before cleanup. Thirty-nine older generated ROM working copies were removed only after manifest/hash/independent BPS reproduction; regenerate a historical build from its shipped patch if needed, retaining original/current/preceding assets and unmatched prototypes.",
   "history_recovery": {
     "source": "user-supplied 16-page conversation PDF",
     "historical_gardening_artifact": "unavailable",
     "gardening_status": "reconstructed from the original ROM; wording is not claimed identical to the historical patch"
   },
-  "checkpoint_ref": "refs/tags/evolution-interface-alpha",
+  "checkpoint_ref": "refs/tags/recall-rename-alpha",
   "runtime_validation": {
-    "rom_md5_prefix": "267BE64B",
+    "rom_md5_prefix": "220E75A3",
     "initial_save": "native day 2",
     "reference_eeprom_unchanged": true,
     "gold": 500,
@@ -57,11 +57,11 @@
     "pause_menu": "native file A day 2, 500G, player name and Merlin observed",
     "historical_opening_state": "local/fire-blue-story-evidence/opening-502.st0 belongs only to MD5 07EC747C; not loaded",
     "historical_exploratory_save": "An exploratory menu return reached bed and changed only an isolated EEPROM. That copy/log are preserved separately. Reference and default were unchanged; final validation restarted from reference. This occurred on status-graphics-alpha, not this milestone.",
-    "new_evolution_interface": "Exact native-A cold boot retains day2/500G/saved player name/Merlin stats/Charm/Fire v1. Doctor Evolve shows polite selection and insufficient-Orb pane (Need Orbs, Evolve: No, Evolve, Orbs: 200) fitting original windows/colors. Ineligible A is blocked; B cancels. Normal exit; three EEPROMs unchanged, no save/states or evolution confirmation. Other doctor, ready/target/confirmation/chores/success branches remain build-validated only."
+    "new_recall_rename": "Exact native-A cold boot retains day2/500G/player/Merlin stats/Charm/Fire v1. Polite Doctor Recall question fits with green Collector; No returns to main menu. Rename selection/confirmation fit two lines, bot/name remain yellow; No returns to selection and B returns to Doctor. No Collector summon, name entry or committed rename. Normal exit; three EEPROM hashes unchanged, no save/states. Other doctor variants remain build-only."
   },
   "update_checksum": true,
   "validate_move_names": true,
-  "backup_payload_files_verified": 1156,
+  "backup_payload_files_verified": 1200,
   "backup_format": "gpg-aes256-split",
   "native_coverage_audit": "translation/native-coverage.json",
   "workspace_backup_checkout": {
@@ -70,9 +70,15 @@
       "/*",
       "!/backups/*",
       "/backups/README.md",
-      "/backups/robopon64-parts-graphics-alpha-*",
-      "/backups/robopon64-evolution-interface-alpha-*"
+      "/backups/robopon64-evolution-interface-alpha-*",
+      "/backups/robopon64-recall-rename-alpha-*"
     ],
     "older_backups": "Omitted working copies remain in local Git and on the canonical GitHub branch; update patterns for the next milestone before staging new parts."
+  },
+  "generated_rom_retention": {
+    "removed_verified_builds": 39,
+    "bytes_freed": 1308622848,
+    "method": "Every removed historical ROM matched its shipped manifest and independently rebuilt byte-for-byte through Flips from original + committed BPS. Current/preceding and unmatched builds retained.",
+    "ledger": "local/recall-rename-evidence/generated-rom-retention.json"
   }
 }

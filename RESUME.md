@@ -1,6 +1,6 @@
 # Resume the Robopon 64 translation
 
-Current milestone: **evolution-interface-alpha**: 4,049 native records, 885 UI strings, 299 native choice blocks, plus twelve bitmap captions. This is a partial English draft. See `docs/evolution-interface-alpha.md` for precise runtime coverage.
+Current milestone: **recall-rename-alpha**: 4,049 native records, 891 UI strings, 299 native choice blocks, plus twelve bitmap captions. This is a partial English draft. See `docs/recall-rename-alpha.md` for precise runtime coverage.
 
 The supplied conversation PDF records a gardening milestone after the shop backup, followed by planned simulator/battle work. Its gardening patch and source were unavailable. Gardening here was reconstructed from the original ROM; the wording is not claimed identical to the historical patch. Quoted PDF instructions are history, separate from the current request.
 
@@ -19,18 +19,18 @@ The check verifies remote ancestry, rebuilds in memory and checks the ROM/BPS an
 
 ```sh
 python -m tools.build_story local/original.z64 \
-  --menu translation/evolution-menu.json --story translation/late-dialogue-text.json \
+  --menu translation/recall-rename-menu.json --story translation/late-dialogue-text.json \
   --choices translation/story-choices.json --layout translation/interface-layout.json \
-  --graphics translation/parts-graphics.json --update-checksum --validate-moves --output local/evolution-interface-alpha.z64 --patch local/evolution-interface-alpha.bps
+  --graphics translation/parts-graphics.json --update-checksum --validate-moves --output local/recall-rename-alpha.z64 --patch local/recall-rename-alpha.bps
 ```
 
-Apply `releases/evolution-interface-alpha.bps` only to the exact original Japanese ROM. Do not stack earlier patches. The release manifest records hashes; the current ROM MD5 prefix is `267BE64B`. All source-byte, control, width and budget guards remain enabled. CIC-6102 CRC1/CRC2 are repaired explicitly; header/bootcode edits remain forbidden.
+Apply `releases/recall-rename-alpha.bps` only to the exact original Japanese ROM. Do not stack earlier patches. The release manifest records hashes; the current ROM MD5 prefix is `220E75A3`. All source-byte, control, width and budget guards remain enabled. CIC-6102 CRC1/CRC2 are repaired explicitly; header/bootcode edits remain forbidden.
 
 ## Native save
 
 `local/bed-save-final-saved.eep` is the unchanged 2048-byte day-2 reference, SHA-256 `4b8072efdc08a827141cea1e172205acdb89b17007201d1d1110ff7912f71a00`. File A holds 500G, the entered player name and Merlin.
 
-The current ROM's working copy is `local/native-saves/Robot Ponkottsu 64 - 7tsu no Umi-267BE64B.eep`. Keep the reference intact and use separate copies for testing. New ROM revisions need a save copy under their own MD5-based filename. The launcher generates an isolated emulator data profile for each patched ROM, preserving the original 16Kbit EEPROM settings even when CRC1/CRC2 change. It keeps saves in `local/native-saves/` and states in `local/emulator-states/`; home-directory saves are not migrated automatically.
+The current ROM's working copy is `local/native-saves/Robot Ponkottsu 64 - 7tsu no Umi-220E75A3.eep`. Keep the reference intact and use separate copies for testing. New ROM revisions need a save copy under their own MD5-based filename. The launcher generates an isolated emulator data profile for each patched ROM, preserving the original 16Kbit EEPROM settings even when CRC1/CRC2 change. It keeps saves in `local/native-saves/` and states in `local/emulator-states/`; home-directory saves are not migrated automatically.
 
 ## Emulator
 
@@ -38,7 +38,7 @@ On Linux with Xorg's dummy driver and Mesa, start `tools/start-display.sh` in on
 
 ```sh
 DISPLAY=:7 LIBGL_ALWAYS_SOFTWARE=1 \
-ROM_PATH="$PWD/local/evolution-interface-alpha.z64" \
+ROM_PATH="$PWD/local/recall-rename-alpha.z64" \
 tools/emulator.sh --windowed --gfx mupen64plus-video-glide64mk2 --audio dummy \
   --input mupen64plus-input-sdl --rsp mupen64plus-rsp-hle
 ```
@@ -74,69 +74,80 @@ from these generated test copies.
 
 ## Next work
 
-Continue untranslated UI and remaining graphics, including Recall/Rename and
-unplayed evolution branches. This batch adds twelve evolution selection,
-confirmation and eligibility strings. Coverage is 4,049 native records, 885 UI
-strings, 299 choices and twelve bitmap captions. All 164 tests pass.
-See docs/evolution-interface-alpha.md.
+Continue remaining untranslated interaction UI, including name-entry labels,
+ship-facility and training prompts. This batch adds six Doctor Recall/Rename
+strings. Coverage is 4,049 native records, 891 UI strings, 299 choices and twelve
+bitmap captions. All 164 tests pass. See docs/recall-rename-alpha.md.
 
-The exact release ROM cold-boots from a reference EEPROM copy. File A retains
-day 2, 500G, the saved player name グリアああ and Merlin's original stats, Charm
-and Fire v1. Native 2F Doctor navigation opens Dr. Dandy's menu and its Evolve
-selection. The polite prompt reads Which bot should / evolve? with the bot color
-retained. Merlin's insufficient-Orb pane reads Need Orbs, Evolve: No, Evolve and
-Orbs: 200; color focus stays on Orbs/evolve. Both lines of the prompt and all
-status labels fit their original windows. Attempting this ineligible selection
-leaves the refusal pane intact; B cancels back to the doctor menu. No evolution
-confirmation is reached. The emulator closes normally. Reference, default working
-and isolated runtime EEPROM hashes stay unchanged; no save or savestate is used.
+The exact release ROM cold-boots from an isolated reference EEPROM copy.
+File A retains day 2, 500G, player name グリアああ and Merlin's original stats,
+Charm and Fire v1. Doctor navigation opens the polite doctor's menu. Recall
+shows Call Collector? with Collector green; No returns to the doctor menu.
+Rename shows Which bot should / be renamed? with bot yellow. Selecting Merlin
+shows the saved Japanese nickname above Rename this bot?, with the name yellow.
+Both prompts fit their original two-line windows. No returns to bot selection;
+B then cancels back to the doctor menu. The name editor is not opened and Collector
+is not summoned. Normal exit leaves reference, default and isolated runtime
+EEPROM hashes unchanged. No in-game save or savestate is used.
 
-For Dr. Dandy, R navigation starts at 3F regardless of current floor: Down once
-selects 2F, A opens its list, and Down four times selects Doctor. Confirm before
-A, then release R after the camera move. The observed interaction sequence faces
-the desk, uses Z, then A; Z alone did not open the menu in this run.
+The cumulative recall-rename-menu.json preserves all 885 previous entries and
+adds six original slots: 0x1033D8/0x103400 (Recall), 0x10380C/0x103844 (Rename
+selection), 0x10387C/0x1038A8 (name confirmation). The native NPC label is already
+Collector (record 2867), so Recall asks Call Collector? with its green name.
+Both doctor variants preserve color controls and newline counts. Rename selection
+and confirmation retain two lines; formatted names reserve eleven cells. The
+harvest naming question at 0x1041B0 was already translated and remains untouched.
+Only the six original text allocations differ from evolution-interface-alpha;
+its ROM/BPS reproduce exactly with current tools and the prior menu catalog.
 
-The previously listed save-screen progress label is actually the saved player
-name **グリアああ**, stored as ten Shift-JIS bytes at EEPROM offset **0x3F**.
-It also appears in the pause-menu player panel. Preserve it with the native save;
-it is not an untranslated interface label. The earlier assumption was incorrect.
+Saved player name グリアああ remains ten Shift-JIS bytes at EEPROM 0x3F. It is
+not a progress heading. Existing bot nicknames are also preserved. No game event,
+branch, item, stat, name-input code or save operation is changed. Other doctor,
+Collector summon/service, committed rename/name entry, long-name cases and
+successful evolution retain their documented runtime limits.
 
-The evolution catalog extends facility-captions-menu.json with twelve original
-NUL-terminated slots at 0x10342C–0x1035C4. Both doctor variants retain their exact
-color-control order. Both confirmation names reserve eleven cells, each on its
-own line; compact `name / to name?` stays within the original two-line layout.
-The target-form name omits Japanese へ to fit its fixed slot. The single-line status pane is limited to ten cells. The %3d Orb counter
-keeps its placeholder and reserves three cells. The ----- placeholder is intact.
-No UI code, game event, condition, branch or stat is modified. Only the twelve
-original text allocations differ from parts-graphics-alpha; its ROM/BPS still
-reproduce exactly with current tools and their original catalog.
+Doctor route: after profile, cancel back to ship and wait for the world screen.
+R navigation always starts at 3F: Down once selects 2F, A opens the list, Down four
+times selects Doctor, A moves the camera, then release R. Face the desk and use
+Z then A as in the observed route. Confirm the actual menu before further input.
+Do not walk toward bed or send unverified Up/A sequences during menu tests.
 
-Use translation/evolution-menu.json and the unchanged translation/parts-graphics.json.
-All four resource programs and owners remain byte-exact:
-- Parts 1459: 21,384 bytes at 0x1B22138 (original status capacity 21,872).
-- File 1461: 19,352 bytes at 0x1B4281C (original Parts capacity 20,412).
-- Status 1450: 24,552 bytes at 0x1B477D8 (original Apps capacity 26,556).
-- Apps 1460: 163,952 bytes at 0x1FD5360, ending at 0x1FFD3D0.
+Use translation/recall-rename-menu.json and unchanged translation/parts-graphics.json.
+Keep all four resource programs and relocated owners, 107 layout guards, all 184
+Book allocations and final 64 FF bytes exact. Native-source slots/donors/grids/
+exclusions, 299 choices, code/checksums and original ROM remain unchanged. There
+is no new ROM-tail space. CRCs remain 603D64ED 4BB35E71. Use exact-ROM profiles
+and separate reference EEPROM copies; never load earlier-ROM states.
 
-Keep all 107 layout guards, 184 Book allocations and final 64 FF bytes intact.
-The immutable original ROM and day-2 reference save stay unchanged. Use exact-ROM
-profiles and isolated native EEPROM copies; never load old states. Confirm each
-screen before input, and do not walk toward bed in menu tests. Other doctor,
-successful evolution, confirmation/chores, other species/branches and hardware
-retain their documented runtime limits. CRCs remain 603D64ED 4BB35E71.
+Workspace retention independently reproduced 39 older generated ROMs from their
+manifest-verified committed BPS files and the immutable original, then removed
+only those exact working copies, freeing 1,308,622,848 bytes. Original, current/
+preceding playable ROMs and unmatched prototypes remain. All shipped patches and
+encrypted history remain in Git/GitHub. To recreate an older build, use Flips:
 
-Current/preceding encrypted working copies and verified restores are retained.
-The older 1,077-file save-file restore was manifest/source/canonical/cipher
-verified, with 38 extras preserved. Remove only its generated tree after the new
-clean restoration passes, retaining the preceding 1,120-file Parts restore.
-Historical ciphertext remains in Git/GitHub. Update sparse patterns before the
-next backup; Git configuration is not archived. See backups/README.md.
+```sh
+local/flips-src/Flips-master/flips --apply releases/OLD-MILESTONE.bps \
+  local/original.z64 local/restored-historical.z64
+```
 
-Recovery requires both ordered ciphertext parts, index and three checksum files.
-Verify, join, decrypt and verify the ZIP, then restore into a new directory.
-The existing passphrase stays outside Git. Validate payload/source hashes,
+Do not assume an old local filename still exists. The recovery archive includes
+the original/current ROMs and cumulative historical patches; it intentionally
+excludes duplicate historical ROM builds. local/recall-rename-evidence contains
+the generated-ROM ledger with every source/target/patch hash and exact rebuild.
+
+Current/preceding encrypted working copies and verified restores remain. The
+older 1,120-file Parts restore was manifest/source/canonical/cipher verified,
+with 38 generated extras preserved. Remove only its generated tree after the new
+clean restore passes, retaining the preceding 1,156-file evolution restore.
+Historical cipher working copies may be sparse-omitted only after Git/remote
+verification. Update patterns before staging a new backup; Git configuration is
+not archived. See backups/README.md.
+
+Recovery needs both ordered ciphertext parts, JSON index and three checksum
+files. Verify, join, decrypt, verify ZIP, then restore into a new directory. The
+existing passphrase stays outside Git. Validate payload/source hashes, executable
 modes, library symlink, native saves/evidence and six exact-ROM profile files.
 
 Update this handoff, `PROJECT_STATE.json` and the recovery archive when the milestone changes. A running cloud process is not a persistent checkpoint.
 
-The durable translation checkpoint is the Git tag `evolution-interface-alpha`. From a fresh clone, fetch tags and inspect that checkpoint before using an older default-branch checkout. Preserve local changes before switching revisions.
+The durable translation checkpoint is the Git tag `recall-rename-alpha`. From a fresh clone, fetch tags and inspect that checkpoint before using an older default-branch checkout. Preserve local changes before switching revisions.
