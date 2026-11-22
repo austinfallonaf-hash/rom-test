@@ -1830,6 +1830,11 @@
       "source": "そうびパーツ / もちものパーツ (Parts bitmap)",
       "english": "Equipped / Spare Parts",
       "note": "Gear screen headings match the Apps equipment interface. Only two caption rectangles change; no equipment operations or statistics are changed."
+    },
+    {
+      "source": "グリアああ (preserved player name)",
+      "english": "saved player name",
+      "note": "Native EEPROM offset 0x3F stores ten Shift-JIS bytes. The Japanese text in file/pause player panels is saved data, not a progress label; preserve it."
     }
   ]
 }

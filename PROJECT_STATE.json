@@ -1,7 +1,7 @@
 {
   "format_version": 1,
   "project": "Robopon 64 English translation",
-  "milestone": "parts-graphics-alpha",
+  "milestone": "evolution-interface-alpha",
   "recovered_on": "2026-11-05",
   "timezone": "America/Los_Angeles",
   "upstream": {
@@ -9,11 +9,11 @@
     "branch": "codex/verified-workspace-recovery",
     "recovered_commit": "b6b220228bdb6074758017c25e83539e12a5ca2d"
   },
-  "release_manifest": "releases/parts-graphics-alpha-manifest.json",
-  "release_patch": "releases/parts-graphics-alpha.bps",
-  "playable_rom": "local/parts-graphics-alpha.z64",
+  "release_manifest": "releases/evolution-interface-alpha-manifest.json",
+  "release_patch": "releases/evolution-interface-alpha.bps",
+  "playable_rom": "local/evolution-interface-alpha.z64",
   "catalogs": {
-    "menu": "translation/facility-captions-menu.json",
+    "menu": "translation/evolution-menu.json",
     "story": "translation/late-dialogue-text.json",
     "choices": "translation/story-choices.json",
     "layout": "translation/interface-layout.json",
@@ -21,7 +21,7 @@
   },
   "coverage": {
     "native_records": 4049,
-    "ui_strings": 873,
+    "ui_strings": 885,
     "native_choice_blocks": 299,
     "graphic_captions": 12
   },
@@ -33,20 +33,22 @@
     "day": 2,
     "gold": 500,
     "party_member": "Merlin",
-    "rom_md5_prefix": "3616DA43",
-    "working_path": "local/native-saves/Robot Ponkottsu 64 - 7tsu no Umi-3616DA43.eep"
+    "rom_md5_prefix": "267BE64B",
+    "working_path": "local/native-saves/Robot Ponkottsu 64 - 7tsu no Umi-267BE64B.eep",
+    "player_name": "グリアああ",
+    "player_name_offset": "0x3F"
   },
-  "latest_encrypted_backup": "backups/robopon64-parts-graphics-alpha-3616DA43.zip.gpg.parts.json",
+  "latest_encrypted_backup": "backups/robopon64-evolution-interface-alpha-267BE64B.zip.gpg.parts.json",
   "automated_tests": 164,
-  "next_task": "Continue evolution frames and the save-screen progress label. Use translation/parts-graphics.json with its unchanged uncached dispatcher. Preserve four resource programs and their included relocated owners: Parts 1459 uses 21384 bytes at 0x1B22138 (capacity 21872); File 1461 uses 19352 at 0x1B4281C (capacity 20412); Status 1450 uses 24552 at 0x1B477D8 (capacity 26556); Apps 1460 uses 163952 at 0x1FD5360, ending exactly at 0x1FFD3D0. Keep full-range source/alias/capacity/overlap guards, all 184 Book allocations, final 64 FF bytes, 107 layout words and prior 4049 native records/873 UI strings/299 choices intact. Palette and plain-run programs need their matching generated streams; legacy RAW2 needs its historical dispatcher. Confirm each screen before dependent input. Cold-boot exact ROMs from isolated reference EEPROMs; no old states or bed saving during menu tests. Keep current/preceding encrypted snapshots and verified restores; verify hashes and preserve extras before generated-copy cleanup. Equipment operations, evolution, other species/branches and hardware remain unverified.",
+  "next_task": "Continue untranslated UI and remaining graphics, including Recall/Rename and unused evolution branches. The supposed save-screen progress label was the saved player name グリアああ, verified as Shift-JIS at EEPROM 0x3F; it is not translation work. Preserve that saved data. Use translation/evolution-menu.json with translation/parts-graphics.json. All four resource programs, ownership chain, 107 layout guards, 184 Book allocations and final 64 FF bytes remain exact. Preserve all 4049 native records, 885 UI strings and 299 choices. Cold-boot exact ROMs from isolated reference EEPROM copies; never load old states or save near bed during menu tests. Check the screen before dependent input. Keep current/preceding encrypted snapshots and verified restores; verify hashes and preserve extras before generated-copy cleanup. Do not claim successful evolution or unplayed doctor/confirmation/chores branches as runtime-tested.",
   "history_recovery": {
     "source": "user-supplied 16-page conversation PDF",
     "historical_gardening_artifact": "unavailable",
     "gardening_status": "reconstructed from the original ROM; wording is not claimed identical to the historical patch"
   },
-  "checkpoint_ref": "refs/tags/parts-graphics-alpha",
+  "checkpoint_ref": "refs/tags/evolution-interface-alpha",
   "runtime_validation": {
-    "rom_md5_prefix": "3616DA43",
+    "rom_md5_prefix": "267BE64B",
     "initial_save": "native day 2",
     "reference_eeprom_unchanged": true,
     "gold": 500,
@@ -55,11 +57,11 @@
     "pause_menu": "native file A day 2, 500G, player name and Merlin observed",
     "historical_opening_state": "local/fire-blue-story-evidence/opening-502.st0 belongs only to MD5 07EC747C; not loaded",
     "historical_exploratory_save": "An exploratory menu return reached bed and changed only an isolated EEPROM. That copy/log are preserved separately. Reference and default were unchanged; final validation restarted from reference. This occurred on status-graphics-alpha, not this milestone.",
-    "new_parts_graphics": "Exact cold boot: file-A day2/500G/player/Merlin, status/Apps intact; Gear shows EQUIPPED/SPARE PARTS and unchanged Charm/ATK7/DEF8/SPD0/RAM10M. Four 163840-byte native caches match builder; Book entry38 data/biography intact. Normal exit; three EEPROMs unchanged; no save/states or confirmed equipment/evolution operations."
+    "new_evolution_interface": "Exact native-A cold boot retains day2/500G/saved player name/Merlin stats/Charm/Fire v1. Doctor Evolve shows polite selection and insufficient-Orb pane (Need Orbs, Evolve: No, Evolve, Orbs: 200) fitting original windows/colors. Ineligible A is blocked; B cancels. Normal exit; three EEPROMs unchanged, no save/states or evolution confirmation. Other doctor, ready/target/confirmation/chores/success branches remain build-validated only."
   },
   "update_checksum": true,
   "validate_move_names": true,
-  "backup_payload_files_verified": 1120,
+  "backup_payload_files_verified": 1156,
   "backup_format": "gpg-aes256-split",
   "native_coverage_audit": "translation/native-coverage.json",
   "workspace_backup_checkout": {
@@ -68,8 +70,8 @@
       "/*",
       "!/backups/*",
       "/backups/README.md",
-      "/backups/robopon64-save-file-graphics-alpha-*",
-      "/backups/robopon64-parts-graphics-alpha-*"
+      "/backups/robopon64-parts-graphics-alpha-*",
+      "/backups/robopon64-evolution-interface-alpha-*"
     ],
     "older_backups": "Omitted working copies remain in local Git and on the canonical GitHub branch; update patterns for the next milestone before staging new parts."
   }
