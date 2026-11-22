@@ -40,13 +40,28 @@ class GraphicsTests(unittest.TestCase):
         image=bytes(64*32*2)
         row={'rect':[2,2,62,13],'sample_x':1,'translation':'APPS'}
         for change in [{'translation':'APPS!'}, {'translation':'A'*11},
-                       {'rect':[0,0,65,10]}, {'sample_x':3}, {'ink_hex':'00'}, {'shadow_hex':'bad'}]:
+                       {'rect':[0,0,65,10]}, {'sample_x':3}, {'ink_hex':'00'}, {'shadow_hex':'bad'},
+                       {'scale':0}, {'scale':3}, {'scale':True}, {'scale':1.5}, {'scale':2}]:
             with self.subTest(change=change), self.assertRaises(ValueError):
                 caption_image(image,64,32,[dict(row,**change)])
         with self.assertRaisesRegex(ValueError,'Overlapping'):
             caption_image(image,64,32,[row,row])
         with self.assertRaisesRegex(ValueError,'size'):
             caption_image(b'',64,32,[row])
+
+    def test_double_size_caption_is_exact_nearest_neighbor_with_its_shadow(self):
+        source=bytes.fromhex('1085')*(64*32)
+        row={'rect':[2,2,39,12],'sample_x':1,'translation':'FILE A',
+             'ink_hex':'0001','shadow_hex':'fffe'}
+        small=caption_image(source,64,32,[row])
+        def double(data):
+            output=bytearray()
+            for y in range(32):
+                line=b''.join(data[2*(y*64+x):2*(y*64+x)+2]*2 for x in range(64))
+                output+=line*2
+            return bytes(output)
+        large=dict(row,rect=[4,4,78,24],sample_x=2,scale=2)
+        self.assertEqual(caption_image(double(source),128,64,[large]),double(small))
 
     def test_resource_relocation_preserves_metadata_and_uses_raw_length(self):
         original,entry,image=self.fixture()

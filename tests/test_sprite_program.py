@@ -85,7 +85,7 @@ class SpriteProgramTests(unittest.TestCase):
                 if not(2<=x<62 and 2<=y<13):self.assertEqual(expected[2*(y*64+x):2*(y*64+x)+2],source[2*(y*64+x):2*(y*64+x)+2])
 
     def test_native_patch_program_handles_multiple_aligned_rectangles_and_colors(self):
-        rows=self.rows()+[{'rect':[4,16,58,30],'sample_x':1,'translation':'STRESS','ink_hex':'0031','shadow_hex':'fffe'}]
+        rows=self.rows()+[{'rect':[4,16,58,32],'sample_x':1,'translation':'HI','ink_hex':'0031','shadow_hex':'fffe','scale':2}]
         source=self.image();expected=caption_image(source,64,32,rows);self.execute(payload(self.header(),expected,64,32,rows),source,expected)
 
     def test_copy_program_runs_uncached_and_preserves_equipment_pixels(self):
@@ -134,6 +134,31 @@ class SpriteProgramTests(unittest.TestCase):
             original[0x400]^=1
             struct.pack_into('>II',original,0x100,3,32);struct.pack_into('>II',original,0x118,0x200,4096)
             with self.assertRaisesRegex(ValueError,'alias'):replacement(original,entry,self.image(),[entry,owner])
+
+    def test_reclaimed_hvq_owner_chain_and_alias_in_unused_suffix(self):
+        original,entry,owner=self.fixture()
+        third_blob=self.header()+b'\0'*(8192-100)
+        struct.pack_into('>II',original,0x100,3,32)
+        struct.pack_into('>II',original,0x118,0x2000-0x120,8192)
+        original[0x2000:0x4000]=third_blob
+        middle=dict(owner,program='hvq_patch',reclaim_resource_id=0x3f2,destination='0x2000')
+        third=dict(owner,resource_id=0x3f2,source_blob_sha256=hashlib.sha256(third_blob).hexdigest())
+        entries=[entry,middle,third]
+        with patch('tools.graphics.TABLE',0x100):
+            edits=[replacement(original,e,self.image(),entries) for e in entries]
+            self.assertEqual([x[1][0] for x in edits],[0x320,0x2000,0x110000])
+            spans=sorted((x[1][0],x[1][0]+len(x[1][1])) for x in edits)
+            self.assertTrue(all(a[1]<=b[0] for a,b in zip(spans,spans[1:])))
+            with self.assertRaisesRegex(ValueError,'owner'):
+                replacement(original,entry,self.image(),[entry,dict(middle,program='RAW2'),third])
+            # This alias falls after the short payload, but still owns reclaimed bytes.
+            self.assertLess(edits[0][1][0]+len(edits[0][1][1]),0x1200)
+            original[0x180:0x1e4]=self.header()
+            struct.pack_into('>I',original,0x108,0x60)
+            struct.pack_into('>II',original,0x100,4,32)
+            struct.pack_into('>II',original,0x120,0x1200-0x120,16)
+            with self.assertRaisesRegex(ValueError,'alias'):
+                replacement(original,entry,self.image(),entries)
 
     def test_shipped_dispatcher_and_program_loader_guard(self):
         root=Path(__file__).resolve().parents[1];rows=json.loads((root/'translation/interface-layout.json').read_text())['entries'];code=b''.join(bytes.fromhex(e['target_hex']) for e in rows if 0x103c<=int(e['offset'],0)<0x1060);self.assertEqual(code,EXEC_DISPATCHER)

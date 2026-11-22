@@ -39,10 +39,12 @@ def caption_image(source, width, height, captions):
         x0,y0,x1,y1 = row['rect']
         sample = row['sample_x']
         text = row['translation']
-        if (not text or any(c not in FONT for c in text) or
+        scale = row.get('scale', 1)
+        if (type(scale) is not int or scale not in (1, 2) or
+                not text or any(c not in FONT for c in text) or
                 not 0 <= x0 < x1 <= width or not 0 <= y0 < y1 <= height or
                 not 0 <= sample < width or x0 <= sample < x1 or
-                len(text)*6 > x1-x0 or y1-y0 < 8):
+                len(text)*6*scale > x1-x0 or y1-y0 < 8*scale):
             raise ValueError('Invalid or oversized bitmap caption')
         if any(x0 < b and a < x1 and y0 < d and c < y1 for a,c,b,d in occupied):
             raise ValueError('Overlapping caption rectangles')
@@ -50,8 +52,8 @@ def caption_image(source, width, height, captions):
         for y in range(y0,y1):
             pixel = source[(y*width+sample)*2:(y*width+sample)*2+2]
             output[(y*width+x0)*2:(y*width+x1)*2] = pixel*(x1-x0)
-        x = x0+(x1-x0-(len(text)*6-1))//2
-        y = y0+(y1-y0-8)//2
+        x = x0+(x1-x0-(len(text)*6-1)*scale)//2
+        y = y0+(y1-y0-8*scale)//2
         ink=bytes.fromhex(row.get('ink_hex','fffe'));shadow=bytes.fromhex(row.get('shadow_hex','0000'))
         if len(ink)!=2 or len(shadow)!=2:raise ValueError('Caption colors require RGBA16 words')
         for dy,dx,color in [(1,1,shadow),(0,0,ink)]:
@@ -59,8 +61,10 @@ def caption_image(source, width, height, captions):
                 for gy,bits in enumerate(FONT[char]):
                     for gx in range(5):
                         if bits & (16>>gx):
-                            position=((y+gy+dy)*width+x+index*6+gx+dx)*2
-                            output[position:position+2] = color
+                            for sy in range(scale):
+                                for sx in range(scale):
+                                    position=((y+(gy+dy)*scale+sy)*width+x+(index*6+gx+dx)*scale+sx)*2
+                                    output[position:position+2] = color
     return bytes(output)
 
 
@@ -105,8 +109,10 @@ def replacement(original, entry, image, entries=()):
         destination=int(entry['destination'],0)
         if entry['program']=='hvq_patch':
             owner_id=entry.get('reclaim_resource_id');owners=[e for e in entries if e.get('resource_id')==owner_id]
-            if len(owners)!=1 or owners[0].get('program')!='copy' or owner_id==resource:
-                raise ValueError('Reclaimed sprite requires its relocated copy owner')
+            # Either program format makes the owner independent of its old blob.
+            # The builder validates that owner's replacement and all final overlaps.
+            if len(owners)!=1 or owners[0].get('program') not in ('copy','hvq_patch') or owner_id==resource:
+                raise ValueError('Reclaimed sprite requires its relocated program owner')
             oi=owner_id-FIRST_ID
             if not 0<=oi<count:raise ValueError('Invalid reclaimed sprite owner')
             oo,osize=struct.unpack_from('>II',original,TABLE+8+8*oi);start=TABLE+relative+oo
@@ -118,7 +124,7 @@ def replacement(original, entry, image, entries=()):
             if start<=od<start+osize:raise ValueError('Reclaimed owner was not relocated')
             for ri in range(count):
                 ro,rs=struct.unpack_from('>II',original,TABLE+8+8*ri);a=TABLE+relative+ro
-                if ri!=oi and destination<a+rs and a<destination+len(payload):
+                if ri!=oi and start<a+rs and a<start+osize:
                     raise ValueError('Reclaimed sprite source has an alias or overlap')
         elif (destination%16 or destination<0x101000 or destination+len(payload)>len(original) or original[destination:destination+len(payload)]!=b'\xff'*len(payload)):
             raise ValueError('Sprite program copy destination is not unused ROM tail')

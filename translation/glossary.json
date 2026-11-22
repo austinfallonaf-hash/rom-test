@@ -1820,6 +1820,11 @@
       "source": "そうごうせいかく (profile bitmap)",
       "english": "Traits",
       "note": "Compact heading for the overall personality panel; only caption pixels change. Hunger/Stress retain their green/blue distinction; Parts/Apps follow existing interface terminology."
+    },
+    {
+      "source": "セーブデータ A / B (save selection bitmap)",
+      "english": "File A / File B",
+      "note": "Save-slot plates use FILE A/FILE B at twice the small bitmap font size, matching the existing Select a save file prompt. Does not alter file operations or saved names."
     }
   ]
 }

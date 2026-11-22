@@ -1,7 +1,7 @@
 {
   "format_version": 1,
   "project": "Robopon 64 English translation",
-  "milestone": "status-graphics-alpha",
+  "milestone": "save-file-graphics-alpha",
   "recovered_on": "2026-11-05",
   "timezone": "America/Los_Angeles",
   "upstream": {
@@ -9,21 +9,21 @@
     "branch": "codex/verified-workspace-recovery",
     "recovered_commit": "b6b220228bdb6074758017c25e83539e12a5ca2d"
   },
-  "release_manifest": "releases/status-graphics-alpha-manifest.json",
-  "release_patch": "releases/status-graphics-alpha.bps",
-  "playable_rom": "local/status-graphics-alpha.z64",
+  "release_manifest": "releases/save-file-graphics-alpha-manifest.json",
+  "release_patch": "releases/save-file-graphics-alpha.bps",
+  "playable_rom": "local/save-file-graphics-alpha.z64",
   "catalogs": {
     "menu": "translation/facility-captions-menu.json",
     "story": "translation/late-dialogue-text.json",
     "choices": "translation/story-choices.json",
     "layout": "translation/interface-layout.json",
-    "graphics": "translation/status-graphics.json"
+    "graphics": "translation/save-file-graphics.json"
   },
   "coverage": {
     "native_records": 4049,
     "ui_strings": 873,
     "native_choice_blocks": 299,
-    "graphic_captions": 8
+    "graphic_captions": 10
   },
   "native_save": {
     "path": "local/bed-save-final-saved.eep",
@@ -33,20 +33,20 @@
     "day": 2,
     "gold": 500,
     "party_member": "Merlin",
-    "rom_md5_prefix": "5DF41F0A",
-    "working_path": "local/native-saves/Robot Ponkottsu 64 - 7tsu no Umi-5DF41F0A.eep"
+    "rom_md5_prefix": "F2D9DED6",
+    "working_path": "local/native-saves/Robot Ponkottsu 64 - 7tsu no Umi-F2D9DED6.eep"
   },
-  "latest_encrypted_backup": "backups/robopon64-status-graphics-alpha-5DF41F0A.zip.gpg.parts.json",
-  "automated_tests": 158,
-  "next_task": "Continue remaining bitmap headings, starting with save-file A/B plates and Parts/evolution frames. Preserve program-backed resources 1450/1460, the reclaimed 26556-byte former 1460 source at 0x1B477D8, its 24552-byte status payload, and the equipment copy ending exactly at 0x1FFD3D0. The former 12-byte gap is now used. All 184 book allocations from that address and final 64 FF bytes remain intact. Use the new program dispatcher with translation/status-graphics.json; legacy RAW2 needs its historical dispatcher. Do not mix protocols. Preserve all 4049 native records, 873 UI strings, 256 donor labels/162 donors, 15 grids, 66 exclusions and 107 layout guards. Cold-boot exact new ROMs from isolated reference EEPROM copies; verify current screen before returning through menus, never walk toward bed during a menu test. Earlier branches/hardware behavior remain unverified. Keep current/preceding encrypted working copies and verified restores; update non-cone sparse patterns before staging a new backup slug and verify generated copies/source/assets/archive hashes and preserve extras before cleanup.",
+  "latest_encrypted_backup": "backups/robopon64-save-file-graphics-alpha-F2D9DED6.zip.gpg.parts.json",
+  "automated_tests": 160,
+  "next_task": "Continue remaining bitmap/UI headings, starting with Parts/evolution frames. Preserve all three program-backed resources 1450/1460/1461: the file payload uses 19352 bytes at 0x1B22138 in the reclaimed 21872-byte original status source; the status payload uses 24552 bytes at 0x1B477D8 in the reclaimed 26556-byte original equipment source; equipment ends exactly at 0x1FFD3D0. Both owners must remain included and relocated. All 184 book allocations and final 64 FF bytes remain intact. Use translation/save-file-graphics.json and its program dispatcher, never a mixed legacy protocol. Preserve all 4049 native records, 873 UI strings, 299 choices, 256 donor labels/162 donors, 15 grids, 66 exclusions and 107 layout guards. Cold-boot exact new ROMs from isolated reference EEPROM copies. Confirm screen before each menu transition; do not send Up/A near bed during menu tests. Save operations, other native/UI branches and hardware retain prior limits. Keep current/preceding encrypted copies and verified restores; verify source/assets/archive hashes and preserve extras before generated-copy cleanup.",
   "history_recovery": {
     "source": "user-supplied 16-page conversation PDF",
     "historical_gardening_artifact": "unavailable",
     "gardening_status": "reconstructed from the original ROM; wording is not claimed identical to the historical patch"
   },
-  "checkpoint_ref": "refs/tags/status-graphics-alpha",
+  "checkpoint_ref": "refs/tags/save-file-graphics-alpha",
   "runtime_validation": {
-    "rom_md5_prefix": "5DF41F0A",
+    "rom_md5_prefix": "F2D9DED6",
     "initial_save": "native day 2",
     "reference_eeprom_unchanged": true,
     "gold": 500,
@@ -54,12 +54,12 @@
     "older_build_state_loaded": false,
     "pause_menu": "native file A day 2, 500G, player name and Merlin observed",
     "historical_opening_state": "local/fire-blue-story-evidence/opening-502.st0 belongs only to MD5 07EC747C; not loaded",
-    "new_status_graphics": "Native-A fresh cold boot: all five new status headings and three equipment captions; both 163840-byte cache outputs match generated pixels exactly. Merlin stats/Charm/Fire v1, Book entry 38 numeric data and four biography lines observed. Normal exit, no states or final save; reference/default/final runtime EEPROM hashes unchanged.",
-    "exploratory_save": "An exploratory menu return reached bed and changed only an isolated EEPROM. That copy/log are preserved separately. Reference and default were unchanged; final validation restarted from reference."
+    "new_save_file_graphics": "Exact native cold boot: both selected/unselected FILE A/FILE B plates observed; B never activated. A loads day 2/500G/player/Merlin. All three 163840-byte cache outputs match builder; profile/equipment captions, stats/Charm/Fire v1 and Book entry 38 data/biography preserved. Normal exit, three EEPROM hashes unchanged, no save/states.",
+    "historical_exploratory_save": "An exploratory menu return reached bed and changed only an isolated EEPROM. That copy/log are preserved separately. Reference and default were unchanged; final validation restarted from reference. This occurred on status-graphics-alpha, not this milestone."
   },
   "update_checksum": true,
   "validate_move_names": true,
-  "backup_payload_files_verified": 1036,
+  "backup_payload_files_verified": 1077,
   "backup_format": "gpg-aes256-split",
   "native_coverage_audit": "translation/native-coverage.json",
   "workspace_backup_checkout": {
@@ -68,8 +68,8 @@
       "/*",
       "!/backups/*",
       "/backups/README.md",
-      "/backups/robopon64-facility-captions-alpha-*",
-      "/backups/robopon64-status-graphics-alpha-*"
+      "/backups/robopon64-status-graphics-alpha-*",
+      "/backups/robopon64-save-file-graphics-alpha-*"
     ],
     "older_backups": "Omitted working copies remain in local Git and on the canonical GitHub branch; update patterns for the next milestone before staging new parts."
   }
