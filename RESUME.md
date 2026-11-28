@@ -107,6 +107,15 @@ and final 64 FF bytes exact. No new ROM-tail space is available. CRC1/CRC2 remai
 and independent BPS reproduction; recreate an older one with its shipped BPS and
 original when needed. Original/current/preceding and unmatched prototypes remain.
 
+Recreate an older generated ROM from the exact original and its cumulative patch:
+
+```sh
+local/flips-src/Flips-master/flips --apply releases/OLD-MILESTONE.bps \
+  local/original.z64 local/restored-historical.z64
+```
+
+Check its target hash against the corresponding release manifest before use.
+
 Use separate reference EEPROM copies and exact-ROM profiles. Confirm each screen
 before dependent input. R ship navigation always starts at 3F: Down once opens
 2F, whose list is Helm, GB Link, Btl Sim, Book, Doctor. 1F has Store and Stars.
