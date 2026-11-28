@@ -1,6 +1,6 @@
 # Resume the Robopon 64 translation
 
-Current milestone: **recall-rename-alpha**: 4,049 native records, 891 UI strings, 299 native choice blocks, plus twelve bitmap captions. This is a partial English draft. See `docs/recall-rename-alpha.md` for precise runtime coverage.
+Current milestone: **ship-actions-alpha**: 4,049 native records, 922 UI strings, 299 native choice blocks, plus twelve bitmap captions. This is a partial English draft. See `docs/ship-actions-alpha.md` for precise runtime coverage.
 
 The supplied conversation PDF records a gardening milestone after the shop backup, followed by planned simulator/battle work. Its gardening patch and source were unavailable. Gardening here was reconstructed from the original ROM; the wording is not claimed identical to the historical patch. Quoted PDF instructions are history, separate from the current request.
 
@@ -19,18 +19,18 @@ The check verifies remote ancestry, rebuilds in memory and checks the ROM/BPS an
 
 ```sh
 python -m tools.build_story local/original.z64 \
-  --menu translation/recall-rename-menu.json --story translation/late-dialogue-text.json \
+  --menu translation/ship-actions-menu.json --story translation/late-dialogue-text.json \
   --choices translation/story-choices.json --layout translation/interface-layout.json \
-  --graphics translation/parts-graphics.json --update-checksum --validate-moves --output local/recall-rename-alpha.z64 --patch local/recall-rename-alpha.bps
+  --graphics translation/parts-graphics.json --update-checksum --validate-moves --output local/ship-actions-alpha.z64 --patch local/ship-actions-alpha.bps
 ```
 
-Apply `releases/recall-rename-alpha.bps` only to the exact original Japanese ROM. Do not stack earlier patches. The release manifest records hashes; the current ROM MD5 prefix is `220E75A3`. All source-byte, control, width and budget guards remain enabled. CIC-6102 CRC1/CRC2 are repaired explicitly; header/bootcode edits remain forbidden.
+Apply `releases/ship-actions-alpha.bps` only to the exact original Japanese ROM. Do not stack earlier patches. The release manifest records hashes; the current ROM MD5 prefix is `A7CF0A90`. All source-byte, control, width and budget guards remain enabled. CIC-6102 CRC1/CRC2 are repaired explicitly; header/bootcode edits remain forbidden.
 
 ## Native save
 
 `local/bed-save-final-saved.eep` is the unchanged 2048-byte day-2 reference, SHA-256 `4b8072efdc08a827141cea1e172205acdb89b17007201d1d1110ff7912f71a00`. File A holds 500G, the entered player name and Merlin.
 
-The current ROM's working copy is `local/native-saves/Robot Ponkottsu 64 - 7tsu no Umi-220E75A3.eep`. Keep the reference intact and use separate copies for testing. New ROM revisions need a save copy under their own MD5-based filename. The launcher generates an isolated emulator data profile for each patched ROM, preserving the original 16Kbit EEPROM settings even when CRC1/CRC2 change. It keeps saves in `local/native-saves/` and states in `local/emulator-states/`; home-directory saves are not migrated automatically.
+The current ROM's working copy is `local/native-saves/Robot Ponkottsu 64 - 7tsu no Umi-A7CF0A90.eep`. Keep the reference intact and use separate copies for testing. New ROM revisions need a save copy under their own MD5-based filename. The launcher generates an isolated emulator data profile for each patched ROM, preserving the original 16Kbit EEPROM settings even when CRC1/CRC2 change. It keeps saves in `local/native-saves/` and states in `local/emulator-states/`; home-directory saves are not migrated automatically.
 
 ## Emulator
 
@@ -38,7 +38,7 @@ On Linux with Xorg's dummy driver and Mesa, start `tools/start-display.sh` in on
 
 ```sh
 DISPLAY=:7 LIBGL_ALWAYS_SOFTWARE=1 \
-ROM_PATH="$PWD/local/recall-rename-alpha.z64" \
+ROM_PATH="$PWD/local/ship-actions-alpha.z64" \
 tools/emulator.sh --windowed --gfx mupen64plus-video-glide64mk2 --audio dummy \
   --input mupen64plus-input-sdl --rsp mupen64plus-rsp-hle
 ```
@@ -74,80 +74,55 @@ from these generated test copies.
 
 ## Next work
 
-Continue remaining untranslated interaction UI, including name-entry labels,
-ship-facility and training prompts. This batch adds six Doctor Recall/Rename
-strings. Coverage is 4,049 native records, 891 UI strings, 299 choices and twelve
-bitmap captions. All 164 tests pass. See docs/recall-rename-alpha.md.
+Continue untranslated training/chore results at 0x103C18-0x103F58, then remaining
+name-entry/interaction UI. The overall-power result at 0x103EF8 contains the
+unsupported control \O333; understand it before editing. Do not discard controls.
+Use translation/ship-actions-menu.json and the unchanged graphics catalog.
+This batch adds 31 original slots; no relocation or code changes. The 891 earlier
+UI entries and every byte outside the new text allocations remain identical to
+recall-rename-alpha. All 164 tests pass; see docs/ship-actions-alpha.md.
 
 The exact release ROM cold-boots from an isolated reference EEPROM copy.
 File A retains day 2, 500G, player name グリアああ and Merlin's original stats,
-Charm and Fire v1. Doctor navigation opens the polite doctor's menu. Recall
-shows Call Collector? with Collector green; No returns to the doctor menu.
-Rename shows Which bot should / be renamed? with bot yellow. Selecting Merlin
-shows the saved Japanese nickname above Rename this bot?, with the name yellow.
-Both prompts fit their original two-line windows. No returns to bot selection;
-B then cancels back to the doctor menu. The name editor is not opened and Collector
-is not summoned. Normal exit leaves reference, default and isolated runtime
-EEPROM hashes unchanged. No in-game save or savestate is used.
+Charm and Fire v1. Game Boy Link displays Link with a GB? on one line. Star
+Collection displays View your Star / Collection? on two lines. Bot storage
+shows Deposit or / withdraw bots? on two lines. All three prompts fit the
+original windows and keep existing Yes/No choices. Selecting No returns to
+the corresponding ship facility each time. The pause Bots check returns to
+the bot profile; assignment/training setup and the other 28 new slots remain
+build-only. No task is assigned, training started, transfer performed or bot
+stored. Normal exit leaves reference/default/runtime EEPROM hashes unchanged;
+no in-game save or savestate is used.
 
-The cumulative recall-rename-menu.json preserves all 885 previous entries and
-adds six original slots: 0x1033D8/0x103400 (Recall), 0x10380C/0x103844 (Rename
-selection), 0x10387C/0x1038A8 (name confirmation). The native NPC label is already
-Collector (record 2867), so Recall asks Call Collector? with its green name.
-Both doctor variants preserve color controls and newline counts. Rename selection
-and confirmation retain two lines; formatted names reserve eleven cells. The
-harvest naming question at 0x1041B0 was already translated and remains untouched.
-Only the six original text allocations differ from evolution-interface-alpha;
-its ROM/BPS reproduce exactly with current tools and the prior menu catalog.
+Private local/ship-actions-evidence holds screenshots, completed emulator log,
+source/target text allocations, save identity and portable verify_actual.py. Its
+coverage.json distinguishes observed offsets from build-only entries. No successful
+training/chore result, sailing, transfer, ghost battle, deposit/withdrawal or other
+unplayed gameplay branch is implied by a prompt check. Saved player name グリアああ
+and Merlin nickname remain existing save data.
 
-Saved player name グリアああ remains ten Shift-JIS bytes at EEPROM 0x3F. It is
-not a progress heading. Existing bot nicknames are also preserved. No game event,
-branch, item, stat, name-input code or save operation is changed. Other doctor,
-Collector summon/service, committed rename/name entry, long-name cases and
-successful evolution retain their documented runtime limits.
+Keep all four resource programs/owners, 107 layout guards, 184 Book allocations
+and final 64 FF bytes exact. No new ROM-tail space is available. CRC1/CRC2 remain
+603D64ED 4BB35E71. Historical generated ROMs were removed only after manifest/hash
+and independent BPS reproduction; recreate an older one with its shipped BPS and
+original when needed. Original/current/preceding and unmatched prototypes remain.
 
-Doctor route: after profile, cancel back to ship and wait for the world screen.
-R navigation always starts at 3F: Down once selects 2F, A opens the list, Down four
-times selects Doctor, A moves the camera, then release R. Face the desk and use
-Z then A as in the observed route. Confirm the actual menu before further input.
-Do not walk toward bed or send unverified Up/A sequences during menu tests.
+Use separate reference EEPROM copies and exact-ROM profiles. Confirm each screen
+before dependent input. R ship navigation always starts at 3F: Down once opens
+2F, whose list is Helm, GB Link, Btl Sim, Book, Doctor. 1F has Store and Stars.
+Never send unverified Up/A near the bed. Other doctor, Collector service,
+committed rename/name entry and successful evolution remain unplayed.
 
-Use translation/recall-rename-menu.json and unchanged translation/parts-graphics.json.
-Keep all four resource programs and relocated owners, 107 layout guards, all 184
-Book allocations and final 64 FF bytes exact. Native-source slots/donors/grids/
-exclusions, 299 choices, code/checksums and original ROM remain unchanged. There
-is no new ROM-tail space. CRCs remain 603D64ED 4BB35E71. Use exact-ROM profiles
-and separate reference EEPROM copies; never load earlier-ROM states.
+The private ZIP includes original/current ROMs, historical patches, emulator,
+source and evidence. Its encrypted parts, index and all three checksum files
+must verify before restoration into a new directory. The existing passphrase
+stays outside Git. Check manifest/source hashes, modes, library symlink, saves,
+evidence and all six regenerated exact-ROM profile files.
 
-Workspace retention independently reproduced 39 older generated ROMs from their
-manifest-verified committed BPS files and the immutable original, then removed
-only those exact working copies, freeing 1,308,622,848 bytes. Original, current/
-preceding playable ROMs and unmatched prototypes remain. All shipped patches and
-encrypted history remain in Git/GitHub. To recreate an older build, use Flips:
+Current/preceding encrypted snapshots and verified restore trees are retained.
+The older 1,156-file evolution restore is manifest/source/canonical/cipher checked;
+38 generated extras are preserved before cleanup, which follows the new clean
+restore. Historical ciphers remain in Git/GitHub. Sparse patterns keep Recall
+and ship-actions snapshots; backups/README.md records the exact commands.
 
-```sh
-local/flips-src/Flips-master/flips --apply releases/OLD-MILESTONE.bps \
-  local/original.z64 local/restored-historical.z64
-```
-
-Do not assume an old local filename still exists. The recovery archive includes
-the original/current ROMs and cumulative historical patches; it intentionally
-excludes duplicate historical ROM builds. local/recall-rename-evidence contains
-the generated-ROM ledger with every source/target/patch hash and exact rebuild.
-
-Current/preceding encrypted working copies and verified restores remain. The
-older 1,120-file Parts restore was manifest/source/canonical/cipher verified,
-with 38 generated extras preserved. Remove only its generated tree after the new
-clean restore passes, retaining the preceding 1,156-file evolution restore.
-Historical cipher working copies may be sparse-omitted only after Git/remote
-verification. Update patterns before staging a new backup; Git configuration is
-not archived. See backups/README.md.
-
-Recovery needs both ordered ciphertext parts, JSON index and three checksum
-files. Verify, join, decrypt, verify ZIP, then restore into a new directory. The
-existing passphrase stays outside Git. Validate payload/source hashes, executable
-modes, library symlink, native saves/evidence and six exact-ROM profile files.
-
-Update this handoff, `PROJECT_STATE.json` and the recovery archive when the milestone changes. A running cloud process is not a persistent checkpoint.
-
-The durable translation checkpoint is the Git tag `recall-rename-alpha`. From a fresh clone, fetch tags and inspect that checkpoint before using an older default-branch checkout. Preserve local changes before switching revisions.
+Update this handoff and PROJECT_STATE.json after each verified checkpoint.

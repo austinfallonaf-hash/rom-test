@@ -4,7 +4,12 @@ Apply one patch to the original big-endian Japanese ROM with SHA-256
 `02cda6221c10cba0705f351227e2d6c77e071bdb4f7aa8b5cd3c7c047a2b1881`.
 Do not stack patches. Keep a backup of your ROM and saves.
 
-- `recall-rename-alpha.bps`: current cumulative partial draft with 4,049 native
+- `ship-actions-alpha.bps`: current cumulative partial draft with 4,049 native
+  records, 922 UI strings, 299 choices and twelve bitmap captions. Adds 31 ship
+  activity/task/training setup and facility strings. See docs/ship-actions-alpha.md
+  and its manifest. Apply directly to the exact original.
+
+- `recall-rename-alpha.bps`: earlier cumulative partial draft with 4,049 native
   records, 891 UI strings, 299 choices and twelve bitmap captions. Adds six Doctor
   Recall/Rename prompts, preserving earlier text, graphics, code and saved names.
   See `docs/recall-rename-alpha.md` and its manifest. Apply to the exact original.
