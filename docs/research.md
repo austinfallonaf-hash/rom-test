@@ -1,6 +1,6 @@
 # Translation research
 
-Latest iteration: [shop alpha](shop-alpha.md).
+Latest iteration: [simulator and reconstructed gardening alpha](simulator-alpha.md).
 The first-proof evidence below is retained as the initial baseline.
 
 ## Verified input

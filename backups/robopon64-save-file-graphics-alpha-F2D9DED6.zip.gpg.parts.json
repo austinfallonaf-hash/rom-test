@@ -1,0 +1,29 @@
+{
+  "format_version": 1,
+  "format": "gpg-aes256-split",
+  "source_revision": "774159858a675fc6ebbbbad1396e856ddb53b4c4",
+  "cipher": "AES256",
+  "chunk_bytes": 75497472,
+  "ciphertext": {
+    "filename": "robopon64-save-file-graphics-alpha-F2D9DED6.zip.gpg",
+    "bytes": 136277474,
+    "sha256": "8d41c53b28016e8d2017ca8d1df3f43755f8a1f85191a308125611166af1b5a1"
+  },
+  "plaintext": {
+    "filename": "robopon64-save-file-graphics-alpha-F2D9DED6.zip",
+    "bytes": 136277354,
+    "sha256": "b1e6622edd0ca00ae57570ec1d2266d31f5effe84c57e2f58c8106f7c569598b"
+  },
+  "parts": [
+    {
+      "filename": "robopon64-save-file-graphics-alpha-F2D9DED6.zip.gpg.part001",
+      "bytes": 75497472,
+      "sha256": "62420f259890dfd608834c62145153d34b1626e5d29b88bafcabfc779fed70b0"
+    },
+    {
+      "filename": "robopon64-save-file-graphics-alpha-F2D9DED6.zip.gpg.part002",
+      "bytes": 60780002,
+      "sha256": "4adf63f4f52fa7091ebdd6356cc9a783deb78a37fb2e7d0b201881c9b416effb"
+    }
+  ]
+}

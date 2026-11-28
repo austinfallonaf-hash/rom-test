@@ -1,0 +1,84 @@
+{
+  "format_version": 1,
+  "project": "Robopon 64 English translation",
+  "milestone": "ship-actions-alpha",
+  "recovered_on": "2026-11-05",
+  "timezone": "America/Los_Angeles",
+  "upstream": {
+    "remote": "origin",
+    "branch": "codex/verified-workspace-recovery",
+    "recovered_commit": "b6b220228bdb6074758017c25e83539e12a5ca2d"
+  },
+  "release_manifest": "releases/ship-actions-alpha-manifest.json",
+  "release_patch": "releases/ship-actions-alpha.bps",
+  "playable_rom": "local/ship-actions-alpha.z64",
+  "catalogs": {
+    "menu": "translation/ship-actions-menu.json",
+    "story": "translation/late-dialogue-text.json",
+    "choices": "translation/story-choices.json",
+    "layout": "translation/interface-layout.json",
+    "graphics": "translation/parts-graphics.json"
+  },
+  "coverage": {
+    "native_records": 4049,
+    "ui_strings": 922,
+    "native_choice_blocks": 299,
+    "graphic_captions": 12
+  },
+  "native_save": {
+    "path": "local/bed-save-final-saved.eep",
+    "bytes": 2048,
+    "sha256": "4b8072efdc08a827141cea1e172205acdb89b17007201d1d1110ff7912f71a00",
+    "slot": "A",
+    "day": 2,
+    "gold": 500,
+    "party_member": "Merlin",
+    "rom_md5_prefix": "A7CF0A90",
+    "working_path": "local/native-saves/Robot Ponkottsu 64 - 7tsu no Umi-A7CF0A90.eep",
+    "player_name": "グリアああ",
+    "player_name_offset": "0x3F"
+  },
+  "latest_encrypted_backup": "backups/robopon64-ship-actions-alpha-A7CF0A90.zip.gpg.parts.json",
+  "automated_tests": 164,
+  "next_task": "Continue remaining untranslated training/chore result UI at 0x103C18-0x103F58 and name-entry/other interaction text. Use translation/ship-actions-menu.json with unchanged graphics. Preserve 4049 native records, 922 UI strings, 299 choices, four graphics programs, 107 layout guards, 184 Book allocations and final 64 FF bytes. The overall-power result at 0x103EF8 contains unsupported control \\O333: inspect/reverse-engineer before editing, do not strip it. Keep dynamic name/item/number bounds conservative. Saved player/bot names remain data. Cold boot exact ROMs from isolated reference EEPROMs, no older states or bed saving. Native coverage is detailed in docs/ship-actions-alpha.md. Other doctor/Collector/committed rename/successful evolution remain unplayed. Keep current/preceding snapshots and verified restores; preserve hashes and extras before generated-copy cleanup. Historical generated ROMs may need independent reproduction from their shipped BPS.",
+  "history_recovery": {
+    "source": "user-supplied 16-page conversation PDF",
+    "historical_gardening_artifact": "unavailable",
+    "gardening_status": "reconstructed from the original ROM; wording is not claimed identical to the historical patch"
+  },
+  "checkpoint_ref": "refs/tags/ship-actions-alpha",
+  "runtime_validation": {
+    "rom_md5_prefix": "A7CF0A90",
+    "initial_save": "native day 2",
+    "reference_eeprom_unchanged": true,
+    "gold": 500,
+    "party_member": "Merlin",
+    "older_build_state_loaded": false,
+    "pause_menu": "native file A day 2, 500G, player name and Merlin observed",
+    "historical_opening_state": "local/fire-blue-story-evidence/opening-502.st0 belongs only to MD5 07EC747C; not loaded",
+    "historical_exploratory_save": "An exploratory menu return reached bed and changed only an isolated EEPROM. That copy/log are preserved separately. Reference and default were unchanged; final validation restarted from reference. This occurred on status-graphics-alpha, not this milestone.",
+    "new_ship_actions": "The exact release ROM cold-boots from an isolated reference EEPROM copy.\nFile A retains day 2, 500G, player name グリアああ and Merlin's original stats,\nCharm and Fire v1. Game Boy Link displays Link with a GB? on one line. Star\nCollection displays View your Star / Collection? on two lines. Bot storage\nshows Deposit or / withdraw bots? on two lines. All three prompts fit the\noriginal windows and keep existing Yes/No choices. Selecting No returns to\nthe corresponding ship facility each time. The pause Bots check returns to\nthe bot profile; assignment/training setup and the other 28 new slots remain\nbuild-only. No task is assigned, training started, transfer performed or bot\nstored. Normal exit leaves reference/default/runtime EEPROM hashes unchanged;\nno in-game save or savestate is used."
+  },
+  "update_checksum": true,
+  "validate_move_names": true,
+  "backup_payload_files_verified": 1254,
+  "backup_format": "gpg-aes256-split",
+  "native_coverage_audit": "translation/native-coverage.json",
+  "workspace_backup_checkout": {
+    "mode": "git sparse-checkout, non-cone",
+    "patterns": [
+      "/*",
+      "!/backups/*",
+      "/backups/README.md",
+      "/backups/robopon64-recall-rename-alpha-*",
+      "/backups/robopon64-ship-actions-alpha-*"
+    ],
+    "older_backups": "Omitted working copies remain in local Git and on the canonical GitHub branch; update patterns for the next milestone before staging new parts."
+  },
+  "generated_rom_retention": {
+    "removed_verified_builds": 39,
+    "bytes_freed": 1308622848,
+    "method": "Every removed historical ROM matched its shipped manifest and independently rebuilt byte-for-byte through Flips from original + committed BPS. Current/preceding and unmatched builds retained.",
+    "ledger": "local/recall-rename-evidence/generated-rom-retention.json"
+  }
+}

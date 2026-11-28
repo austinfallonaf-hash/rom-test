@@ -1,0 +1,29 @@
+{
+  "format_version": 1,
+  "format": "gpg-aes256-split",
+  "source_revision": "f41394f5124c5e7809a4fc8163d9f5b1b2999c46",
+  "cipher": "AES256",
+  "chunk_bytes": 83886080,
+  "ciphertext": {
+    "filename": "robopon64-ship-actions-alpha-A7CF0A90.zip.gpg",
+    "bytes": 157766454,
+    "sha256": "629af7ebb5197ab7d43e07be6a4d86335a7078ddd29483cb4cece046c4e4251b"
+  },
+  "plaintext": {
+    "filename": "robopon64-ship-actions-alpha-A7CF0A90.zip",
+    "bytes": 157766340,
+    "sha256": "2f6088c057493c2f0003b358afa55ef38b7c2fc80bd42fea286936fcacab5ad9"
+  },
+  "parts": [
+    {
+      "filename": "robopon64-ship-actions-alpha-A7CF0A90.zip.gpg.part001",
+      "bytes": 83886080,
+      "sha256": "c972e0911a7b4553cbeab98acb245243a3d99a806150d9561e88231a7853bb32"
+    },
+    {
+      "filename": "robopon64-ship-actions-alpha-A7CF0A90.zip.gpg.part002",
+      "bytes": 73880374,
+      "sha256": "5e793cde411d7a4af6f2439de50eca5bb323d0c794692f17c065df2c3f65195c"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "format_version": 1,
+  "format": "gpg-aes256-split",
+  "source_revision": "9ba4975b6c94d3c2894c3bd544788f633b3b7cac",
+  "cipher": "AES256",
+  "chunk_bytes": 67108864,
+  "ciphertext": {
+    "filename": "robopon64-equipment-labels-alpha-89C91C55.zip.gpg",
+    "bytes": 113691005,
+    "sha256": "962a3a6f0f5238423dd41b3e59a289064b78ede32b4a6430be9ba6d11a152e78"
+  },
+  "plaintext": {
+    "filename": "robopon64-equipment-labels-alpha-89C91C55.zip",
+    "bytes": 113690887,
+    "sha256": "7e5a00511a9b9cde3227cfe6f493a0f29c2b33c45d760f963c3200218155afb7"
+  },
+  "parts": [
+    {
+      "filename": "robopon64-equipment-labels-alpha-89C91C55.zip.gpg.part001",
+      "bytes": 67108864,
+      "sha256": "6a06a2c92106ac0ebf0cb42a742b5a43aa0d7c7c5130ef86c19e1a6f1e0c3ba7"
+    },
+    {
+      "filename": "robopon64-equipment-labels-alpha-89C91C55.zip.gpg.part002",
+      "bytes": 46582141,
+      "sha256": "83bc8c83605bb2beedf2ee55c08f6f1b601b52ee3552f366bc6df5512168c7ac"
+    }
+  ]
+}

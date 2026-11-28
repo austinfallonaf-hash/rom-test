@@ -26,7 +26,7 @@ def controls(codes):
     return result
 
 
-def encode(source_codes, text, *, allow_layout_newlines=False):
+def encode(source_codes, text, *, allow_layout_newlines=False, layout_pages_before=()):
     target = []
     position = 0
     cells = 0
@@ -59,7 +59,12 @@ def encode(source_codes, text, *, allow_layout_newlines=False):
         elif word == 0x200B:
             if line > 2:
                 raise ValueError('Dialogue page exceeds three lines')
-            cells += 5  # Original name-entry capacity; room for player name.
+            # Dome rewards use argument 6 for a dynamic item label, rather
+            # than a five-cell entered name. Keep that label alone on its
+            # source line: its possible values have not been bounded here.
+            # Argument 7 is a bot name. The translated native roster reaches
+            # eleven ASCII cells; it is distinct from the five-cell player name.
+            cells += 16 if args[0] == 6 else 11 if args[0] == 7 else 5
         position = match.end()
     for c in text[position:]:
         if not 32 <= ord(c) <= 126 or c in '[]':
@@ -71,9 +76,27 @@ def encode(source_codes, text, *, allow_layout_newlines=False):
     if cells > 16:
         raise ValueError('Dialogue line exceeds 16 cells')
     expected, actual = controls(source_codes), controls(target)
+    # Some source paragraphs lack a page separator. A catalog may declare an
+    # extra page only before an original portrait or the start of a colored
+    # name (2003:0001). This lets a cast list retain full English names. Expand
+    # that exact expected stream instead of allowing arbitrary page changes.
+    if not isinstance(layout_pages_before, (list, tuple)):
+        raise ValueError('Layout page anchors must be source-control indices')
+    if any(type(i) is not int for i in layout_pages_before):
+        raise ValueError('Layout page anchors must be source-control indices')
+    if list(layout_pages_before) != sorted(set(layout_pages_before)):
+        raise ValueError('Layout page anchors must be unique and ordered')
+    for index in layout_pages_before:
+        if (not 0 < index < len(expected)
+                or (expected[index][0] != 0x200A and expected[index] != (0x2003, 1))
+                or expected[index-1] == (0x2001,)):
+            raise ValueError('Layout page anchor must precede an unpaged original portrait or name color')
+    anchored = set(layout_pages_before)
+    expected = [command for index, original in enumerate(expected)
+                for command in ([(0x2001,), original] if index in anchored else [original])]
     if allow_layout_newlines:
         # Existing controls must form a subsequence. The only permitted extra
-        # word is a line break; page, portrait, color and variable controls stay.
+        # word is a line break; declared pages and all other controls stay.
         index = 0
         for command in actual:
             if index < len(expected) and command == expected[index]:

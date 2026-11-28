@@ -1,0 +1,29 @@
+{
+  "format_version": 1,
+  "format": "gpg-aes256-split",
+  "source_revision": "dc8cf16fa0bb84d15b49882e4a914f2d12543665",
+  "cipher": "AES256",
+  "chunk_bytes": 67108864,
+  "ciphertext": {
+    "filename": "robopon64-late-dialogue-alpha-DC99F55B.zip.gpg",
+    "bytes": 121301499,
+    "sha256": "4581581f796c0180b9bcc551c96373c8a2810d7e7a30869a7592aed0ecc5cef9"
+  },
+  "plaintext": {
+    "filename": "robopon64-late-dialogue-alpha-DC99F55B.zip",
+    "bytes": 121301384,
+    "sha256": "3c254f521480c3da55896aca6d7f142ca29dcc7081780067adc6aec8ad3e6090"
+  },
+  "parts": [
+    {
+      "filename": "robopon64-late-dialogue-alpha-DC99F55B.zip.gpg.part001",
+      "bytes": 67108864,
+      "sha256": "cd5cb93d82dab1a18ac0c325d0526b8a94f21f295e2c51273781c38dd12fab26"
+    },
+    {
+      "filename": "robopon64-late-dialogue-alpha-DC99F55B.zip.gpg.part002",
+      "bytes": 54192635,
+      "sha256": "71f607fc620c80fe9e626fc18aa2cbb694ffd09870bc31a542a493562bea74b8"
+    }
+  ]
+}

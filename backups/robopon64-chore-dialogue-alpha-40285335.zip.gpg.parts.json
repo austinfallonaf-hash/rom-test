@@ -1,0 +1,29 @@
+{
+  "format_version": 1,
+  "format": "gpg-aes256-split",
+  "source_revision": "b51414834efd5a11ec6e9e2dd4b6a5d78d792089",
+  "cipher": "AES256",
+  "chunk_bytes": 67108864,
+  "ciphertext": {
+    "filename": "robopon64-chore-dialogue-alpha-40285335.zip.gpg",
+    "bytes": 110582308,
+    "sha256": "b6bb710dc32183923e5c0254bb847f7bae1e792a1edf2640e7763c0a0f58ded4"
+  },
+  "plaintext": {
+    "filename": "robopon64-chore-dialogue-alpha-40285335.zip",
+    "bytes": 110582192,
+    "sha256": "aeaacb3b773812b359b646785da52830c1ad986ac5c782ad1abd3dc005102f29"
+  },
+  "parts": [
+    {
+      "filename": "robopon64-chore-dialogue-alpha-40285335.zip.gpg.part001",
+      "bytes": 67108864,
+      "sha256": "1cc5326e4a9660f52fba845869fead691bb78afb7b44bf68eb29efa0d4fd1556"
+    },
+    {
+      "filename": "robopon64-chore-dialogue-alpha-40285335.zip.gpg.part002",
+      "bytes": 43473444,
+      "sha256": "fa1f31ea0e00378102d9cf19a635170eaa378838dd7eba7f39a6acef5c6627da"
+    }
+  ]
+}
